@@ -2,6 +2,7 @@
   #locales class=("notify" if flash[:locale])
     ul
       - I18n.available_locales.map(&:to_s).sort.each do |locale|
+        - next if locale == 'pt'
         li
           = link_to params.merge(locale: locale) do
             = image_tag "locales/#{locale}.png"

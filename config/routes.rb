@@ -52,9 +52,6 @@ Catarse::Application.routes.draw do
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
   get "/about",                 to: "static#about",               as: :about
 
-
-  match "/explore" => "explore#index", as: :explore
-  match "/explore#:quick" => "explore#index", as: :explore_quick
   match "/credits" => "credits#index", as: :credits
 
   match "/reward/:id" => "rewards#show", as: :reward
@@ -68,6 +65,9 @@ Catarse::Application.routes.draw do
 
     root to: 'projects#index', as: :donate
     
+    match "/explore" => "explore#index", as: :explore
+    match "/explore#:quick" => "explore#index", as: :explore_quick
+
     get '/guidelines',            to: 'static#guidelines',          as: :guidelines
     get "/guidelines_tips",       to: "static#guidelines_tips",     as: :guidelines_tips
     get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
