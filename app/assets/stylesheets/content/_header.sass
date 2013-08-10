@@ -1,15 +1,24 @@
+#header_wrapper
+  background: white
+  padding: 14px 0
+  text-transform: uppercase
+  box-shadow: 0 10px 30px rgba(#8b8b8b,.3)
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1000
+
 #header
   +grid-container
   +grid-system(16)
-  margin: 20px auto 20px
   display: block
   .logo
     +grid(4)
     +alpha
     margin-right: 20px
-    height: 54px
+    height: 73px
     border: none
-    background: url($images_path+"logo.png") left top no-repeat
+    background: url($images_path+"logo-donate.png") left top no-repeat
     text-indent: -9999em
   nav
     a

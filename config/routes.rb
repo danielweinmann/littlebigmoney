@@ -50,10 +50,6 @@ Catarse::Application.routes.draw do
 
   # Static Pages
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
-  get '/guidelines',            to: 'static#guidelines',          as: :guidelines
-  get "/guidelines_tips",       to: "static#guidelines_tips",     as: :guidelines_tips
-  get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
-  get "/guidelines_start",      to: "static#guidelines_start",    as: :guidelines_start
   get "/about",                 to: "static#about",               as: :about
 
 
@@ -68,29 +64,41 @@ Catarse::Application.routes.draw do
     resources :backer_reports_for_project_owners, only: [:index]
   end
 
-  resources :projects do
-    resources :updates, only: [ :index, :create, :destroy ]
-    resources :rewards, only: [ :index, :create, :update, :destroy ] do
+  scope "/donate" do
+
+    root to: 'projects#index', as: :donate
+    
+    get '/guidelines',            to: 'static#guidelines',          as: :guidelines
+    get "/guidelines_tips",       to: "static#guidelines_tips",     as: :guidelines_tips
+    get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
+    get "/guidelines_start",      to: "static#guidelines_start",    as: :guidelines_start
+
+    resources :projects do
+      resources :updates, only: [ :index, :create, :destroy ]
+      resources :rewards, only: [ :index, :create, :update, :destroy ] do
+        member do
+          post 'sort'
+        end
+      end
+      resources :backers, controller: 'projects/backers', only: [ :index, :show, :new, :create ] do
+        member do
+          match 'credits_checkout'
+          post 'update_info'
+        end
+      end
+      collection do
+        get 'video'
+        get 'check_slug'
+      end
       member do
-        post 'sort'
+        put 'pay'
+        get 'embed'
+        get 'video_embed'
       end
     end
-    resources :backers, controller: 'projects/backers', only: [ :index, :show, :new, :create ] do
-      member do
-        match 'credits_checkout'
-        post 'update_info'
-      end
-    end
-    collection do
-      get 'video'
-      get 'check_slug'
-    end
-    member do
-      put 'pay'
-      get 'embed'
-      get 'video_embed'
-    end
+
   end
+  
   resources :users do
     collection do
       get :uservoice_gadget
@@ -153,6 +161,6 @@ Catarse::Application.routes.draw do
   match "/:permalink" => "projects#show", as: :project_by_slug
 
   # Root path
-  root to: 'projects#index'
+  root to: 'home#index'
 
 end
