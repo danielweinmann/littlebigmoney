@@ -136,6 +136,7 @@ group :assets do
   gem 'coffee-rails'
   gem "compass-rails"
   gem 'uglifier'
+  gem 'semantic-mixins', '~> 0.1.9'
   gem 'compass-960-plugin'
 end
 

@@ -381,8 +381,10 @@ en:
       help: help
       signup: "sign up"
       signin: login
-      explore: explore
+      explore: donate
+      invest: invest (soon)
       submit_project: submit
+      how_it_works: how it works
       profile: "my profile"
       account: "my account"
     user:

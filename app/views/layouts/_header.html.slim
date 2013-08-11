@@ -1,14 +1,5 @@
-#header_wrapper
-  #header
-    /= render 'layouts/announcement'
-    = link_to "Home", root_url(host: Configuration[:base_domain] || request.domain), :class => 'logo', :title => Configuration[:company_name]
-    nav.actions
-      = link_to t('layouts.header.explore'), donate_path, :class => 'explore'
-      = link_to t('layouts.header.submit_project'), guidelines_start_path, :class =>  'submit_project'
-    /.search
-      = form_tag explore_path(:anchor => "search"), :method => 'GET', :class=>'search_input' do
-        = text_field_tag :search, nil, autocomplete: "off"
-        = submit_tag
+#header_wrapper data-kind="#{current_kind}"
+  #menu_wrapper
     nav.menu
       /= link_to t('layouts.header.help'), Configuration[:support_forum], target: :_blank, id: 'guidelines_header_modal' if Configuration[:support_forum].present?
       /= link_to t('layouts.header.blog'), Configuration['blog_url'], target: :_blank, class: 'blog' if Configuration['blog_url'].present?
@@ -35,4 +26,16 @@
       - else
         = link_to t('layouts.header.signup'), new_user_session_path(active_register: true)
         = link_to t('layouts.header.signin'), new_user_session_path
+  #header
+    /= render 'layouts/announcement'
+    = link_to "Home", (current_kind == "both" ? root_url(host: Configuration[:base_domain] || request.domain) : donate_url(host: Configuration[:base_domain] || request.domain)), :class => 'logo', :title => Configuration[:company_name]
+    nav.actions
+      = link_to t('layouts.header.explore'), donate_path, :class => 'explore'
+      = link_to t('layouts.header.invest'), "#", :class => 'invest'
+      = link_to t('layouts.header.submit_project'), guidelines_start_path, :class =>  'submit_project'
+      = link_to t('layouts.header.how_it_works'), guidelines_path, :class => 'how_it_works'
+    /.search
+      = form_tag explore_path(:anchor => "search"), :method => 'GET', :class=>'search_input' do
+        = text_field_tag :search, nil, autocomplete: "off"
+        = submit_tag
     .clearfix

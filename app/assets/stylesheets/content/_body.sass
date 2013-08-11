@@ -1,10 +1,16 @@
+html
+  -webkit-font-smoothing: antialiased  
+  font-smoothing: antialiased  
+  font-family: $default_font
+
 body
-  font-family: "Lato"
   background: #F0F0F0
   i, em
     font-style: italic
   b, strong
-    font-weight: 700 
+    font-weight: 700
+  a
+    +transition(all, .3s)
 
   #main_content
     margin-top: 101px
@@ -41,7 +47,6 @@ body
             margin-left: 20px
             float: left
             color: $channel_text
-            font-family: "Lato"
             font-size: 28px
             font-weight: 700
       .projects

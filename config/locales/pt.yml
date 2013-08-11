@@ -329,7 +329,9 @@ pt:
       signup: cadastre-se
       signin: login
       explore: explore
+      invest: investir (breve)
       submit_project: envie
+      how_it_works: como funciona?
       profile: "meu perfil"
       account: "minha conta"
     user:

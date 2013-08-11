@@ -328,7 +328,9 @@ es:
       faq: FAQ
       signup: cadastre-se
       signin: login
-      explore: explore
+      explore: donar
+      invest: invertir (breve)
+      how_it_works: ¿cómo funciona?
       submit_project: envie
       profile: "meu perfil"
       account: "minha conta"
