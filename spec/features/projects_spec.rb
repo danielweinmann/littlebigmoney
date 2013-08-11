@@ -20,7 +20,7 @@ describe "Projects" do
     before do
       FactoryGirl.create(:project, state: 'online', online_days: 30, online_date: Time.now)
       FactoryGirl.create(:project, state: 'online', online_days: -30)
-      visit donate_path(locale: :pt)
+      visit root_path(locale: :pt)
     end
 
     it "should show recent projects" do
