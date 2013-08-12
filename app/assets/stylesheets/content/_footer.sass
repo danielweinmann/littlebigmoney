@@ -1,5 +1,13 @@
 #footer
   background: $footerblue
+  a
+    font-family: $headline-font
+    color: white
+    text-decoration: none
+    &:hover
+      color: $brightblue
+  color: white
+  padding-bottom: 32px
   .footer
     +grid-system(16)
     .content
@@ -9,8 +17,7 @@
         font-weight: 700
         font-size: 18px
         color: white
-        padding-bottom: 40px
-        padding-top: 5px
+        padding-bottom: 16px
       .info
         +grid(4)
         ul
@@ -18,12 +25,7 @@
             margin-bottom: 24px
             a
               font-size: 18px
-              font-family: $headline-font
-              color: white
-              text-decoration: none
-              &:hover
-                color: $brightblue
-
+            
       .opendata
         +grid(6)
         ul
@@ -56,26 +58,37 @@
             float: left
             width: 170px
             height: 28px
+            padding-left: 8px
             +border-radius(4px 0 0 4px)
             border: 1px $df_gryn solid
             border-right: none
             &:focus
               outline: none
-              border: 1px $pink solid
+              border: 1px $carrot solid
               border-right: none
           input[type="submit"]
             float: left
-            background: $pink
+            background: $carrot
             width: 82px
             height: 32px
             +border-radius(0 4px 4px 0)
             color: white
             font-size: 12px
-            text-transform: uppercase
+            text-transform: lowercase
             border: none
             +transition(all, 0.5s)
+            &:hover
+              background: darken($carrot, 10%)
             &:active
               +box-shadow(rgba(black, 0.5) 0 0 5px inset)
+        .posts
+          padding-bottom: 8px
+          p
+            padding-bottom: 16px
+            font-size: 12px
+          .author
+            color: $brightblue
+            padding-top: 4px
 #credits
   background: $creditsblue
   padding: 36px 0 20px 0
