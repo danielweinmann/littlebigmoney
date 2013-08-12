@@ -385,6 +385,7 @@ en:
       invest: invest (soon)
       submit_project: submit
       how_it_works: how it works
+      welcome_html: "Welcome <span class='user_name'>%{name}</span>"
       profile: "my profile"
       account: "my account"
     user:

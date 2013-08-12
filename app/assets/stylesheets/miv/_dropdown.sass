@@ -3,13 +3,13 @@
   display: none
   list-style: none
   width: 120px
-  background: white
+  background: $lightgray
   padding: 10px 5px
   position: absolute
   +border-radius(4px)
   +box-shadow(rgba(black, 0.3) 1px 1px 2px)
   &.user
-    margin-left: 87px
+    right: 20px
     margin-top: 10px
   li
     width: 100%
@@ -17,11 +17,12 @@
     margin-top: 5px
     padding: 0 10px
     .small
-      font-weight: 700
-      font-size: 11px
-      color: $green
+      font-size: 10px
+      color: $carrot
     &.divider
+      width: 80%
       border-bottom: 1px $gryn solid
-      margin-bottom: 5px
-      margin-top: 15px
-
+      margin-bottom: 8px
+      margin-top: 8px
+    a
+      color: $mediumgray !important

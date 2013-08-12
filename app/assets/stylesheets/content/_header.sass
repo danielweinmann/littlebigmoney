@@ -12,9 +12,11 @@
     top: 0
     right: 0
     z-index: 10
-    padding: 4px 25px 12px 0
+    padding: 8px 25px 8px 0
     height: 12px
     background: $warmgray
+    color: white
+    font-size: 12px
     +decorative-content(before, false)
       position: absolute
       left: -53px
@@ -33,15 +35,14 @@
       z-index: -1
     nav.menu
       float: right
+      .user_name
+        color: $mediumgray
       a
         color: white
         font-size: 12px
-        margin-left: 12px
+        margin: 0 6px
         text-decoration: none
         &.my_profile_link
-          width: 130px
-          display: block
-          float: right
           margin-right: 0
           img.profile_picture
             border: 1px $ultra_gryn
@@ -51,14 +52,14 @@
             float: left
             margin-top: -14px
             margin-right: 5px
-
             &:hover
               +box-shadow(rgba(black, 0.6) 1px 1px 2px inset)
-          .current_user_name
-            float: left
-            margin-right: 5px
           .dropdown_arrow
-            float: left
+            margin-left: 8px
+            top: -2px
+            position: relative
+          .current_user_name
+          .dropdown_arrow
             position: relative
             margin-top: 7px
         &:last-child
@@ -136,6 +137,9 @@
       background: $navy
     &:before
       border-top-color: $navy
+    nav.menu
+      .user_name
+        color: darken($lightgray,25%)
   #header
     .logo
       background: url($images_path+"logo.png") left top no-repeat

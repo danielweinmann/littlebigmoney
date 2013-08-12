@@ -332,6 +332,7 @@ es:
       invest: invertir (breve)
       how_it_works: ¿cómo funciona?
       submit_project: envie
+      welcome_html: "Bienvenido <span class='user_name'>%{name}</span>"
       profile: "meu perfil"
       account: "minha conta"
     user:
