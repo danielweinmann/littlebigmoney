@@ -18,13 +18,14 @@ describe "Projects" do
 
   describe "home" do
     before do
-      FactoryGirl.create(:project, state: 'online', online_days: 30, online_date: Time.now)
+      FactoryGirl.create(:project, state: 'online', online_days: 30, online_date: Time.now, recommended: false)
+      FactoryGirl.create(:project, state: 'online', online_days: 30, online_date: Time.now, recommended: true)
       FactoryGirl.create(:project, state: 'online', online_days: -30)
       visit root_path(locale: :pt)
     end
 
-    it "should show recent projects" do
-      recent = all(".recents_projects.list .projects .curated_project")
+    it "should show selected projects" do
+      recent = all(".selected_projects.list .projects .curated_project")
       recent.should have(1).items
     end
   end
