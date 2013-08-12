@@ -1,8 +1,11 @@
 div.project
   +grid(4)
-  background-color: $ed_gryn
+  width: 218px
+  background-color: white
+  border: 1px solid darken($lightgray, 10%)
+  +border-top-left-radius(5px)
   +transition(all, 0.3s)
-  height: 415px
+  height: 413px
   overflow: hidden
   &.first
     +alpha
@@ -29,23 +32,28 @@ div.project
       border-bottom: 1px rgba(white, 0.2) solid
     .black_box
       text-transform: uppercase
+      text-align: right
       position: absolute
-      background-color: rgba(0,0,0,.6)
+      background-color: $carrot
+      background-color: rgba(245, 116, 33, 0.9)
       height: 16px
       overflow: hidden
-      margin-top: 148px
-      padding: 7px 0 1px 5px
+      margin-top: 140px
+      margin-left: 4px
+      padding: 7px 5px 1px 0
       color: white
       font-size: 11px
-      width: 215px
+      width: 205px
     .cover
-      width: 220px
-      height: 172px
+      width: 210px
+      height: 164px
       overflow: hidden
       margin-bottom: 8px
+      margin-left: 4px
+      margin-top: 4px
       img
-        width: 220px
-        height: 172px
+        width: 210px
+        height: 164px
         vertical-align: middle
     h4
       font-size: 14px
@@ -56,12 +64,14 @@ div.project
       overflow: hidden
       margin-bottom: 3px
       a
-        color: black
+        color: $carrot
+        border-left: 2px solid $carrot
+        padding-left: 4px
         font-weight: 700
         font-size: 14px
         text-decoration: none
         &:hover
-          color: $green
+          color: lighten($carrot, 10%)
     .author, .where, .description
       padding-left: 3px
       color: black
@@ -74,7 +84,7 @@ div.project
       line-height: 120%
       font-size: 13px
       padding: 10px 0 15px 3px
-      height: 60px
+      height: 62px
       +opacity(0.5)
     .where
       padding: 10px 0
@@ -87,11 +97,11 @@ div.project
       +border-radius(5px)
       .progress
         +border-radius(4px)
-        background-color: $green
+        background-color: $carrot
         height: 10px
         overflow: hidden
     .info_bar
-      background: $dc_gryn
+      background: $lightgray
       float: left
       width: 210px
       padding: 5px 5px 10px
@@ -108,7 +118,7 @@ div.project
         h6
           font-weight: 700
           font-size: 12px
-          color: black
+          color: $carrot
           +opacity(0.7)
           margin-bottom: 3px
         p
