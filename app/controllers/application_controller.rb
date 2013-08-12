@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  helper_method :namespace, :fb_admins, :render_facebook_sdk, :render_facebook_like, :render_twitter, :display_uservoice_sso, :current_kind
+  helper_method :namespace, :fb_admins, :render_facebook_sdk, :render_facebook_like, :render_twitter, :display_uservoice_sso, :current_kind, :blog_posts
 
   before_filter :set_locale
   before_filter :force_http
@@ -115,4 +115,14 @@ class ApplicationController < ActionController::Base
   def force_http
     redirect_to(protocol: 'http', host: ::Configuration[:base_domain]) if request.ssl?
   end
+
+  def blog_posts
+    Blog.fetch_last_posts.inject([]) do |total,item|
+      total << item if total.size < 2
+      total
+    end
+  rescue
+    []
+  end
+
 end

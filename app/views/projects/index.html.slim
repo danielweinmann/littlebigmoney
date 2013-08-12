@@ -54,7 +54,7 @@
         .blog
           h3= t('sidebar.titles.blog')
           ul.posts
-            - @blog_posts.each do |post|
+            - blog_posts.each do |post|
               li
                 h2
                   = link_to post.url, target: '__blank' do

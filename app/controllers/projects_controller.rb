@@ -30,7 +30,6 @@ class ProjectsController < ApplicationController
         @projects_near = Project.online.near_of(current_user.address_state).order("random()").limit(3) if current_user
         @expiring = Project.expiring_for_home(project_ids)
         @recent   = Project.recent_for_home(project_ids)
-        @blog_posts = blog_posts
       end
 
       format.json do
@@ -112,15 +111,6 @@ class ProjectsController < ApplicationController
     @project = Project.find params[:id]
     @title = @project.name
     render layout: 'embed'
-  end
-
-  def blog_posts
-    Blog.fetch_last_posts.inject([]) do |total,item|
-      total << item if total.size < 2
-      total
-    end
-  rescue
-    []
   end
 
   # Just to fix a minor bug,
