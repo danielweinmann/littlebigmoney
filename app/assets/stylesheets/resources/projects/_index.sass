@@ -1,15 +1,12 @@
 [data-namespace="null"][data-controller="projects"][data-action="index"]
   .channel_banner
-    width: 100%
-    height: 357px
-    border-top: 1px solid #DDDDDD 
-    border-bottom: 1px solid #DDDDDD 
-    background: image-url("channels/banner_tile.jpg") left top repeat
+    +grid-container
+    +grid-system(16)
     overflow: hidden
-    margin-bottom: 50px
+    padding-top: 20px
+    margin-bottom: 20px
     .center_content
-      width: 960px
-      margin: auto
+      +grid(16)
     .text
       width: 50%
       float: left
@@ -49,3 +46,10 @@
         text-decoration: none
         &:hover
           color: $green
+    .clear_link
+      float: left
+      hr
+        +grid(16)
+        +alpha
+        +omega
+        border: 1px solid transparent

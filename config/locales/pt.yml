@@ -119,7 +119,7 @@ pt:
     near:
       title: 'Próximos a mim'
     selection:
-      title: 'Seleção'
+      title: 'Projetos em destaque'
     expiring:
       title: "Na reta final"
     recents:

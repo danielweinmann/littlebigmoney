@@ -53,7 +53,7 @@ class ApplicationController < ActionController::Base
   private
   
   def current_kind
-    if controller_name == "projects" and action_name == "index"
+    if self.class == ProjectsController and action_name == "index"
       "both"
     else
       "donate"
