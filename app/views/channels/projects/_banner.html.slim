@@ -1,9 +1,12 @@
 .channel_banner
   .center_content
-    = image_tag "home-banner.jpg"
-    /.text
-      h1 Conheça o Canal Asas
-      span Para potencializar projetos criativos de jovens transformadores aqui no Catarse, o Instituto Asas lançou seu próprio canal.
-      = link_to "Saiba mais", root_url(subdomain: 'asas'), class: "ch_button ch_button_ok ch_button_green know_more_button"
-    /.picture
-      = image_tag 'channels/banner.png'
+    = image_tag "home-banner.#{I18n.locale}.png"
+    .text
+      h2= t("projects.index.what_is_html")
+      .donate
+        = link_to donate_path do
+          = image_tag "catarse/logo-donate.png"
+        h3.slogan= t("projects.index.slogan_donate")
+      .invest
+        = image_tag "catarse/logo-invest.png"
+        h3.slogan= t("projects.index.slogan_invest")

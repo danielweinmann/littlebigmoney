@@ -387,6 +387,10 @@ es:
       waiting_funds: aguardando
       not_reached_goal: aguardando
   projects:
+    index:
+      what_is_html: "<strong>LittleBigMoney</strong> es la primera plataforma en la región de micro-inversión colectiva para el financiamiento y desarrollo de PYMES"
+      slogan_donate: Una pequeña donación, una gran ayuda
+      slogan_invest: (En breve) crece con los nuevos emprendedores
     box:
       by: por
     admin_fields:

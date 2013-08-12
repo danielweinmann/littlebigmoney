@@ -438,6 +438,10 @@ en:
       waiting_funds: waiting
       not_reached_goal: waiting
   projects:
+    index:
+      what_is_html: "<strong>LittleBigMoney</strong> is the first platform of the region in collective micro-investment for the funding and development of SMEs"
+      slogan_donate: A little donation, a big help
+      slogan_invest: (Soon) grow with new entrepreneurs
     box:
       by: by
     admin_fields:

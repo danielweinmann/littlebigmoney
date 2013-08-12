@@ -8,12 +8,45 @@
     .center_content
       +grid(16)
     .text
-      width: 50%
-      float: left
+      margin-top: 40px
       h1
         font-size: 2.2em
         font-weight: bold
         margin: 2em 0 0.5em 0
+      h2
+        +grid(14)
+        +grid-prefix(1)
+        +grid-suffix(1)
+        +alpha
+        +omega
+        font-size: 18px
+        line-height: 24px
+        text-transform: uppercase
+        text-align: center
+        font-weight: bold
+        color: $mediumlightgray
+        strong
+          color: $mediumgray
+      .donate, .invest
+        +grid(8)
+        text-align: center
+        margin-top: 60px
+        .slogan
+          margin: 40px 0
+          padding: 30px 0
+          background: white
+          text-transform: uppercase
+          font-size: 13px
+          font-weight: bold
+      .donate
+        +alpha
+        .slogan
+          color: $carrot
+      .invest
+        +opacity(0.5)
+        +omega
+        .slogan
+          color: $brightblue
       span
         font-size: 1.3em
         line-height: 1.5
