@@ -48,16 +48,14 @@ html lang="#{I18n.locale}" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http:/
       .container.footer
         .content
           .info
-            h3= t('footer.titles.info')
             ul
-
+              li= link_to "Home", root_path
               li= link_to t('footer.links.about'), about_path
               li= link_to t('footer.links.faq'), 'http://suporte.catarse.me/', target: '_blank'
               li= link_to t('footer.links.terms'), t('footer.links.terms_link')
               li= link_to t('footer.links.policy'), t('footer.links.policy_link')
               li= link_to t('footer.links.contact'), 'http://suporte.catarse.me/', target: '_blank'
           .opendata
-            h3= t('footer.titles.social')
             .twitter
               = link_to "Follow @#{::Configuration[:twitter_username]}", "http://twitter.com/#{::Configuration[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
             .facebook
@@ -68,5 +66,9 @@ html lang="#{I18n.locale}" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http:/
               = text_field_tag 'EMAIL', nil, placeholder: 'email@email.com', label: 'email'
               = submit_tag "#{t('newsletter_subscribe')}"
           .clearfix
+    #credits
+      .content
+        a href="http://www.fundacioncapital.org/" target="_blank"
+          = image_tag "catarse/logo-fundacion.png"
     = render '/layouts/uservoice'
     = yield :mouseflow
