@@ -329,10 +329,10 @@ pt:
       faq: FAQ
       signup: cadastre-se
       signin: login
-      explore: explore
+      explore: Doar
       invest: investir (breve)
       submit_project: envie
-      how_it_works: como funciona?
+      how_it_works: Como funciona?
       welcome_html: "Bem-vindo <span class='user_name'>%{name}</span>"
       profile: "meu perfil"
       account: "minha conta"

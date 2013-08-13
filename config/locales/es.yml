@@ -331,7 +331,7 @@ es:
       signin: login
       explore: donar
       invest: invertir (breve)
-      how_it_works: ¿cómo funciona?
+      how_it_works: ¿Cómo funciona?
       submit_project: envie
       welcome_html: "Bienvenido <span class='user_name'>%{name}</span>"
       profile: "meu perfil"
