@@ -41,10 +41,10 @@
         i
           font-style: italic
           font-size: 18px
-          color: #E75297
+          color: $carrot
           text-shadow: 1px 1px white
         a
-          color: #E75297
+          color: $carrot
           text-decoration: none
           &:hover
             text-decoration: underline
@@ -80,11 +80,11 @@
             color: #444
             text-decoration: none
             &:hover
-              color: $pink
+              color: $carrot
               text-decoration: underline
             &.destroy_update
               font-size: 12px
-              color: $pink
+              color: $carrot
               text-decoration: none
               padding: 10px 0px 20px 20px
               float: left
@@ -111,15 +111,13 @@
       padding-top:  40px
       padding-bottom: 40px
       h1
-        color: #333
         font-weight: 700
         font-size: 24px
         padding: 5px 0
       h4
-        color: rgba($ultra_gryn, 0.7)
         font-size: 16px
         a
-          color: $pink
+          color: $carrot
           text-decoration: none
           &:hover
             text-decoration: underline
@@ -185,10 +183,10 @@
           strong
             font-weight: bold
           a
-            color: $pink
+            color: $carrot
             text-decoration: none
             &:hover
-              color: $pink
+              color: $carrot
 
       .media_content_backers
         ul.collection_list
@@ -221,7 +219,7 @@
                   margin-bottom: 15px
                   display: block
                   &:hover
-                    color: $pink
+                    color: $carrot
                     text-decoration: underline
               #confirmed, #backed
                 padding-top: 4px
@@ -251,7 +249,7 @@
                 font-size: 18px
                 margin-bottom: 12px
               .user_email
-                color: $pink
+                color: $carrot
                 font-size: 12px
                 margin-top: 10px
                 &:hover
@@ -282,7 +280,7 @@
             font-size: 12px
             &.email
               width: auto
-              color: $pink
+              color: $carrot
               margin-left: 5px
               text-indent: 0px
               text-decoration: none
@@ -306,7 +304,7 @@
           &.sortable:hover
             cursor: pointer
           &.clickable:hover
-            background: rgba($light_green, 0.3)
+            background: rgba($carrot, 0.3)
           .btn-danger
             margin-top: 20px
           .edit_reward
@@ -333,7 +331,7 @@
             line-height: 18px
             padding-bottom: 5px
             a
-              color: #64CB64
+              color: $navy
               text-decoration: none
               &:hover
                 text-decoration: underline
@@ -342,7 +340,7 @@
             margin-left: 0px
           .reward_deliver_at
             p
-              color: $pink
+              color: $carrot
           .reward_updated_at
             p
               color: $blue
@@ -391,38 +389,31 @@
               color: $green
             .updated_reward
               padding-top: 20px
-              color: $pink
+              color: $carrot
               span
                 cursor: pointer
       .info
         #pledge
-          background: #F3F3F3
+          background: $lightgray
         .statistics
-          background: #F3F3F3
+          background: $lightgray
           width: 240px
           float: left
           padding: 20px 20px 0 20px
           .item
             font-size: 16px
-            color: #444
-            padding-left: 65px
             margin-bottom: 20px
+            font-family: $headline-font
             p
               white-space: nowrap
               font-weight: 700
               font-size: 36px
-              color: #444
+              color: $mediumgray
               text-shadow: 1px 1px white
             em
               font-size: 14px
-              color: #444
+              color: $mediumlightgray
               text-shadow: 1px 1px white
-            &.backers
-              background: url($images_path+"sidebar_backers_icon26x19.png") left center no-repeat
-            &.goal
-              background: url($images_path+"goal_icon36x17.png") left center no-repeat
-            &.time
-              background: url($images_path+"time_icon19x30.png") left center no-repeat
         #condition
           background: url($images_path+"back_statistics.gif") left top repeat-x
           width: 260px
@@ -452,15 +443,14 @@
           padding-bottom: 20px
           input[type="submit"][disabled="disabled"]
             +opacity(0.6)
-            background: url($images_path+"submit_back_icon25x22.png") 20px center no-repeat $ultra_gryn
+            background: $ultra_gryn
           input[type="submit"]
             display: block
             margin: 0 auto
-            background: url($images_path+"submit_back_icon25x22.png") 20px center no-repeat $light_green
+            background: $carrot
             width: 245px
             height: 55px
             border: none
-            text-indent: 30px
             +border-radius(10px)
             +transition(all, 0.5s)
             text-transform: uppercase
@@ -498,15 +488,13 @@
             color: $ultra_gryn
             text-decoration: none
             &:hover
-              color: $pink
+              color: $carrot
           h3
-            background: url($images_path+"profile_icon19x14.png") left 4px no-repeat
-            color: $ultra_gryn
+            color: $warmgray
+            text-transform: uppercase
             font-weight: 700
-            font-size: 18px
-            padding-left: 30px
             display: block
-            padding-bottom: 25px
+            padding-bottom: 16px
           .avatar
             +grid(2)
             width: 80px
@@ -523,7 +511,7 @@
               a
                 font-weight: 700
                 font-size: 14px
-                color: $pink
+                color: $carrot
                 text-decoration: none
                 &:hover
                   text-decoration: underline
@@ -564,7 +552,7 @@
     #project_edit, #project_reports
       .bootstrap-twitter
         a
-          color: #E75297
+          color: $carrot
         p
           font-style: italic
           font-size: 16px
@@ -592,7 +580,7 @@
         textarea, input[type='text']
           width: 70%
         label
-          color: #E75297
+          color: $carrot
           float: left
           font-style: italic
           font-size: 18px
@@ -637,7 +625,7 @@
             margin-top: 10px
             padding-bottom: 10px
           a
-            color: #E75297
+            color: $carrot
             text-decoration: none
             &:hover
               text-decoration: underline
@@ -653,10 +641,10 @@
           padding: 0
           margin: 0
           .btn
-            border: solid 1px #C2457E
+            border: solid 1px $darkcarrot
             color: white
             display: block
-            text-shadow: 1px 1px #C2457E
+            text-shadow: 1px 1px $darkcarrot
             font-size: 12px
             height: 46px
             padding: 0 15px 0 45px
@@ -665,9 +653,9 @@
             margin-right: 10px
             float: right
             +border-radius (10px)
-            background: #E75297 url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
+            background: $carrot url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
             &:hover
-              background-color: #C2457E
+              background-color: $darkcarrot
     #project_updates
       width: 620px
       .bootstrap-form
@@ -687,7 +675,7 @@
         font-size: 14px
         margin-bottom: 15px
         a
-          color: $pink
+          color: $carrot
           text-decoration: none
           &:hover
             text-decoration: underline
@@ -725,7 +713,7 @@
           margin-top: 10px
           padding-bottom: 10px
         a
-          color: #E75297
+          color: $carrot
           text-decoration: none
           &:hover
             text-decoration: underline
@@ -741,10 +729,10 @@
         padding: 0
         margin: 0
         .btn
-          border: solid 1px #C2457E
+          border: solid 1px $darkcarrot
           color: white
           display: block
-          text-shadow: 1px 1px #C2457E
+          text-shadow: 1px 1px $darkcarrot
           font-size: 12px
           height: 46px
           padding: 0 15px 0 45px
@@ -753,9 +741,9 @@
           margin-right: 10px
           float: left
           +border-radius (10px)
-          background: #E75297 url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
+          background: $carrot url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
           &:hover
-            background-color: #C2457E
+            background-color: $darkcarrot
 
       #formatting_tips
         display: none
@@ -780,5 +768,5 @@
           color: $ultra_gryn
           text-decoration: none
           &:hover
-            color: $pink
+            color: $carrot
 

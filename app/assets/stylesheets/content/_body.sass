@@ -11,12 +11,17 @@ body
   b, strong
     font-weight: 700
   a
+    color: $carrot
     +transition(all, .3s)
+    &:hover
+      color: $darkcarrot
   h1, h2, h3, h4, h5, h6
     font-family: $headline-font
   h1, h2
     text-transform: uppercase
     color: $warmgray
+  input[type="submit"]
+    font-family: $headline-font
 
   #main_content
     margin-top: 101px
