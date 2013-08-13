@@ -101,6 +101,9 @@ pt:
       terms_link: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso'
       policy_link: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade'
       contact: Contato
+      twitter: Siga-nos no @%{twitter}
+      facebook: Encontre-nos no Facebook
+      
   main:
     links:
       selected: "explore mais projetos selecionados"

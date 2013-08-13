@@ -56,10 +56,16 @@ html lang="#{I18n.locale}" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http:/
               li= link_to t('footer.links.policy'), t('footer.links.policy_link')
               li= link_to t('footer.links.contact'), 'http://suporte.catarse.me/', target: '_blank'
           .opendata
-            .twitter
-              = link_to "Follow @#{::Configuration[:twitter_username]}", "http://twitter.com/#{::Configuration[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
-            .facebook
-              = render_facebook_like href: "#{::Configuration[:facebook_url]}", width: "171"
+            ul
+              li
+                = link_to "https://twitter.com/#{::Configuration[:twitter_username]}" do
+                  = image_tag "twitter_pin.png"
+                  = t('footer.links.twitter', twitter: ::Configuration[:twitter_username])
+              li
+                = link_to ::Configuration[:facebook_url] do
+                  = image_tag "facebook_pin.png"
+                  = t('footer.links.facebook')
+                .fb-like-box data-href="#{::Configuration[:facebook_url]}" data-width="292" data-height="250" data-show-faces="true" data-colorscheme="dark" data-stream="false" data-show-border="false" data-header="false"
           .social
             h3= t('footer.titles.blog')
             ul.posts
