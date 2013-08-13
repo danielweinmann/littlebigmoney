@@ -4,6 +4,7 @@ html
   font-family: $default_font
 
 body
+  color: $mediumgray
   background: $lightgray
   i, em
     font-style: italic
@@ -13,18 +14,19 @@ body
     +transition(all, .3s)
   h1, h2, h3, h4, h5, h6
     font-family: $headline-font
+  h1, h2
+    text-transform: uppercase
+    color: $warmgray
 
   #main_content
     margin-top: 101px
   #page_content
     .container
       +grid-system(16)
-      +border-radius(4px)
-      padding: 0 10px 0 10px
+      padding: 40px 10px 0 10px
       background: white
-      border: 1px $df_gryn solid
-      margin-bottom: 40px
-
+      border-left: 1px $df_gryn solid
+      border-right: 1px $df_gryn solid
       .main
         padding-top: 17px
         +grid(12)

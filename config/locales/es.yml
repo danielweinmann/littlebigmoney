@@ -101,6 +101,8 @@ es:
       terms_link: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso'
       policy_link: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade'
       contact: Contato
+      twitter: Síguenos en @%{twitter}
+      facebook: Encuéntranos en Facebook
   main:
     links:
       selected: "explore mais projetos selecionados"
@@ -261,9 +263,9 @@ es:
       quick_explore: "Busca rápida"
       recent: Recentes
       recommended: Recomendados
-      subtitle: "Explore os projetos, encontre aqueles que mexem com seu coração, e faça acontecer!"
+      subtitle: "Descubre increíbles microempresas, explora sus proyectos, encuentra aquellos que más te motiven y colabora para hacer realidad sus sueños!"
       successful: Bem-sucedidos
-      title: "Encontre projetos incríveis"
+      title: "Descubre increíbles microempresas"
     title: "Explore os projetos"
     project:
       empty: "Ei, não encontramos nenhum projeto com o texto que você procurou. Que tal experimentar com outras palavras? =D"

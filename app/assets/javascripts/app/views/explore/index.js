@@ -148,7 +148,7 @@ CATARSE.ExploreIndexView = Backbone.View.extend({
   },
 
   render: function(){
-    this.$('#header .search input').timedKeyup(this.updateSearch, 1000)
+    this.$('input#search').timedKeyup(this.updateSearch, 1000)
   }
 
 })

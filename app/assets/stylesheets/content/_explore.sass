@@ -6,49 +6,67 @@
         margin-top: 123px
         .content
           padding-top: 10px
+        .search
+          margin-bottom: 20px
+          form
+            width: 195px
+            height: 22px
+            +border-radius(8px)
+            border: 1px $minimal_gryn solid
+            // +box-shadow(rgba(black, 0.1) 1px 1px 2px)
+            background: white
+            input[type="text"]
+              border: none
+              width: 165px
+              float: left
+              margin-left: 6px
+              margin-top: 3px
+              &:focus
+                outline: none
+            input[type="submit"]
+              background: url($images_path+"search_submit15x15.png") left top no-repeat
+              width: 15px
+              height: 15px
+              border: none
+              text-indent: -9999em
+              float: right
+              margin: 3px 5px 0 0px
         section
           h2
-            font-size: 16px
-            color: black
-            font-weight: 700
+            font-size: 13px
+            color: $mediumlightgray
             margin-bottom: 10px
-            text-transform: lowercase
-            padding-left: 20px
-          &.highlights
-            h2
-              background: url($images_path+'min_star12x11.png') left 3px no-repeat
-          &.categories
-            h2
-              background: url($images_path+'category_icon14x14.png') left 2px no-repeat
+            text-transform: uppercase
+            font-weight: 700
           ul
             margin-bottom: 20px
             li
               margin-bottom: 5px
               a
-                color: $ultra_gryn
+                color: $mediumlightgray
                 font-size: 14px
-                background: rgba($minimal_gryn, 0.3)
                 display: block
-                padding: 1px 10px
+                padding: 6px 10px
                 text-decoration: none
                 +border-radius(5px)
                 &:hover, &.selected
-                  background: rgba($pink, 0.3)
+                  background: rgba($carrot, 0.8)
+                  color: white
       .main
         .section_header
           +grid(16)
           +alpha
-          padding-bottom: 60px
+          display: block
+          height: 105px
           h1
             font-weight: 700
-            font-size: 28px
-            color: $ultra_gryn
+            font-size: 20px
             padding-bottom: 5px
             span
-              color: $minimal_gryn
+              color: $mediumgray
           h4
             font-size: 16px
-            color: $ultra_gryn
+            line-height: 20px
         #explore_results
           .results
             ul.collection_list

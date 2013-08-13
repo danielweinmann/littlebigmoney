@@ -93,6 +93,8 @@ en:
       terms_link: 'http://suporte.catarse.me/knowledgebase/articles/161102-terms-of-use'
       policy_link: 'http://suporte.catarse.me/knowledgebase/articles/161104-privacy-policy'
       contact: Contact
+      twitter: Follow us at @%{twitter}
+      facebook: Find us on Facebook
   main:
     links:
       selected: "explore more projects selected"
