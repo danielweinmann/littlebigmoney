@@ -1,7 +1,7 @@
 doctype 5
 html
   head
-    title= content_for(:title)
+    title= t('site.meta_title', title: (@title || yield(:title)), company_name: ::Configuration[:company_name])
 
 
     = stylesheet_link_tag :catarse
