@@ -8,12 +8,12 @@
       .static_default
         +grid(16)
         padding-top: 15px
+        padding-bottom: 40px
         .title
           +grid(16)
           +alpha
           padding-bottom: 40px
           h1
-            color: #333333
             font-size: 24px
             padding: 0 0 5px 50px
             margin-top: 20px
@@ -28,7 +28,7 @@
               background: url($images_path+'icon_faq.png') left top no-repeat
               height: 40px              
           h2
-            color: #333333
+            color: $mediumgray
             font-size: 14px
             padding-left: 50px
             padding-bottom: 15px
@@ -40,7 +40,7 @@
             &.faq
               margin-top: -17px
           h3
-            color: #F28D0B
+            color: $carrot
             font-size: 21px
             font-style: italic
             margin-top: 46px
@@ -48,7 +48,7 @@
             width: 100%
             text-align: center
             &.backer
-              color: #6BB344
+              color: $navy
             &.start
               color: $carrot
           p
@@ -115,20 +115,19 @@
           margin-top: 30px
           width: 980px
           span
-            color: #F28D0B
+            color: $carrot
             font-size: 18px
             font-weight: bold
             line-height: 24px
             margin-left: 20px
-            margin-top: 23px
+            margin-top: 10px
             text-shadow: 1px 1px white
             width: 130px
             float: left
             &.backer
-              color: #6BB344
+              margin-top: 24px
+              color: $navy
               width: 200px
-              font-size: 18px
-              margin-top: 35px
           ul.list
             width: 750px
             height: 60px
@@ -151,28 +150,28 @@
               height: 50px
               padding-top: 10px
               &.creative
-                background: url($images_path+'icon_creative.png') left top no-repeat
+                background: url($images_path+'icon_creative.png') left 2px no-repeat
                 width: 50px
                 padding-left: 30px
               &.colective
-                background: url($images_path+'icon_colective.png') left top no-repeat
+                background: url($images_path+'icon_colective.png') left 2px no-repeat
                 width: 100px
                 padding-left: 60px
                 width: 80px
                 margin-left: 10px
               &.nonprofit
-                background: url($images_path+'icon_nonprofit.png') left top no-repeat
+                background: url($images_path+'icon_nonprofit.png') left 5px no-repeat
                 width: 100px
                 padding-left: 40px
               &.donation
-                background: url($images_path+'icon_donation.png') left top no-repeat
+                background: url($images_path+'icon_donation.png') left 10px no-repeat
                 padding-left: 40px
               &.video
                 background: url($images_path+'icon_video.png') left 10px no-repeat
                 width: 60px
                 margin-right: 0px
               &.sucessfull, &.not_funded
-                background: url($images_path+'icon_projectsuccess.png') left 10px no-repeat
+                background: url($images_path+'icon_projectsuccess.png') left top no-repeat
                 width: 250px
                 padding-top: 0px
                 height: auto
@@ -180,24 +179,24 @@
                 span
                   font-style: italic
                   font-size: 14px
-                  color: #333333
+                  color: $mediumgray
                   margin: 0px
                   width: 250px
-                  line-height: 16px
+                  line-height: 14px
                 p
                   width: 233px
                   font-style: italic
                   margin-top: 10px
                   float: left
                   text-shadow: none
-                  line-height: 16px
-                  font-size: 13px
+                  line-height: 14px
+                  font-size: 12px
               &.not_funded
-                background: url($images_path+'icon_projectnotfunded.png') left 10px no-repeat
+                background: url($images_path+'icon_projectnotfunded.png') left top no-repeat
                 p
                   width: 280px
                 a
-                  color: #6BB344
+                  color: $carrot
                   text-decoration: none
         .more_questions
           color: #666666
@@ -245,6 +244,10 @@
               float: left
               &.backer
                 margin-top: 40px
+                .btn_explore
+                  margin-left: 10px
+                .btn_send
+                  margin-right: 10px
               .bootstrap-twitter
                 margin-left: 60px
                 .curious
@@ -253,31 +256,24 @@
                   .btn_explore
                     float: left
                     width: 240px
-                    background: #6BB544 url($images_path+'button_explore.png') 15px 6px no-repeat
-                    border: solid 1px #578A3F
+                    background: $lightnavy
+                    border: solid 1px $navy
                     height: 49px
-                    padding-top: 13px
+                    padding-top: 8px
                     text-transform: uppercase
                     color: white
-                    text-shadow: 1px 1px #4C8132
                     font-style: italic
                     font-size: 15px
-                    text-indent: 35px
                     +border-radius(15px)
-                    &.backer
-                      width: 214px
-                      text-indent: 0px
-                      height: 47px
-                      padding-top: 15px
-                      background: #6BB544 url($images_path+'icon_submitbacker.png') 10px 13px no-repeat
                   span
                     color: white
-                    text-shadow: 1px 1px #4C8132
                     font-style: italic
                     font-size: 14px
                     position: absolute
-                    top: 32px
-                    left: 58px
+                    top: 30px
+                    left: 36px
+                    &.start
+                      left: 24px
                 .send
                   position: relative
                   float: left
@@ -285,38 +281,32 @@
                   .btn_send
                     float: left
                     width: 240px
-                    background: #F28E0B url($images_path+'button_send.png') 15px 11px no-repeat
-                    border: solid 1px #C8760A
+                    background: $carrot
+                    border: solid 1px $darkcarrot
                     height: 49px
-                    padding-top: 13px
+                    padding-top: 8px
                     text-transform: uppercase
                     color: white
-                    text-shadow: 1px 1px #C8760A
                     font-weight: 700
                     font-size: 15px
-                    text-indent: 24px
                     +border-radius(15px)
-                    &.backer
-                      width: 228px
-                      text-indent: 37px
-                      padding-top: 15px
-                      height: 47px
-                      margin-right: 30px
                   span
                     color: white
-                    text-shadow: 1px 1px #C8760A
                     font-style: italic
                     font-size: 14px
                     position: absolute
-                    top: 32px
-                    left: 68px
+                    top: 30px
+                    left: 36px
+                    &.start
+                      left: 24px
 
 
           .why_catarse
             float: right
             width: 275px
-            background: #F3F3F3
-            border: 1px solid #EDEDED
+            background: $lightgray
+            border: 1px solid $mediumlightgray
+            margin-top: 40px
             margin-bottom: 20px
             img
               margin-left: -10px
@@ -326,17 +316,17 @@
               font-weight: bold
               font-size: 14px
               color: white
-              background: #F28E0B
+              background: $carrot
               padding: 4px 10px
               float: left
               text-transform: uppercase
               margin-top: 20px
               &.backer
-                background: #74B84F
+                background: $lightnavy
                 line-height: 20px
             strong
               font-style: italic
-              color: #666666
+              color: $mediumgray
               font-size: 14px
               display: block
               line-height: 18px
@@ -419,30 +409,24 @@
               .btn_explore
                 float: left
                 width: 240px
-                background: #6BB544 url($images_path+'button_explore.png') 15px 6px no-repeat
-                border: solid 1px #578A3F
+                background: $lightnavy
+                border: solid 1px $navy
                 height: 49px
-                padding-top: 13px
+                padding-top: 8px
                 text-transform: uppercase
                 color: white
-                text-shadow: 1px 1px #4C8132
                 font-weight: bold
                 font-size: 15px
-                text-indent: 35px
                 +border-radius(15px)
-                &.start
-                  background: #6BB544 url($images_path+'icon_submitbacker.png') 10px 13px no-repeat
-                  padding-top: 16px
-                  text-indent: 29px
-                  height: 45px
               span
                 color: white
-                text-shadow: 1px 1px #4C8132
                 font-style: italic
                 font-size: 14px
                 position: absolute
-                top: 32px
-                left: 58px
+                top: 30px
+                left: 36px
+                &.start
+                  left: 24px
             .send
               position: relative
               float: left
@@ -450,32 +434,25 @@
               .btn_send
                 float: left
                 width: 240px
-                background: #F28E0B url($images_path+'button_send.png') 15px 11px no-repeat
-                border: solid 1px #C8760A
+                background: $carrot
+                border: solid 1px $darkcarrot
                 height: 49px
-                padding-top: 13px
+                padding-top: 8px
                 text-transform: uppercase
                 color: white
-                text-shadow: 1px 1px #C8760A
                 font-weight: bold
                 font-size: 15px
-                text-indent: 24px
                 +border-radius(15px)
-                &.start
-                  text-indent: 32px
-                  padding-top: 15px
-                  height: 46px
-                  background-position: 12px 13px
               span
+                text-align: center
                 color: white
-                text-shadow: 1px 1px #C8760A
                 font-style: italic
                 font-size: 14px
                 position: absolute
-                top: 32px
-                left: 68px
+                top: 30px
+                left: 36px
                 &.start
-                  left: 62px
+                  left: 24px
         .tips
           float: left
           width: 100%
@@ -500,11 +477,11 @@
                     margin-top: 2px
                     margin-bottom: 30px
                   p
-                    color: #666666
-                    line-height: 18px
+                    color: $mediumlightgray
+                    line-height: 16px
                     font-size: 12px
                   strong
-                    color: #666666
+                    color: $mediumgray
                     font-size: 14px
                     display: block
                     line-height: 18px
@@ -525,11 +502,11 @@
             background: #F7F7F7
             border: solid 1px #EDEDED
             color: #666666
-            font-size: 13px
-            line-height: 18px
+            font-size: 12px
+            line-height: 16px
             a
-              color: #666666
-              font-size: 13px
+              color: $mediumgray
+              font-size: 12px
               text-decoration: none
             img
               float: left
@@ -537,7 +514,7 @@
               margin-top: -1px
             p
               width: 300px
-              margin-top: 13px
+              margin-top: 8px
               margin-left: 33px
         .guide + .center_form
           margin: 30px 0px 30px 155px
