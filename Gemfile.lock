@@ -149,7 +149,7 @@ GEM
       simplecov (>= 0.7)
       thor
     crack (0.1.8)
-    curb (0.8.4)
+    curb (0.7.18)
     database_cleaner (1.1.1)
     debug_inspector (0.0.2)
     devise (3.0.1)
@@ -468,6 +468,7 @@ DEPENDENCIES
   compass-960-plugin
   compass-rails
   coveralls
+  curb (= 0.7.18)
   database_cleaner
   devise
   draper

@@ -67,6 +67,7 @@ gem 'rmagick'
 # Other Tools
 gem 'ranked-model'
 gem 'feedzirra'
+gem 'curb', '0.7.18'
 gem 'validation_reflection',      git: 'git://github.com/ncri/validation_reflection.git'
 gem 'inherited_resources',        '1.3.1'
 gem 'has_scope'
