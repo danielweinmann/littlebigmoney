@@ -121,8 +121,8 @@ class ApplicationController < ActionController::Base
       total << item if total.size < 2
       total
     end
-  rescue
-    []
+  # rescue
+  #   []
   end
 
 end
