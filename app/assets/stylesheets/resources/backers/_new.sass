@@ -10,13 +10,12 @@
           width: 600px
           padding-bottom: 40px
           h1
-            color: $ultra_gryn
-            font-weight: 700
             font-size: 24px
             padding: 5px 0
           h2
-            color: #333333
+            color: $mediumgray
             font-size: 14px
+            line-height: 20px
             padding-bottom: 20px
             border-bottom: 1px dotted #CCCCCC
         #back_options
@@ -29,11 +28,10 @@
               width: 30px
               margin-top: -55px
               p
-                color: #6BB444
+                color: $carrot
                 font-size: 28px
             .inline-hints
               font-size: 14px
-              color: #333333
               width: 180px
               float: right
               line-height: 18px
@@ -42,7 +40,6 @@
             label
               font-size: 18px
               display: block
-              color: #333333
               margin-bottom: 12px
             input[type="text"]
               height: 55px
@@ -75,7 +72,7 @@
                 background: url($images_path+'gift.png') 10px top no-repeat
                 label
                   padding-left: 50px
-                  color: $ultra_gryn
+                  color: $mediumgray
                   font-size: 22px
                   padding-top: 7px
                   margin-bottom: 12px
@@ -116,32 +113,29 @@
               font-size: 14px
               label
                 font-size: 16px
-                color: #333
                 font-weight: 700
                 float: right
                 padding: 15px 16px
                 width: 510px
                 margin-right: 10px
-                background: #e0f5e0
-                @include border-radius(10px)
+                background: #E8F8FD
+                +border-radius(10px)
               input
                 display: inline
                 margin-right: 10px
                 vertical-align: top
         .alert
-          background: #e0f5e0
-          @include border-radius(10px)
-          color: #333333
-          float: right
+          background: #E8F8FD
+          +border-radius(10px)
+          color: $mediumgray
           border: none
           font-size: 14px
           line-height: 18px
           margin-bottom: 20px
-          margin-right: 10px
-          margin-top: -26px
+          margin-left: 48px
+          margin-top: 34px
           padding: 20px 40px
-          text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
-          //width: 462px
+          width: 462px
         #backer_submit
           width: 300px
           height: 55px
@@ -161,15 +155,14 @@
           margin-top: -80px
           +omega          
           .project_name
-            font-weight: 700
             font-size: 18px
             margin-bottom: 15px
             a
-              color: black
+              color: $mediumgray              
               text-decoration: none
               @include transition(all, 0.5s)
               &:hover
-                color: $carrot
+                color: $darkcarrot
           .project_owner
             padding-top: 12px
             padding-bottom: 8px
@@ -179,7 +172,7 @@
               text-decoration: none
               @include transition(all, 0.5s)
               &:hover
-                color: black
+                color: $darkcarrot
           .project_expires_at
             font-size: 14px
             padding-bottom: 20px
@@ -187,17 +180,13 @@
           margin-bottom: 20px
           h2
             border-bottom: 1px dotted #CCCCCC
-            color: #333333
-            font-size: 22px
+            font-size: 18px
             margin-bottom: 20px
             padding-bottom: 8px
-            text-transform: lowercase
             margin-top: 30px
           h3
-            font-weight: 700
             font-size: 14px
             padding-bottom: 15px
-            color: #333333
             text-decoration: none
             cursor: pointer
             line-height: 21px

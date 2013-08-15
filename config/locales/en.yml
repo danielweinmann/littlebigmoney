@@ -488,7 +488,7 @@ en:
         title: "Back %{name}"
       create:
         brazil_address_title: 'Fill when you back is in Brazil'
-        live_in_brazil: "If you live in Brazil, please check this box"
+        live_in_brazil: "If you live in Colombia, please check this box"
         credits_notice_html: "This back will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
         error: "Ooops. There was an error while registering your back. Please try again."
         international:
