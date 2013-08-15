@@ -10,7 +10,7 @@
       a
   #user_profile
     padding-top: 20px
-    padding-bottom: 20px
+    padding-bottom: 40px
     float: left
     #user_profile_content
       .content
@@ -25,17 +25,15 @@
         +grid(3)
         +alpha
         .avatar_wrapper
-          +box-shadow(rgba(black, 0.4) 2px 2px 5px)
+          +box-shadow(rgba(black, 0.4) 2px 2px 2px)
       .profile_title
         +grid(9)
         +omega
         h1
-          color: $ultra_gryn
           font-size: 28px
           font-weight: 700
           padding: 4px 0 10px
         h4
-          color: $ultra_gryn
           font-size: 16px
           line-height: 140%
     .user_social
@@ -46,7 +44,7 @@
         margin-bottom: 10px
         +opacity(0.8)
         a
-          color: black
+          color: $mediumgray
           +transition(all, 0.5s)
           text-decoration: none
           &:hover
@@ -93,7 +91,6 @@
         color: $carrot
       .table_title
         font-size: 20px
-        color: $dark_green
         padding-top: 14px
         padding-bottom: 10px
       .table_content
@@ -104,19 +101,16 @@
           font-size: 14px
           a
             text-decoration: none
-            color: $blue
+            color: $brightblue
             +transition(all, 0.5s)
             &:hover
-              color: $carrot
+              text-decoration: underline
   #social_info
     margin-top: 20px
   #my_data, #social_info, #my_avatar, #change_password, #my_facebook
     h1
-      color: #333333
-      font-style: italic
       font-size: 24px
       margin-top: 20px
-      letter-spacing: -1px
     ul
       padding-top: 20px
       border-bottom: 1px dotted #ccc
@@ -190,15 +184,15 @@
             li#user_address_complement_input, li#user_address_state_input
               margin-right: 0px
           #user_submit
-            background: url($images_path+'bot_profileUser.png') left top no-repeat
+            background: $carrot
             color: #FFFFFF
             display: block
             font-size: 12px
-            height: 56px
+            height: 49px
             text-transform: uppercase
-            padding-left: 55px
-            width: 221px
-            border: none
+            width: 240px
+            border: 1px solid $darkcarrot
+            +border-radius(15px)
             margin-bottom: 30px
           .socialmidia
             #user_newsletter_input, #user_email_input, #user_phone_number_input

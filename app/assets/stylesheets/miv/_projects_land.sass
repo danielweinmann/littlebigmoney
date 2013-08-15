@@ -8,7 +8,7 @@
   &.with_omega
     +omega
   +transition(all, 0.3s)
-  background-color: $ed_gryn
+  background-color: $lightgray
   height: 175px
   .status_image
     position: absolute
@@ -33,21 +33,18 @@
       height: 120px
     h4
       font-size: 16px
-      color: $blue
+      color: $carrot
       padding: 7px 0 0 0
-      font-weight: 700
       overflow: hidden
       margin-bottom: 3px
       a
-        color: black
-        font-weight: 700
+        color: $mediumlightgray
         font-size: 18px
         text-decoration: none
         +transition(all, 0.5s)
         &:hover
-          color: $green
+          color: $carrot
     .author
-      color: black
       font-size: 13px
       overflow: hidden
       // margin-bottom: 30px
@@ -65,7 +62,6 @@
         height: 10px
         overflow: hidden
     .info_bar
-      background: $dc_gryn
       float: left
       width: 210px
       padding: 5px 5px 10px
@@ -83,17 +79,14 @@
           font-weight: 700
           font-size: 12px
           color: black
-          +opacity(0.7)
           margin-bottom: 3px
         p
           text-transform: uppercase
-          color: $super_minimal_gryn
           font-size: 9px
   .headline
     margin: 5px 0
     font-size: 12px
     line-height: 110%
-    color: black
   .small_back_info
     +grid(3)
     +omega
@@ -112,13 +105,12 @@
         padding-bottom: 2px
         margin-bottom: 12px !important
         h5
-          font-weight: 700
-          font-size: 17px
-          color: #333
+          font-size: 16px
+          color: $mediumgray
         p
           font-size: 12px
           line-height: 130%
-          color: #333
+          color: $mediumlightgray
 
         &.date
           background: url($images_path+'back_icons.png') left top no-repeat
@@ -130,7 +122,7 @@
             padding-top: 4px
             padding-bottom: 5px
           p
-            color: #333
+            color: $mediumlightgray
   .actions
     +grid(4)
     text-align: center
