@@ -47,12 +47,12 @@ describe "Projects" do
     before do
       FactoryGirl.create(:project, name: 'Foo', state: 'online', online_days: 30, recommended: true)
       FactoryGirl.create(:project, name: 'Lorem', state: 'online', online_days: 30, recommended: false)
-      visit explore_path(anchor: :search) + '/Lorem'
+      visit donate_path(anchor: :search) + '/Lorem'
       sleep 4
     end
-    it "should show recommended projects" do
-      recommended = all(".collection_list .project")
-      recommended.should have(1).items
+    it "should show searched projects" do
+      searched = all(".collection_list .project")
+      searched.should have(1).items
     end
   end
 
