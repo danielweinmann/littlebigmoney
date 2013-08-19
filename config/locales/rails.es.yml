@@ -1,54 +1,54 @@
 es:
   date:
     abbr_day_names:
-      - Dom
-      - Seg
-      - Ter
-      - Qua
-      - Qui
-      - Sex
-      - Sáb
+      - dom
+      - lun
+      - mar
+      - mié
+      - jue
+      - vie
+      - sáb
     abbr_month_names:
       - ~
-      - Jan
-      - Fev
-      - Mar
-      - Abr
-      - Mai
-      - Jun
-      - Jul
-      - Ago
-      - Set
-      - Out
-      - Nov
-      - Dez
+      - ene
+      - feb
+      - mar
+      - abr
+      - may
+      - jun
+      - jul
+      - ago
+      - sep
+      - oct
+      - nov
+      - dic
     day_names:
-      - Domingo
-      - Segunda
-      - Terça
-      - Quarta
-      - Quinta
-      - Sexta
-      - Sábado
+      - domingo
+      - lunes
+      - martes
+      - miércoles
+      - jueves
+      - viernes
+      - sábado
     formats:
       default: "%d/%m/%Y"
-      with_time: "%d/%m/%Y às %Hh%Mmin"
+      with_time: ~
       long: "%d de %B de %Y"
-      short: "%d de %B"
+      short: "%d de %b"
     month_names:
-      - 
-      - Janeiro
-      - Fevereiro
-      - Março
-      - Abril
-      - Maio
-      - Junho
-      - Julho
-      - Agosto
-      - Setembro
-      - Outubro
-      - Novembro
-      - Dezembro
+      - ~
+      - enero
+      - febrero
+      - marzo
+      - abril
+      - mayo
+      - junio
+      - julio
+      - agosto
+      - septiembre
+      - octubre
+      - noviembre
+      - diciembre
     order:
       - :day
       - :month
@@ -56,92 +56,92 @@ es:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: "aproximadamente 1 hora"
-        other: "aproximadamente %{count} horas"
+        one: "alrededor de 1 hora"
+        other: "alrededor de %{count} horas"
       about_x_months:
-        one: "aproximadamente 1 mês"
-        other: "aproximadamente %{count} meses"
+        one: "alrededor de 1 mes"
+        other: "alrededor de %{count} meses"
       about_x_years:
-        one: "aproximadamente 1 ano"
-        other: "aproximadamente %{count} anos"
+        one: "alrededor de 1 año"
+        other: "alrededor de %{count} años"
       almost_x_years:
-        one: "quase 1 ano"
-        other: "quase %{count} anos"
-      half_a_minute: "meio minuto"
+        one: "casi 1 año"
+        other: "casi %{count} años"
+      half_a_minute: "medio minuto"
       less_than_x_minutes:
-        one: "menos de um minuto"
+        one: "menos de 1 minuto"
         other: "menos de %{count} minutos"
       less_than_x_seconds:
         one: "menos de 1 segundo"
         other: "menos de %{count} segundos"
       over_x_years:
-        one: "mais de 1 ano"
-        other: "mais de %{count} anos"
+        one: "más de 1 año"
+        other: "más de %{count} años"
       x_days:
-        one: "1 dia"
-        other: "%{count} dias"
+        one: "1 día"
+        other: "%{count} días"
       x_minutes:
         one: "1 minuto"
         other: "%{count} minutos"
       x_months:
-        one: "1 mês"
+        one: "1 mes"
         other: "%{count} meses"
       x_seconds:
         one: "1 segundo"
         other: "%{count} segundos"
     prompts:
-      day: Dia
+      day: Día
       hour: Hora
-      minute: Minuto
-      month: Mês
-      second: Segundo
-      year: Ano
-  errors: &errors
+      minute: Minutos
+      month: Mes
+      second: Segundos
+      year: Año
+  errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: "deve ser aceito"
-      blank: "não pode ficar em branco"
-      confirmation: "não está de acordo com a confirmação"
-      empty: "não pode ficar vazio"
-      equal_to: "deve ser igual a %{count}"
-      even: "deve ser par"
-      exclusion: "não está disponível"
-      greater_than: "deve ser maior que %{count}"
-      greater_than_or_equal_to: "deve ser maior ou igual a %{count}"
-      inclusion: "não está incluído na lista"
-      invalid: "não é válido"
-      less_than: "deve ser menor que %{count}"
-      less_than_or_equal_to: "deve ser menor ou igual a %{count}"
-      not_a_number: "não é um número"
-      not_an_integer: "não é um número inteiro"
-      odd: "deve ser ímpar"
-      record_invalid: "A validação falhou: %{errors}"
-      taken: "já está em uso"
-      too_long: "é muito longo (máximo: %{count} caracteres)"
-      too_short: "é muito curto (mínimo: %{count} caracteres)"
-      wrong_length: "não possui o tamanho esperado (%{count} caracteres)"
+      accepted: "debe ser aceptado"
+      blank: "no puede estar en blanco"
+      confirmation: "no coincide con la confirmación"
+      empty: "no puede estar vacío"
+      equal_to: "debe ser igual a %{count}"
+      even: "debe ser par"
+      exclusion: "está reservado"
+      greater_than: "debe ser mayor que %{count}"
+      greater_than_or_equal_to: "debe ser mayor que o igual a %{count}"
+      inclusion: "no está incluido en la lista"
+      invalid: "no es válido"
+      less_than: "debe ser menor que %{count}"
+      less_than_or_equal_to: "debe ser menor que o igual a %{count}"
+      not_a_number: "no es un número"
+      not_an_integer: "debe ser un entero"
+      odd: "debe ser impar"
+      record_invalid: "La validación falló: %{errors}"
+      taken: "ya está en uso"
+      too_long: "es demasiado largo (%{count} caracteres máximo)"
+      too_short: "es demasiado corto (%{count} caracteres mínimo)"
+      wrong_length: "no tiene la longitud correcta (%{count} caracteres exactos)"
     template:
-      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      body: "Se encontraron problemas con los siguientes campos:"
       header:
-        one: "Não foi possível gravar %{model}: 1 erro"
-        other: "Não foi possível gravar %{model}: %{count} erros."
+        one: "No se pudo guardar este/a %{model} porque se encontró 1 error"
+        other: "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
   helpers:
     select:
-      prompt: "Por favor selecione"
+      prompt: "Por favor seleccione"
     submit:
-      create: "Criar %{model}"
-      submit: "Salvar %{model}"
-      update: "Atualizar %{model}"
+      create: "Crear %{model}"
+      submit: "Guardar %{model}"
+      update: "Actualizar %{model}"
   number:
     currency:
       format:
         delimiter: "."
-        format: "%u %n"
+        format: "%n %u"
         precision: 2
         separator: ","
         significant: false
         strip_insignificant_zeros: false
-        unit: R$
+        unit: €
     format:
       delimiter: "."
       precision: 3
@@ -152,23 +152,15 @@ es:
       decimal_units:
         format: "%n %u"
         units:
-          billion:
-            one: bilhão
-            other: bilhões
-          million:
-            one: milhão
-            other: milhões
-          quadrillion:
-            one: quatrilhão
-            other: quatrilhões
+          billion: "mil millones"
+          million: millón
+          quadrillion: "mil billones"
           thousand: mil
-          trillion:
-            one: trilhão
-            other: trilhões
+          trillion: billón
           unit: ~
       format:
-        delimiter: "."
-        precision: 2
+        delimiter: ~
+        precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
@@ -183,34 +175,87 @@ es:
           tb: TB
     percentage:
       format:
-        delimiter: "."
+        delimiter: ~
     precision:
       format:
-        delimiter: "."
+        delimiter: ~
   support:
     array:
-      last_word_connector: " e "
-      two_words_connector: " e "
+      last_word_connector: ", y "
+      two_words_connector: " y "
       words_connector: ", "
   time:
     am: am
     formats:
-      prevision: "%B/%Y"
-      simple: "%d/%m/%Y, %H:%M h"
-      default: "%A, %d de %B de %Y, %H:%M h"
-      long: "%A, %d de %B de %Y, %H:%M h"
-      short: "%d/%m, %H:%M h"
-      updates: "%d %b %Y"
+      prevision: ~
+      simple: ~
+      default: "%A, %d de %B de %Y %H:%M:%S %z"
+      long: "%d de %B de %Y %H:%M"
+      short: "%d de %b %H:%M"
+      updates: ~
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
-      <<: *errors
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: "debe ser aceptado"
+        blank: "no puede estar en blanco"
+        confirmation: "no coincide con la confirmación"
+        empty: "no puede estar vacío"
+        equal_to: "debe ser igual a %{count}"
+        even: "debe ser par"
+        exclusion: "está reservado"
+        greater_than: "debe ser mayor que %{count}"
+        greater_than_or_equal_to: "debe ser mayor que o igual a %{count}"
+        inclusion: "no está incluido en la lista"
+        invalid: "no es válido"
+        less_than: "debe ser menor que %{count}"
+        less_than_or_equal_to: "debe ser menor que o igual a %{count}"
+        not_a_number: "no es un número"
+        not_an_integer: "debe ser un entero"
+        odd: "debe ser impar"
+        record_invalid: "La validación falló: %{errors}"
+        taken: "ya está en uso"
+        too_long: "es demasiado largo (%{count} caracteres máximo)"
+        too_short: "es demasiado corto (%{count} caracteres mínimo)"
+        wrong_length: "no tiene la longitud correcta (%{count} caracteres exactos)"
+      template:
+        body: "Se encontraron problemas con los siguientes campos:"
+        header:
+          one: "No se pudo guardar este/a %{model} porque se encontró 1 error"
+          other: "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
   activerecord:
     errors:
-      <<: *errors
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: "debe ser aceptado"
+        blank: "no puede estar en blanco"
+        confirmation: "no coincide con la confirmación"
+        empty: "no puede estar vacío"
+        equal_to: "debe ser igual a %{count}"
+        even: "debe ser par"
+        exclusion: "está reservado"
+        greater_than: "debe ser mayor que %{count}"
+        greater_than_or_equal_to: "debe ser mayor que o igual a %{count}"
+        inclusion: "no está incluido en la lista"
+        invalid: "no es válido"
+        less_than: "debe ser menor que %{count}"
+        less_than_or_equal_to: "debe ser menor que o igual a %{count}"
+        not_a_number: "no es un número"
+        not_an_integer: "debe ser un entero"
+        odd: "debe ser impar"
+        record_invalid: "La validación falló: %{errors}"
+        taken: "ya está en uso"
+        too_long: "es demasiado largo (%{count} caracteres máximo)"
+        too_short: "es demasiado corto (%{count} caracteres mínimo)"
+        wrong_length: "no tiene la longitud correcta (%{count} caracteres exactos)"
+      template:
+        body: "Se encontraron problemas con los siguientes campos:"
+        header:
+          one: "No se pudo guardar este/a %{model} porque se encontró 1 error"
+          other: "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
       models:
         user:
           attributes:
             email:
-              taken: "já cadastrado, faça o login ao lado"
+              taken: ~

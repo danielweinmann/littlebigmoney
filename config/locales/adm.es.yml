@@ -1,150 +1,294 @@
 es:
-  adm: &admin
-    confirm_dialog: 'Você tem certeza?'
+  adm:
+    confirm_dialog: ~
     financials:
       index:
-        id: ID
-        name: 'Titulo'
-        user: 'Usuário MoIP'
-        user_id: 'User ID'
-        goal: 'Meta'
-        total_payment_service_fee: 'Taxa do MP'
-        total_catarse_fee: 'Taxa do Catarse'
-        repass_value: 'Vl. Repasse'
-        expires_at: 'Finaliza'
-        online_date: 'Entrou no ar'
-        pledged: 'Alcançado'
-        recommended: 'Recomendado?'
-        state: 'Estado'
-        menu: 'Rel. Financeiros'
-        title: 'Relatórios financeiros'
-        backer_report: "Relatório de apoiadores"
-        search_report: "Relatório da busca"
-        total_projects: 'projetos'
-        submit: 'filtrar'
-        by_state: 'Por estado'
-        between_expires_at: 'Expiram entre'
-        by_progress: Por progresso %
+        id: ~
+        name: ~
+        user: ~
+        user_id: ~
+        goal: ~
+        total_payment_service_fee: ~
+        total_catarse_fee: ~
+        repass_value: ~
+        expires_at: ~
+        online_date: ~
+        pledged: ~
+        recommended: ~
+        state: ~
+        menu: ~
+        title: ~
+        backer_report: ~
+        search_report: ~
+        total_projects: ~
+        submit: ~
+        by_state: ~
+        between_expires_at: ~
+        by_progress: ~
     projects:
       index:
-        by_state: 'Por estado'
-        between_created_at: 'Criados entre'
-        id: ID
-        name: 'Titulo'
-        send_to_trash: "Deletar"
-        send_to_draft: 'Mandar para DRAFT!'
-        reject: 'Rejeitar!'
-        approve: 'Aprovar!'
-        user_id: 'User ID'
-        goal: 'Meta'
-        total_backs: 'Apoios'
-        online_date: 'Entrou no ar'
-        pledged: 'Alcançado'
-        recommended: 'Recomendado?'
-        state: 'Estado'
-        menu: 'Adm. Projetos'
-        title: 'Gerenciamento de projetos'
-        total_projects: 'projetos'
-        submit: 'filtrar'
-        expires_at: 'Finaliza em'
-        category: 'Categoria'
-        order_table: 'Ordernar tabela'
-        order_date: 'Data de envio'
-        order_asc: 'Menor meta'
-        order_desc: 'Maior meta'
-        order_created_at: 'Data de envio'
+        by_state: ~
+        between_created_at: ~
+        id: ~
+        name: ~
+        send_to_trash: ~
+        send_to_draft: ~
+        reject: ~
+        approve: ~
+        user_id: ~
+        goal: ~
+        total_backs: ~
+        online_date: ~
+        pledged: ~
+        recommended: ~
+        state: ~
+        menu: ~
+        title: ~
+        total_projects: ~
+        submit: ~
+        expires_at: ~
+        category: ~
+        order_table: ~
+        order_date: ~
+        order_asc: ~
+        order_desc: ~
+        order_created_at: ~
     actions:
-      confirm: 'Confirmar'
+      confirm: ~
     users:
       index:
-        title: "Gerenciamento de apoiadores"
-        menu: "Apoiadores"
-        credits: "Créditos"
-        credits_view: "Créditos calculados"
-        id: Id
-        key: Chave
-        submit: Pesquisar
-        has_credits_difference: Discrepância nos créditos
-        total_backed: Total de apoios
-        total_backers: apoiadores
-        total_backs: apoios
-        total_users: usuários
-        total_credits: créditos
-        total_credits_view: créditos calculados
-        user: Usuário
-        value: Valor
-        payer_email: Email do pagamento
-        provider: Provedor
+        title: ~
+        menu: ~
+        credits: ~
+        credits_view: ~
+        id: ~
+        key: ~
+        submit: ~
+        has_credits_difference: ~
+        total_backed: ~
+        total_backers: ~
+        total_backs: ~
+        total_users: ~
+        total_credits: ~
+        total_credits_view: ~
+        user: ~
+        value: ~
+        payer_email: ~
+        provider: ~
     backers:
       messages:
         successful:
-          confirm: 'Apoio confirmado com sucesso!'
-          pendent: 'Apoio desconfirmado com sucesso!'
-          refund: 'Apoio estornado com sucesso!'
-          change_reward: 'Recompensa modificada com sucesso!'
-          hide: 'Apoio escondido com sucesso!'
-          cancel: 'Apoio cancelado com sucesso!'
-          push_to_trash: 'Apoio deletado com sucesso!'
+          confirm: ~
+          pendent: ~
+          refund: ~
+          change_reward: ~
+          hide: ~
+          cancel: ~
+          push_to_trash: ~
       index:
-        push_to_trash: 'Deletar apoio'
-        cancel: 'Cancelar apoio'
-        between_values: 'Valores entre'
-        by_state: 'Estado'
-        refund_and_hide: 'Fazer estorno e não exibir apoio.'
-        backer_info: 'Informações do backer %{key}'
-        payment_id: 'ID do pagamento'
-        payment_method: 'Meio de pagamento'
-        payment_fee: 'Taxa do meio de pagamento'
-        payment_choice: 'Opção de pagamento'
-        payer_email: 'Email utilizado no meio de pagamento'
-        user_email: 'Email utilizado no catarse'
-        created_at: 'Iniciado em'
-        pending_to_refund: 'Estornos pendentes'
-        confirm_backer: 'Confirmar apoio'
-        unconfirm_backer: 'Desconfirmar apoio'
-        refund_backer: 'Estornar apoio'
-        title: "Gerenciamento de apoios"
-        state: 'Estado'
-        menu: "Apoios"
-        anonymous: Anônimo?
-        confirmed: Confirmado?
-        credits: "Usou créditos?"
-        id: Id
-        key: Chave
-        no_backers: "Nenhum apoiador encontrado."
-        project: Projeto
-        refunded: "Estorno realizado?"
-        requested_refund: "Solicitou estorno?"
-        reward: Recompensa
-        no_reward: "Sem recompensa"
-        submit: Pesquisar
-        total_backed: arrecadados
-        total_backers: apoiadores
-        total_backs: apoios
-        total_users: usuários
-        user: Usuário
-        value: Valor
+        push_to_trash: ~
+        cancel: ~
+        between_values: ~
+        by_state: ~
+        refund_and_hide: ~
+        backer_info: ~
+        payment_id: ~
+        payment_method: ~
+        payment_fee: ~
+        payment_choice: ~
+        payer_email: ~
+        user_email: ~
+        created_at: ~
+        pending_to_refund: ~
+        confirm_backer: ~
+        unconfirm_backer: ~
+        refund_backer: ~
+        title: ~
+        state: ~
+        menu: ~
+        anonymous: ~
+        confirmed: ~
+        credits: ~
+        id: ~
+        key: ~
+        no_backers: ~
+        project: ~
+        refunded: ~
+        requested_refund: ~
+        reward: ~
+        no_reward: ~
+        submit: ~
+        total_backed: ~
+        total_backers: ~
+        total_backs: ~
+        total_users: ~
+        user: ~
+        value: ~
     statistics:
       index:
-        menu: "Estatísticas"
-        title: "Estatísticas"
-        total_users: "Usuários"
-        total_backs: "Apoios"
-        total_backers: "Apoiadores"
-        total_backed: "Arrecadação"
-        total_projects: "Projetos"
-        total_projects_success: "Bem sucedidos"
-        total_projects_online: "Online"
+        menu: ~
+        title: ~
+        total_users: ~
+        total_backs: ~
+        total_backers: ~
+        total_backed: ~
+        total_projects: ~
+        total_projects_success: ~
+        total_projects_online: ~
       projects_by_week:
-        title: "Projetos enviados por semana"
-        current_period: "Últimas 8 sem."
-        previous_period: "8 sem. anteriores"
-        last_year: "Ano anterior"
+        title: ~
+        current_period: ~
+        previous_period: ~
+        last_year: ~
       backers_by_week:
-        title: "Valor de apoios confirmados por semana"
-        current_period: "Últimas 8 sem."
-        previous_period: "8 sem. anteriores"
-        last_year: "Ano anterior"
+        title: ~
+        current_period: ~
+        previous_period: ~
+        last_year: ~
   channels:
     adm:
-      <<: *admin
+      confirm_dialog: ~
+      financials:
+        index:
+          id: ~
+          name: ~
+          user: ~
+          user_id: ~
+          goal: ~
+          total_payment_service_fee: ~
+          total_catarse_fee: ~
+          repass_value: ~
+          expires_at: ~
+          online_date: ~
+          pledged: ~
+          recommended: ~
+          state: ~
+          menu: ~
+          title: ~
+          backer_report: ~
+          search_report: ~
+          total_projects: ~
+          submit: ~
+          by_state: ~
+          between_expires_at: ~
+          by_progress: ~
+      projects:
+        index:
+          by_state: ~
+          between_created_at: ~
+          id: ~
+          name: ~
+          send_to_trash: ~
+          send_to_draft: ~
+          reject: ~
+          approve: ~
+          user_id: ~
+          goal: ~
+          total_backs: ~
+          online_date: ~
+          pledged: ~
+          recommended: ~
+          state: ~
+          menu: ~
+          title: ~
+          total_projects: ~
+          submit: ~
+          expires_at: ~
+          category: ~
+          order_table: ~
+          order_date: ~
+          order_asc: ~
+          order_desc: ~
+          order_created_at: ~
+      actions:
+        confirm: ~
+      users:
+        index:
+          title: ~
+          menu: ~
+          credits: ~
+          credits_view: ~
+          id: ~
+          key: ~
+          submit: ~
+          has_credits_difference: ~
+          total_backed: ~
+          total_backers: ~
+          total_backs: ~
+          total_users: ~
+          total_credits: ~
+          total_credits_view: ~
+          user: ~
+          value: ~
+          payer_email: ~
+          provider: ~
+      backers:
+        messages:
+          successful:
+            confirm: ~
+            pendent: ~
+            refund: ~
+            change_reward: ~
+            hide: ~
+            cancel: ~
+            push_to_trash: ~
+        index:
+          push_to_trash: ~
+          cancel: ~
+          between_values: ~
+          by_state: ~
+          refund_and_hide: ~
+          backer_info: ~
+          payment_id: ~
+          payment_method: ~
+          payment_fee: ~
+          payment_choice: ~
+          payer_email: ~
+          user_email: ~
+          created_at: ~
+          pending_to_refund: ~
+          confirm_backer: ~
+          unconfirm_backer: ~
+          refund_backer: ~
+          title: ~
+          state: ~
+          menu: ~
+          anonymous: ~
+          confirmed: ~
+          credits: ~
+          id: ~
+          key: ~
+          no_backers: ~
+          project: ~
+          refunded: ~
+          requested_refund: ~
+          reward: ~
+          no_reward: ~
+          submit: ~
+          total_backed: ~
+          total_backers: ~
+          total_backs: ~
+          total_users: ~
+          user: ~
+          value: ~
+      statistics:
+        index:
+          menu: ~
+          title: ~
+          total_users: ~
+          total_backs: ~
+          total_backers: ~
+          total_backed: ~
+          total_projects: ~
+          total_projects_success: ~
+          total_projects_online: ~
+        projects_by_week:
+          title: ~
+          current_period: ~
+          previous_period: ~
+          last_year: ~
+        backers_by_week:
+          title: ~
+          current_period: ~
+          previous_period: ~
+          last_year: ~

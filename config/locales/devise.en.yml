@@ -1,7 +1,7 @@
-# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
-
 en:
   devise:
+    links:
+      forgot_password: ~
     confirmations:
       confirmed: "Your account was successfully confirmed. You are now signed in."
       send_instructions: "You will receive an email with instructions about how to confirm your account in a few minutes."
@@ -33,15 +33,15 @@ en:
       updated: "Your password was changed successfully. You are now signed in."
       updated_not_active: "Your password was changed successfully."
       new:
-        site_title: 'Forgot my password'
-        title: 'Type your email address and ask for a password reset'
-        submit: 'Send instructions to reset my password'
+        site_title: "Forgot my password"
+        title: "Type your email address and ask for a password reset"
+        submit: "Send instructions to reset my password"
       edit:
-        site_title: 'Reset password'
-        label_new_password: 'Type your new password bellow'
-        title: 'Reset password'
-        subtitle: 'Reset password to use your email and password in your Catarse login'
-        submit: 'Reset password'
+        site_title: "Reset password"
+        label_new_password: "Type your new password bellow"
+        title: "Reset password"
+        subtitle: "Reset password to use your email and password in your Catarse login"
+        submit: "Reset password"
     registrations:
       destroyed: "Bye! Your account was successfully cancelled. We hope to see you again soon."
       signed_up: "Welcome! You have signed up successfully."
@@ -52,8 +52,8 @@ en:
       updated: "You updated your account successfully."
     sessions:
       new:
-        site_title: "Login"
-        submit: "Login"
+        site_title: Login
+        submit: Login
         title: "Enter using your email address"
         login_title: Login
         login_subtitle: "If you already have an account"
@@ -61,10 +61,10 @@ en:
         register_subtitle: "Use your email address"
         with_facebook: "Use your facebook account"
         with_facebook_subtitle: "A fast way to log in"
+        with_another_social: "Twitter support will be removed next week"
         google_warning_html: "If you were using a <strong>Google</strong> account:"
         google_step_1: "1 - Click in %{link}"
         google_step_2: "2 - Follow the steps to create a new password."
-        with_another_social: "Twitter support will be removed next week"
         with_another_social_subtitle: "<a target=\"_blank\" href=\"http://blog.catarse.me/mudanca-no-sistema-de-login/\">Read more</a> about it (in portuguese only)"
       signed_in: "Signed in successfully."
       signed_out: "Signed out successfully."

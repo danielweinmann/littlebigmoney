@@ -41,9 +41,6 @@ en:
     project_received_channel:
       subject: "Your project was received by the Wings Channel"
       header: "Your project was welcomed by the staff of the Wings Channel"
-    new_draft_project_channel:
-      subject: "The project %{project_name} has just been created"
-      header:  "A new project is awaiting review"
     project_visible:
       subject: "Your project is now online at Catarse"
       header: "Now it's for real"
@@ -53,6 +50,9 @@ en:
     new_draft_project:
       subject: "New project created - %{project_name}"
       header: "New project created"
+    new_draft_project_channel:
+      subject: "The project %{project_name} has just been created"
+      header: "A new project is awaiting review"
     new_features:
       subject: "Ajuda para tese de doutorado sobre crowdfunding"
       header: "Ajuda para tese de doutorado sobre crowdfunding"
