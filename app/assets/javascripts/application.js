@@ -23,4 +23,4 @@
 //= require ./app/collections/paginated.js
 //= require_tree ./app
 //= require ./init.js
-
+//= require i18n_viz

@@ -79,6 +79,8 @@ gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise pay
 # Translations
 gem 'http_accept_language'
 gem 'routing-filter'
+gem 'web_translate_it'
+gem 'i18n_viz'
 
 # Payment
 gem 'moip', git: 'git://github.com/catarse/moip-ruby.git'
