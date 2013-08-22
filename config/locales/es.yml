@@ -387,7 +387,7 @@ es:
       not_reached_goal: ~
   projects:
     index:
-      what_is_html: ~
+      what_is_html: "<strong>LittleBigMoney</strong> es la primera plataforma"
       slogan_donate: ~
       slogan_invest: ~
     box:

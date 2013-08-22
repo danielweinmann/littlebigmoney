@@ -1,13 +1,13 @@
 es:
   notifications:
     backer_canceled_after_confirmed:
-      subject: ~
-      header: ~
+      subject: "La colaboración fue cancelada después de la confirmación"
+      header: "La colaboración fue cancelado después de la confirmación"
     project_owner_backer_confirmed:
-      subject: ~
-      header: ~
+      subject: "Excelente! Otro nuevo colaborador apoyó tu proyecto"
+      header: "Un nuevo apoyo fue rconfirmado recintemente para tu proyecto"
     confirm_backer:
-      subject: ~
+      subject: "Gracias! Tu apoyo para %{project_name} fue confirmado!"
       header: ~
     payment_slip:
       subject: ~

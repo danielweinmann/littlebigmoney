@@ -32,7 +32,7 @@ es:
       - sábado
     formats:
       default: "%d/%m/%Y"
-      with_time: ~
+      with_time: "%d/%m/%Y a las %Hh%Mmin"
       long: "%d de %B de %Y"
       short: "%d de %b"
     month_names:
@@ -159,7 +159,7 @@ es:
           trillion: billón
           unit: ~
       format:
-        delimiter: ~
+        delimiter: "."
         precision: 1
         significant: true
         strip_insignificant_zeros: true
@@ -175,7 +175,7 @@ es:
           tb: TB
     percentage:
       format:
-        delimiter: ~
+        delimiter: "."
     precision:
       format:
         delimiter: ~
@@ -187,12 +187,12 @@ es:
   time:
     am: am
     formats:
-      prevision: ~
-      simple: ~
+      prevision: "%B/%Y"
+      simple: "%d/%m/%Y, %H:%M h"
       default: "%A, %d de %B de %Y %H:%M:%S %z"
       long: "%d de %B de %Y %H:%M"
       short: "%d de %b %H:%M"
-      updates: ~
+      updates: "%d %b %Y"
     pm: pm
   activemodel:
     errors:
