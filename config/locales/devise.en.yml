@@ -61,7 +61,6 @@ en:
         register_subtitle: "Use your email address"
         with_facebook: "Use your facebook account"
         with_facebook_subtitle: "A fast way to log in"
-        with_another_social: "Twitter support will be removed next week"
         google_warning_html: "If you were using a <strong>Google</strong> account:"
         google_step_1: "1 - Click in %{link}"
         google_step_2: "2 - Follow the steps to create a new password."

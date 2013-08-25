@@ -3,79 +3,78 @@ es:
     links:
       forgot_password: ~
     confirmations:
-      confirmed: ~
-      send_instructions: ~
-      send_paranoid_instructions: ~
+      confirmed: "Tu cuenta ha sido confirmada. Has accedido a tu cuenta."
+      send_instructions: "Recibirás un email con instrucciones para confirmar tu cuenta en poco minutos."
+      send_paranoid_instructions: "Si tu email ya esta en nuestra base de datos, recibirás un correo en unos segundos con las instrucciones para confirmar tu cuenta."
     failure:
-      already_authenticated: ~
-      inactive: ~
-      invalid: ~
-      invalid_token: ~
-      locked: ~
-      not_found_in_database: ~
-      timeout: ~
-      unauthenticated: ~
-      unconfirmed: ~
+      already_authenticated: "Ya estás registrado"
+      inactive: "Tu cuenta no ha sido activada aun."
+      invalid: "Contraseña o Email incorrectos"
+      invalid_token: "El token de autenticación no es válido"
+      locked: "Tu cuenta está bloqueada."
+      not_found_in_database: "Contraseña o Email incorrectos."
+      timeout: "Tu sesión caducó, debes acceder de nuevo para continuar."
+      unauthenticated: "Necesitas iniciar sesión o registrarte antes de continuar."
+      unconfirmed: "Necesitas confirmar tu cuenta antes de continuar."
     mailer:
       confirmation_instructions:
-        subject: ~
+        subject: "Instrucciones de confirmación"
       reset_password_instructions:
-        subject: ~
+        subject: "Instrucciones para cambiar tu contraseña"
       unlock_instructions:
-        subject: ~
+        subject: "Instrucciones de desbloqueo"
     omniauth_callbacks:
-      failure: ~
-      success: ~
+      failure: "No se puede autorizar una cuenta de %{kind} porque \"%{reason}\"."
+      success: "La cuenta %{kind} fue autenticada."
     passwords:
-      no_token: ~
-      send_instructions: ~
-      send_paranoid_instructions: ~
-      updated: ~
-      updated_not_active: ~
+      no_token: "Tu no puedes acceder a esta página sin estar registrado. Si llegaste hasta acá a partir de un correo de \"olvidé mi contraseña\", por favor verifique la URL."
+      send_instructions: "Recibirás un email con instrucciones para cambiar tu contraseña en pocos minutos."
+      send_paranoid_instructions: "Si tu email existe en nuestra base de datos, recibirás un enlace para recuperar la contraseña"
+      updated: "Tu contraseña ha sido modificada. Ya has accedido a tu cuenta."
+      updated_not_active: "Tu contraseña ha sido cambiada exitosamente."
       new:
-        site_title: ~
-        title: ~
-        submit: ~
+        site_title: "Olvidé mi contraseña."
+        title: "Ingresa tu correo electrónico y solicita una nueva contraseña"
+        submit: "Enviar instrucciones para cambiar mi contraseña"
       edit:
-        site_title: ~
-        label_new_password: ~
-        title: ~
-        subtitle: ~
+        site_title: "Cambiar Contraseña"
+        label_new_password: "Digita tu nueva contraseña abajo."
+        title: "Cambiar Contraseña"
+        subtitle: "Define una nueva contraseña para utilizar tu correo electronico cuando quieras acceder a LittleBigMoney"
         submit: ~
     registrations:
-      destroyed: ~
-      signed_up: ~
-      signed_up_but_inactive: ~
-      signed_up_but_locked: ~
-      signed_up_but_unconfirmed: ~
-      update_needs_confirmation: ~
-      updated: ~
+      destroyed: "Gracias. Tu cuenta fue cancelada, esperamos verte en LittleBigMoney de nuevo!"
+      signed_up: "¡Bienvenido! Te has registrado correctamente."
+      signed_up_but_inactive: "Te has registrado exitosamente. Sin embargo, no puedes iniciar sesión porque tu cuenta todavía no ha sido activada."
+      signed_up_but_locked: "Te has registrado exitosamente. Sin embargo, no puedes iniciar sesión porque tu cuenta está bloqueada."
+      signed_up_but_unconfirmed: "Un mensaje con un enlace de confirmación ha sido enviado a tu dirección email. Por favor abre el enlace para activar tu cuenta."
+      update_needs_confirmation: "Has actualizado tu cuenta correctamente, pero necesitamos verificar tu nueva dirección de email. Por favor revisa tu email y haz click en el enlace de confirmación para finalizar con la verificación de tu nueva dirección de email."
+      updated: "Has actualizado exitosamente tu cuenta."
     sessions:
       new:
-        site_title: ~
-        submit: ~
-        title: ~
-        login_title: ~
-        login_subtitle: ~
-        register_title: ~
-        register_subtitle: ~
-        with_facebook: ~
-        with_facebook_subtitle: ~
-        with_another_social: ~
-        google_warning_html: ~
-        google_step_1: ~
-        google_step_2: ~
-        with_another_social_subtitle: ~
-      signed_in: ~
-      signed_out: ~
+        site_title: "iniciar sesión"
+        submit: "iniciar sesión"
+        title: "Inicia sesión con tu cuenta de email"
+        login_title: "Iniciar sesión"
+        login_subtitle: "Si ya tienes una cuenta"
+        register_title: Regístrate
+        register_subtitle: "Usa tu cuenta de email"
+        with_facebook: "Usa tu cuenta de Facebook"
+        with_facebook_subtitle: "Una forma fácil para registrarte"
+        google_warning_html: "Si esta usando una cuenta de <strong>Google</strong>:"
+        google_step_1: "Clic en %{link}"
+        google_step_2: "Sigue los pasos para crear una contraseña."
+        with_another_social_subtitle: "<a target=\"_blank\" href=\"http://blog.catarse.me/mudanca-no-sistema-de-login/\">más información</a> sobre esto (sólo en español)"
+      signed_in: "Has accedido exitosamente."
+      signed_out: "Has salido exitosamente."
     unlocks:
-      send_instructions: ~
-      send_paranoid_instructions: ~
-      unlocked: ~
+      send_instructions: "Recibirás un email con instrucciones para desbloquear tu cuenta en pocos minutos."
+      send_paranoid_instructions: "Si tu cuenta existe, recibirás un email con instrucciones para desbloquear tu cuenta en pocos minutos."
+      unlocked: "Tu cuenta ha sido desbloqueada. Por favor ingresa para continuar."
   errors:
     messages:
-      already_confirmed: ~
-      confirmation_period_expired: ~
+      already_confirmed: "Ya se ha confirmado, por favor intenta ingresar"
+      confirmation_period_expired: "Debiste confirmar durante %{period}, por favor solicita un nuevo usuario"
       expired: ~
       not_found: ~
       not_locked: ~

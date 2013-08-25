@@ -28,43 +28,43 @@ es:
       header: "Tu proyecto no alcanzó los recursos solicitados : ("
     backer_project_successful:
       subject: "Súper! El proyecto %{project_name} tuvo éxito en LittleBigMoney"
-      header: ~
+      header: "Súper! El proyecto para el que colaboraste fue exitoso en LittleBigMoney"
     backer_project_unsuccessful:
-      subject: ~
-      header: ~
+      subject: "El proyecto %{project_name} no alcanzó los fondos esperados - Alguna información útil"
+      header: "Información sobre créditos disponibles y reembolsos ; )"
     pending_backer_project_unsuccessful:
-      subject: ~
-      header: ~
+      subject: "El proyecto %{project_name} apoyado por ti no alcanzó los fondos esperados - Alguna información útil"
+      header: "Confirmación sobre información de soporte, créditos disponibles y reembolsos ; )"
     project_received:
-      subject: ~
-      header: ~
+      subject: "Tu proyecto fue recibido por LittleBigMoney"
+      header: "Tu proyecto fue recibido por el equipo de LittleBigMoney"
     project_received_channel:
-      subject: ~
+      subject: "Tu proyecto fue recibido por el canal de wings"
       header: ~
     project_visible:
-      subject: ~
-      header: ~
+      subject: "Tu proyecto ahora esta publicado en LittleBigMoney"
+      header: "Ahora es una realidad"
     project_rejected:
-      subject: ~
-      header: ~
+      subject: "Tu proyecto no tiene el perfil que LittleBigMoney busca ahora"
+      header: "Tu proyecto no fue aceptado : ("
     new_draft_project:
-      subject: ~
-      header: ~
+      subject: "Nuevo proyecto creado - %{project_name}"
+      header: "Nuevo proyecto creado"
     new_draft_project_channel:
-      subject: ~
-      header: ~
+      subject: "El proyecto %{project_name} fue creado"
+      header: "Un nuevo proyecto esta listo para ser revisado"
     new_features:
-      subject: ~
-      header: ~
+      subject: "Ayuda para tesis doctoral sobre crowdfunding"
+      header: "Ayuda para tesis doctoral sobre crowdfunding"
     adm_project_deadline:
-      subject: ~
-      header: ~
+      subject: "Se acabo el tiempo de publicación para el proyecto %{project_name}"
+      header: "El plazo para el proyecto se cumplió"
     credits_warning:
-      subject: ~
-      header: ~
+      subject: "Tienes %{amount} USD de crédito en LittleBigMoney"
+      header: "¿Qué tal apoyar un nuevo proyecto?"
     backer_confirmed_after_project_was_closed:
-      subject: ~
-      header: ~
+      subject: "Nueva colaboración confirmada para el proyecto '%{project_name}' después de 7 días del término del plazo."
+      header: "Nueva colaboración confirmada"
     temporary_password:
-      subject: ~
-      header: ~
+      subject: "Contraseña provisional para LittleBigMoney"
+      header: "Ingresa a tu cuenta para cambiar la contraseña"
