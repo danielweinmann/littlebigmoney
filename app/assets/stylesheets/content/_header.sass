@@ -15,14 +15,14 @@
     z-index: 10
     padding: 8px 25px 8px 0
     height: 12px
-    background: $warmgray
+    background: $navy
     color: white
     font-size: 12px
     +decorative-content(before, false)
       position: absolute
       left: -53px
       top: 0
-      +triangle(top-right, 11px, $warmgray)
+      +triangle(top-right, 11px, $navy)
       border-left-width: 12px
       z-index: -1
     +decorative-content(after, false)
@@ -31,13 +31,13 @@
       top: 0
       width: 45px
       height: 28px
-      background: $warmgray
+      background: $navy
       border-radius: 0 0 0 100%
       z-index: -1
     nav.menu
       float: right
       .user_name
-        color: $mediumgray
+        color: darken($lightgray,25%)
       a
         color: white
         font-size: 12px
@@ -78,7 +78,7 @@
     margin-right: 20px
     height: 73px
     border: none
-    background: url($images_path+"logo-donate.png") left top no-repeat
+    background: url($images_path+"logo.png") left top no-repeat
     text-indent: -9999em
   nav
     text-align: right
@@ -95,15 +95,15 @@
         &:last-child
           margin-right: 0
         &:hover
-          color: $carrot
+          color: $navy
         &.explore
-          +icon($icon_donate, $carrot)
+          +icon($icon_donate, $navy)
         &.invest
-          +icon($icon_invest, $carrot)
+          +icon($icon_invest, $navy)
         &.submit_project
-          +icon($icon_submit, $carrot)
+          +icon($icon_submit, $navy)
         &.how_it_works
-          +icon($icon_how_it_works, $carrot)
+          +icon($icon_how_it_works, $navy)
   .search
     +grid(4)
     margin-top: 18px
@@ -130,28 +130,3 @@
         text-indent: -9999em
         float: right
         margin: 3px 5px 0 0px
-
-#header_wrapper[data-kind="both"]
-  #menu_wrapper
-    background: $navy
-    &:after
-      background: $navy
-    &:before
-      border-top-color: $navy
-    nav.menu
-      .user_name
-        color: darken($lightgray,25%)
-  #header
-    .logo
-      background: url($images_path+"logo.png") left top no-repeat
-    nav.actions a
-      &:hover
-        color: $navy
-      &.explore
-        +icon($icon_donate, $navy)
-      &.invest
-        +icon($icon_invest, $navy)
-      &.submit_project
-        +icon($icon_submit, $navy)
-      &.how_it_works
-        +icon($icon_how_it_works, $navy)
