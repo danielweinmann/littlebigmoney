@@ -40,7 +40,7 @@ es:
       header: "Tu proyecto fue recibido por el equipo de LittleBigMoney"
     project_received_channel:
       subject: "Tu proyecto fue recibido por el canal de wings"
-      header: ~
+      header: "Tu proyecto fue recibido por el equipo del Canal Asas"
     project_visible:
       subject: "Tu proyecto ahora esta publicado en LittleBigMoney"
       header: "Ahora es una realidad"

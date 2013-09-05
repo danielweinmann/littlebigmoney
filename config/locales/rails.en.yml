@@ -157,9 +157,9 @@ en:
           quadrillion: Quadrillion
           thousand: Thousand
           trillion: Trillion
-          unit: ~
+          unit: "."
       format:
-        delimiter: ~
+        delimiter: "."
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -175,10 +175,10 @@ en:
           tb: TB
     percentage:
       format:
-        delimiter: ~
+        delimiter: "."
     precision:
       format:
-        delimiter: ~
+        delimiter: "."
   support:
     array:
       last_word_connector: ", and "
@@ -188,7 +188,7 @@ en:
     am: am
     formats:
       prevision: "%B/%Y"
-      simple: ~
+      simple: "%m/%d/%Y, %H:%M h"
       default: "%a, %d %b %Y %H:%M:%S %z"
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
@@ -258,4 +258,4 @@ en:
         user:
           attributes:
             email:
-              taken: ~
+              taken: "already registered, please log in"

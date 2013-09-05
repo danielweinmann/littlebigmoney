@@ -1,7 +1,7 @@
 es:
   devise:
     links:
-      forgot_password: ~
+      forgot_password: "Olvidé mi contraseña"
     confirmations:
       confirmed: "Tu cuenta ha sido confirmada. Has accedido a tu cuenta."
       send_instructions: "Recibirás un email con instrucciones para confirmar tu cuenta en poco minutos."
@@ -41,7 +41,7 @@ es:
         label_new_password: "Digita tu nueva contraseña abajo."
         title: "Cambiar Contraseña"
         subtitle: "Define una nueva contraseña para utilizar tu correo electronico cuando quieras acceder a LittleBigMoney"
-        submit: ~
+        submit: "Cambiar Contraseña"
     registrations:
       destroyed: "Gracias. Tu cuenta fue cancelada, esperamos verte en LittleBigMoney de nuevo!"
       signed_up: "¡Bienvenido! Te has registrado correctamente."
@@ -75,6 +75,9 @@ es:
     messages:
       already_confirmed: "Ya se ha confirmado, por favor intenta ingresar"
       confirmation_period_expired: "Debiste confirmar durante %{period}, por favor solicita un nuevo usuario"
-      expired: ~
-      not_found: ~
-      not_locked: ~
+      expired: "ha caducado, por favor pide uno nuevo"
+      not_found: "No encontrado"
+      not_locked: "No fue bloqueado"
+      not_saved:
+        one: "1 error impide que este %{resource} sea guardado:"
+        other: "%{count} errores impiden que este %{resource} sea guardado:"

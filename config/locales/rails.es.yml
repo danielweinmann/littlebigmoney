@@ -139,30 +139,38 @@ es:
         format: "%n %u"
         precision: 2
         separator: ","
-        significant: false
-        strip_insignificant_zeros: false
-        unit: €
+        significant: falso
+        strip_insignificant_zeros: falso
+        unit: $
     format:
       delimiter: "."
       precision: 3
-      separator: ","
-      significant: false
-      strip_insignificant_zeros: false
+      separator: "."
+      significant: falso
+      strip_insignificant_zeros: falso
     human:
       decimal_units:
         format: "%n %u"
         units:
-          billion: "mil millones"
-          million: millón
-          quadrillion: "mil billones"
+          billion:
+            one: "mil millones"
+            other: "mil millones"
+          million:
+            one: Millon
+            other: Millones
+          quadrillion:
+            one: "trillón "
+            other: trillones
           thousand: mil
-          trillion: billón
-          unit: ~
+          trillion:
+            one: Billón
+            other: Billones
+          unit: "."
       format:
         delimiter: "."
-        precision: 1
-        significant: true
-        strip_insignificant_zeros: true
+        precision: 3
+        significant: verdadero
+        strip_insignificant_zeros: verdadero
       storage_units:
         format: "%n %u"
         units:
@@ -178,7 +186,7 @@ es:
         delimiter: "."
     precision:
       format:
-        delimiter: ~
+        delimiter: "."
   support:
     array:
       last_word_connector: ", y "
@@ -258,4 +266,4 @@ es:
         user:
           attributes:
             email:
-              taken: ~
+              taken: "Ya estás registrado, por favor ingresa"

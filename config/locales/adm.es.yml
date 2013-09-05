@@ -1,294 +1,294 @@
 es:
   adm:
-    confirm_dialog: ~
+    confirm_dialog: "¿Estás seguro?"
     financials:
       index:
-        id: ~
-        name: ~
-        user: ~
-        user_id: ~
-        goal: ~
-        total_payment_service_fee: ~
-        total_catarse_fee: ~
-        repass_value: ~
-        expires_at: ~
-        online_date: ~
-        pledged: ~
-        recommended: ~
-        state: ~
-        menu: ~
-        title: ~
-        backer_report: ~
-        search_report: ~
-        total_projects: ~
-        submit: ~
-        by_state: ~
-        between_expires_at: ~
-        by_progress: ~
+        id: Identificación
+        name: Título
+        user: "Usuario PayU"
+        user_id: "Identificación de Usuario"
+        goal: Meta
+        total_payment_service_fee: "Tarifa de PayU"
+        total_catarse_fee: "Tarifa de LittleBigMoney"
+        repass_value: "Valor a pagar"
+        expires_at: Finaliza
+        online_date: "Va en vivo"
+        pledged: Alcanzado
+        recommended: ¿Recomendado?
+        state: Estado
+        menu: "Informes financieros"
+        title: "Informes financieros"
+        backer_report: "Informe de colaboradores"
+        search_report: "Informe de búsqueda"
+        total_projects: Proyectos
+        submit: Filtro
+        by_state: "Por Departamento/Provincia"
+        between_expires_at: "Expira entre"
+        by_progress: "Por progreso %"
     projects:
       index:
-        by_state: ~
-        between_created_at: ~
-        id: ~
-        name: ~
-        send_to_trash: ~
-        send_to_draft: ~
-        reject: ~
-        approve: ~
-        user_id: ~
-        goal: ~
-        total_backs: ~
-        online_date: ~
-        pledged: ~
-        recommended: ~
-        state: ~
-        menu: ~
-        title: ~
-        total_projects: ~
-        submit: ~
-        expires_at: ~
-        category: ~
-        order_table: ~
-        order_date: ~
-        order_asc: ~
-        order_desc: ~
-        order_created_at: ~
+        by_state: "Por Departamento/Provincia"
+        between_created_at: "Creados entre"
+        id: Identificación
+        name: Título
+        send_to_trash: Borrar
+        send_to_draft: "Guardar como borrador!"
+        reject: Rechazar!
+        approve: Aprobar!
+        user_id: "Identificación de Usuario"
+        goal: Meta
+        total_backs: Colaboraciones
+        online_date: "Va en vivo"
+        pledged: Alcanzado
+        recommended: ¿Recomendado?
+        state: Departamento/Provincia
+        menu: "Admin. Proyectos"
+        title: "Admin. Proyectos"
+        total_projects: Proyectos
+        submit: Filtro
+        expires_at: "Expira a las"
+        category: Categoria
+        order_table: Orden
+        order_date: "Fecha de envío"
+        order_asc: "Meta más baja"
+        order_desc: "Meta más alta"
+        order_created_at: "Fecha de envío"
     actions:
-      confirm: ~
+      confirm: Confirmar
     users:
       index:
-        title: ~
-        menu: ~
-        credits: ~
-        credits_view: ~
-        id: ~
-        key: ~
-        submit: ~
-        has_credits_difference: ~
-        total_backed: ~
-        total_backers: ~
-        total_backs: ~
-        total_users: ~
-        total_credits: ~
-        total_credits_view: ~
-        user: ~
-        value: ~
-        payer_email: ~
-        provider: ~
+        title: "Gestión de colaboradores"
+        menu: Colaboradores
+        credits: Créditos
+        credits_view: "Créditos calculados"
+        id: Identificación
+        key: Clave
+        submit: Buscar
+        has_credits_difference: "Discrepancia en los créditos"
+        total_backed: "Total de colaboraciones"
+        total_backers: Colaboradores
+        total_backs: Colaboraciones
+        total_users: Usuarios
+        total_credits: Créditos
+        total_credits_view: "Créditos calculados"
+        user: Usuario
+        value: Valor
+        payer_email: "email de pago"
+        provider: Proveedor
     backers:
       messages:
         successful:
-          confirm: ~
-          pendent: ~
-          refund: ~
-          change_reward: ~
-          hide: ~
-          cancel: ~
-          push_to_trash: ~
+          confirm: "Colaboración confirmada :)"
+          pendent: "Colaboración cancelada!"
+          refund: "Colaboración reembolsada!"
+          change_reward: "Recompensa modificada com éxito!"
+          hide: "Colaboración escondida con éxito!"
+          cancel: "Colaboración cancelada!"
+          push_to_trash: "Colaboración Eliminada!"
       index:
-        push_to_trash: ~
-        cancel: ~
-        between_values: ~
-        by_state: ~
-        refund_and_hide: ~
-        backer_info: ~
-        payment_id: ~
-        payment_method: ~
-        payment_fee: ~
-        payment_choice: ~
-        payer_email: ~
-        user_email: ~
-        created_at: ~
-        pending_to_refund: ~
-        confirm_backer: ~
-        unconfirm_backer: ~
-        refund_backer: ~
-        title: ~
-        state: ~
-        menu: ~
-        anonymous: ~
-        confirmed: ~
-        credits: ~
-        id: ~
-        key: ~
-        no_backers: ~
-        project: ~
-        refunded: ~
-        requested_refund: ~
-        reward: ~
-        no_reward: ~
-        submit: ~
-        total_backed: ~
-        total_backers: ~
-        total_backs: ~
-        total_users: ~
-        user: ~
-        value: ~
+        push_to_trash: "Eliminar Colaboración"
+        cancel: "Cancelar Colaboración"
+        between_values: "Valores entre"
+        by_state: Departamento/Provincia
+        refund_and_hide: "No mostrar la cancelación del apoyo"
+        backer_info: "información del colaborador %{key}"
+        payment_id: "Identificación de pago"
+        payment_method: "Forma de pago"
+        payment_fee: "Tarifa del método de pago"
+        payment_choice: "Elección de pago"
+        payer_email: "email utilizado en el método de pago"
+        user_email: LittleBig-email
+        created_at: "Creado el"
+        pending_to_refund: "Pendiente de reembolso"
+        confirm_backer: "Confirmar colaboración :)"
+        unconfirm_backer: "Colaboración no confirmada"
+        refund_backer: "Retornar colaboración"
+        title: "Gestión de colaboraciones"
+        state: Departamento/Provincia
+        menu: Colaboraciones
+        anonymous: ¿Anónimo?
+        confirmed: ¿Confirmado?
+        credits: "¿Créditos usados?"
+        id: Identificación
+        key: Clave
+        no_backers: "Ningún colaborador encontrado."
+        project: Proyecto
+        refunded: "Colaboración reembolsada!"
+        requested_refund: ¿Reembolso?
+        reward: Recompensa
+        no_reward: "Sin Recompensa"
+        submit: Buscar
+        total_backed: "Total de colaboraciones"
+        total_backers: Colaboradores
+        total_backs: Colaboraciones
+        total_users: Usuarios
+        user: Usuario
+        value: Valor
     statistics:
       index:
-        menu: ~
-        title: ~
-        total_users: ~
-        total_backs: ~
-        total_backers: ~
-        total_backed: ~
-        total_projects: ~
-        total_projects_success: ~
-        total_projects_online: ~
+        menu: Estadísticas
+        title: Estadísticas
+        total_users: Usuarios
+        total_backs: Colaboraciones
+        total_backers: Colaboradores
+        total_backed: "Total de colaboraciones"
+        total_projects: Proyectos
+        total_projects_success: Exitoso
+        total_projects_online: "En línea"
       projects_by_week:
-        title: ~
-        current_period: ~
-        previous_period: ~
-        last_year: ~
+        title: "Proyectos enviados por semana"
+        current_period: "Últimas 8 semanas"
+        previous_period: "8 sem. anteriores"
+        last_year: "El año pasado"
       backers_by_week:
-        title: ~
-        current_period: ~
-        previous_period: ~
-        last_year: ~
+        title: "Valor de colaboraciones confirmadas por semana"
+        current_period: "Últimas 8 semanas"
+        previous_period: "8 sem. anteriores"
+        last_year: "El año pasado"
   channels:
     adm:
-      confirm_dialog: ~
+      confirm_dialog: "¿Estás seguro?"
       financials:
         index:
-          id: ~
-          name: ~
-          user: ~
-          user_id: ~
-          goal: ~
-          total_payment_service_fee: ~
-          total_catarse_fee: ~
-          repass_value: ~
-          expires_at: ~
-          online_date: ~
-          pledged: ~
-          recommended: ~
-          state: ~
-          menu: ~
-          title: ~
-          backer_report: ~
-          search_report: ~
-          total_projects: ~
-          submit: ~
-          by_state: ~
-          between_expires_at: ~
-          by_progress: ~
+          id: Identificación
+          name: Título
+          user: "Usuario PayU"
+          user_id: Usuario
+          goal: Meta
+          total_payment_service_fee: "Tarifa de PayU"
+          total_catarse_fee: "Tarifa de LittleBigMoney"
+          repass_value: "Valor a pagar"
+          expires_at: Finaliza
+          online_date: "Va en vivo"
+          pledged: Alcanzado
+          recommended: Recomendados
+          state: estado
+          menu: "Informes Financieros"
+          title: "Informes Financieros"
+          backer_report: "Informe de colaboradores"
+          search_report: "Informe de búsqueda"
+          total_projects: Proyectos
+          submit: Filtro
+          by_state: "Por Departamento/Provincia"
+          between_expires_at: "Expira entre"
+          by_progress: "Por progreso %"
       projects:
         index:
-          by_state: ~
-          between_created_at: ~
-          id: ~
-          name: ~
-          send_to_trash: ~
-          send_to_draft: ~
-          reject: ~
-          approve: ~
-          user_id: ~
-          goal: ~
-          total_backs: ~
-          online_date: ~
-          pledged: ~
-          recommended: ~
-          state: ~
-          menu: ~
-          title: ~
-          total_projects: ~
-          submit: ~
-          expires_at: ~
-          category: ~
-          order_table: ~
-          order_date: ~
-          order_asc: ~
-          order_desc: ~
-          order_created_at: ~
+          by_state: "Por Departamento/Provincia"
+          between_created_at: "Creados entre"
+          id: Identificación
+          name: Título
+          send_to_trash: borrar
+          send_to_draft: "Guardar como borrador!"
+          reject: Rechazar!
+          approve: Aprobar!
+          user_id: Usuario
+          goal: Meta
+          total_backs: Colaboraciones
+          online_date: "Va en vivo"
+          pledged: Alcanzado
+          recommended: Recomendados
+          state: estado
+          menu: "Admin. Proyectos"
+          title: "Admin. Proyectos"
+          total_projects: Proyectos
+          submit: Filtro
+          expires_at: "Expira a las"
+          category: Categoría
+          order_table: Orden
+          order_date: "Fecha de envío"
+          order_asc: "Meta más baja"
+          order_desc: "Meta más alta"
+          order_created_at: "Fecha de envío"
       actions:
-        confirm: ~
+        confirm: Confirmar
       users:
         index:
-          title: ~
-          menu: ~
-          credits: ~
-          credits_view: ~
-          id: ~
-          key: ~
-          submit: ~
-          has_credits_difference: ~
-          total_backed: ~
-          total_backers: ~
-          total_backs: ~
-          total_users: ~
-          total_credits: ~
-          total_credits_view: ~
-          user: ~
-          value: ~
-          payer_email: ~
-          provider: ~
+          title: "Gestión de colaboradores"
+          menu: Coaboradores
+          credits: Créditos
+          credits_view: "Créditos calculados"
+          id: Identificación
+          key: Clave
+          submit: buscar
+          has_credits_difference: "Discrepancia en los créditos"
+          total_backed: "Total de colaboraciones"
+          total_backers: Coaboradores
+          total_backs: Colaboraciones
+          total_users: Usuarios
+          total_credits: Créditos
+          total_credits_view: "Créditos calculados"
+          user: Usuario
+          value: Valor
+          payer_email: "email de pago"
+          provider: Proveedor
       backers:
         messages:
           successful:
-            confirm: ~
-            pendent: ~
-            refund: ~
-            change_reward: ~
-            hide: ~
-            cancel: ~
-            push_to_trash: ~
+            confirm: "Colaboración confirmada :)"
+            pendent: "Colaboración cancelada!"
+            refund: "Colaboración reembolsada!"
+            change_reward: "Recompensa modificada con éxito!"
+            hide: "Colaboración escondida con éxito!"
+            cancel: "Colaboración cancelada!"
+            push_to_trash: "Colaboración Eliminada!"
         index:
-          push_to_trash: ~
-          cancel: ~
-          between_values: ~
-          by_state: ~
-          refund_and_hide: ~
-          backer_info: ~
-          payment_id: ~
-          payment_method: ~
-          payment_fee: ~
-          payment_choice: ~
-          payer_email: ~
-          user_email: ~
-          created_at: ~
-          pending_to_refund: ~
-          confirm_backer: ~
-          unconfirm_backer: ~
-          refund_backer: ~
-          title: ~
-          state: ~
-          menu: ~
-          anonymous: ~
-          confirmed: ~
-          credits: ~
-          id: ~
-          key: ~
-          no_backers: ~
-          project: ~
-          refunded: ~
-          requested_refund: ~
-          reward: ~
-          no_reward: ~
-          submit: ~
-          total_backed: ~
-          total_backers: ~
-          total_backs: ~
-          total_users: ~
-          user: ~
-          value: ~
+          push_to_trash: "Eliminar Colaboración"
+          cancel: "Cancelar Colaboración"
+          between_values: "Valores entre"
+          by_state: Departamento/Provincia
+          refund_and_hide: "Cancelar y no mostrar apoyo"
+          backer_info: "información del colaborador %{key}"
+          payment_id: "Identificación de pago"
+          payment_method: "Forma de pago"
+          payment_fee: "Tarifa del método de pago"
+          payment_choice: "Elección de pago"
+          payer_email: "email utilizado en el método de pago"
+          user_email: LittleBig-email
+          created_at: "Creado el"
+          pending_to_refund: "Pendiente de reembolso"
+          confirm_backer: "Confirmar colaboración :)"
+          unconfirm_backer: "Colaboración no confirmada"
+          refund_backer: "Reembolsar colaboración"
+          title: "Gestión de colaboraciones"
+          state: Departamento/Provincia
+          menu: Colaboraciones
+          anonymous: ¿Anónimo?
+          confirmed: ¿Confirmado?
+          credits: "¿Créditos usados?"
+          id: Identificación
+          key: Clave
+          no_backers: "Ningún colaborador encontrado."
+          project: Standard
+          refunded: "Colaboración reembolsada!"
+          requested_refund: ¿Reembolso?
+          reward: Recompensa
+          no_reward: "Sin Recompensa"
+          submit: buscar
+          total_backed: "Total de colaboraciones"
+          total_backers: Coaboradores
+          total_backs: Colaboraciones
+          total_users: Usuarios
+          user: Usuario
+          value: Valor
       statistics:
         index:
-          menu: ~
-          title: ~
-          total_users: ~
-          total_backs: ~
-          total_backers: ~
-          total_backed: ~
-          total_projects: ~
-          total_projects_success: ~
-          total_projects_online: ~
+          menu: Estadísticas
+          title: Estadísticas
+          total_users: Usuarios
+          total_backs: Colaboraciones
+          total_backers: Coaboradores
+          total_backed: "Total de colaboraciones"
+          total_projects: Proyectos
+          total_projects_success: Exitosa
+          total_projects_online: "En línea"
         projects_by_week:
-          title: ~
-          current_period: ~
-          previous_period: ~
-          last_year: ~
+          title: "Proyectos enviados por semana"
+          current_period: "Últimas 8 semanas"
+          previous_period: "8 semanas anteriores"
+          last_year: "El año pasado"
         backers_by_week:
-          title: ~
-          current_period: ~
-          previous_period: ~
-          last_year: ~
+          title: "Valor de colaboraciones confirmadas por semana"
+          current_period: "Últimas 8 semanas"
+          previous_period: "8 semanas anteriores"
+          last_year: "El año pasado"

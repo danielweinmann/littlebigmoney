@@ -1,82 +1,85 @@
 en:
   channels_subscribers:
-    created: ~
-    deleted: ~
+    created: "Now you're following Asas channel"
+    deleted: "You're no longer following this channel"
   channels:
-    send_your_project: ~
-    send_a_email: ~
-    follow: ~
-    following: ~
-    unfollow: ~
-    subscribed: ~
-    curator: ~
+    send_your_project: "Submit your project"
+    send_a_email: "Send an email"
+    follow: "Follow the channel"
+    following: Following
+    unfollow: Unfollow
+    subscribed: "%{count} following the channel"
+    curator: Curator
     adm:
-      menu: ~
+      menu: "Channel moderation"
     projects:
-      send: ~
-      see_how_it_works: ~
-      how_it_works: ~
-      progress_html: ~
-      pledged_html: ~
+      send: "Submit your project"
+      see_how_it_works: "See how it works and submit your project"
+      how_it_works: "How it works"
+      progress_html: "<span>%{percent}%</span> funded"
+      pledged_html: "<span>%{value}</span> funded"
       new:
-        title: ~
-        subtitle: ~
-        legend_html: ~
-        permalink_hint: ~
-        permalink_important: ~
-        important_html: ~
-        about: ~
-        how_much_you_need: ~
-        how_much_hint_html: ~
-        how_much_important: ~
-        days: ~
-        days_hint: ~
-        days_important: ~
+        title: "There you go! Submit your project to Asas channel"
+        subtitle: "The time to make it happen is now! We really want to know what you're up to..."
+        legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br/><br/>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go live.<br/><br/><strong>Very Important</strong> Asas channel select the projects according to their own <a href=' https://docs.google.com/document/d/1TomgNL2k3Vlya-nMJixe-06cEjyswqIdtQwQ6OfOkoc/edit' target='_blank'>selection criteria</a>, which means that your project may be rejected by the curating team. "
+        permalink_hint: "Simplify the URL of your project. Think that your collaborator need to remember the address to share your project."
+        permalink_important: "Try not to use underline, hyphen etc."
+        important_html: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount."
+        about: "Describe your project and how much do you need"
+        how_much_you_need: "How much do you want to raise?"
+        how_much_hint_html: "It's important to remember that most of your collaborations will come from people near you (first and second levels of relationship): <a href='%{href}' target='_blank'>Click here!</a> Therefore, when calculating your goal in LittleBigMoney is paramount to think about your capacity of raising at least 50% of the goal in your own network."
+        how_much_important: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount."
+        days: "In how many days?"
+        days_hint: "Usually the projects stay live for 40 days."
+        days_important: "60 days is the maximum number of days for your deadline."
         about_hint: ~
-        about_important: ~
-        contact: ~
-        links: ~
-        links_important: ~
-        links_hint: ~
-        category: ~
-        tags_hint: ~
-        tags_important: ~
-        video: ~
+        about_important: "Don't make it too long! Indicate links so people can know more about your work"
+        contact: "Leave us your email address so we can contact you"
+        links: "Where can we find more about you and your project?"
+        links_important: "These links will help us understand your background."
+        links_hint: "Leave us as many links as you have, so we can get to know your work and your project better. Doesn't have to be something formal or fancy, just a few useful links."
+        category: "Project category"
+        tags_hint: "Before you format your project explore other (successful) projects to inspire yourself!"
+        tags_important: "Check out other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
+        video: "Your project already have a video?"
         video_hint: ~
-        video_important: ~
-        how_know_important: ~
-        more_links_important: ~
-        first_backers_important: ~
-        online_days_important: ~
-        headline_important: ~
-        name_important: ~
-        social: ~
-        facebook_hint: ~
-        twitter_hint: ~
-        social_important: ~
-        know_us_via: ~
-        knowus_important: ~
-        how_works: ~
+        video_important: "The video must be hosted by Vimeo. Paste here the URL!"
+        how_know_important: "Yay! We reached the final question."
+        more_links_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success"
+        first_backers_important: "These people are fundamental to the success of your project."
+        online_days_important: "60 days is the maximum number of days for your deadline."
+        headline_important: "It's a summary of  your project . 140 characteres tops!:D"
+        name_important: "Do not exceed  50 characters"
+        social: "Funding network"
+        facebook_hint: "http://facebook.com/__________"
+        twitter_hint: "http:// twitter.com/____________"
+        social_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success."
+        know_us_via: "How did you get to know LittleBigMoney?"
+        knowus_important: "Yay! We reached the final question."
+        how_works: "How to mobilize backers to raise $ needed for enforcement?"
         project_warning:
-          content_html: ~
-          help_link: ~
-        rewards: ~
-        rewards_hint: ~
-        rewards_important: ~
-        submit: ~
-        send_project: ~
-        how_know: ~
+          content_html: "Want to have your project selected? Don't forget to read %{link}."
+          help_link: "our guide"
+        rewards: "What rewards do you want to offer?"
+        rewards_hint: "We believe that the best way to inspire people to back a project is offering excelent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
+        rewards_important: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
+        submit: "Submit project"
+        send_project: "I want to submit my project"
+        how_know: "How did you get to know Asas channel?"
+      time_remaining_html:
+        one: "<span>%{count} %{unit}</span> left"
+        other: "<span>%{count} %{unit}</span> left"
     how_it_works:
-      title: ~
+      title: "How does %{channel} work?"
     footer:
-      terms: ~
-      privacy_policy: ~
-      how_it_works: ~
-      how_channels_work: ~
-      contact: ~
+      terms: "Terms of use"
+      privacy_policy: "Privacy Policy"
+      how_it_works: "How %{name} works"
+      how_channels_work: "Understand LittleBigMoney channels"
+      contact: Contact
     accessibility:
-      how_it_works: ~
-      send_your_project: ~
-      link_to_twitter: ~
-      link_to_facebook: ~
-      link_to_website: ~
+      how_it_works: "Click to know how the channel works and submit your project"
+      send_your_project: "Click here to submit your project"
+      link_to_twitter: "Link to the channel's twitter"
+      link_to_facebook: "Link to the channel's facebook"
+      link_to_website: "Link to the channel's external website"

@@ -3,58 +3,58 @@ en:
     confirm_dialog: "You are sure?"
     financials:
       index:
-        id: ~
-        name: ~
-        user: ~
-        user_id: ~
-        goal: ~
-        total_payment_service_fee: ~
-        total_catarse_fee: ~
-        repass_value: ~
-        expires_at: ~
-        online_date: ~
-        pledged: ~
-        recommended: ~
-        state: ~
-        menu: ~
-        title: ~
-        backer_report: ~
-        search_report: ~
-        total_projects: ~
+        id: ID
+        name: Title
+        user: "MoIP Username"
+        user_id: "User ID"
+        goal: Goal
+        total_payment_service_fee: "MoIP's fee"
+        total_catarse_fee: "LittleBigMoney's fee"
+        repass_value: "Value to pay"
+        expires_at: Ends
+        online_date: "Went live"
+        pledged: Reached
+        recommended: Recommended?
+        state: State
+        menu: "Financial reports"
+        title: "Financial reports"
+        backer_report: "Backer report"
+        search_report: "Search report"
+        total_projects: projects
         submit: Filter
         by_state: "By state"
-        between_expires_at: ~
+        between_expires_at: "Expire between"
         by_progress: "By progress %"
     projects:
       index:
         by_state: "By state"
         between_created_at: "Created at between"
-        id: ~
-        name: ~
+        id: ID
+        name: Title
         send_to_trash: Delete
         send_to_draft: "Send to DRAFT!"
         reject: Reject!
         approve: Approve!
-        user_id: ~
-        goal: ~
-        total_backs: ~
-        online_date: ~
-        pledged: ~
-        recommended: ~
-        state: ~
-        menu: ~
-        title: ~
-        total_projects: ~
+        user_id: "User ID"
+        goal: Goal
+        total_backs: Backs
+        online_date: "Went live"
+        pledged: Reached
+        recommended: Recommended?
+        state: State
+        menu: "Projects Admin"
+        title: "Projects Admin"
+        total_projects: projects
         submit: Filter
-        expires_at: ~
-        category: ~
-        order_table: ~
-        order_date: ~
+        expires_at: "Expires at"
+        category: Category
+        order_table: Order
+        order_date: "Submit date"
         order_asc: "Goal asc"
         order_desc: "Goal desc"
         order_created_at: "Submission date"
     actions:
-      confirm: ~
+      confirm: Confirm
     users:
       index:
         title: "Management backers"
@@ -73,7 +73,7 @@ en:
         total_credits_view: "calculated credits"
         user: User
         value: Value
-        payer_email: ~
+        payer_email: "Payment email"
         provider: Provider
     backers:
       messages:
@@ -88,8 +88,8 @@ en:
       index:
         push_to_trash: "Delete backer"
         cancel: "Cancel backer"
-        between_values: ~
-        by_state: ~
+        between_values: "Values between"
+        by_state: State
         refund_and_hide: "Refund and hide"
         backer_info: "Info of backer %{key}"
         payment_id: "Payment ID"
@@ -100,11 +100,11 @@ en:
         user_email: "Catarse user email"
         created_at: "Created at"
         pending_to_refund: "Pending to refund"
-        confirm_backer: ~
-        unconfirm_backer: ~
-        refund_backer: ~
+        confirm_backer: "Confirm backer"
+        unconfirm_backer: "Unconfirm backer"
+        refund_backer: "Refund backer"
         title: "Backers management"
-        state: ~
+        state: State
         menu: Backs
         anonymous: Anonymous?
         confirmed: Confirmed?
@@ -150,58 +150,58 @@ en:
       confirm_dialog: "You are sure?"
       financials:
         index:
-          id: ~
-          name: ~
-          user: ~
-          user_id: ~
-          goal: ~
-          total_payment_service_fee: ~
-          total_catarse_fee: ~
-          repass_value: ~
-          expires_at: ~
-          online_date: ~
-          pledged: ~
-          recommended: ~
-          state: ~
-          menu: ~
-          title: ~
-          backer_report: ~
-          search_report: ~
-          total_projects: ~
+          id: ID
+          name: Title
+          user: "MoIP Username"
+          user_id: "User ID"
+          goal: Goal
+          total_payment_service_fee: "MoIP's fee"
+          total_catarse_fee: "LittleBigMoney's fee"
+          repass_value: "Value to pay"
+          expires_at: Ends
+          online_date: "Went live"
+          pledged: Reached
+          recommended: Recommended?
+          state: State
+          menu: "Financial reports"
+          title: "Financial reports"
+          backer_report: "Backer report"
+          search_report: "Search report"
+          total_projects: projects
           submit: Filter
           by_state: "By state"
-          between_expires_at: ~
+          between_expires_at: "Expire between"
           by_progress: "By progress %"
       projects:
         index:
           by_state: "By state"
           between_created_at: "Created at between"
-          id: ~
-          name: ~
+          id: ID
+          name: Title
           send_to_trash: Delete
           send_to_draft: "Send to DRAFT!"
           reject: Reject!
           approve: Approve!
-          user_id: ~
-          goal: ~
-          total_backs: ~
-          online_date: ~
-          pledged: ~
-          recommended: ~
-          state: ~
-          menu: ~
-          title: ~
-          total_projects: ~
+          user_id: "User ID"
+          goal: Goal
+          total_backs: Backs
+          online_date: "Went live"
+          pledged: Reached
+          recommended: Recommended?
+          state: State
+          menu: "Projects Admin"
+          title: "Projects Admin"
+          total_projects: projects
           submit: Filter
-          expires_at: ~
-          category: ~
-          order_table: ~
-          order_date: ~
+          expires_at: "Expires at"
+          category: Category
+          order_table: Order
+          order_date: "Date sent"
           order_asc: "Goal asc"
           order_desc: "Goal desc"
           order_created_at: "Submission date"
       actions:
-        confirm: ~
+        confirm: Confirm
       users:
         index:
           title: "Management backers"

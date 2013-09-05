@@ -95,7 +95,7 @@ en:
       about: "Who are we"
       terms: "Terms of use"
       policy: "Privacy Policy"
-      terms_link: "http://suporte.catarse.me/knowledgebase/articles/161102-terms-of-use"
+      terms_link: "http://lbm.uservoice.com/knowledgebase/articles/245482"
       policy_link: "http://suporte.catarse.me/knowledgebase/articles/161104-privacy-policy"
       contact: Contact
       twitter: "Follow us at @%{twitter}"
@@ -327,7 +327,7 @@ en:
       faq: ~
       signup: "sign up"
       signin: login
-      explore: donate
+      explore: Explore
       invest: "invest (soon)"
       submit_project: submit
       how_it_works: "How it works"
@@ -770,35 +770,53 @@ en:
       explore_projects: "Understand how to back a project"
     about:
       title: "Who Are We?"
-      subtitle: "Meet the lovely gang that makes this whole thing happen <3"
+      subtitle: "Meet the Little people that makes BIG things happen <3"
       introduction: "Who are they? What do they feed of? How are they networked? You’ll see all of it now on “Who are we?”."
-      name_one: "Luis Otávio Ribeiro"
-      title_one: "Fisher of Killer Projects"
-      text_one: "Uberabense. Laziness enthusiast , is addicted to maintaining creative structures running and promoting encounters between people."
-      name_two: "Diego Reeberg"
-      title_two: "Philosopher who lives in a Barrel"
-      text_two: "Apprentice of poet, musician, tango dancer and addict to Calvino and Saramago, likes to dig beautiful things and talented people in the dusty corners of the internet."
-      name_three: "Luciana Masini"
-      title_three: "Apprentice of Making it happen"
-      text_three: "Color and contrast enthusiast, poet and artist by nature, curious about culture, curator by accident."
-      name_four: "Renato Garcia"
-      title_four: "LittleBigMoney’s Silvio Santos (a brasilian host and entrepreneur)"
-      text_four: "Collectivist. Believes in collaboration one by one, with no authority,  for a fairer world. Football and skateboarding fanatic. All this accompanied by a good samba or nacinal rap soundtrack."
-      name_five: "Rodrigo Maia"
-      title_five: "Information Remixer"
-      text_five: "Pragmatist who loves improvisation, has a deep voice and artistic outbursts. Fascinated by people and all forms of moving images."
-      name_six: "Diogo Biazus"
-      title_six: "Database Archbishop"
-      text_six: "Data Architect. Likes self-explanatory, self-referential and self-cleaning structures."
-      name_seven: "Evelise Luz"
-      title_seven: "Footer Designer"
-      text_seven: "Completely crazy, likes venturing into books, singing in the shower and loves exploring fig jam jars."
-      name_eight: "Adriano Benin"
-      title_eight: Programmer
-      text_eight: "When not programming he likes designing circuits and risking the piano."
-      name_nine: "Antônio Roberto"
-      title_nine: Fireman
-      text_nine: "A fellow crazy about development who lives in Tonland"
+      name_one: "Yves Moury - Bélgica"
+      title_one: "Presidente y Director Ejecutivo"
+      text_one: |-
+          Economista e Ingeniero de Gestión por la Universidad de Lovaina en Bélgica, y Posgraduado en Antropología Social y Cultural, Administración, Banca e Informática, y Finanzas para el Desarrollo por la misma universidad.  Su experiencia de más de 25 años en desarrollo internacional y reducción de la pobreza incluye consultorías e investigaciones para agencias y organizaciones internacionales como BID, Unión Europea, FIDA, ONUDI, OIT y PNUD, y con entidades públicas y privadas, corporaciones financieras y universidades en Europa, África, Asia y América Latina.
+
+          y.moury@fundacioncapital.org
+      name_two: "Franz Gomez - Bolivia"
+      title_two: "Director de Inclusión Financiera"
+      text_two: |-
+          Economista graduado de la Universidad Mayor de San Andrés, Bolivia. Tiene un Master en Economía y un Doctorado (Ph.D.) en Desarrollo Económico en la Universidad Estatal de Ohio, Estados Unidos.  Es especialista en microfinanzas y finanzas rurales, con amplia experiencia en asesoramiento técnico a entidades gubernamentales e instituciones financieras para el diseño e implementación de políticas de inclusión financiera y protección social.  Ha trabajado como consultor e investigador en varios países en América Latina y el Caribe, Europa y Asia.
+
+          franz.gomez@fundacioncapital.org
+      name_three: "Paula Rodriguez Rueda - Colombia"
+      title_three: "Coordinadora de Proyecto - LittleBigMoney"
+      text_three: |-
+          Es Master en Relaciones Internacionales de la Universidad Javeriana en Bogotá y en Public Management del SDA Bocconi School of Management de Italia. Ha trabajado con el sector público colombiano abriendo mercados exteriores a pequeñas y medianas empresas colombianas, y  también con empresas privadas prestadoras de servicios públicos, apoyando el diseño de nuevo proyectos de inversión y licitaciones públicas.
+
+          paula.rodriguez@fundacioncapital.org
+      name_four: "María Antonia Hoyos - Colombia"
+      title_four: "Oficial de Operaciones - LittleBigMoney"
+      text_four: |-
+          Profesional en Gobierno y Relaciones Internacionales, con énfasis en Gestión Pública de la Universidad Externado de Colombia. Experiencia en Gerencia y Formulación de proyectos sociales, Fundraising y gestión de Asistencia Técnica Internacional para pequeñas y medianas empresas colombianas. Trabajó en la Fundación CINEP/Programa por la Paz como Profesional Junior de la Gerencia de Proyectos y realizó un año de pasantía en la Dirección de Cooperación y Convenios de PROEXPORT.
+
+          maria.hoyos@fundacioncapital.org
+      name_five: "Veruschka Zilveti - Bolivia"
+      title_five: "Coordinadora de Proyecto"
+      text_five: |-
+          Economista por la Universidad Católica de Bolivia, con un Posgrado en Gestión y Organización de Entidades Non-Profit. Cuenta con amplia experiencia en proyectos de desarrollo rural y  en el trabajo con comunidades rurales. En el FIDA trabajó durante 8 años analizando estrategias de reducción de la pobreza y herramientas para el fortalecimiento el acceso a mercados de emprendimientos rurales.
+
+          veruschka.zilveti@fudacioncapital.org
+      name_six: "Javier Felipe Hidalgo - Colombia"
+      title_six: "Oficial de Comunicaciones LittleBigMoney"
+      text_six: |-
+          Comunicador social y periodista con énfasis en la gestión de la comunicación empresarial de la Universidad Externado de Colombia. Experiencia en manejo y creación de comunidades en redes y creación de estratégias de comunicación organizacional. Trabajó como voluntario en la fundación CISV de Colombia como entrenador de liderazgo en educación experiencial y realizó labores de fotografía en la Corporación Coral y Orquestal de Colombia.
+
+          javier.hidalgo@fundacioncapital.org
+      name_seven: ~
+      title_seven: ~
+      text_seven: ~
+      name_eight: ~
+      title_eight: ~
+      text_eight: ~
+      name_nine: ~
+      title_nine: ~
+      text_nine: ~
     privacy:
       title: "Privacy Policy"
     terms:
