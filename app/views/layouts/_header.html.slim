@@ -35,7 +35,7 @@
     = link_to "Home", (current_kind == "both" ? root_url(host: Configuration[:base_domain] || request.domain) : donate_url(host: Configuration[:base_domain] || request.domain)), :class => 'logo', :title => Configuration[:company_name]
     nav.actions
       = link_to t('layouts.header.explore'), donate_path, :class => 'explore'
-      = link_to t('layouts.header.invest'), "#", :class => 'invest'
+      /= link_to t('layouts.header.invest'), "#", :class => 'invest'
       = link_to t('layouts.header.submit_project'), guidelines_start_path, :class =>  'submit_project'
       = link_to t('layouts.header.how_it_works'), guidelines_path, :class => 'how_it_works'
     /.search
