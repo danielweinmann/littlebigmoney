@@ -12,7 +12,7 @@ es:
   or: o
   site:
     title: "LittleBigMoney es una plataforma de financiación colectiva para Microempresas con impacto social o ambiental"
-    meta_title: "%{title}.%{company_name}"
+    meta_title: "%{title} · %{company_name}"
     description: "LittleBigMoney es una herramienta diferente – y colaborativa – para que tu proyecto salga del papel!"
     keywords: "littlebigmoney, crowdfunding, project, community, open source, financiación colectiva, donar, ayudar, colaborar"
   login:
@@ -260,7 +260,7 @@ es:
       quick_explore: "Búsqueda Rápida"
       recent: Reciente
       recommended: Recomendaciones
-      subtitle: "Explora los proyectos, encontra aquellos que mueven tu corazón, y conviértelos en una realidad! :)"
+      subtitle: "Explora los proyectos, encuentra aquellos que mueven tu corazón, y conviértelos en una realidad! :)"
       successful: Exitoso!
       title: "Descubre proyectos increíbles!"
     title: "Explora los proyectos"
@@ -327,9 +327,9 @@ es:
       faq: FAQ
       signup: Registro
       signin: Ingreso
-      explore: Explorar
+      explore: Explora
       invest: "Inversión (Próximamente)"
-      submit_project: Enviar
+      submit_project: Envia
       how_it_works: "Como funciona LittleBigMoney"
       welcome_html: "Bienvenido <span class='user_name'>%{name}</span>"
       profile: "Mi perfil"
@@ -520,7 +520,7 @@ es:
       user: Usuario
       value: Valor
     project:
-      backed: "Total de colaboraciones"
+      backed: Colaboraciones
       reached: Alcanzado
     project_backers:
       empty: "Este proyecto necesita más entusiasmo. ¿Qué tal que si eres el primero en colaborar?"
@@ -766,7 +766,7 @@ es:
     guidelines:
       title: "Cómo funciona"
       subtitle: "Conoce un poco más de LittleBigMoney"
-      introduction_html: "LittleBigMoney es un espacio de intercambios entre indivíduos que, juntos, <br>viabilizan la realizaión de proyectos de impacto social o ambiental."
+      introduction_html: "LittleBigMoney es un espacio de colaboración entre individuos que juntos, <br>permiten la realización de proyectos con impacto social o ambiental."
       legend_html: "Creemos que conectar personas que \"comparten valor\" con causas, ideas o proyectos, nos permite hacerlos realidad. <br><br>Bienvenidos a este su espacio! Un lugar hecho para ustedes, donde colaborar con pequeños aportes logra GRANDES resultados.  Cambiar la vida de las personas esta en nuestras manos... Hoy podemos colaborar con mejorar la calidad de vida de las personas que están trabajando día a día por un mejor mundo, desde su comunidad. Esta es una alternativa  para que los más pobres reciban nuestra ayuda y cada uno sea parte de una comunidad en la que las pequeñas cosas se hacen GRANDES. =D"
       submit: "ENVIAR TU PROYECTO"
       send_project: "Entérate cómo subir tu proyecto"
