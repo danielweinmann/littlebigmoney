@@ -65,42 +65,36 @@ Catarse::Application.routes.draw do
     resources :backer_reports_for_project_owners, only: [:index]
   end
 
-  scope "/donate" do
+  match "/explore" => "explore#index", as: :explore
+  match "/explore#:quick" => "explore#index", as: :explore_quick
 
-    root to: 'explore#index', as: :donate
-    
-    match "/explore" => "explore#index", as: :explore
-    match "/explore#:quick" => "explore#index", as: :explore_quick
+  get '/guidelines',            to: 'static#guidelines',          as: :guidelines
+  get "/guidelines_tips",       to: "static#guidelines_tips",     as: :guidelines_tips
+  get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
+  get "/guidelines_start",      to: "static#guidelines_start",    as: :guidelines_start
 
-    get '/guidelines',            to: 'static#guidelines',          as: :guidelines
-    get "/guidelines_tips",       to: "static#guidelines_tips",     as: :guidelines_tips
-    get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
-    get "/guidelines_start",      to: "static#guidelines_start",    as: :guidelines_start
-
-    resources :projects do
-      resources :updates, only: [ :index, :create, :destroy ]
-      resources :rewards, only: [ :index, :create, :update, :destroy ] do
-        member do
-          post 'sort'
-        end
-      end
-      resources :backers, controller: 'projects/backers', only: [ :index, :show, :new, :create ] do
-        member do
-          match 'credits_checkout'
-          post 'update_info'
-        end
-      end
-      collection do
-        get 'video'
-        get 'check_slug'
-      end
+  resources :projects do
+    resources :updates, only: [ :index, :create, :destroy ]
+    resources :rewards, only: [ :index, :create, :update, :destroy ] do
       member do
-        put 'pay'
-        get 'embed'
-        get 'video_embed'
+        post 'sort'
       end
     end
-
+    resources :backers, controller: 'projects/backers', only: [ :index, :show, :new, :create ] do
+      member do
+        match 'credits_checkout'
+        post 'update_info'
+      end
+    end
+    collection do
+      get 'video'
+      get 'check_slug'
+    end
+    member do
+      put 'pay'
+      get 'embed'
+      get 'video_embed'
+    end
   end
   
   resources :users do

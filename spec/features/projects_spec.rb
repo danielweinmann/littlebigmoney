@@ -47,7 +47,7 @@ describe "Projects" do
     before do
       FactoryGirl.create(:project, name: 'Foo', state: 'online', online_days: 30, recommended: true)
       FactoryGirl.create(:project, name: 'Lorem', state: 'online', online_days: 30, recommended: false)
-      visit donate_path(anchor: :search) + '/Lorem'
+      visit explore_path(anchor: :search) + '/Lorem'
       sleep 4
     end
     it "should show searched projects" do

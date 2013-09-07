@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  helper_method :namespace, :fb_admins, :render_facebook_sdk, :render_facebook_like, :render_twitter, :display_uservoice_sso, :current_kind, :blog_posts
+  helper_method :namespace, :fb_admins, :render_facebook_sdk, :render_facebook_like, :render_twitter, :display_uservoice_sso, :blog_posts
 
   before_filter :set_locale
   before_filter :force_http
@@ -51,14 +51,6 @@ class ApplicationController < ActionController::Base
   end
 
   private
-  
-  def current_kind
-    if self.class == ProjectsController and action_name == "index"
-      "both"
-    else
-      "donate"
-    end
-  end
   
   def fb_admins
     @fb_admins.join(',')

@@ -19,7 +19,7 @@
     .sidebar
       .content
         .search
-          = form_tag donate_path(:anchor => "search"), :method => 'GET', :class=>'search_input' do
+          = form_tag explore_path(:anchor => "search"), :method => 'GET', :class=>'search_input' do
             = text_field_tag :search, nil, autocomplete: "off"
             = submit_tag
         - unless @recommended.empty? and @expiring.empty? and @recent.empty? and @successful.empty?
