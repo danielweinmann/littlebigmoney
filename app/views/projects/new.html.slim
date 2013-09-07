@@ -54,7 +54,7 @@
               .bootstrap-alert
                 span
                 .alert
-                  .important= t('.tags_important', href: "http://www.catarse.me/explore").html_safe
+                  .important= t('.tags_important', href: explore_path).html_safe
               = form.label :category, t('.category')
               = form.select :category_id, Category.array, class: "#{'error' if @project.errors[:category].present?}"
               p.inline-hints= t('formtastic.hints.project.category')
