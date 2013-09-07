@@ -330,7 +330,7 @@ es:
       explore: Explora
       invest: "Inversión (Próximamente)"
       submit_project: Envía
-      how_it_works: "Como funciona LittleBigMoney"
+      how_it_works: "Como funciona"
       welcome_html: "Bienvenido <span class='user_name'>%{name}</span>"
       profile: "Mi perfil"
       account: "Mi cuenta"
