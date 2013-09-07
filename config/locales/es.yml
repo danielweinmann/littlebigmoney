@@ -22,7 +22,7 @@ es:
       submit: Reestablecer
     welcome: "Que bueno tenerte de vuelta! :)"
     submit: Entra
-    register: Registro!
+    register: Regístrate!
     no_account_html: "¿Aún no tienes cuenta? <strong>%{link}</strong>"
     remember_me: Recuérdame
     submit_facebook: "Ingresa usando tu cuenta de Facebook"
@@ -66,7 +66,7 @@ es:
       truncate: "..."
   statistics:
     backers:
-      subtitle: Coaboradores
+      subtitle: Colaboradores
     goal:
       subtitle: "Total de %{total}"
   project_by: "Proyecto por"
@@ -194,7 +194,7 @@ es:
     value_must_be_at_least_rewards_value: "debe ser al menos %{minimum_value} para la recompensa seleccionada"
     project_should_be_online: "No puedes colaborar a un proyecto que no esta listado"
   project_plural: Proyectos
-  backer_plural: Coaboradores
+  backer_plural: Colaboradores
   backer_singular: Colaborador
   project_singular: Proyecto
   click_here: "haz clic aquí"
@@ -329,7 +329,7 @@ es:
       signin: Ingreso
       explore: Explora
       invest: "Inversión (Próximamente)"
-      submit_project: Envia
+      submit_project: Envía
       how_it_works: "Como funciona LittleBigMoney"
       welcome_html: "Bienvenido <span class='user_name'>%{name}</span>"
       profile: "Mi perfil"
@@ -514,7 +514,7 @@ es:
       submit: buscar
       title: "Administración de colaboraciones"
       total_backed: "Total de colaboraciones"
-      total_backers: Coaboradores
+      total_backers: Colaboradores
       total_backs: Colaboraciones
       total_users: Usuarios
       user: Usuario
@@ -560,7 +560,7 @@ es:
         link_reward: "Descarga el reporte de los colaboradores que seleccionaron recompensa "
       menu:
         about: Sobre
-        backers: Coaboradores
+        backers: Colaboradores
         comments: Comentarios
         updates: Actualizaciones
         edit: Editar

@@ -205,7 +205,7 @@ es:
       users:
         index:
           title: "Gestión de colaboradores"
-          menu: Coaboradores
+          menu: Colaboradores
           credits: Créditos
           credits_view: "Créditos calculados"
           id: Identificación
@@ -213,7 +213,7 @@ es:
           submit: buscar
           has_credits_difference: "Discrepancia en los créditos"
           total_backed: "Total de colaboraciones"
-          total_backers: Coaboradores
+          total_backers: Colaboradores
           total_backs: Colaboraciones
           total_users: Usuarios
           total_credits: Créditos
@@ -266,7 +266,7 @@ es:
           no_reward: "Sin Recompensa"
           submit: buscar
           total_backed: "Total de colaboraciones"
-          total_backers: Coaboradores
+          total_backers: Colaboradores
           total_backs: Colaboraciones
           total_users: Usuarios
           user: Usuario
@@ -277,7 +277,7 @@ es:
           title: Estadísticas
           total_users: Usuarios
           total_backs: Colaboraciones
-          total_backers: Coaboradores
+          total_backers: Colaboradores
           total_backed: "Total de colaboraciones"
           total_projects: Proyectos
           total_projects_success: Exitosa
