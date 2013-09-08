@@ -13,7 +13,7 @@
               = image_tag "catarse/icon_heart.png", class: 'heart'
               = label_tag 'how_much_you_need', t('.how_much_you_need')
               .input-prepend
-                span.add-on R$
+                span.add-on USD
                 = text_field_tag 'how_much_you_need'
                 p.inline-hints.much= t('.how_much_hint_html', href: "http://blog.catarse.me/sua-campanha-no-catarse-precisa-de-um-empurrazinho/")
               .bootstrap-alert

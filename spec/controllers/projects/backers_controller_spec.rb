@@ -176,7 +176,7 @@ describe Projects::BackersController do
     shared_examples_for  "admin / owner" do
       it "should see all info from backer" do
         response_backer = ActiveSupport::JSON.decode(response.body)[0]
-        response_backer['value'].should == 'R$ 10'
+        response_backer['value'].should == 'USD 10'
         response_backer['user']['name'].should == 'Foo Bar'
         response_backer['reward']['description'].should == 'Test Reward'
       end
