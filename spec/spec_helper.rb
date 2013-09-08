@@ -76,6 +76,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
     RoutingFilter.active = false # Because this issue: https://github.com/svenfuchs/routing-filter/issues/36
     Configuration[:base_domain] = 'localhost'
+    Configuration[:support_forum] = 'http://suporte.catarse.me'
     ::Configuration['email_contact'] = 'foo@bar.com'
   end
 
