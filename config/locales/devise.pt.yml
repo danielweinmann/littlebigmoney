@@ -40,7 +40,7 @@ pt:
         site_title: "Defina uma nova senha"
         label_new_password: "Digite sua nova senha abaixo"
         title: "Defina uma nova senha"
-        subtitle: "Defina uma nova senha para usar seu email e senha quando quiser entrar no Catarse."
+        subtitle: "Defina uma nova senha para usar seu email e senha quando quiser entrar no LittleBigMoney."
         submit: "Definir nova senha"
     registrations:
       destroyed: "Adeus! A sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve."
