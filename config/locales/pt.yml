@@ -805,10 +805,9 @@ pt:
       title: "Termos de uso"
   terms: "termos de uso"
   user:
-    backs_text:
-      one: "Apoiou somente este projeto até agora"
-      two: "Apoiou este e mais 1 outro projeto"
-      many: "Apoiou este e mais outros %{total} projetos"
+    backs_text_one: "Apoiou somente este projeto até agora"
+    backs_text_two: "Apoiou este e mais 1 outro projeto"
+    backs_text_many: "Apoiou este e mais outros %{total} projetos"
     no_name: "Sem nome"
     google_account: "Conta Google"
   users:

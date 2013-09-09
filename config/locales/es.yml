@@ -827,6 +827,9 @@ es:
       title: "Término de uso"
   terms: "Términos de uso"
   user:
+    backs_text_one: "Solamente colaboró con este proyecto hasta ahora"
+    backs_text_two: "Colaboró con este y un proyecto más"
+    backs_text_many: "Colaboró con este y %{total} proyectos más"
     no_name: "Sin nombre"
     google_account: "Cuenta Google"
   users:

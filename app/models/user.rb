@@ -233,11 +233,11 @@ class User < ActiveRecord::Base
 
   def backs_text
     if total_backed_projects == 2
-      I18n.t('user.backs_text.two')
+      I18n.t('user.backs_text_two')
     elsif total_backed_projects > 1
-      I18n.t('user.backs_text.many', total: (total_backed_projects-1))
+      I18n.t('user.backs_text_many', total: (total_backed_projects-1))
     else
-      I18n.t('user.backs_text.one')
+      I18n.t('user.backs_text_one')
     end
   end
 

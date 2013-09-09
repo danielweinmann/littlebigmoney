@@ -823,10 +823,9 @@ en:
       title: "Terms of use"
   terms: "terms of use"
   user:
-    backs_text:
-      one: "Backed only this project until now"
-      two: "Backed this and 1 other project"
-      many: "Backed this and other %{total} projects"
+    backs_text_one: "Backed only this project until now"
+    backs_text_two: "Backed this and 1 other project"
+    backs_text_many: "Backed this and other %{total} projects"
     no_name: Unnamed
     google_account: "Google Account"
   users:
