@@ -139,15 +139,15 @@ es:
         format: "%n %u"
         precision: 2
         separator: ","
-        significant: falso
-        strip_insignificant_zeros: falso
-        unit: $
+        significant: false
+        strip_insignificant_zeros: false
+        unit: USD
     format:
       delimiter: "."
       precision: 3
       separator: "."
-      significant: falso
-      strip_insignificant_zeros: falso
+      significant: false
+      strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
@@ -169,8 +169,8 @@ es:
       format:
         delimiter: "."
         precision: 3
-        significant: verdadero
-        strip_insignificant_zeros: verdadero
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:

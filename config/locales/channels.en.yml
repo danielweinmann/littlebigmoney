@@ -17,6 +17,9 @@ en:
       see_how_it_works: "See how it works and submit your project"
       how_it_works: "How it works"
       progress_html: "<span>%{percent}%</span> funded"
+      time_remaining_html:
+        one: "<span>%{count} %{unit}</span> left"
+        other: "<span>%{count} %{unit}</span> left"
       pledged_html: "<span>%{value}</span> funded"
       new:
         title: "There you go! Submit your project to Asas channel"
@@ -66,9 +69,6 @@ en:
         submit: "Submit project"
         send_project: "I want to submit my project"
         how_know: "How did you get to know Asas channel?"
-      time_remaining_html:
-        one: "<span>%{count} %{unit}</span> left"
-        other: "<span>%{count} %{unit}</span> left"
     how_it_works:
       title: "How does %{channel} work?"
     footer:
