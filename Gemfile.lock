@@ -18,6 +18,21 @@ GIT
       slim-rails
 
 GIT
+  remote: git://github.com/danielweinmann/catarse_payulatam.git
+  revision: 985584e5870c4f59c19702ebc33a9301d1353d8a
+  specs:
+    catarse_payulatam (0.1.11)
+      payulatam
+      rails (~> 3.2.6)
+
+GIT
+  remote: git://github.com/danielweinmann/payulatam.git
+  revision: c902f5cca0d63187a9844259647a5da13d291820
+  specs:
+    payulatam (0.0.2)
+      hashie
+
+GIT
   remote: git://github.com/ncri/validation_reflection.git
   revision: 60320e6beb088808fd625a8d958dbd0d2661d494
   specs:
@@ -30,19 +45,6 @@ GIT
   branch: 2.0
   specs:
     cancan (2.0.0.alpha)
-
-PATH
-  remote: ../catarse_payulatam
-  specs:
-    catarse_payulatam (0.1.11)
-      payulatam
-      rails (~> 3.2.6)
-
-PATH
-  remote: ../payulatam
-  specs:
-    payulatam (0.0.2)
-      hashie
 
 GEM
   remote: https://rubygems.org/
