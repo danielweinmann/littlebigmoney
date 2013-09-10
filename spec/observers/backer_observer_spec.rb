@@ -18,7 +18,7 @@ describe BackerObserver do
   describe "after_create" do
     before{ Kernel.stub(:rand).and_return(1) }
     its(:key){ should == Digest::MD5.new.update("#{backer.id}###{backer.created_at}##1").to_s }
-    its(:payment_method){ should == 'MoIP' }
+    its(:payment_method){ should == 'PayULatam' }
   end
   
   describe "before_save" do
