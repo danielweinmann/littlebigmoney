@@ -412,6 +412,11 @@ pt:
     backers:
       review:
         error: "Ooops. Ocorreu um erro ao registrar seu apoio. Por favor, tente novamente."
+        paypal: 'Pagamento internacional - PayPal'
+        international:
+          section_title: 'Você será direcionado para o site do Paypal para completar o pagamento.'
+          user_document_label: 'CPF / CNPJ (somente números) opcional'
+          button: 'Ir para o paypal'
       show:
         error: "Ooops. Você só pode acessar esta página depois de apoiar um projeto."
         moip_message: "A verificação da sua transação está em andamento e o código Moip é “%{code}″.<br>Caso tenha alguma dúvida referente a transação, entre em contato com o Moip. Um email será enviado quando o pagamento for confirmado."
@@ -423,6 +428,11 @@ pt:
         title: "Muito obrigado"
       checkout:
         no_credits: "Você não possui créditos suficientes para realizar este apoio."
+        paypal_cancel: "Seu pagamento no PayPal foi cancelado. Por favor, tente novamente."
+        paypal_description: "Apoio para o projeto %{project_name} no valor de %{value}"
+        paypal_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o PayPal. Por favor, tente novamente."
+        payulatam_description: "Apoio para o projeto %{project_name} no valor de %{value}"
+        payulatam_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o PayU Latam. Por favor, tente novamente."
         success: "Seu apoio foi realizado com sucesso. Muito obrigado!"
       new:
         cannot_back: "Não é possível apoiar este projeto no momento. Por favor, apoie outros projetos."
