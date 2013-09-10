@@ -412,6 +412,13 @@ en:
     backers:
       review:
         error: "Ooops. There was an error while registering your back. Please try again."
+        payulatam: ~
+        payulatam_title: ~
+        paypal: ~
+        international:
+          section_title: ~
+          user_document_label: ~
+          button: ~
       show:
         error: "Ooops. You can only access this page after backing a project."
         moip_message: "Your transaction is “Authorized” and you Moip code is “%{code}″.<br>If you have any questions about this transaction, contact Moip directly."
@@ -423,6 +430,12 @@ en:
         title: "Thank you"
       checkout:
         no_credits: "You don't have enough credits to back this project."
+        paypal_cancel: ~
+        paypal_description: ~
+        paypal_error: ~
+        payulatam_submit: ~
+        payulatam_description: ~
+        payulatam_error: ~
         success: "Your back was successfully made. Thanks a lot!"
       new:
         cannot_back: "It's not possible to back this project right now. Please, back other projects."

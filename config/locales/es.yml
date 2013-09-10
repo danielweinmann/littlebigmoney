@@ -412,6 +412,13 @@ es:
     backers:
       review:
         error: "Oops! Hubo un error mientras se registraba la colaboración. Por favor intenta de nuevo."
+        payulatam: "Pago nacional - PayU Latam"
+        payulatam_title: "Vas a ser redirigido a la página de PayU Latam para completar el pago."
+        paypal: "Pago internacional - PayPal"
+        international:
+          section_title: "Vas a ser redirigido a la página de PayPal para completar el pago."
+          user_document_label: "Documento (solamente números) opcional"
+          button: "Ir a PayPal"
       show:
         error: "Oops! Sólo puedes ingresar a esta página después de apoyar un proyecto."
         moip_message: "Tu transacción fue \"autorizada.\" El código de PayU es \"%{code}\".<br>Si tienes alguna pregunta sobre esta transacción, contacta a PayU directamente."
@@ -423,6 +430,12 @@ es:
         title: Gracias
       checkout:
         no_credits: "No tienes suficiente crédito para colaborar con este proyecto."
+        paypal_cancel: "Tu pago en PayPal fue anulado. Por favor, intenta de nuevo."
+        paypal_description: "Colaboración para el proyecto %{project_name} con el valor de %{value}"
+        paypal_error: "Oops! Algo sucedió con el envío de tu pago para PayPal. Por favor, intenta de nuevo."
+        payulatam_submit: "Ir a PayU Latam"
+        payulatam_description: "Colaboración para el proyecto %{project_name} con el valor de %{value}"
+        payulatam_error: "Oops! Algo sucedió con el envío de tu pago para PayU Latam. Por favor, intenta de nuevo."
         success: "Tu colaboración fue exitosa. Muchas gracias!"
       new:
         cannot_back: "No es posible colaborar con este proyecto ahora. Qué tal si colaboras con otros proyectos."
@@ -666,13 +679,13 @@ es:
       introduction: "LittleBigMoney es una herramienta diferente – y colaborativa – para sacar tu proyecto del papel."
       legend_html: "Presta atención al paso a paso  para decidir si<br>LittleBigMoney es el camino para financiar tu proyecto."
       title_one: "Envía tu proyecto"
-      step_one: "Las ideas pueden ser proyectos, y los proyectos pueden ser colaboraciones! Estamos con los brazos abiertos para recibir colaboraciones grandes, pequeñas, divertidas, serias, tradicionales, innovadoras... Nos encantan proyectos que necesitan poco dinero y que generan un gran impacto en sis comunidades."
+      step_one: "Las ideas pueden ser proyectos, y los proyectos pueden ser colaboraciones! Estamos con los brazos abiertos para recibir colaboraciones grandes, pequeñas, divertidas, serias, tradicionales, innovadoras... Nos encantan los proyectos que necesitan poco dinero y que generan un gran impacto en sus comunidades."
       title_two: Revisar
       step_two: "Después de recibir tu proyecto, estará bajo la revisión del equipo de curadores. El objetivo es dar recomendaciones <strong>y aumentar las posibilidades de que tu proyecto sea exitoso.</strong> Recuerda que buscamos tanto el éxito de tu proyecto como el tuyo. Nosotros solo ganamos cuando tu ganas!"
-      title_three: "¿Listo para salir al aire!?"
+      title_three: "¿Listo para salir al aire?"
       step_three: "Cuando tu proyecto esté listo, es tiempo de ir al aire con tu plan de fortalecimiento. Durante este tiempo, deberás atraer a tantas personas como puedas para alcanzar tu meta."
       title_four: "Es todo o nada"
-      step_four: "En caso de que tu proyecto no tenga tanta colaboración dentro del plazo, tus colaboradores recibirán su colaboración en forma de crédito para poder apoyar a otros proyectos (ou, se preferirem, receberão o dinheiro de volta.)"
+      step_four: "En caso de que tu proyecto no tenga tanta colaboración dentro del plazo, tus colaboradores recibirán su colaboración en forma de crédito para poder apoyar a otros proyectos (o si prefieren recibirán su dinero de vuelta)"
       title_requirements: "Requisitos para enviar proyectos a LittleBigMoney"
       creative: "creativo y finito"
       colective: "Beneficios colectivos"
