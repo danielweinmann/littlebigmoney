@@ -28,10 +28,11 @@ gem 'chartkick'
 gem 'catarse_paypal_express', git: 'git://github.com/catarse/catarse_paypal_express.git',  ref: '49cdd22'
 #gem 'catarse_paypal_express',           path: '../catarse_paypal_express'
 
-# Payment engine using Moip
-gem 'catarse_moip',           git: 'git://github.com/catarse/catarse_moip.git', ref: '739a40a'
-#gem 'catarse_moip',           path: '../catarse_moip'
-
+# Payment engine using PayU Latam
+# gem 'payulatam', git: 'git://github.com/danielweinmann/payulatam.git'
+# gem 'catarse_payulatam', git: 'git://github.com/danielweinmann/catarse_payulatam.git'
+gem 'payulatam', path: '../payulatam'
+gem 'catarse_payulatam', path: '../catarse_payulatam'
 
 # Decorators
 gem 'draper'
@@ -83,7 +84,6 @@ gem 'web_translate_it'
 gem 'i18n_viz'
 
 # Payment
-gem 'moip', git: 'git://github.com/catarse/moip-ruby.git'
 gem 'activemerchant', '>= 1.17.0', require: 'active_merchant'
 gem 'httpclient',     '>= 2.2.5'
 
