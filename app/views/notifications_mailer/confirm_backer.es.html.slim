@@ -12,7 +12,7 @@ br
 |Uma coisa super importante:<strong> se o seu pagamento foi feito com cartão de crédito</strong>, o nome que virá na sua fatura é o do #{backer.payment_method}. Infelizmente, as operadoras de cartão ainda não possibilitam que o nome do #{Configuration[:company_name]} apareça escrito lá, ok?
 br
 br
-|Valor da contribuição: <strong>USD #{backer.value}</strong>
+|Valor da contribuição: <strong>#{backer.value} COP</strong>
 br
 -if backer.reward.present?
   |Recompensa selecionada: <strong>#{backer.reward.description}</strong>

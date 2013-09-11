@@ -22,20 +22,20 @@ describe Backer do
     it{ should validate_presence_of(:project) }
     it{ should validate_presence_of(:user) }
     it{ should validate_presence_of(:value) }
-    it{ should_not allow_value(4.99).for(:value) }
-    it{ should allow_value(10).for(:value) }
-    it{ should allow_value(20).for(:value) }
+    it{ should_not allow_value(9999.99).for(:value) }
+    it{ should allow_value(10000).for(:value) }
+    it{ should allow_value(20000).for(:value) }
   end
 
   describe ".between_values" do
-    let(:start_at) { 10 }
-    let(:ends_at) { 20 }
+    let(:start_at) { 10000 }
+    let(:ends_at) { 20000 }
     subject { Backer.between_values(start_at, ends_at) }
     before do
-      create(:backer, value: 10)
-      create(:backer, value: 15)
-      create(:backer, value: 20)
-      create(:backer, value: 21)
+      create(:backer, value: 10000)
+      create(:backer, value: 15000)
+      create(:backer, value: 20000)
+      create(:backer, value: 21000)
     end
     it { should have(3).itens }
   end
@@ -152,19 +152,19 @@ describe Backer do
   end
 
   describe "#value_must_be_at_least_rewards_value" do
-    let(:reward){ create(:reward, minimum_value: 500) }
+    let(:reward){ create(:reward, minimum_value: 500000) }
     let(:backer){ build(:backer, reward: reward, project: reward.project, value: value) }
     subject{ backer }
     context "when value is lower than reward minimum value" do
-      let(:value){ 499.99 }
+      let(:value){ 499999.99 }
       it{ should_not be_valid }
     end
     context "when value is equal than reward minimum value" do
-      let(:value){ 500.00 }
+      let(:value){ 500000.00 }
       it{ should be_valid }
     end
     context "when value is greater than reward minimum value" do
-      let(:value){ 500.01 }
+      let(:value){ 500000.01 }
       it{ should be_valid }
     end
   end
@@ -336,7 +336,7 @@ describe Backer do
         create(:backer, state: 'confirmed', user: user, project: failed_project)
         failed_project.update_attributes state: 'failed'
       end
-      it{ should == 10 }
+      it{ should == 10000 }
     end
 
     context "when backs are done with credits" do
@@ -358,13 +358,13 @@ describe Backer do
 
   describe "#display_value" do
     context "when the value has decimal places" do
-      subject{ build(:backer, value: 99.99).display_value }
-      it{ should == "USD 100" }
+      subject{ build(:backer, value: 99999.99).display_value }
+      it{ should == "COP 100.000" }
     end
 
     context "when the value does not have decimal places" do
       subject{ build(:backer, value: 1).display_value }
-      it{ should == "USD 1" }
+      it{ should == "COP 1" }
     end
   end
 end

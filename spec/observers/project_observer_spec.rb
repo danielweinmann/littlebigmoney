@@ -13,7 +13,7 @@ describe ProjectObserver do
   let(:project_visible){ create(:notification_type, name: 'project_visible') }
   let(:project_rejected){ create(:notification_type, name: 'project_rejected') }
   let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: nil) }
-  let(:project) { create(:project, goal: 3000) }
+  let(:project) { create(:project, goal: 3000000) }
 
   subject{ backer }
 
@@ -80,10 +80,10 @@ describe ProjectObserver do
 
   describe "#notify_owner_that_project_is_waiting_funds" do
     let(:user) { create(:user) }
-    let(:project) { create(:project, user: user, goal: 100, online_days: -2, state: 'online') }
+    let(:project) { create(:project, user: user, goal: 100000, online_days: -2, state: 'online') }
 
     before do
-      create(:backer, project: project, value: 200, state: 'confirmed')
+      create(:backer, project: project, value: 200000, state: 'confirmed')
       Notification.should_receive(:create_notification_once).with(:project_in_wainting_funds, project.user, {project_id: project.id}, {project: project})
     end
 
@@ -97,11 +97,11 @@ describe ProjectObserver do
     end
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, online_days: -7, goal: 10, state: 'online', user: user) }
+    let(:project) { create(:project, online_days: -7, goal: 10000, state: 'online', user: user) }
 
     context 'when project is successful' do
       before do
-        create(:backer, value: 15, state: 'confirmed', project: project)
+        create(:backer, value: 15000, state: 'confirmed', project: project)
         project.update_attributes state: 'waiting_funds'
       end
 
@@ -126,8 +126,8 @@ describe ProjectObserver do
   describe "notify_backers" do
 
     context "when project is successful" do
-      let(:project){ create(:project, goal: 30, online_days: -7, state: 'online') }
-      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 30, project: project) }
+      let(:project){ create(:project, goal: 30000, online_days: -7, state: 'online') }
+      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 30000, project: project) }
 
       before do
         backer
@@ -140,8 +140,8 @@ describe ProjectObserver do
     end
 
     context "when project is unsuccessful" do
-      let(:project){ create(:project, goal: 30, online_days: -7, state: 'online') }
-      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 20) }
+      let(:project){ create(:project, goal: 30000, online_days: -7, state: 'online') }
+      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 20000) }
       before do
         backer
         project.update_attributes state: 'waiting_funds'
@@ -153,11 +153,11 @@ describe ProjectObserver do
     end
 
     context "when project is unsuccessful with pending backers" do
-      let(:project){ create(:project, goal: 30, online_days: -7, state: 'online') }
+      let(:project){ create(:project, goal: 30000, online_days: -7, state: 'online') }
 
       before do
-        create(:backer, project: project, key: 'ABC1', payment_method: 'ABC', payment_token: 'ABC', value: 20, state: 'confirmed')
-        create(:backer, project: project, key: 'ABC2', payment_method: 'ABC', payment_token: 'ABC', value: 20)
+        create(:backer, project: project, key: 'ABC1', payment_method: 'ABC', payment_token: 'ABC', value: 20000, state: 'confirmed')
+        create(:backer, project: project, key: 'ABC2', payment_method: 'ABC', payment_token: 'ABC', value: 20000)
         project.update_attributes state: 'waiting_funds'
       end
 
@@ -171,7 +171,7 @@ describe ProjectObserver do
   end
 
   describe '#notify_owner_that_project_is_successful' do
-    let(:project){ create(:project, goal: 30, online_days: -7, state: 'waiting_funds') }
+    let(:project){ create(:project, goal: 30000, online_days: -7, state: 'waiting_funds') }
 
     before do
       ::Configuration[:facebook_url] = 'http://facebook.com/foo'
@@ -203,7 +203,7 @@ describe ProjectObserver do
   end
 
   describe "#notify_admin_that_project_reached_deadline" do
-    let(:project){ create(:project, goal: 30, online_days: -7, state: 'waiting_funds') }
+    let(:project){ create(:project, goal: 30000, online_days: -7, state: 'waiting_funds') }
     let(:user) { create(:user, email: 'foo@foo.com')}
     before do
       ::Configuration[:email_payments] = 'foo@foo.com'

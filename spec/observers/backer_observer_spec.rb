@@ -34,11 +34,11 @@ describe BackerObserver do
     end
 
     context "when project reached the goal" do
-      let(:project){ create(:project, state: 'failed', goal: 20) }
-      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 20) }
+      let(:project){ create(:project, state: 'failed', goal: 20000) }
+      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 20000) }
       before do
         project_total = mock()
-        project_total.stub(:pledged).and_return(20.0)
+        project_total.stub(:pledged).and_return(20000.0)
         project_total.stub(:total_backers).and_return(1)
         project.stub(:project_total).and_return(project_total)
         backer.project = project

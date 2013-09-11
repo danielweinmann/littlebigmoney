@@ -33,7 +33,7 @@ FactoryGirl.define do
     f.association :category, factory: :category
     f.about "Foo bar"
     f.headline "Foo bar"
-    f.goal 10000
+    f.goal 10000000
     f.online_date Time.now
     f.online_days 5
     f.how_know 'Lorem ipsum'
@@ -62,7 +62,7 @@ FactoryGirl.define do
 
   factory :reward do |f|
     f.association :project, factory: :project
-    f.minimum_value 10.00
+    f.minimum_value 10000.00
     f.description "Foo bar"
     f.days_to_delivery 10
   end
@@ -71,7 +71,7 @@ FactoryGirl.define do
     f.association :project, factory: :project
     f.association :user, factory: :user
     f.confirmed_at Time.now
-    f.value 10.00
+    f.value 10000.00
     f.state 'confirmed'
     f.credits false
   end
