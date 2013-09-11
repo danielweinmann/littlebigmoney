@@ -19,8 +19,8 @@ GIT
 
 GIT
   remote: git://github.com/danielweinmann/catarse_payulatam.git
-  revision: 4f742c8dcd0943cc0f69457df5510231d6851428
-  ref: 4f742c8dcd0943cc0f69457df5510231d6851428
+  revision: 19d14b0c085b7ab751d4fb16203dad40143ee734
+  ref: 19d14b0c085b7ab751d4fb16203dad40143ee734
   specs:
     catarse_payulatam (0.1.11)
       payulatam
