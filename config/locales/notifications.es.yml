@@ -60,7 +60,7 @@ es:
       subject: "Se acabo el tiempo de publicación para el proyecto %{project_name}"
       header: "El plazo para el proyecto se cumplió"
     credits_warning:
-      subject: "Tienes %{amount} USD de crédito en LittleBigMoney"
+      subject: "Tienes %{amount} COP de crédito en LittleBigMoney"
       header: "¿Qué tal apoyar un nuevo proyecto?"
     backer_confirmed_after_project_was_closed:
       subject: "Nueva colaboración confirmada para el proyecto '%{project_name}' después de 7 días del término del plazo."

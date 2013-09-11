@@ -60,7 +60,7 @@ en:
       subject: "The project %{project_name} has reached its deadline"
       header: "The project reached its deadline"
     credits_warning:
-      subject: "You have USD %{amount} in credits on Catarse"
+      subject: "You have %{amount} COP in credits on Catarse"
       header: "Why not back another project?"
     backer_confirmed_after_project_was_closed:
       subject: "New backer confirmed on finished project '%{project_name}' "

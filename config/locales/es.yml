@@ -270,7 +270,7 @@ es:
     hints:
       backer:
         credits: "Tienes <strong>%{credits}</strong> en créditos y puedes apoyar hasta este valor sim necesitae realizar un nuevo pago."
-        value: "Tu escoges el valor ;) a partir de 5 USD está genial!"
+        value: "Tu escoges el valor ;) a partir de 10.000 COP está genial!"
       project:
         video_url_edit: "Pega aquí la URL de tu video de Vimeo."
         about: "Cuéntanos un poco cobre tu inspiración para realizar el proyecto, tu historia y lo que será de ella al terminar. Hazlo en tus mismas palabras y evita las formalidades. Presenta a tus colaboradores algo que los conmueva y se muy transparente en relación con la expectativa sobre el proyecto."
@@ -404,7 +404,7 @@ es:
         waiting_funds: "Esperando confirmación de los pagos para saber si el proyecto fue financiado."
         draft: "Este proyecto esta en borrador y no esta disponible para colaboraciones aún."
       reached_of: Alcanzado
-      submit: "Colabora con este proyecto"
+      submit: "Quiero colaborar :D"
     backer:
       anonymous_backer: "Colaborador anónimo"
       anonymous_description: "Prefiero permanecer anónimo"
@@ -690,7 +690,7 @@ es:
       creative: "creativo y finito"
       colective: "Beneficios colectivos"
       nonprofit: "Recompensas no financieras"
-      donation: "No proyectos filantrópicos o de \"financia mi vida\""
+      donation: "No apoyamos proyecto personales “financia mi vida”"
       video: "Hacer un video"
       more_questions: "listo! pero cuéntame un poco más de LittleBigMoney..."
       title_magic: "Nuestra fórmula mágica"
