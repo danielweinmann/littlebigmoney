@@ -1,5 +1,5 @@
 class Adm::BackersController < Adm::BaseController
-  menu I18n.t("adm.backers.index.menu") => Rails.application.routes.url_helpers.adm_backers_path
+  menu I18n.t("adm.backers.index.menu", locale: :es) => Rails.application.routes.url_helpers.adm_backers_path(locale: :es)
   has_scope :by_user_id, :by_key, :user_name_contains, :project_name_contains, :confirmed, :credits, :requested_refund, :refunded,
     :by_state, :by_value
   has_scope :between_values, using: [ :start_at, :ends_at ], allow_blank: true
