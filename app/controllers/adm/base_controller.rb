@@ -1,5 +1,9 @@
 class Adm::BaseController < ApplicationController
   inherit_resources
+  skip_before_filter :set_locale
+  before_filter do
+    I18n.locale = 'es'
+  end
   before_filter do
     authorize! :manage, resource_class  
   end
