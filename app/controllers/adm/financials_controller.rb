@@ -2,7 +2,7 @@ class Adm::FinancialsController < Adm::BaseController
   require 'csv'
   inherit_resources
   defaults  resource_class: Project, collection_name: 'projects', instance_name: 'project'
-  menu I18n.t("adm.financials.index.menu") => Rails.application.routes.url_helpers.adm_financials_path
+  menu I18n.t("adm.financials.index.menu", locale: :es) => Rails.application.routes.url_helpers.adm_financials_path(locale: :es)
   has_scope :by_permalink, :name_contains, :user_name_contains, :financial, :by_state, :by_progress
   has_scope :between_expires_at, using: [ :start_at, :ends_at ], allow_blank: true
 
