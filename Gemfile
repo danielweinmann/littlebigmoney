@@ -30,7 +30,7 @@ gem 'catarse_paypal_express', git: 'git://github.com/catarse/catarse_paypal_expr
 
 # Payment engine using PayU Latam
 gem 'payulatam', git: 'git://github.com/danielweinmann/payulatam.git'
-gem 'catarse_payulatam', git: 'git://github.com/danielweinmann/catarse_payulatam.git',  ref: '19d14b0c085b7ab751d4fb16203dad40143ee734'
+gem 'catarse_payulatam', git: 'git://github.com/danielweinmann/catarse_payulatam.git',  ref: '8c270c8aa0994f28973b4098f34c3bccd83bcbff'
 # gem 'payulatam', path: '../payulatam'
 # gem 'catarse_payulatam', path: '../catarse_payulatam'
 
