@@ -1,7 +1,7 @@
 es:
   notifications:
     backer_canceled_after_confirmed:
-      subject: "La colaboración fue cancelada después de la confirmación"
+      subject: "El aporte fue cancelado después de la confirmación"
       header: "La colaboración fue cancelado después de la confirmación"
     project_owner_backer_confirmed:
       subject: "Excelente! Otro nuevo colaborador apoyó tu proyecto"
