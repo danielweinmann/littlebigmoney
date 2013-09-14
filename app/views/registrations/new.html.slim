@@ -36,7 +36,6 @@
 
       .large-14.columns.large-centered
         .separator
-          p
-            | ou
+          p= t('or')
 
         = link_to t('login.submit_facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: [:button, :facebook, 'large-16', 'columns']
