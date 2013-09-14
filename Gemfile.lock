@@ -28,7 +28,8 @@ GIT
 
 GIT
   remote: git://github.com/danielweinmann/payulatam.git
-  revision: c902f5cca0d63187a9844259647a5da13d291820
+  revision: e87c399c90a3650e74698c13481a446359508e67
+  ref: e87c399c90a3650e74698c13481a446359508e67
   specs:
     payulatam (0.0.2)
       hashie
