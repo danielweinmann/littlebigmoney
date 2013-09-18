@@ -549,6 +549,49 @@ pt:
       title: "Título da sua Novidade"
       destroy: "Remover Novidade"
       destroy_confirmation: "Deseja remover esta novidade?"
+      alert: Lembrando que todo post de novidade vai diretamente para o email de seus apoiadores. Por isso, revise bem seu texto antes de enviá-lo.
+    warnings:
+      minimize: (minimizar informações)
+      support: central de suporte
+      support_html: Sinta-se a vontade pra nos enviar perguntas e feedbacks durante todo o processo =) pra fazer isso acesse a nossa %{link}.
+      draft:
+        alert: ATENÇÃO!  Este projeto ainda não está no ar... Seja bem-vindo ao rascunho o/
+        paragraph_1_html: Este projeto ainda está em fase de Rascunho, isso significa que nenhuma informação abaixo é definitiva até a entrada do projeto no ar. Por isso, aproveite! Dê uma olhada no vídeo, na descrição e nas recompensas e <strong>deixe seu feedback na aba de comentários</strong>.
+        paragraph_2_html: "<strong>Lembrando que</strong> o LittleBigMoney é uma plataforma curada, o que significa que vamos avaliar o foco, a viabilidade, e a consistência do seu projeto durante o processo de Rascunho. Se entendermos que o seu projeto não está de acordo com os nossos critérios de seleção, ele poderá ser recusado pela equipe de curadores."
+      rejected:
+        alert: ATENÇÃO! Este projeto foi rejeitado
+        paragraph_1_html: Esse projeto não se enquadra aos nossos critérios de seleção.
+      online:
+        alert: Seu projeto está no ar \o/
+        paragraph_1_html: Foi dada a largada! A agora é hora de mandar ver na divulgação da sua campanha =D
+        paragraph_2_html: Em geral as campanhas bem sucedidas têm dois picos de arrecadação. Um na primeira semana e outro na Reta Final. Se o seu projeto destoa muito (pra pior) dessa lógica então seria bom reavaliar seu plano de divulgação ;) Confira as dicas no nosso guia de <a href='https://docs.google.com/a/catarse.me/document/d/14l3tS-x3wHhYV1xalRugl9tpgcaG9ot7RCvmth-ApH8/edit' target='_blank'>COMO PROMOVER O SEU PROJETO</a>.  Lembrando que seus apoiadores estão (em grande maioria) na sua prória rede de contatos. Divulgue bastante do começo até o fim do prazo e interaja com esse pessoal pra que eles efetivem o apoio e se sintam convidados a espalhar ainda mais ainda a sua ideia pelas redes.
+        info:
+          title: Informações importantes
+          item_1: As contribuições podem demorar até 3 dias úteis para serem confirmadas no site, ok?
+          item_2: Tudo que é postado na Aba de Novidades/Updates é enviado para o e-mail dos seus apoiadores.
+          item_3: Na Aba de Relatórios você pode emitir (a qualque momento) planilhas detalhadas sobre os apoios ao seu projeto
+          item_4: Pela Aba de Edição você ainda pode incluir fotos, vídeos e imagens na descrição =)
+      waiting_funds:
+        alert: Acabou o prazo!
+        paragraph_1_html: Durante 3 dias úteis após o fim do prazo, seu projeto estará aguardando a confirmação das contribuições de última hora.
+        paragraph_2_html: "Caso seu projeto atinja a meta, o repasse do dinheiro acontecerá da seguinte forma: o pagamento será feito em até 5 dias úteis após o prazo de encerramento do projeto. Assim que você receber o dinheiro na sua Conta Para Vendedores no MoIP e solicitar o saque, levarão no máximo 4 dias úteis para o dinheiro chegar na sua conta corrente."
+        paragraph_3_html: "Caso seu projeto não atinja a meta, todo dinheiro será devolvido aos apoiadores. A principio eles receberão de volta o valor da contribuição na forma de créditos para apoiar outros projetos na plataforma e receberão um e-mail com instruções sobre como pedir o estorno."
+        paragraph_4_html: "Caso o seu projeto tenha atingido pelo menos 30% da meta financeira você está apto a solicitar a uma 2ª Chance."
+      successful:
+        alert: Parabéns! Seu projeto foi bem sucedido =D
+        paragraph_1_html: Comunicação é a chave de ouro pra fechar essa campanha ;) use a Aba de Novidades para compartilhar informações sobre o desenvolvimento do projeto e a entrega de recompensas.
+        paragraph_2_html: As últimas semanas representaram uma troca, um contato e uma aproximação entre você e seu público, envolvendo assuntos delicados como carinho, expectativa, confiança e dinheiro. Agora é hora de agradecer seus apoiadores, realizar o projeto e entregar as recompensas!!
+        paragraph_3_html: "<strong>Lembrando que</strong> o repasse do dinheiro acontecerá da seguinte forma: o pagamento será feito em até 5 dias úteis após o prazo de encerramento do projeto. Assim que você receber o dinheiro na sua Conta Para Vendedores no MoIP e solicitar o saque, levarão no máximo 4 dias úteis para o dinheiro chegar na sua conta corrente."
+      failed:
+        alert: Este projeto não atingiu a meta =/
+        paragraph_1_html: Todo dinheiro será devolvido aos apoiadores. A principio eles receberão de volta o valor da contribuição na forma de créditos para apoiar outros projetos na plataforma e receberão um e-mail com instruções sobre como pedir o estorno.
+    formatting_tips:
+      title: Dicas de Formatação
+      media_html: Se você colar a url de uma imagem ou de um vídeo do vimeo ou do youtube, eles irão aparecer na descrição da ideia. Experimente!
+      link_html: 'Ao colar uma url qualquer, ela virará um link. Por exemplo, http://meulink.com virará <a href="http://www.meulink.com.br">http://www.meulink.com.br</a>'
+      link_text_html: 'Se você quiser colocar um texto no link, basta usar o seguinte formato: "texto que você quer":http://sua.url. Por exemplo, "meu link":http://meulink.com virará <a href="http://www.meulink.com.br">meu link</a>.'
+      bold_html: Você pode usar negrito adicionando dois asteriscos (**) antes e depois do texto que você quer formatar. Por exemplo, **meu texto em negrito** irá aparecer como <strong>meu texto em negrito</strong>.
+      italic_html: Você pode usar itálico adicionando um underline (_) antes e depois do texto que você quer formatar. Por exemplo, _meu texto em itálico_ irá aparecer como <i>meu texto em itálico</i>.
     rewards:
       reward_title: "Para %{minimum} ou mais"
       reward_deliver_time: "<b>Estimativa de Entrega:</b> %{prevision}"

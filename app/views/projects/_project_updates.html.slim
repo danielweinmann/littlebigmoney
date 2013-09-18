@@ -8,30 +8,22 @@
         .clearfix
         .bootstrap-twitter
           .alert.alert-info
-            p Lembrando que todo post de novidade vai diretamente para o email de seus apoiadores.
-            | Por isso, revise bem seu texto antes de enviá-lo.
+            p= t('projects.project_updates.alert')
         .tips
-          h3 Dicas de Formatação
+          h3= t('projects.formatting_tips.title')
           = image_tag "catarse/icon_media.png"
-          p Se você colar a url de uma imagem ou de um vídeo do vimeo ou do youtube, eles irão aparecer na descrição da ideia. experimente!
+          p= t('projects.formatting_tips.media_html') 
           = image_tag "catarse/icon_url.png"
-          p Ao colar uma url qualquer, ela virará um link. Por exemplo, http://meulink.com virará <a href="http://www.meulink.com.br">http://www.meulink.com.br</a>
+          p= t('projects.formatting_tips.link_html')
           = image_tag "catarse/icon_linktext.png"
-          p Se você quiser colocar um texto no link, basta usar o seguinte formato: "texto que você quer":http://sua.url. Por exemplo, 'meu link':http://meulink.com virará <a href="http://www.meulink.com.br">meu link</a>.
+          p= t('projects.formatting_tips.link_text_html')
           = image_tag "catarse/icon_bold.png"
-          p
-            |Você pode usar negrito adicionando dois asteriscos (**) antes e depois do texto que você quer formatar. Por exemplo, **meu texto em negrito** irá aparecer como
-            strong meu texto em negrito
-            |.
+          p= t('projects.formatting_tips.bold_html')
           = image_tag "catarse/icon_italic.png"
-          p
-            |Você pode usar itálico adicionando um underline (_) antes e depois do texto que você quer formatar. Por exemplo, _meu texto em itálico_ irá aparecer como
-            i meu texto em itálico
-            |.
+          p= t('projects.formatting_tips.italic_html')            
       = form.actions do
         .bootstrap-twitter
           = form.submit t('projects.project_updates.submit'), class: "btn", id: "update_submit"
           .loading_updates.hide= image_tag "loading.gif"
-
 .updates_wrapper
   = render template: 'updates/index'
