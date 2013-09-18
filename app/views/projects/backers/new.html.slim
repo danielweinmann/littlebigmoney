@@ -26,8 +26,7 @@
             = form.input :anonymous
             #anonymous_warning.important.hide
               .bootstrap-alert
-                .alert
-                  = render 'anonymous_warning'
+                .alert= t('.anonymous_warning_html')
           = form.actions do
             .bootstrap-twitter
               = form.submit t('.submit'), disabled: true, class: 'btn btn-primary btn-large', id: "backer_submit"
