@@ -38,7 +38,17 @@
           .project_expires_at #{@project.time_to_go[:time]} #{@project.time_to_go[:unit]} #{pluralize_without_number(@project.time_to_go[:time], t('remaining_singular'), t('remaining_plural'))}
         .clearfix
         .back_faq
-          = render 'back_text'
+          h2= t('.back_faq.title')
+          h3= t('.back_faq.question_1')
+          p= t('.back_faq.answer_1_html')
+          h3= t('.back_faq.question_2')
+          p= t('.back_faq.answer_2_html', goal: @project.display_goal, expires_at: @project.display_expires_at)
+          h3= t('.back_faq.question_3')
+          p= t('.back_faq.answer_3_html')
+          h3= t('.back_faq.question_4')
+          p= t('.back_faq.answer_4_html', link: link_to(t('credits.title'), user_path(current_user, anchor: :credits), :target => :_blank))
+          h3= t('.back_faq.question_5')
+          p= t('.back_faq.answer_5_html', link: link_to(@project.user.display_name, user_path(@project.user)))
       .clearfix
     .clearfix
 
