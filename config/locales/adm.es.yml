@@ -78,7 +78,7 @@ es:
     backers:
       messages:
         successful:
-          confirm: "Colaboración confirmada :)"
+          confirm: "Apoyo confirmado"
           pendent: "Colaboración cancelada!"
           refund: "Colaboración reembolsada!"
           change_reward: "Recompensa modificada com éxito!"
@@ -100,7 +100,7 @@ es:
         user_email: LittleBig-email
         created_at: "Creado el"
         pending_to_refund: "Pendiente de reembolso"
-        confirm_backer: "Confirmar colaboración :)"
+        confirm_backer: "Confirmar apoyo"
         unconfirm_backer: "Colaboración no confirmada"
         refund_backer: "Retornar colaboración"
         title: "Gestión de colaboraciones"
@@ -225,7 +225,7 @@ es:
       backers:
         messages:
           successful:
-            confirm: "Colaboración confirmada :)"
+            confirm: "Apoyo confirmado"
             pendent: "Colaboración cancelada!"
             refund: "Colaboración reembolsada!"
             change_reward: "Recompensa modificada con éxito!"
@@ -247,7 +247,7 @@ es:
           user_email: LittleBig-email
           created_at: "Creado el"
           pending_to_refund: "Pendiente de reembolso"
-          confirm_backer: "Confirmar colaboración :)"
+          confirm_backer: "Confirmar apoyo"
           unconfirm_backer: "Colaboración no confirmada"
           refund_backer: "Reembolsar colaboración"
           title: "Gestión de colaboraciones"

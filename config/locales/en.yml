@@ -445,6 +445,19 @@ en:
         no_reward: "Thanks. I just want to help the project."
         submit: "Review and proceed to checkout"
         title: "Back %{name}"
+        anonymous_warning_html: ~
+        back_faq:
+          title: ~
+          question_1: ~
+          question_2: ~
+          question_3: ~
+          question_4: ~
+          question_5: ~
+          answer_1_html: ~
+          answer_2_html: ~
+          answer_3_html: ~
+          answer_4_html: ~
+          answer_5_html: ~
       create:
         brazil_address_title: "Fill when you back is in Brazil"
         credits_notice_html: "This back will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
@@ -549,6 +562,49 @@ en:
       title: "Title of the update"
       destroy: "Remove update"
       destroy_confirmation: "Do you want to remove the update?"
+      alert: ~
+    warnings:
+      minimize: ~
+      support: ~
+      support_html: ~
+      draft:
+        alert: ~
+        paragraph_1_html: ~
+        paragraph_2_html: ~
+      rejected:
+        alert: ~
+        paragraph_1_html: ~
+      online:
+        alert: ~
+        paragraph_1_html: ~
+        paragraph_2_html: ~
+        info:
+          title: ~
+          item_1: ~
+          item_2: ~
+          item_3: ~
+          item_4: ~
+      waiting_funds:
+        alert: ~
+        paragraph_1_html: ~
+        paragraph_2_html: ~
+        paragraph_3_html: ~
+        paragraph_4_html: ~
+      successful:
+        alert: ~
+        paragraph_1_html: ~
+        paragraph_2_html: ~
+        paragraph_3_html: ~
+      failed:
+        alert: ~
+        paragraph_1_html: ~
+    formatting_tips:
+      title: ~
+      media_html: ~
+      link_html: ~
+      link_text_html: ~
+      bold_html: ~
+      italic_html: ~
     rewards:
       reward_title: "For %{minimum} or more"
       reward_deliver_time: "Estimated delivery: %{prevision}"

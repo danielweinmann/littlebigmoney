@@ -2,19 +2,19 @@ es:
   notifications:
     backer_canceled_after_confirmed:
       subject: "El aporte fue cancelado después de la confirmación"
-      header: "La colaboración fue cancelado después de la confirmación"
+      header: "El aporte fue cancelado después de la confirmación"
     project_owner_backer_confirmed:
       subject: "Excelente! Otro nuevo colaborador apoyó tu proyecto"
-      header: "Una nueva colaboración fue rconfirmada recintemente para tu proyecto"
+      header: "Un nuevo aporte fue rconfirmado recintemente para tu proyecto"
     confirm_backer:
-      subject: "Gracias! Tu colaboración para %{project_name} fue confirmado!"
-      header: "Colaboración confirmada"
+      subject: "Gracias! Tu aporte para %{project_name} fue confirmado!"
+      header: "Aporte confirmado"
     payment_slip:
-      subject: "Estado del la colaboración para %{project_name}: orden de pago impresa"
-      header: "Información sobre colaboración vía orden de pago en LittleBigMoney"
+      subject: "Estado del aporte para %{project_name}: orden de pago impresa"
+      header: "Información sobre aporte vía orden de pago para LittleBigMoney"
     processing_payment:
-      subject: "Tu colaboración para %{project_name} fue recibida y esta esperando la confirmación de %{payment_method}"
-      header: "Colaboración en análisis - ¿Qué es esto?"
+      subject: "Tu aporte para %{project_name} fue recibido y esta esperando la confirmación de %{payment_method}"
+      header: "Aporte en análisis - ¿Qué es esto?"
     updates:
       subject: "Ponte pilas! Actualización de %{project_name} por  %{project_owner}: %{update_title}"
     project_in_wainting_funds:
@@ -24,7 +24,7 @@ es:
       subject: "Proyecto exitoso: A continuación alguna información importante"
       header: "Proyecto exitoso"
     project_unsuccessful:
-      subject: "Tu proyecto no alcanzó los recursos, pero queremos tener tu retroalimentación : )"
+      subject: "Tu proyecto no alcanzó los recursos, pero queremos tener tu retroalimentación :)"
       header: "Tu proyecto no alcanzó los recursos solicitados : ("
     backer_project_successful:
       subject: "Súper! El proyecto %{project_name} tuvo éxito en LittleBigMoney"
@@ -63,8 +63,8 @@ es:
       subject: "Tienes %{amount} COP de crédito en LittleBigMoney"
       header: "¿Qué tal apoyar un nuevo proyecto?"
     backer_confirmed_after_project_was_closed:
-      subject: "Nueva colaboración confirmada para el proyecto '%{project_name}' después de 7 días del término del plazo."
-      header: "Nueva colaboración confirmada"
+      subject: "Nuevo aporte confirmado para el proyecto '%{project_name}' después de 7 días del término del plazo."
+      header: "Nuevo aporte confirmado"
     temporary_password:
       subject: "Contraseña provisional para LittleBigMoney"
       header: "Ingresa a tu cuenta para cambiar la contraseña"
