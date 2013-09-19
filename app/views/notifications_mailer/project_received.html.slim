@@ -1,4 +1,4 @@
 - user = @notification.user
 - project = @notification.project
-= t('notifications.project_received.text_html', name: user.name, link: link_to('link do rascunho do seu projeto', project_by_slug_url(project.permalink)), explore: link_to('conhecer alguns projetos que estão no ar', explore_url), facebook: link_to('Facebook', Configuration[:facebook_url]), twitter: link_to('Twitter', "http://twitter.com/#{Configuration[:twitter_username]}"), blog: link_to('blog', Configuration[:blog_url]))
+= t('notifications.project_received.text_html', name: user.name, link: link_to(project_by_slug_url(project.permalink), project_by_slug_url(project.permalink)), facebook: link_to('Facebook', Configuration[:facebook_url]), twitter: link_to('Twitter', "http://twitter.com/#{Configuration[:twitter_username]}"), blog: link_to('blog', Configuration[:blog_url]))
 = render "email_footer"
