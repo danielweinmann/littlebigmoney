@@ -1,3 +1,5 @@
+- Notification.create_notification(:processing_payment, current_user, backer: current_user.backs.last, project_name: current_user.backs.last.project.name, payment_method: "PayULatam")
+
 - content_for :js_templates do
   = render partial: 'backer'
   = render partial: 'project_templates'
