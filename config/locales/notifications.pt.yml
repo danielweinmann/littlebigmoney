@@ -70,3 +70,4 @@ pt:
     temporary_password:
       subject: "Sua senha temporária para o LittleBigMoney"
       header: "Acesse sua conta para trocar sua senha"
+      text_html: "Como você se cadastrou no LittleBigMoney via facebook, estamos te enviando uma senha temporária para que possa entrar também com o seu email.<br/><br/>O login poderá ser feito utilizando as seguintes informações:<br/><br/>Email: %{email}<br/>Senha temporária: %{password}<br/><br/>Só lembrando que você pode continuar entrando no LittleBigMoney utilizando o botão do facebook, ok?<br/><br/>Para redefinir essa senha temporária, %{link}.<br/><br/>Abraços,<br/>Equipe do LittleBigMoney"
