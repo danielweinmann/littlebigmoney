@@ -1,0 +1,9 @@
+- #encoding: utf-8
+- update = @notification.mail_params[:update]
+|#{update.title}
+br
+== @notification.mail_params[:update_comment]
+br
+= t('notifications.updates.comments_html', link: link_to(update.project.name, project_by_slug_url(permalink: update.project.permalink)))
+br
+= t('notifications.updates.contact_html', link: mail_to( @notification.mail_params[:project_owner_email] ))

@@ -17,6 +17,8 @@ pt:
       header: "Apoio Em Análise - o que é isso?"
     updates:
       subject: "Se liga! Atualização de %{project_name} por %{project_owner}: %{update_title}"
+      comments_html: "Comentários? Mande ver na página do projeto: %{link}."
+      contact_html: "Para entrar em contato com o realizador do projeto envie um email para %{link}."
     project_in_wainting_funds:
       subject: "O prazo do seu projeto acabou, saiba quais são os próximos passos"
       header: "Acabou o prazo!"
