@@ -1,6 +1,6 @@
 - backer = @notification.backer
 -if backer.reward.present?
-  - reward = t('notifications.confirm_backer.reward_html', description: backer.reward.description)
+  - reward = t('notifications.reward_html', description: backer.reward.description)
 -else
   - reward = t('notifications.confirm_backer.no_reward_html', link: mail_to(Configuration[:email_contact]))
 

@@ -2,16 +2,18 @@ pt:
   notifications:
     support_html: "Se tiver alguma outra dúvida, entre em contato conosco na nossa Central de Suporte:<br/>%{link}"
     signature_html: "Um grande abraço,<br/>Equipe do LittleBigMoney"
+    reward_html: "Recompensa selecionada: %{description}</strong>"
+    no_reward_html: "<strong>Nenhuma recompensa selecionada</strong>"
     backer_canceled_after_confirmed:
       subject: "Apoio cancelado após ser confirmado"
       header: "Apoio cancelado após ser confirmado"
     project_owner_backer_confirmed:
       subject: "Uhuu! Mais um novo apoiador pro seu projeto"
       header: "Um novo apoio acabou de ser confirmado para o seu projeto"
+      text_html: "Olá, <strong>%{name}</strong>!<br/><br/>O apoiador %{backer} acabou de contribuir com o seu projeto!<br/><br/>Alguns dados sobre o apoio:<br/><br/><strong>Valor apoiado:</strong> %{value}<br/>%{reward}<br/><strong>Email do apoiador:</strong> %{email}<br/><br/>Veja outros apoiadores aqui: %{backers_link}<br/><br/>Comunique-se com eles a partir das novidades: %{updates_link}<br/><br/>E baixe seus relatórios: %{reports_link}"
     confirm_backer:
       subject: "Obrigado! Seu apoio para %{project_name} foi confirmado!"
       header: "Apoio confirmadíssimo o/"
-      reward_html: "Recompensa selecionada: <strong>%{description}</strong>"
       no_reward_html: "Nenhuma recompensa foi selecionada. Qualquer dúvida entre em contato com a nossa equipe através do %{link}"
       text_html: "Olá, <strong>%{name}</strong>!<br/><br/>Seu apoio para %{project} foi confirmado pelo <strong>%{method}</strong>!<br/><br/>Mantenha essa mensagem com você para servir como comprovante do seu apoio.<br/><br/>Uma coisa super importante:<strong> se o seu pagamento foi feito com cartão de crédito</strong>, o nome que virá na sua fatura é o do %{method}. Infelizmente, as operadoras de cartão ainda não possibilitam que o nome do LittleBigMoney apareça escrito lá, ok?<br/><br/>Valor da contribuição: <strong>%{value}</strong><br/>%{reward}<br/>Id do apoio: %{id}<br/><br/>Caso o projeto seja bem-sucedido em <strong>%{expires_at}</strong>, os responsáveis pelo projeto entrarão em contato com você para requisitar informações sobre a entrega das recompensas. Esse contato deles virá, normalmente, uma semana após essa data, que é o tempo que levamos para passar a informação de todos os apoiadores para o realizador.<br/><br/>Se o projeto não atingir a meta financeira estabelecida, você receberá um e-mail do LittleBigMoney com instruções para:<br/>1) apoiar outro projeto com os créditos que serão gerados; OU<br/>2) solicitar o reembolso do seu dinheiro.<br/><br/>Se quiser entrar em contato com %{user}, mande um e-mail para %{email}"
     payment_slip:
