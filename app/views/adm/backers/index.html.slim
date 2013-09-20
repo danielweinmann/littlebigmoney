@@ -20,6 +20,9 @@
         = form_tag adm_backers_path, method: :get, class: 'form-horizontal' do |f|
           fieldset
             .input
+              = label_tag :by_id, t('.id')
+              = text_field_tag :by_id, params[:by_id], class: 'input-small'
+            .input
               = label_tag :by_user_id, t('.user_id')
               = text_field_tag :by_user_id, params[:by_user_id], class: 'input-small'
             .input
@@ -75,6 +78,7 @@
             thead
               tr
                 th= t('.info')
+                th= t('.id')
                 th= t('.project')
                 th= t('.user')
                 th= t('.value')
@@ -126,9 +130,11 @@
                           button type='button' data-dismiss="modal" class="btn" OK
                     = link_to "#backerInfo#{backer.id}", class: 'btn btn-mini', data: {toggle:'modal'} do
                       i.icon-info-sign
+                  td=backer.id
                   td title=backer.project.name
                     = link_to project_by_slug_path(permalink: backer.project.permalink) do
                       = image_tag backer.project.display_image, class: 'project_img'
+                    .project_id=backer.project.id
                   td title=backer.user.display_name
                     = link_to user_path(backer.user) do
                       = image_tag backer.user.display_image, class: 'user_img'

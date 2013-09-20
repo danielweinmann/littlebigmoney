@@ -89,7 +89,7 @@ es:
         push_to_trash: "Eliminar Colaboración"
         cancel: "Cancelar Colaboración"
         between_values: "Valores entre"
-        by_state: Departamento/Provincia
+        by_state: Estado
         refund_and_hide: "No mostrar la cancelación del apoyo"
         backer_info: "información del colaborador %{key}"
         payment_id: "Identificación de pago"
@@ -104,7 +104,7 @@ es:
         unconfirm_backer: "Colaboración no confirmada"
         refund_backer: "Retornar colaboración"
         title: "Gestión de colaboraciones"
-        state: Departamento/Provincia
+        state: Estado
         menu: Colaboraciones
         anonymous: ¿Anónimo?
         confirmed: ¿Confirmado?
@@ -236,7 +236,7 @@ es:
           push_to_trash: "Eliminar Colaboración"
           cancel: "Cancelar Colaboración"
           between_values: "Valores entre"
-          by_state: Departamento/Provincia
+          by_state: Estado
           refund_and_hide: "Cancelar y no mostrar apoyo"
           backer_info: "información del colaborador %{key}"
           payment_id: "Identificación de pago"
@@ -251,7 +251,7 @@ es:
           unconfirm_backer: "Colaboración no confirmada"
           refund_backer: "Reembolsar colaboración"
           title: "Gestión de colaboraciones"
-          state: Departamento/Provincia
+          state: Estado
           menu: Colaboraciones
           anonymous: ¿Anónimo?
           confirmed: ¿Confirmado?
