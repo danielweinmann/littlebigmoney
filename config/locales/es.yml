@@ -612,6 +612,7 @@ es:
         one: "1 colaboración esperando confirmación."
         other: "%{count} colaboraciones esperando confirmación."
       title: "Colabora y recibe"
+      versions: ~
     send_mail:
       success: "Tu proyecto fue creado exitosamente! Te contactaremos próximamente. Muchas gracias!"
     show:

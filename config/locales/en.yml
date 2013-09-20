@@ -612,6 +612,7 @@ en:
         one: "1 backer in time to confirm."
         other: "%{count} backers in time to confirm."
       title: "Back and receive..."
+      versions: ~
     send_mail:
       success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
     show:
