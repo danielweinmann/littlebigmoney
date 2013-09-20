@@ -96,7 +96,7 @@ class ProjectObserver < ActiveRecord::Observer
   def sync_with_mailchimp(project)
     begin
       user = project.user
-      mailchimp_params = { EMAIL: user.email, FNAME: user.name, CITY: user.address_city, STATE: user.address_state }
+      mailchimp_params = { EMAIL: user.email, FNAME: user.name, CITY: (user.address_city || 'other'), STATE: (user.address_state || 'other') }
 
       if project.successful?
         CatarseMailchimp::API.subscribe(mailchimp_params, Configuration[:mailchimp_successful_projects_list])
