@@ -1,20 +1,20 @@
 es:
   notifications:
-    support_html: ~
-    signature_html: ~
-    reward_html: ~
-    no_reward_html: ~
+    support_html: "Si tienes alguno otra duda, entra en contacto con nuestro equipo en nuestra central de soporte<br/>%{link}"
+    signature_html: "Un fuerte abrazo,<br/>Equipo de LittleBigMoney"
+    reward_html: "Recompensa seleccionada:%{description}</strong>"
+    no_reward_html: "<strong>Ninguna recompensa seleccionada</strong>"
     backer_canceled_after_confirmed:
       subject: "El aporte fue cancelado después de la confirmación"
       header: "El aporte fue cancelado después de la confirmación"
     project_owner_backer_confirmed:
       subject: "Excelente! Otro nuevo colaborador apoyó tu proyecto"
       header: "Un nuevo aporte fue rconfirmado recintemente para tu proyecto"
-      text_html: ~
+      text_html: "Hola,<strong>%{name}</strong>!<br/><br/>El colaborador%{backer} acaba de aportar con tu proyecto!<br/><br/>Algunos datos sobre el aporte:<br/><br/><strong>Valor aportado:</strong>%{value}<br/>%{reward}<br/><strong>Email del colaborador:</strong>%{email}<br/><br/>Mira otros colaboradores aquí:%{backers_link}<br/><br/>Comparte tus novedades con ellos:%{updates_link}<br/><br/>Descarga tus reportes:%{reports_link}"
     confirm_backer:
       subject: "Gracias! Tu aporte para %{project_name} fue confirmado!"
       header: "Aporte confirmado"
-      no_reward_html: ~
+      no_reward_html: "Ninguna recompensa fue seleccionada. Cualquier duda, entra en contacto con nuestro equipo a través de %{link}"
       text_html: ~
     payment_slip:
       subject: "Estado del aporte para %{project_name}: orden de pago impresa"
@@ -25,8 +25,8 @@ es:
       text_html: ~
     updates:
       subject: "Ponte pilas! Actualización de %{project_name} por  %{project_owner}: %{update_title}"
-      comments_html: ~
-      contact_html: ~
+      comments_html: "¿Comentários? Envíalos a la página del proyecto: %{link}."
+      contact_html: "Para entrar en contacto con el microempresario envía un mail para %{link}."
     project_in_wainting_funds:
       subject: "El plazo de tu proyecto ha terminado, conoce los próximos pasos"
       header: "Acabo tu plazo!"
@@ -81,4 +81,4 @@ es:
     temporary_password:
       subject: "Contraseña provisional para LittleBigMoney"
       header: "Ingresa a tu cuenta para cambiar la contraseña"
-      text_html: ~
+      text_html: "Como tu te regustraste en LittleBibMoney vía facebook, te estamos enviando una contraseña temporal para que puedas entrar también con tu cuenta de correo.<br/><br/>El ingreso podrá hacerse usando la siguiente información: <br/><br/>Email:%{email}<br/>Contraseña temporal:%{password}<br/><br/>Recuerda que puedes continuar entrando a LittleBigMoney usando tu cuenta de facebook. <br/><br/>Para cambiar la contraseña temporal,%{link}."
