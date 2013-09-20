@@ -19,15 +19,13 @@
               = image_tag 'catarse/icon-tw.png', title: 'Twitter'
             = link_to "http://www.facebook.com/share.php?u=#{project_by_slug_url(permalink: @project.permalink)}", target: :_blank do
               = image_tag 'catarse/icon-fb.png', title: 'Facebook'
-        #recommended_projects
-          h2 = t('.recommended_projects')
-          - rp = @backer.user.recommended_projects(3)
-          - if rp.count > 0
+        - rp = @backer.user.recommended_projects(3).delete_if{ |project| project.id == @project.id }
+        - if rp.count > 0
+          #recommended_projects
+            h2 = t('.recommended_projects')
             - rp.each do |project|
               = render partial: 'projects/box', locals: {project: project }
       .clearfix
-
-
 
 = content_for :mouseflow do
   = render 'layouts/mouseflow'
