@@ -612,6 +612,7 @@ pt:
         one: "1 apoio em prazo de confirmação."
         other: "%{count} apoios em prazo de confirmação."
       title: "Apoie e ganhe..."
+      versions: "Veja a versão anterior."
     send_mail:
       success: "Seu projeto foi enviado com sucesso! Logo entraremos em contato. Muito obrigado!"
     show:
