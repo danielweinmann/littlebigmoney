@@ -1,22 +1,32 @@
 en:
   notifications:
+    support_html: ~
+    signature_html: ~
+    reward_html: ~
+    no_reward_html: ~
     backer_canceled_after_confirmed:
       subject: "Backer canceled after confirmed"
       header: "Backer canceled after confirmed"
     project_owner_backer_confirmed:
       subject: "Hooray! Another new supporter backed your project"
       header: "A new back has just been confirmed for your project"
+      text_html: ~
     confirm_backer:
       subject: "Thank you! Your back for %{project_name} was confirmed!"
       header: "Back confirmed"
+      no_reward_html: ~
+      text_html: ~
     payment_slip:
       subject: "Status do apoio para %{project_name}: boleto impresso"
       header: "Informações sobre pagamentos por boleto no Catarse"
     processing_payment:
       subject: "Seu apoio para %{project_name} foi recebido e está aguardando confirmação do %{payment_method}"
       header: "Apoio Em Análise - o que é isso?"
+      text_html: ~
     updates:
       subject: "Se liga! Atualização de %{project_name} por %{project_owner}: %{update_title}"
+      comments_html: ~
+      contact_html: ~
     project_in_wainting_funds:
       subject: "O prazo do seu projeto acabou, saiba quais são os próximos passos"
       header: "Acabou o prazo!"
@@ -38,15 +48,18 @@ en:
     project_received:
       subject: "Your project was received by Catarse"
       header: "Your project was received by the Catarse team"
+      text_html: ~
     project_received_channel:
       subject: "Your project was received by the Wings Channel"
       header: "Your project was welcomed by the staff of the Wings Channel"
     project_visible:
       subject: "Your project is now online at Catarse"
       header: "Now it's for real"
+      text_html: ~
     project_rejected:
       subject: "Your project does not fit Catarse's focus"
       header: "Your project was not accepted ;("
+      text_html: ~
     new_draft_project:
       subject: "New project created - %{project_name}"
       header: "New project created"
@@ -68,3 +81,4 @@ en:
     temporary_password:
       subject: "Temporary password for Catarse"
       header: "Log on to change your password"
+      text_html: ~

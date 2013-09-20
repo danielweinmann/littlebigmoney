@@ -832,7 +832,9 @@ es:
       title: "Cómo funciona"
       subtitle: "Conoce un poco más de LittleBigMoney"
       introduction_html: "LittleBigMoney es un espacio de colaboración entre individuos, <br>que juntos permiten la realización de proyectos con impacto social o ambiental."
-      legend_html: "Creemos que conectar personas con causas, ideas o proyectos de valor compartido es una de las mejores maneras de hacerlos realidad. <br><br>Bienvenidos a este tu espacio! Un lugar hecho para ustedes, donde con pequeños aportes puedes lograr GRANDES resultados.  Cambiar la vida de las personas esta en nuestras manos... Hoy podemos ayudar a mejorar la calidad de vida de las personas que desde tu comunidad están trabajando día a día por un  mundo mejor. Esta es una alternativa  para que los más pobres reciban nuestra ayuda y cada uno sea parte de una comunidad en la que las pequeñas cosas se hacen GRANDES. =D"
+      legend_html: |-
+          Bienvenidos a este tu espacio! Un lugar hecho para ustedes, donde con pequeños aportes puedes lograr GRANDES resultados. <br><br> Hoy podemos ayudar y contribuir en el crecimiento de muchas micro-empresas, que contribuyen en el crecimiento de tu país, y el fortalecimiento económico de muchas comunidades.
+          LittleBigMoney es una alternativa que conecta a miles de personas con muchos de sueños de muchos micro-empresarios, y cada uno sea parte de una comunidad en la que las pequeñas cosas se hacen GRANDES.
       submit: "ENVIAR TU PROYECTO"
       send_project: "Entérate cómo subir tu proyecto"
       explore_curious: "APORTAR A UN PROYECTO"
@@ -959,7 +961,7 @@ es:
     notification_email:
       alt: "Debes habilitar la opción \"ver imágenes\" para ver este mensaje."
       forward: "Reenviar a mis amigos"
-      hello: Hola!
+      hello: Hola
       intro: "Si estás recibiendo este mensaje es porque te registraste en LittleBigMoney!"
       mailee: "Mensaje enviado por SendGrid"
       salutation: "Un fuerte abrazo,"

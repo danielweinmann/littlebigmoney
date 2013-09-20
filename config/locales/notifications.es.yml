@@ -1,22 +1,32 @@
 es:
   notifications:
+    support_html: ~
+    signature_html: ~
+    reward_html: ~
+    no_reward_html: ~
     backer_canceled_after_confirmed:
       subject: "El aporte fue cancelado después de la confirmación"
       header: "El aporte fue cancelado después de la confirmación"
     project_owner_backer_confirmed:
       subject: "Excelente! Otro nuevo colaborador apoyó tu proyecto"
       header: "Un nuevo aporte fue rconfirmado recintemente para tu proyecto"
+      text_html: ~
     confirm_backer:
       subject: "Gracias! Tu aporte para %{project_name} fue confirmado!"
       header: "Aporte confirmado"
+      no_reward_html: ~
+      text_html: ~
     payment_slip:
       subject: "Estado del aporte para %{project_name}: orden de pago impresa"
       header: "Información sobre aporte vía orden de pago para LittleBigMoney"
     processing_payment:
       subject: "Tu aporte para %{project_name} fue recibido y esta esperando la confirmación de %{payment_method}"
       header: "Aporte en análisis - ¿Qué es esto?"
+      text_html: ~
     updates:
       subject: "Ponte pilas! Actualización de %{project_name} por  %{project_owner}: %{update_title}"
+      comments_html: ~
+      contact_html: ~
     project_in_wainting_funds:
       subject: "El plazo de tu proyecto ha terminado, conoce los próximos pasos"
       header: "Acabo tu plazo!"
@@ -38,15 +48,18 @@ es:
     project_received:
       subject: "Tu proyecto fue recibido por LittleBigMoney"
       header: "Tu proyecto fue recibido por el equipo de LittleBigMoney"
+      text_html: ~
     project_received_channel:
       subject: "Tu proyecto fue recibido por el canal de wings"
       header: "Tu proyecto fue recibido por el equipo del Canal Asas"
     project_visible:
       subject: "Tu proyecto ahora esta publicado en LittleBigMoney"
       header: "Ahora es una realidad"
+      text_html: ~
     project_rejected:
       subject: "Tu proyecto no tiene el perfil que LittleBigMoney busca ahora"
       header: "Tu proyecto no fue aceptado : ("
+      text_html: ~
     new_draft_project:
       subject: "Nuevo proyecto creado - %{project_name}"
       header: "Nuevo proyecto creado"
@@ -68,3 +81,4 @@ es:
     temporary_password:
       subject: "Contraseña provisional para LittleBigMoney"
       header: "Ingresa a tu cuenta para cambiar la contraseña"
+      text_html: ~
