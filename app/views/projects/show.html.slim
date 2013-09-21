@@ -124,10 +124,10 @@
           ul
             - if @project.user.facebook_link
               li
-                = link_to "Perfil no facebook", @project.user.facebook_link, target: '_blank', class: 'facebook'
+                = link_to "Facebook", @project.user.facebook_link, target: '_blank', class: 'facebook'
             - if @project.user.twitter
               li
-                = link_to "Perfil no twitter", @project.user.twitter_link, target: '_blank', class: 'twitter'
+                = link_to "Twitter", @project.user.twitter_link, target: '_blank', class: 'twitter'
             - if @project.user.email
               li
                 = mail_to @project.user.email, @project.user.email, target: '_blank', class: 'email'

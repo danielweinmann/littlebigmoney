@@ -207,6 +207,7 @@ pt:
       title: "Quer mesmo solicitar o reembolso do seu apoio?"
       text: "Saiba como funciona o processo de reembolso no LittleBigMoney:"
       link: "Regras e Funcionamento dos reembolsos / estornos"
+      link_url: "http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos"
       reject_btn: "Não, desejo manter meus créditos"
       accept_btn: "Sim, desejo solicitar o reembolso do meu apoio"
     index:
@@ -613,6 +614,7 @@ pt:
         other: "%{count} apoios em prazo de confirmação."
       title: "Apoie e ganhe..."
       versions: "Veja a versão anterior."
+      updated_at: "Modificado em"
     send_mail:
       success: "Seu projeto foi enviado com sucesso! Logo entraremos em contato. Muito obrigado!"
     show:
@@ -622,6 +624,7 @@ pt:
       about_title: "O projeto"
       no_rewards_warning_title: "Crie aqui suas recompensas"
       no_rewards_warning: "Não viaje! Pense em como irá entregá-las e coloque tudo isso no orçamento. Prometeu?! CUMPRA! :D"
+      guide_html: "Para saber tudo sobre como estruturar o seu projeto, baixe o <a href='http://catarse.me/guia_realizadores.pdf' target='_blank'>Guia Completo</a>."
       reports:
         no_backs: "Seu projeto ainda não tem nenhum apoio."
         link_reports: "Baixar relatório de "
@@ -789,6 +792,7 @@ pt:
       submit: "Próximo Passo!"
       send_project: "Quero enviar meu projeto."
       guide: "Baixe aqui um guia completo com dicas estratégicas para elaborar um projeto de sucesso no LittleBigMoney."
+      guide_url: "http://catarse.me/guia_realizadores.pdf"
     guidelines_backers:
       title: "Quero apoiar um projeto!"
       subtitle: "Entenda passo-a-passo sobre como apoiar um projeto no LittleBigMoney."
@@ -910,6 +914,8 @@ pt:
       title: "Escolha de quais projetos você deseja receber notificações:"
       updates: "Eu quero receber atualizações dos projetos"
     current_user_fields:
+      cpf_hint_url: "http://suporte.catarse.me/knowledgebase/articles/162312-o-catarse-emite-nota-fiscal"
+      moip_login_hint_url: "http://suporte.catarse.me/knowledgebase/articles/153570-como-criar-uma-conta-no-moip"
       my_facebook: "Integração com o facebook"
       bio_limit: "até 140 caracteres"
       updated: "As suas informações foram atualizadas"
