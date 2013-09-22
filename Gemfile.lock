@@ -8,16 +8,6 @@ GIT
       supermodel
 
 GIT
-  remote: git://github.com/danielweinmann/catarse_paypal_express.git
-  revision: a028c442b082948f9bb129c58a7a97db9df25ad9
-  ref: a028c442b082948f9bb129c58a7a97db9df25ad9
-  specs:
-    catarse_paypal_express (0.1.0)
-      activemerchant (>= 1.17.0)
-      rails (~> 3.2.6)
-      slim-rails
-
-GIT
   remote: git://github.com/danielweinmann/catarse_payulatam.git
   revision: 8c270c8aa0994f28973b4098f34c3bccd83bcbff
   ref: 8c270c8aa0994f28973b4098f34c3bccd83bcbff
@@ -465,7 +455,6 @@ DEPENDENCIES
   capybara (~> 2.0.2)
   carrierwave (~> 0.8.0)
   catarse_mailchimp!
-  catarse_paypal_express!
   catarse_payulatam!
   chartkick
   coffee-rails

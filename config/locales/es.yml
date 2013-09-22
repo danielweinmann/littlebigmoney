@@ -413,7 +413,7 @@ es:
     backers:
       review:
         error: "Oops! Hubo un error mientras se registraba la colaboración. Por favor intenta de nuevo."
-        payulatam: "Pago nacional - PayU Latam"
+        payulatam: "PayU Latam"
         payulatam_title: "Vas a ser redirigido a la página de PayU Latam para completar el pago."
         paypal: "Pago internacional - PayPal"
         international:
