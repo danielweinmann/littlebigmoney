@@ -207,6 +207,7 @@ en:
       title: "Do you want to confirm your refund request?"
       text: "Check out how our refund process works:"
       link: "See how the refund works"
+      link_url: ~
       reject_btn: "I want to keep my credits"
       accept_btn: "I want to request the refund"
     index:
@@ -623,6 +624,7 @@ en:
       about_title: "About this project"
       no_rewards_warning_title: "Create here your rewards"
       no_rewards_warning: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
+      guide_html: ~
       reports:
         no_backs: "This project don't have any back yet."
         link_reports: "Download report of "
@@ -790,6 +792,7 @@ en:
       submit: "Next step!"
       send_project: "I want to submit my project."
       guide: "Download here a complete guide with all the tips to elaborate your project in LittleBigMoney."
+      guide_url: ~
     guidelines_backers:
       title: "I want to back a project!"
       subtitle: "Understand step by step how to back a project on LittleBigMoney."
@@ -929,6 +932,8 @@ en:
       title: "Choose from which projects you want to receive update notifications:"
       updates: "I want to receive project updates"
     current_user_fields:
+      cpf_hint_url: ~
+      moip_login_hint_url: ~
       my_facebook: ~
       bio_limit: "only 140 characters"
       updated: "Your information has been updated"

@@ -207,6 +207,7 @@ es:
       title: "¿Aún quieres un reembolso de tu colaboración?"
       text: "Conoce más sobre el proceso de reembolso de LittleBigMoney:"
       link: "Mira como funcionan los reembolsos"
+      link_url: ~
       reject_btn: "Quiero conservar mis créditos"
       accept_btn: "Sí, deseo solicitar el reembolso de mi colaboración"
     index:
@@ -623,6 +624,7 @@ es:
       about_title: "El proyecto"
       no_rewards_warning_title: "Crea aquí tus recompensas"
       no_rewards_warning: "No te compliques! Planea la forma en que la vas a entregar tus recompensas (digital) e incluye los costos en tu presupuesto. Las personas están confiando en ti, esto es muy serio!"
+      guide_html: ~
       reports:
         no_backs: "Este proyecto no tiene colaboradores aún."
         link_reports: "Descarga el reporte de "
@@ -790,6 +792,7 @@ es:
       submit: "Siguiente paso!"
       send_project: "Quiero enviar mi proyecto"
       guide: "Descarga aquí una guía completa con todos los tips para hacer tu proyecto en LittleBigMoney."
+      guide_url: ~
     guidelines_backers:
       title: "Quiero aportar a este proyecto!"
       subtitle: "Entiende paso a paso como aportar a un proyecto de LittleBigMoney."
@@ -931,6 +934,8 @@ es:
       title: "Selecciona los proyectos de los que deseas recibir notificaciones:"
       updates: "Quiero recibir notificaciones de las actualizaciones"
     current_user_fields:
+      cpf_hint_url: ~
+      moip_login_hint_url: ~
       my_facebook: "Integrar con mi cuenta de Facebook"
       bio_limit: "Sólo 140 caracteres"
       updated: "Tu información fue actualizada"
