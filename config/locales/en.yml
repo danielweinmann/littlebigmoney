@@ -434,6 +434,8 @@ en:
         paypal_cancel: ~
         paypal_description: ~
         paypal_error: ~
+        paypal_currency: ~
+        paypal_conversion: ~
         payulatam_submit: ~
         payulatam_description: ~
         payulatam_error: ~
