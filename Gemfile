@@ -25,11 +25,14 @@ gem 'schema_associations'
 gem 'chartkick'
 
 # Payment engine using Paypal
-gem 'catarse_paypal_express', git: 'git://github.com/danielweinmann/catarse_paypal_express.git',  ref: 'd5d7dbf58dc19c610bc530bac93a73d1921ac437'
+gem 'catarse_paypal_express', git: 'git://github.com/danielweinmann/catarse_paypal_express.git',  ref: '06d31e0659b06da12578291c67b803a4dc1964fc'
+# gem 'catarse_paypal_express', path: '../catarse_paypal_express'
 
 # Payment engine using PayU Latam
 gem 'payulatam', git: 'git://github.com/danielweinmann/payulatam.git',  ref: 'e87c399c90a3650e74698c13481a446359508e67'
 gem 'catarse_payulatam', git: 'git://github.com/danielweinmann/catarse_payulatam.git',  ref: '8c270c8aa0994f28973b4098f34c3bccd83bcbff'
+# gem 'payulatam', path: '../payulatam'
+# gem 'catarse_payulatam', path: '../catarse_payulatam'
 
 # Decorators
 gem 'draper'
