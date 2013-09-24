@@ -86,5 +86,5 @@ html lang="#{I18n.locale}" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http:/
         a href="http://www.fundacioncapital.org/" target="_blank"
           = image_tag "catarse/logo-fundacion.png"
     = render '/layouts/uservoice'
-    = render '/layouts/conversion_analytics'
+    = render '/layouts/conversion_analytics' if namespace == "projects" && controller_name == "backers" && action_name == "show"
     = yield :mouseflow
