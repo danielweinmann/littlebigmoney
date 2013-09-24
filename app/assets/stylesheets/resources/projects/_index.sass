@@ -91,3 +91,17 @@
         +alpha
         +omega
         border: 1px solid transparent
+  .allies
+    a
+      display: block
+      +grid(4)
+      +border-radius(4px)
+      background: white
+      text-align: center
+      +opacity(0.8)
+      &:hover
+        +opacity(1)
+      &.first
+        +alpha
+      &.last
+        +omega

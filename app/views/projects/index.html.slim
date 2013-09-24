@@ -27,6 +27,21 @@
         .clear_link
           hr
 
+      .allies.list
+        .list_title
+          .title
+            h2= t('sections.partners.title')
+        .projects
+          a.first href="http://www.culturaemedellin.gov.co/sites/CulturaE/ciudade/Paginas/default.aspx" target="_blank"
+            = image_tag "allies/ciudad_e.png"
+          a href="http://givetocolombia.org/" target="_blank"
+            = image_tag "allies/give_to_colombia.png"
+          a href="http://www.dps.gov.co/" target="_blank"
+            = image_tag "allies/dps.png"
+          a.last href="http://www.fordfoundation.org/" target="_blank"
+            = image_tag "allies/ford_foundation.png"
+        .clear_link
+          hr
       /.expiring_projects.list
         .list_title
           .title
@@ -74,4 +89,3 @@
             = text_field_tag 'EMAIL', nil, placeholder: 'email@email.com', label: 'email'
             = submit_tag t('sidebar.buttons.newsletter')
     .clearfix
-

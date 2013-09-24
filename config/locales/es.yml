@@ -125,7 +125,7 @@ es:
     recents:
       title: Reciente
     partners:
-      title: "aliados locales"
+      title: "Con el apoyo de"
   accept_terms_html: "He leído y estoy de acuerdo %{link}."
   activerecord:
     errors:
