@@ -271,7 +271,7 @@ es:
     hints:
       backer:
         credits: "Tienes <strong>%{credits}</strong> en créditos y puedes apoyar hasta este valor sim necesitae realizar un nuevo pago."
-        value: "Tu escoges el valor ;) a partir de 10.000 COP está genial!"
+        value: "Tu escoges el valor ;) a partir de 20.000 COP está genial!"
       project:
         video_url_edit: "Pega aquí la URL de tu video de Vimeo."
         about: "Cuéntanos un poco cobre tu inspiración para realizar el proyecto, tu historia y lo que será de ella al terminar. Hazlo en tus mismas palabras y evita las formalidades. Presenta a tus colaboradores algo que los conmueva y se muy transparente en relación con la expectativa sobre el proyecto."

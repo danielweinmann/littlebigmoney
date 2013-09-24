@@ -22,20 +22,20 @@ describe Backer do
     it{ should validate_presence_of(:project) }
     it{ should validate_presence_of(:user) }
     it{ should validate_presence_of(:value) }
-    it{ should_not allow_value(9999.99).for(:value) }
-    it{ should allow_value(10000).for(:value) }
+    it{ should_not allow_value(19999.99).for(:value) }
     it{ should allow_value(20000).for(:value) }
+    it{ should allow_value(30000).for(:value) }
   end
 
   describe ".between_values" do
-    let(:start_at) { 10000 }
-    let(:ends_at) { 20000 }
+    let(:start_at) { 20000 }
+    let(:ends_at) { 30000 }
     subject { Backer.between_values(start_at, ends_at) }
     before do
-      create(:backer, value: 10000)
-      create(:backer, value: 15000)
       create(:backer, value: 20000)
-      create(:backer, value: 21000)
+      create(:backer, value: 25000)
+      create(:backer, value: 30000)
+      create(:backer, value: 31000)
     end
     it { should have(3).itens }
   end
@@ -336,7 +336,7 @@ describe Backer do
         create(:backer, state: 'confirmed', user: user, project: failed_project)
         failed_project.update_attributes state: 'failed'
       end
-      it{ should == 10000 }
+      it{ should == 20000 }
     end
 
     context "when backs are done with credits" do

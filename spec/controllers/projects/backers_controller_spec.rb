@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Projects::BackersController do
   render_views
   let(:project) { create(:project) }
-  let(:backer){ create(:backer, value: 10000.00, credits: true, project: project, state: 'pending') }
+  let(:backer){ create(:backer, value: 20000.00, credits: true, project: project, state: 'pending') }
   let(:user){ nil }
   let(:backer_info){ { address_city: 'Porto Alegre', address_complement: '24', address_neighbourhood: 'Rio Branco', address_number: '1004', address_phone_number: '(51)2112-8397', address_state: 'RS', address_street: 'Rua Mariante', address_zip_code: '90430-180', payer_email: 'diogo@biazus.me', payer_name: 'Diogo de Oliveira Biazus' } }
 
@@ -58,7 +58,7 @@ describe Projects::BackersController do
 
     context "with correct user and sufficient credits" do
       let(:user) do
-        create(:backer, value: 10000.00, credits: false, state: 'confirmed', user: backer.user, project: failed_project)
+        create(:backer, value: 20000.00, credits: false, state: 'confirmed', user: backer.user, project: failed_project)
         failed_project.update_attributes state: 'failed'
         backer.user.reload
         backer.user
@@ -141,7 +141,7 @@ describe Projects::BackersController do
   end
 
   describe "GET show" do
-    let(:backer){ create(:backer, value: 10000.00, credits: false, state: 'confirmed') }
+    let(:backer){ create(:backer, value: 20000.00, credits: false, state: 'confirmed') }
     before do
       get :show, { locale: :pt, project_id: backer.project.id, id: backer.id }
     end
@@ -166,7 +166,7 @@ describe Projects::BackersController do
 
   describe "GET index" do
     before do
-      create(:backer, value: 10000.00, state: 'confirmed',
+      create(:backer, value: 20000.00, state: 'confirmed',
               reward: create(:reward, project: project, description: 'Test Reward'),
               project: project,
               user: create(:user, name: 'Foo Bar'))
@@ -176,7 +176,7 @@ describe Projects::BackersController do
     shared_examples_for  "admin / owner" do
       it "should see all info from backer" do
         response_backer = ActiveSupport::JSON.decode(response.body)[0]
-        response_backer['value'].should == 'COP 10.000'
+        response_backer['value'].should == 'COP 20.000'
         response_backer['user']['name'].should == 'Foo Bar'
         response_backer['reward']['description'].should == 'Test Reward'
       end

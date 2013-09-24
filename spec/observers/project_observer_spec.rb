@@ -97,11 +97,11 @@ describe ProjectObserver do
     end
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, online_days: -7, goal: 10000, state: 'online', user: user) }
+    let(:project) { create(:project, online_days: -7, goal: 20000, state: 'online', user: user) }
 
     context 'when project is successful' do
       before do
-        create(:backer, value: 15000, state: 'confirmed', project: project)
+        create(:backer, value: 30000, state: 'confirmed', project: project)
         project.update_attributes state: 'waiting_funds'
       end
 

@@ -50,7 +50,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
     }
     value_ok = function(){
       var value = $('#backer_value').val()
-      if(/^(\d+)$/.test(value) && parseInt(value) >= 10000){
+      if(/^(\d+)$/.test(value) && parseInt(value) >= 20000){
         $('#backer_value').addClass("ok").removeClass("error")
         return true
       } else {

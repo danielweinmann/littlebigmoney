@@ -271,7 +271,7 @@ pt:
     hints:
       backer:
         credits: "Você possui <strong>%{credits}</strong> em créditos e pode apoiar até este valor sem precisar realizar um novo pagamento."
-        value: "Você escolhe o valor ;) a partir de 10.000 COP está ótimo."
+        value: "Você escolhe o valor ;) a partir de 20.000 COP está ótimo."
       project:
         video_url_edit: "Cole aqui o link do seu vídeo hospedado no Vimeo"
         about: "Conte-nos um pouco sobre sua inspiração para realizar o projeto, sua história e o que será entregue ao final. Seja sucinto e fuja daquelas formalidades de editais. Nada de OBJETIVO, JUSTIFICATIVA, PÚBLICO-ALVO... Presenteie seus leitores com algo que mexa com eles e seja muito transparente em relação a expectativa sobre o projeto."
@@ -434,7 +434,7 @@ pt:
         paypal_cancel: "Seu pagamento no PayPal foi cancelado. Por favor, tente novamente."
         paypal_description: "Apoio para o projeto %{project_name} no valor de %{value}"
         paypal_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o PayPal. Por favor, tente novamente."
-        paypal_currency: "USD"
+        paypal_currency: USD
         paypal_conversion: "1880.00"
         payulatam_submit: "Ir para o PayU Latam"
         payulatam_description: "Apoio para o projeto %{project_name} no valor de %{value}"

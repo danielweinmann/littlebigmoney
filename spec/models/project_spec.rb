@@ -95,14 +95,14 @@ describe Project do
     subject { Project.by_progress(20) }
 
     before do
-      @project_01 = create(:project, goal: 100000)
-      @project_02 = create(:project, goal: 100000)
-      @project_03 = create(:project, goal: 100000)
+      @project_01 = create(:project, goal: 200000)
+      @project_02 = create(:project, goal: 200000)
+      @project_03 = create(:project, goal: 200000)
 
-      create(:backer, value: 10000, project: @project_01)
-      create(:backer, value: 10000, project: @project_01)
-      create(:backer, value: 30000, project: @project_02)
-      create(:backer, value: 10000, project: @project_03)
+      create(:backer, value: 20000, project: @project_01)
+      create(:backer, value: 20000, project: @project_01)
+      create(:backer, value: 60000, project: @project_02)
+      create(:backer, value: 20000, project: @project_03)
     end
 
     it { should have(2).itens }
@@ -291,13 +291,13 @@ describe Project do
   end
 
   describe '#can_go_to_second_chance?' do
-    let(:project) { create(:project, goal: 100000, online_days: -3) }
+    let(:project) { create(:project, goal: 200000, online_days: -3) }
     subject { project.can_go_to_second_chance? }
 
-    before { create(:backer, value: 20000, state: 'confirmed', project: project) }
+    before { create(:backer, value: 40000, state: 'confirmed', project: project) }
 
     context 'when confirmed and pending backers reached 30% of the goal and in time to wait to wait' do
-      before { create(:backer, value: 10000, state: 'waiting_confirmation', project: project) }
+      before { create(:backer, value: 20000, state: 'waiting_confirmation', project: project) }
 
       it { should be_true }
     end
@@ -360,18 +360,18 @@ describe Project do
     end
 
     context "when goal == pledged > 0" do
-      let(:goal){ 10000.0 }
-      let(:pledged){ 10000.0 }
+      let(:goal){ 20000.0 }
+      let(:pledged){ 20000.0 }
       it{ should == 100 }
     end
 
     context "when goal is > 0 and pledged is 0.0" do
-      let(:goal){ 10000.0 }
+      let(:goal){ 20000.0 }
       it{ should == 0 }
     end
 
     context "when goal is 0.0 and pledged > 0.0" do
-      let(:pledged){ 10000.0 }
+      let(:pledged){ 20000.0 }
       it{ should == 100 }
     end
 
@@ -391,10 +391,10 @@ describe Project do
     context "when project_total exists" do
       before do
         project_total = mock()
-        project_total.stub(:pledged).and_return(10000.0)
+        project_total.stub(:pledged).and_return(20000.0)
         project.stub(:project_total).and_return(project_total)
       end
-      it{ should == 10000.0 }
+      it{ should == 20000.0 }
     end
   end
 
