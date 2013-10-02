@@ -1,64 +1,64 @@
 en:
   notifications:
-    support_html: ~
-    signature_html: ~
-    reward_html: ~
-    no_reward_html: ~
+    support_html: "If you have any questions contact our team in our support central<br/>%{link}"
+    signature_html: "A big hug,<br/>LittleBigMoney team"
+    reward_html: "Reward selected:%{description}</strong>"
+    no_reward_html: "<strong>No reward selected</strong>"
     backer_canceled_after_confirmed:
-      subject: "Backer canceled after confirmed"
-      header: "Backer canceled after confirmed"
+      subject: "The support was canceled after confirmation"
+      header: "The support was canceled after confirmation"
     project_owner_backer_confirmed:
       subject: "Hooray! Another new supporter backed your project"
-      header: "A new back has just been confirmed for your project"
-      text_html: ~
+      header: "A new support has just been confirmed for your project"
+      text_html: "Hello,<strong>%{name}</strong>!<br/><br/>The supporter%{backer} just supported your project!<br/><br/>Some support data:<br/><br/><strong>Support provided:</strong>%{value}<br/>%{reward}<br/><strong>Supporter's email:</strong>%{email}<br/><br/>See other supporters here:%{backers_link}<br/><br/>Share your news with them:%{updates_link}<br/><br/>Download your reports:%{reports_link}"
     confirm_backer:
-      subject: "Thank you! Your back for %{project_name} was confirmed!"
-      header: "Back confirmed"
-      no_reward_html: ~
-      text_html: ~
+      subject: "Thank you! Your support for %{project_name} was confirmed!"
+      header: "Support confirmed"
+      no_reward_html: "No reward was selected. Any questions, contact our team through %{link}"
+      text_html: "Hello, <strong>%{name}</strong>!<br/><br/>Your support to%{project} was confirmed by <strong>%{method}</strong><br/><br/>Save this message to serve as proof of your support.<br/><br/>Something very important:<strong> if your support was made by credit card</strong>, the name that will appear on the invoice is%{method}. It is not yet possible that the name of LittleBigMoney appears written there.<br/><br/>Value of support:<strong>%{value}</strong><br/>%{reward}<br/>Support id%{id}<br/><br/>If the project is successful<strong>%{expires_at}</strong>, the project micro entrepeneurs will contact you to arrange the delivery of the rewards. That contact is made, usually, one week after the deadline of the campaign. This is the time that we use to pass the information of all the supporters to the micro entrepeneur.<br/><br/> If the project fails to meet the goal, you will receive an email from LittleBigMoney with the instructions to<br/>support another project with the credits that will be generated.<br/><br/>If you want to contact%{user}, you can send an email to%{email}"
     payment_slip:
-      subject: "Status do apoio para %{project_name}: boleto impresso"
-      header: "Informações sobre pagamentos por boleto no Catarse"
+      subject: "Support status for %{project_name}: printed payment order"
+      header: "Support information through payment order for LittleBigMoney"
     processing_payment:
-      subject: "Seu apoio para %{project_name} foi recebido e está aguardando confirmação do %{payment_method}"
-      header: "Apoio Em Análise - o que é isso?"
-      text_html: ~
+      subject: "Your support to %{project_name} was received and is awaiting confirmation from %{payment_method}"
+      header: "Support in analysis - What is this?"
+      text_html: "Hello, <strong>%{name}</strong>!<br/><br/>Your support to %{project} is in process of<strong>Analysis</strong> in <strong>%{method}</strong>.<br/><br/>This is a security process to prevent fraud. Besides that, in some payments the micro entrepeneur comes into contact with the supporter directly, therefore it is not aproved yet.<br/><br/>%{method}, in some cases, you can try contacting us through the telephone to confirm the transaction.<br/><br/>If the support was more than COP 100.000, they might require some identification to confirm the transaction and they will contact you.<br/><br/>At the moment your support is confirmed we will send you a confirmation email.<br/><br/>Support identification:%{id}"
     updates:
-      subject: "Se liga! Atualização de %{project_name} por %{project_owner}: %{update_title}"
-      comments_html: ~
-      contact_html: ~
+      subject: "Watch out! Update from %{project_name} by %{project_owner}: %{update_title}"
+      comments_html: "Comments? Send them to the project's page: %{link}."
+      contact_html: "To contact the micro entrepeneur send an email to %{link}."
     project_in_wainting_funds:
-      subject: "O prazo do seu projeto acabou, saiba quais são os próximos passos"
-      header: "Acabou o prazo!"
+      subject: "The deadline for your project is over, know the next steps"
+      header: "Your deadline is over!"
     project_success:
-      subject: "Project successful: some necessary information"
+      subject: "Project successful: Some important information next"
       header: "Project successful"
     project_unsuccessful:
-      subject: "Your project was not funded on Catarse, but we would like your feedback x)"
-      header: "Project was not successfully funded ;)"
+      subject: "Your project was not successfully supported, but we would like your feedback :)"
+      header: "Project was not successfully supported :("
     backer_project_successful:
-      subject: "Hooray! The project %{project_name} has succeeded on Catarse"
-      header: "Hooray! The project you backed has succeeded on Catarse"
+      subject: "Hooray! The project %{project_name} was successful in LittleBigMoney"
+      header: "Hooray! The project you supported was successful in LittleBigMoney"
     backer_project_unsuccessful:
-      subject: "The project %{project_name} was not funded - some useful information"
-      header: "Information on credits and refunds ;)"
+      subject: "The project %{project_name} did not reach the expected support - Some useful information"
+      header: "Information on available credits and refunds ;)"
     pending_backer_project_unsuccessful:
-      subject: "You started to back the project %{project_name}, which was not funded - some useful information"
-      header: "Information about confirmation of support, credits and refunds ;)"
+      subject: "The project %{project_name} supported by you did not reach the expected support - Some useful information"
+      header: "Confirmation about support information, available credits and refunds ;)"
     project_received:
-      subject: "Your project was received by Catarse"
-      header: "Your project was received by the Catarse team"
-      text_html: ~
+      subject: "Your project was received by LittleBigMoney"
+      header: "Your project was received by the LittleBigMoney team"
+      text_html: "Hello, %{name}<br/><br/>! Thank you very much for trusting LittleBigMoney and sending us your project. <br/><br/> First of all we want to remind you how  the project selection works in LittleBigMoney step by step. It is very easy, there are 4 simple steps:<br/><br/>1 - When you completed your form you could see your project's page. In that moment it is a DRAFT and we already have knowledge of it;<br/><br/>2 - Our team will answer in four business days maximum. It's not a matter of yes or no, certainly we will exchange several mails before your project airs.<br/><br/>3 - In the meantime (and during the contact you have with us too), you can update the information that you sent. Remember that the project is in a draft state, that's why you have the possibility to complete your information calmly and it will air only when your project is ready<br/><ul><li>Here you can find a <a href='https://docs.google.com/document/d/1IHkWiIqPzB9aAryoO-wUiHJUjgdLW7LrVcGn43mZ_Lk/edit'>GUIDE</a>on how to better structure your project.</li><li>Here's another<a href='https://docs.google.com/document/d/169gO3htuy9NyZHdmtnJsOod3TwvImRLVzgRbU5VelKs/edit'>GUIDE</a>on how to edit your project in draft.</li></ul><br/>4 - We will receive your notification so we can authorize your project to be available to all human beings of the world to share and support you!<br/><br/>Important information: It is mandatory to complete the registration information. To do so in the upper part of the page click in: MY ACCOUNT > MY PROFILE > ADJUSTMENTS<br/><br/> You have a link of the draft of your project: %{link}. With that take the opportunity to share with some people in order to get suggestions to improve your project before going to air.<br/><br/>It is worth receiving a little inspiration from the projects that have been successful in LittleBigMoney, it is all collective knowledge created to be taken advantage from.<br/><br/>Benefit too by <a href='http://littlebigmoney.org/es/explore'> knowing some of the projects that are on air</a>and if one of them catches your eye, you can support it. That is the best way to show that you believe in the culture of crowdfunding in Colombia and promote the ecosystem that is being formed around LittleBigMoney. If you support a project you will probably receive support back when your project airs.<br/><br/>Stay connected with our latest news on %{facebook} and %{twitter} and know more about LittleBigMoney reading our entries in our %{blog}."
     project_received_channel:
-      subject: "Your project was received by the Wings Channel"
+      subject: "Your project was received by the wings channel"
       header: "Your project was welcomed by the staff of the Wings Channel"
     project_visible:
-      subject: "Your project is now online at Catarse"
+      subject: "Your project is now online at LittleBigMoney"
       header: "Now it's for real"
       text_html: ~
     project_rejected:
-      subject: "Your project does not fit Catarse's focus"
-      header: "Your project was not accepted ;("
+      subject: "Your project does not fit LittleBigMoney's profile"
+      header: "Your project was not accepted :("
       text_html: ~
     new_draft_project:
       subject: "New project created - %{project_name}"
@@ -67,18 +67,18 @@ en:
       subject: "The project %{project_name} has just been created"
       header: "A new project is awaiting review"
     new_features:
-      subject: "Ajuda para tese de doutorado sobre crowdfunding"
-      header: "Ajuda para tese de doutorado sobre crowdfunding"
+      subject: "Help for doctoral dissertation on crowdfunding"
+      header: "Help for doctoral dissertation on crowdfunding"
     adm_project_deadline:
-      subject: "The project %{project_name} has reached its deadline"
+      subject: "The project %{project_name} has reached its deadline for publishing"
       header: "The project reached its deadline"
     credits_warning:
-      subject: "You have %{amount} COP in credits on Catarse"
-      header: "Why not back another project?"
+      subject: "You have %{amount} COP in credits on LittleBigMoney"
+      header: "Why not support another project?"
     backer_confirmed_after_project_was_closed:
-      subject: "New backer confirmed on finished project '%{project_name}' "
-      header: "New backer confirmed."
+      subject: "New support confirmed for the project '%{project_name}' after 7 days of the end of the deadline"
+      header: "New support confirmed"
     temporary_password:
-      subject: "Temporary password for Catarse"
-      header: "Log on to change your password"
+      subject: "Temporary password for LittleBigMoney"
+      header: "Login to change your password"
       text_html: ~

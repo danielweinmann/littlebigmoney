@@ -68,7 +68,7 @@ es:
     backers:
       subtitle: Colaboradores
     goal:
-      subtitle: "Total de %{total}"
+      subtitle: "De %{total} solicitados"
   project_by: "Proyecto por"
   tell_about_this_back: "Cuenta al mundo sobre tu apoyo!"
   share_my_backs: "Echa un vistazo al proyecto "
@@ -398,7 +398,7 @@ es:
     back_project:
       display_status:
         reached_goal: "Este proyecto tendrá éxito y recibirá el dinero el %{date}"
-        not_reached_goal: "Este proyecto sólo tendrá éxito si al menos %{goal} es recaudado hasta el %{date}"
+        not_reached_goal: "Este proyecto sólo tendrá éxito si se recaudan al menos %{goal} hasta el %{date}"
         failed: "Este proyecto no alcanzo la meta de %{goal} antes del %{date} y por lo tanto no fue financiado"
         rejected: "Este proyecto no fue aceptado"
         successful: "Este proyecto fue financiado con éxito el %{date}"
@@ -615,8 +615,8 @@ es:
         one: "1 colaboración esperando confirmación."
         other: "%{count} colaboraciones esperando confirmación."
       title: "Colabora y recibe"
-      versions: ~
-      updated_at: ~
+      versions: "Ver la versión anterior"
+      updated_at: "Última modificación"
     send_mail:
       success: "Tu proyecto fue creado exitosamente! Te contactaremos próximamente. Muchas gracias!"
     show:

@@ -90,7 +90,7 @@ en:
         cancel: "Cancel backer"
         between_values: "Values between"
         by_state: State
-        refund_and_hide: "Refund and hide"
+        refund_and_hide: "Reimburse and do not exhibit support."
         backer_info: "Info of backer %{key}"
         payment_id: "Payment ID"
         payment_method: "Payment method"
