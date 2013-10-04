@@ -1,7 +1,6 @@
 [data-controller="static"][data-action="about"]
   #page_content
     .container
-      background: url($images_path+'grey.png') repeat
       .static_default
         +grid(16)
         padding-top: 15px
@@ -14,7 +13,7 @@
             font-style: italic
             letter-spacing: -4px
             font-size: 68px
-            padding: 70px 0 0
+            padding: 180px 0 0
             text-align: center
             margin: 40px auto 0
             background: url($images_path+'icon_about.png') center top no-repeat
@@ -52,6 +51,8 @@
                 margin-right: 50px
                 position: relative
                 width: 20%
+                img
+                  width: 183px
                 .flagCity
                   color: white
                   font-style: italic
@@ -63,31 +64,23 @@
                   right: 10px
                   text-align: center
                   top: -10px
-                  width: 30px
-                  &.sp
-                    background: url($images_path+'flagCity.png') left top no-repeat
-                  &.rj
-                    background: url($images_path+'flagCityRJ.png') left top no-repeat
-                  &.rs
-                    background: url($images_path+'flagCityPoa.png') left top no-repeat
-                  &.mg
-                    background: url($images_path+'flagCityMg.png') left top no-repeat
+                  width: 120px
+                  background: url($images_path+'flagCity.png') left top no-repeat
+                  .city
+                    background: $carrot
+                    margin-left: -1px
+                    margin-top: -10px
+                    width: 130px
+                    padding: 9px 0
                 .flagname
                   height: 41px
                   position: absolute
-                  top: 135px
+                  top: 150px
                   width: 11px
                   left: -11px
-                  &.sp
-                    background: url($images_path+'flagNameSP.png') left top no-repeat
-                  &.rj
-                    background: url($images_path+'flagNameRJ.png') left top no-repeat
-                  &.rs
-                    background: url($images_path+'flagNamePoa.png') left top no-repeat
-                  &.mg
-                    background: url($images_path+'flagNameMg.png') left top no-repeat                    
-                .namesp, .namerj, .namers, .namemg
-                  background: #E85397
+                  background: url($images_path+'flagName.png') left top no-repeat
+                .name
+                  background: $lightnavy
                   font-style: italic
                   color: white
                   font-size: 16px
@@ -95,13 +88,7 @@
                   left: 0
                   padding: 7px 10px 10px 4px
                   position: absolute
-                  top: 135px
-                .namerj
-                  background: #F49B04
-                .namers
-                  background: #6BB544
-                .namemg
-                  background: #E6303C
+                  top: 150px
                 p, span
                   color: #666666
                   font-size: 12px

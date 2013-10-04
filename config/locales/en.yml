@@ -6,7 +6,7 @@ en:
       location: "City / State"
       confirmed_backers: "Support confirmed"
       created_projects: "Created projects"
-  current_update: ~
+  current_update: "Modified "
   "no": "No"
   "yes": "Yes"
   or: or
@@ -17,8 +17,8 @@ en:
     keywords: "littlebigmoney, crowdfunding, project, community, open source, crowdfunding, donate, help, collaborate, support"
   login:
     forgot_password:
-      welcome: ~
-      label: ~
+      welcome: "Reset password"
+      label: "Enter your email to change your password"
       submit: ~
     welcome: "Welcome back!"
     submit: "Sign in"
@@ -109,8 +109,8 @@ en:
   sidebar:
     titles:
       blog: blog
-      facebook: "have you liked our facebook page yet?"
-      newsletter: "do you want to receive our news?"
+      facebook: "Have you liked our facebook page yet?"
+      newsletter: "Do you want to receive our LittleBig-news?"
       faq: "have any doubt?"
       schedule: calendar
     buttons:
@@ -219,7 +219,7 @@ en:
       refunded: "Refund request successfully done. Our team will contact you within two business days."
       insufficient_credits: "You don't have enough credits to request this refund."
       refunds_title: "Payments that can be refunded"
-      request_refund: "Request refund"
+      request_refund: Refund?
       requested_refund: "Requested refund"
       status: Status
       title: "My credits"
@@ -235,17 +235,17 @@ en:
     request_refund_from:
       subject: "Refund request from project %{name}"
       subject_html: "User %{name} requested reimbursement of the support %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
-      user_name: "User name"
-      user_email: "User email"
-      payer_email: "Payment email"
-      payer_name: "User name used on payment"
+      user_name: User
+      user_email: LittleBigMoney-email
+      payer_email: "payment email"
+      payer_name: "Name used on payment"
       project: Project
       backer_key: "Support key"
       payment_id: "Payment ID"
       backer_value: Value
       payment_method: "Payment method"
       payment_choice: "Payment choice"
-      created_at: "created at"
+      created_at: "Created at"
   curated_pages:
     index:
       title: "Curated pages"
@@ -261,12 +261,12 @@ en:
       quick_explore: "Quick search"
       recent: Recent
       recommended: Recommended
-      subtitle: "Explore the projects, find the ones that touch you, and make them happen!"
+      subtitle: "Explore the projects, find the ones that inspire you, and support to make them happen!"
       successful: Successful
       title: "Discover amazing projects"
     title: "Explore the projects"
     project:
-      empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? =D"
+      empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? :)"
   formtastic:
     hints:
       backer:
@@ -274,7 +274,7 @@ en:
         value: "You chose the amount ;) starting from 20,000 COP, any amount is great!"
       project:
         video_url_edit: "Paste here the URL of your Vimeo video."
-        about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
+        about: "Tell us about what inspired you to come up with this project . Be objective and charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
         category: "Before you format your project explore other (successful) projects to inspire yourself!"
         expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
         online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
@@ -468,7 +468,7 @@ en:
         error: "Ooops. There was an error while registering your support. Please try again."
         international:
           description: "You can use PayPal to make international payments"
-          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5.4% + 0.60 COP per transaction.</p>"
+          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any extra fees.</p><p>In case you can make the regular payment through PayU, you have to ask for the refund.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5.4% + 0.60 COP per transaction.</p>"
           submit: "Proceed to PayPal's checkout"
           title: "Want to make an international payment?"
         review_with_reward_html: "You will support with <strong>%{value}</strong> and receive the following reward:"
@@ -538,7 +538,7 @@ en:
       no_backers: "No backers found."
       project: Project
       refunded: "Support refunded!"
-      requested_refund: "Requested refund?"
+      requested_refund: Refund?
       reward: Reward
       submit: Search
       title: "Supporters management"
@@ -591,7 +591,7 @@ en:
         alert: ~
         paragraph_1_html: "After time runs out, your project will be waiting for confirmation of last minute support during the next 3 business days."
         paragraph_2_html: ~
-        paragraph_3_html: "All the money will be transferred to the supporters in the form of credits. At first, this credits can support other projects in LittleBigMoney. In any case, you will receive an email with instructions on how to ask for a refund."
+        paragraph_3_html: "All the money will be transferred to the supporters in the form of credits. At first, these credits can support other projects in LittleBigMoney. In any case, you will receive an email with instructions on how to ask for a refund."
         paragraph_4_html: "In case your project collects at least 30% of its goal, it will have the possibility to go on air for a second time. However it will reviewed by the LittleBigMoney team"
       successful:
         alert: ~
@@ -600,7 +600,7 @@ en:
         paragraph_3_html: ~
       failed:
         alert: ~
-        paragraph_1_html: "All the money will be transferred to the supporters in the form of credits. At first, this credits can support other projects in LittleBigMoney. In any case, you will receive an email with instructions on how to ask for a refund."
+        paragraph_1_html: "All the money will be transferred to the supporters in the form of credits. At first, these credits can support other projects in LittleBigMoney. In any case, you will receive an email with instructions on how to ask for a refund."
     formatting_tips:
       title: ~
       media_html: ~
@@ -695,9 +695,9 @@ en:
       rewards_important: ~
       submit: "Submit the project"
       send_project: "I want to submit my project."
-      legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you will add the rewards for your supporters. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>LittleBigMoney is a platform with diverse levels of supervision, which means that our board will evaluate the focus, the feasibility and consistency of your project during the draft. We hope you understand that if your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
+      legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you can add the rewards for your supporters. You can also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go live.<br><br><b>Very Important:</b> <i>LittleBigMoney is a platform with diverse levels of supervision, which means that our board will evaluate the focus, the feasibility and consistency of your project during the draft. We hope you understand that if your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
     twitter:
-      take_a_look: "Check out the project %{name} on @catarse"
+      take_a_look: "Check out the project %{name} on @LBigMoney"
     video_embed:
       a_project_by_html: "A project by %{link} on"
   projects_mailer:
@@ -737,7 +737,7 @@ en:
       submit: "Next step!"
       send_project: "I want to submit my project."
       subtitle: "Understand, step-by-step, how to finance your project through LittleBigMoney."
-      title: "How does LittleBigMoney?"
+      title: "How does LittleBigMoney work?"
       introduction: "LittleBigMoney is a different - and collaborative - way to make your projects become a reality."
       legend_html: "Use this guide to decide if <br>LittleBigMoney is the right choice to finance your project."
       title_one: "Submit your project"
@@ -823,7 +823,7 @@ en:
       title_credits: "If the project does not achieve the goal, how do I use my credits?"
       credits: "You will receive your credits on your LittleBigMoney profile. At the time you choose to support another project, on the select a reward window, there will be a field to use your credits."
       title_money: "What if I don't want to use the credits?"
-      money: "No problem! You just have to go to your profile (My credits) and request a refund. If you paid with debit or billet, you’ll need to open an account at MOIP. If you used a credit card you will receive the value on your next card bill. You can also send an email to finanzas@littlebigmoney.org with your request."
+      money: "No problem! You just have to go to your profile (My credits) and request a refund according to the terms of use. You can also send an email to finanzas@littlebigmoney.org with your request."
       other_backers: "I WANT MORE! CAN I HELP  IN OTHER WAYS?"
       intro: "Get to know diferent ways to help projects you believe in"
       other_one: "Bring two other friends to support the project as you did"
@@ -851,50 +851,63 @@ en:
       subtitle: "Meet the Little people that makes BIG things happen <3"
       introduction: "Who are they? What do they feed of? How are they networked? You’ll see all of it now on “Who are we?”."
       name_one: "Yves Moury - Bélgica"
+      image_one: ~
+      place_one: ~
       title_one: "Presidente y Director Ejecutivo"
       text_one: |-
           Economista e Ingeniero de Gestión por la Universidad de Lovaina en Bélgica, y Posgraduado en Antropología Social y Cultural, Administración, Banca e Informática, y Finanzas para el Desarrollo por la misma universidad.  Su experiencia de más de 25 años en desarrollo internacional y reducción de la pobreza incluye consultorías e investigaciones para agencias y organizaciones internacionales como BID, Unión Europea, FIDA, ONUDI, OIT y PNUD, y con entidades públicas y privadas, corporaciones financieras y universidades en Europa, África, Asia y América Latina.
 
           y.moury@fundacioncapital.org
       name_two: "Franz Gomez - Bolivia"
+      image_two: ~
+      place_two: ~
       title_two: "Director de Inclusión Financiera"
       text_two: |-
           Economista graduado de la Universidad Mayor de San Andrés, Bolivia. Tiene un Master en Economía y un Doctorado (Ph.D.) en Desarrollo Económico en la Universidad Estatal de Ohio, Estados Unidos.  Es especialista en microfinanzas y finanzas rurales, con amplia experiencia en asesoramiento técnico a entidades gubernamentales e instituciones financieras para el diseño e implementación de políticas de inclusión financiera y protección social.  Ha trabajado como consultor e investigador en varios países en América Latina y el Caribe, Europa y Asia.
 
           franz.gomez@fundacioncapital.org
       name_three: "Paula Rodriguez Rueda - Colombia"
+      image_three: ~
+      place_three: ~
       title_three: "Project Coordinator - LittleBigMoney"
       text_three: |-
           Es Master en Relaciones Internacionales de la Universidad Javeriana en Bogotá y en Public Management del SDA Bocconi School of Management de Italia. Ha trabajado con el sector público colombiano abriendo mercados exteriores a pequeñas y medianas empresas colombianas, y  también con empresas privadas prestadoras de servicios públicos, apoyando el diseño de nuevo proyectos de inversión y licitaciones públicas.
 
           paula.rodriguez@fundacioncapital.org
       name_four: "María Antonia Hoyos - Colombia"
+      image_four: ~
+      place_four: ~
       title_four: "Operations officer - LittleBigMoney"
       text_four: |-
           Profesional en Gobierno y Relaciones Internacionales, con énfasis en Gestión Pública de la Universidad Externado de Colombia. Experiencia en Gerencia y Formulación de proyectos sociales, Fundraising y gestión de Asistencia Técnica Internacional para pequeñas y medianas empresas colombianas. Trabajó en la Fundación CINEP/Programa por la Paz como Profesional Junior de la Gerencia de Proyectos y realizó un año de pasantía en la Dirección de Cooperación y Convenios de PROEXPORT.
 
           maria.hoyos@fundacioncapital.org
       name_five: "Veruschka Zilveti - Bolivia"
+      image_five: ~
+      place_five: ~
       title_five: "Coordinadora de Proyecto"
       text_five: |-
           Economista por la Universidad Católica de Bolivia, con un Posgrado en Gestión y Organización de Entidades Non-Profit. Cuenta con amplia experiencia en proyectos de desarrollo rural y  en el trabajo con comunidades rurales. En el FIDA trabajó durante 8 años analizando estrategias de reducción de la pobreza y herramientas para el fortalecimiento el acceso a mercados de emprendimientos rurales.
 
           veruschka.zilveti@fudacioncapital.org
       name_six: "Javier Felipe Hidalgo - Colombia"
+      image_six: ~
+      place_six: ~
       title_six: "Communications officer - LittleBigMoney"
       text_six: |-
           Comunicador social y periodista con énfasis en la gestión de la comunicación empresarial de la Universidad Externado de Colombia. Experiencia en manejo y creación de comunidades en redes y creación de estratégias de comunicación organizacional. Trabajó como voluntario en la fundación CISV de Colombia como entrenador de liderazgo en educación experiencial y realizó labores de fotografía en la Corporación Coral y Orquestal de Colombia.
 
           javier.hidalgo@fundacioncapital.org
       name_seven: ~
+      image_seven: ~
+      place_seven: ~
       title_seven: ~
       text_seven: ~
       name_eight: ~
+      image_eight: ~
+      place_eight: ~
       title_eight: ~
       text_eight: ~
-      name_nine: ~
-      title_nine: ~
-      text_nine: ~
     privacy:
       title: "Privacy Policy"
     terms:

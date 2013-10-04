@@ -9,71 +9,78 @@
       ul.team
         li.first
           ul
-            li
-              = image_tag('catarse/team_luis.jpg')
-              .flagCity.sp SP
-              .flagname.sp
-              .namesp= t('.name_one')
-              span= t('.title_one')
-              p= t('.text_one')
-            li
-              = image_tag('catarse/team_diego.jpg')
-              .flagCity.sp SP
-              .flagname.sp
-              .namesp= t('.name_two')
-              span= t('.title_two')
-              p= t('.text_two')
-            li
-              = image_tag('catarse/team_luciana.jpg')
-              .flagCity.sp SP
-              .flagname.sp
-              .namesp= t('.name_three')
-              span= t('.title_three')
-              p= t('.text_three')
-            li.last
-              = image_tag('catarse/team_renato.jpg')
-              .flagCity.sp SP
-              .flagname.sp
-              .namesp= t('.name_four')
-              span= t('.title_four')
-              p= t('.text_four')
+            - if t('.image_one', default: "").present?
+              li
+                = image_tag(t('.image_one'))
+                .flagCity
+                  .city= t('.place_one')
+                .flagname
+                .name= t('.name_one')
+                span= t('.title_one')
+                p= t('.text_one')
+            - if t('.image_two', default: "").present?
+              li
+                = image_tag(t('.image_two'))
+                .flagCity
+                  .city= t('.place_two')
+                .flagname
+                .name= t('.name_two')
+                span= t('.title_two')
+                p= t('.text_two')
+            - if t('.image_three', default: "").present?
+              li
+                = image_tag(t('.image_three'))
+                .flagCity
+                  .city= t('.place_three')
+                .flagname
+                .name= t('.name_three')
+                span= t('.title_three')
+                p= t('.text_three')
+            - if t('.image_four', default: "").present?
+              li.last
+                = image_tag(t('.image_four'))
+                .flagCity
+                  .city= t('.place_four')
+                .flagname
+                .name= t('.name_four')
+                span= t('.title_four')
+                p= t('.text_four')
         li.second
           ul
-            li
-              = image_tag('catarse/team_rodrigo.jpg')
-              .flagCity.rj RJ
-              .flagname.rj
-              .namerj= t('.name_five')
-              span= t('.title_five')
-              p= t('.text_five')
-            li
-              = image_tag('catarse/team_diogo.jpg')
-              .flagCity.rj RJ
-              .flagname.rj
-              .namerj= t('.name_six')
-              span= t('.title_six')
-              p= t('.text_six')
-            li
-              = image_tag('catarse/team_evelise.jpg')
-              .flagCity.rs RS
-              .flagname.rs
-              .namers= t('.name_seven')
-              span= t('.title_seven')
-              p= t('.text_seven')
-            li.last
-              = image_tag('catarse/team_adriano.jpg')
-              .flagCity.rs RS
-              .flagname.rs
-              .namers= t('.name_eight')
-              span= t('.title_eight')
-              p= t('.text_eight')
-        li.first
-          ul
-            li
-              = image_tag('catarse/team_ton.jpg')
-              .flagCity.mg MG
-              .flagname.mg
-              .namemg= t('.name_nine')
-              span= t('.title_nine')
-              p= t('.text_nine')       
+            - if t('.image_five', default: "").present?
+              li
+                = image_tag(t('.image_five'))
+                .flagCity
+                  .city= t('.place_five')
+                .flagname
+                .name= t('.name_five')
+                span= t('.title_five')
+                p= t('.text_five')
+            - if t('.image_six', default: "").present?
+              li
+                = image_tag(t('.image_six'))
+                .flagCity
+                  .city= t('.place_six')
+                .flagname
+                .name= t('.name_six')
+                span= t('.title_six')
+                p= t('.text_six')
+            - if t('.image_seven', default: "").present?
+              li
+                = image_tag(t('.image_seven'))
+                .flagCity
+                  .city= t('.place_seven')
+                .flagname
+                .name= t('.name_seven')
+                span= t('.title_seven')
+                p= t('.text_seven')
+            - if t('.image_eight', default: "").present?
+              li.last
+                = image_tag(t('.image_eight'))
+                .flagCity
+                  .city= t('.place_eight')
+                .flagname
+                .name= t('.name_eight')
+                span= t('.title_eight')
+                p= t('.text_eight')
     .clearfix

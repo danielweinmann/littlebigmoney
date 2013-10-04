@@ -1,14 +1,14 @@
 en:
   adm:
-    confirm_dialog: "You are sure?"
+    confirm_dialog: "Are you sure?"
     financials:
       index:
         id: ID
         name: Title
-        user: "MoIP Username"
+        user: "PayU Username"
         user_id: "User ID"
         goal: Goal
-        total_payment_service_fee: "MoIP's fee"
+        total_payment_service_fee: "PayU's fee"
         total_catarse_fee: "LittleBigMoney's fee"
         repass_value: "Value to pay"
         expires_at: Ends
@@ -20,7 +20,7 @@ en:
         title: "Financial reports"
         backer_report: "Supporters report"
         search_report: "Search report"
-        total_projects: projects
+        total_projects: Projects
         submit: Filter
         by_state: "By state"
         between_expires_at: "Expire between"
@@ -28,11 +28,11 @@ en:
     projects:
       index:
         by_state: "By state"
-        between_created_at: "Created at between"
+        between_created_at: "Created between"
         id: ID
         name: Title
         send_to_trash: Delete
-        send_to_draft: "Send to DRAFT!"
+        send_to_draft: "Save as DRAFT!"
         reject: Reject!
         approve: Approve!
         user_id: "User ID"
@@ -44,14 +44,14 @@ en:
         state: State
         menu: "Projects Admin"
         title: "Projects Admin"
-        total_projects: projects
+        total_projects: Projects
         submit: Filter
         expires_at: "Expires at"
         category: Category
         order_table: Order
         order_date: "Submit date"
-        order_asc: "Goal asc"
-        order_desc: "Goal desc"
+        order_asc: "Lowest goal"
+        order_desc: "Highest goal"
         order_created_at: "Submission date"
     actions:
       confirm: Confirm
@@ -68,12 +68,12 @@ en:
         total_backed: "Support total"
         total_backers: Supporters
         total_backs: Support
-        total_users: users
-        total_credits: credits
-        total_credits_view: "calculated credits"
+        total_users: Users
+        total_credits: Credits
+        total_credits_view: "Calculated credits"
         user: User
         value: Value
-        payer_email: "Payment email"
+        payer_email: "payment email"
         provider: Provider
     backers:
       messages:
@@ -96,7 +96,7 @@ en:
         payment_method: "Payment method"
         payment_fee: "Payment method fee"
         payment_choice: "Payment choice"
-        payer_email: "Payer email"
+        payer_email: "payer email"
         user_email: LittleBig-email
         created_at: "Created at"
         pending_to_refund: "Refund pending"
@@ -147,15 +147,15 @@ en:
         last_year: "Last year"
   channels:
     adm:
-      confirm_dialog: "You are sure?"
+      confirm_dialog: "Are you sure?"
       financials:
         index:
           id: ID
           name: Title
-          user: "MoIP Username"
+          user: "PayU Username"
           user_id: "User ID"
           goal: Goal
-          total_payment_service_fee: "MoIP's fee"
+          total_payment_service_fee: "PayU's fee"
           total_catarse_fee: "LittleBigMoney's fee"
           repass_value: "Value to pay"
           expires_at: Ends
@@ -167,7 +167,7 @@ en:
           title: "Financial reports"
           backer_report: "Supporter report"
           search_report: "Search report"
-          total_projects: projects
+          total_projects: Projects
           submit: Filter
           by_state: "By state"
           between_expires_at: "Expire between"
@@ -175,11 +175,11 @@ en:
       projects:
         index:
           by_state: "By state"
-          between_created_at: "Created at between"
+          between_created_at: "Created between"
           id: ID
           name: Title
-          send_to_trash: Delete
-          send_to_draft: "Send to DRAFT!"
+          send_to_trash: delete
+          send_to_draft: "Save as DRAFT!"
           reject: Reject!
           approve: Approve!
           user_id: "User ID"
@@ -187,18 +187,18 @@ en:
           total_backs: Support
           online_date: "Went live"
           pledged: Reached
-          recommended: Recommended?
-          state: State
+          recommended: Recommended
+          state: state
           menu: "Projects Admin"
           title: "Projects Admin"
-          total_projects: projects
+          total_projects: Projects
           submit: Filter
           expires_at: "Expires at"
           category: Category
           order_table: Order
           order_date: "Date sent"
-          order_asc: "Goal asc"
-          order_desc: "Goal desc"
+          order_asc: "Lowest goal"
+          order_desc: "highest goal"
           order_created_at: "Submission date"
       actions:
         confirm: Confirm
@@ -210,17 +210,17 @@ en:
           credits_view: "Calculated credits"
           id: ID
           key: Key
-          submit: Search
+          submit: search
           has_credits_difference: "Discrepancy in credits"
           total_backed: "Support total"
           total_backers: Supporters
           total_backs: Support
-          total_users: users
-          total_credits: credits
-          total_credits_view: "calculated credits"
+          total_users: Users
+          total_credits: Credits
+          total_credits_view: "Calculated credits"
           user: User
           value: Value
-          payer_email: ~
+          payer_email: "payment email"
           provider: Provider
       backers:
         messages:
@@ -243,23 +243,23 @@ en:
           payment_method: "Payment method"
           payment_fee: "Payment method fee"
           payment_choice: "Payment choice"
-          payer_email: "Payer email"
-          user_email: "Catarse user email"
+          payer_email: "payer email"
+          user_email: LittleBig-email
           created_at: "Created at"
-          pending_to_refund: "Pending to refund"
-          confirm_backer: ~
+          pending_to_refund: "Refund pending"
+          confirm_backer: "Confirm support"
           unconfirm_backer: "Support not confirmed"
           refund_backer: "Refund support"
           title: "Support management"
-          state: ~
+          state: Status
           menu: Support
           anonymous: Anonymous?
           confirmed: Confirmed?
           credits: "Used credits?"
           id: ID
-          key: Key
-          no_backers: "No backers found."
-          project: Project
+          key: Password
+          no_backers: "No supporters found."
+          project: Standard
           refunded: "Support refunded!"
           requested_refund: "Requested refund?"
           reward: Reward
@@ -288,7 +288,7 @@ en:
           previous_period: "Previous 8 weeks"
           last_year: "Last year"
         backers_by_week:
-          title: "Confirmed value of support per week"
+          title: "Support value confirmed per week"
           current_period: "Last 8 weeks"
           previous_period: "Previous 8 weeks"
           last_year: "Last year"
