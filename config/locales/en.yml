@@ -4,17 +4,17 @@ en:
     user:
       name: User
       location: "City / State"
-      confirmed_backers: "Confirmed backs"
+      confirmed_backers: "Support confirmed"
       created_projects: "Created projects"
   current_update: ~
   "no": "No"
   "yes": "Yes"
   or: or
   site:
-    title: "The biggest crowdfunding community in Brazil"
+    title: "LittleBigMoney is a crowdfunding platform for micro businesses with social or environmental impact"
     meta_title: "%{title} · %{company_name}"
-    description: "O LittleBigMoney é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel!"
-    keywords: "littlebigmoney, crowdfunding, project, community, open source"
+    description: "LittleBigMoney is a different - and colaborative - tool for your project to come alive!"
+    keywords: "littlebigmoney, crowdfunding, project, community, open source, crowdfunding, donate, help, collaborate, support"
   login:
     forgot_password:
       welcome: ~
@@ -32,7 +32,7 @@ en:
   backer_report_to_project_owner:
     reward_description: "Reward description"
     confirmed_at: "Payment confirmed at"
-    value: "Back value"
+    value: "Support value"
     service_fee: "LittleBigMoney fee"
     user_email: "LittleBigMoney user profile e-mail"
     user_name: "Backer name"
@@ -71,21 +71,21 @@ en:
       subtitle: "total of %{total}"
   project_by: "project by"
   tell_about_this_back: "Tell the world about your support!"
-  share_my_backs: "See the projects that I support in LittleBigMoney!"
+  share_my_backs: "Check out the project! "
   tell_about_this_project: "Tell the world about your project!"
-  share_my_projects: "See my projects in LittleBigMoney!"
-  count_backed_projects: "backed %{total} projects"
+  share_my_projects: "Check out the project! "
+  count_backed_projects: "You have supported %{total} projects"
   footer:
     titles:
       info: "Useful Information"
       opendata: "nice statistics"
-      social: "do you like LittleBigMoney?"
+      social: "Did you like LittleBigMoney?"
       blog: "Recent posts"
       newsletter: "Sing up our newsletter"
     stats:
       backers: Backers
-      backs: Backs
-      total_backed: Backed
+      backs: Support
+      total_backed: "Support total"
       users: Users
       funded_projects: "Successful projects"
       active_projects: "Projects on air now"
@@ -192,7 +192,7 @@ en:
     reward_must_be_from_project: "must be from the same project"
     should_not_back_if_maximum_backers_been_reached: "has reached its maximum backers"
     value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
-    project_should_be_online: "You cannot back a project that is not online"
+    project_should_be_online: "You cannot support a project that is not listed"
   project_plural: projects
   backer_plural: backers
   backer_singular: backer
@@ -209,11 +209,11 @@ en:
       link: "See how the refund works"
       link_url: ~
       reject_btn: "I want to keep my credits"
-      accept_btn: "I want to request the refund"
+      accept_btn: "Yes, I want to request a refund"
     index:
-      back_date: "Back date"
+      back_date: "Support date"
       current_credits_html: "Your current balance is <span id=\"current_credits\">%{credits}</span> in credits."
-      important_html: "If you ask for a refund, the value of your payment will be deducted from your credits."
+      important_html: "To learn the rules of the reimbursement procedure, <a href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos' target='_blank'>click here</a>. Any questions, please enter <a href='http://suporte.catarse.me' target='_blank'> Support</a>."
       project: Project
       refund_expration_date: "Refund deadline"
       refunded: "Refund request successfully done. Our team will contact you within two business days."
@@ -223,26 +223,26 @@ en:
       requested_refund: "Requested refund"
       status: Status
       title: "My credits"
-      value: Value
+      value: value
     refund:
-      cannot_refund: "This payment cannot be refunded."
+      cannot_refund: "This support cannot be refunded"
       error: "Oops. There was an error while requesting your refund."
-      no_credits: "You don't have enough credits to request this refund."
-      refunded: "This payment has already been refunded."
-      requested_refund: "You already requested a refund for this payment."
+      no_credits: "You don't have enough credits to perform this support"
+      refunded: "This support has already been refunded."
+      requested_refund: "You already requested a refund for this support."
     title: "My credits"
   credits_mailer:
     request_refund_from:
       subject: "Refund request from project %{name}"
-      subject_html: "User %{name} requested refund for the back %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
+      subject_html: "User %{name} requested reimbursement of the support %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
       user_name: "User name"
       user_email: "User email"
       payer_email: "Payment email"
       payer_name: "User name used on payment"
       project: Project
-      backer_key: "Backer key"
+      backer_key: "Support key"
       payment_id: "Payment ID"
-      backer_value: "Backer value"
+      backer_value: Value
       payment_method: "Payment method"
       payment_choice: "Payment choice"
       created_at: "created at"
@@ -250,7 +250,7 @@ en:
     index:
       title: "Curated pages"
     show:
-      backed: backed
+      backed: "Support total"
       reached: reached
   error: "Ooops! There was an error. Please try again."
   explore:
@@ -270,15 +270,15 @@ en:
   formtastic:
     hints:
       backer:
-        credits: "You have <strong>%{credits}</strong> in credits and can back with up to this amount without needing to make a new payment."
-        value: "You chose the amount ;) starting with 10,000 COP, any amount is great."
+        credits: "You have <strong>%{credits}</strong> in credits and can support with up to this amount without needing to make a new payment."
+        value: "You chose the amount ;) starting from 20,000 COP, any amount is great!"
       project:
         video_url_edit: "Paste here the URL of your Vimeo video."
         about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
         category: "Before you format your project explore other (successful) projects to inspire yourself!"
         expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
         online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
-        goal: "Is important to keep in mind that most of the support comes from people close to you (friends, family, acquaintances, etc):  <a href='http://blog.catarse.me/sua-campanha-no-catarse-precisa-de-um-empurrazinho' target='_blank'> Click here</a> This way you can set the support you want to collect through LittleBigMoney. It is important to think about the capacity you have to mobilize at least 50% of the support within contact network."
+        goal: "It is important to keep in mind that most of the support comes from people close to you (friends, family, acquaintances, etc):  <a href='http://blog.catarse.me/sua-campanha-no-catarse-precisa-de-um-empurrazinho' target='_blank'> Click here</a> This way you can set the support you want to collect through LittleBigMoney. It is important to think about the capacity you have to mobilize at least 50% of the support within your contact network."
         headline: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct :)"
         name: "Be as objective as you can. Leave explanations for the About section."
         uploaded_image: "Upload a 512x400 image(.jpg)."
@@ -286,16 +286,16 @@ en:
         more_links: "Which chanels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you"
         first_backers: "To reach your financial goal it’s indispensable to engaje the people who are close to you and the project. So if you can list here who will be your first 20 backers that would be a great sign ;) "
       reward:
-        description: "Describe your reward in a way that arouses people's interest to back the project. Don't be shy!"
+        description: "Describe your reward in a way that attracts people's interest to support the project. Don't be shy!"
         maximum_backers: "If your reward is limited, tell us the maximum backers."
-        minimum_value: "This is the minimum amount to choose this reward."
+        minimum_value: "This is the minimum amount of support to choose this reward."
         days_to_delivery: "Total of days to deliver the reward."
     labels:
       backer:
-        anonymous: "I want my back to be anonymous."
+        anonymous: "I want my support to be anonymous."
         credits: "I want to use my credits on this back."
         reward: "Select your reward"
-        value: "How much do you want to contribute with?"
+        value: "How much do you want to support with?"
       comment:
         comment: "Leave your comment about this project"
       project:
@@ -316,8 +316,8 @@ en:
   found_plural: Found
   found_singular: Found
   here: here
-  i_backed: "I backed the project %{name} on @catarse"
-  i_just_backed: "I just backed the project %{name} on @catarse"
+  i_backed: "I supported this project %{name} on @LittleBigMoney"
+  i_just_backed: "I just supported the project %{name} on @LittleBigMoney"
   layouts:
     login:
       login_with_facebook: "sign in with your facebook account"
@@ -361,21 +361,21 @@ en:
   project:
     start:
       email_subject: "Your project has been received by LittleBigMoney's team"
-      email_text: "Thanks for trusting your project to LittleBigMoney :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to resnpond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep atention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #f57421 !important;'>%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around LittleBigMoney.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #f57421 !important;'>Facebook</a> and get some deeper knowledge about LittleBigMoney reading the posts in our <a href='%{blog}' style='color: #f57421 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
+      email_text: "Thanks for trusting your project to LittleBigMoney :) <br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 business days to respond. That is because we have a small team working on several projects. Note that the reply can come sooner, so keep atention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #f57421 !important;'>%{explore_link}</a>) and - if you like any of them- support it! This is the way to show support for the crowdfunding culture in Colombia and to feed the ecosystem that keeps growing around LittleBigMoney.<br><br>Besides that, you will get some inspiration for your own project. <br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #f57421 !important;'>Facebook</a> and<a href='%{twitter}' style='color: #f57421 !important;'>Twitter</a> and get a deeper knowledge of LittleBigMoney in our Blog<a href='%{blog}' style='color: #f57421 !important;'>blog</a>. <br> If you have any doubts, send an email to: %{email}"
       notification_text: "Your project has been received by LittleBigMoney's team"
     finish:
       successful:
         email_subject: "Hooray! The project %{project_name} was successful on LittleBigMoney!"
-        email_text: "The project %{project_link}, that you have backed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_backers} wonderful backers, raised %{project_pleged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: LittleBigMoney's team takes 3 days to send to the project creator the list with all information of the backers. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantine, share with all your friends this sucess?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about LittleBigMoney, acess our FAQ: <a href='http://www.catarse.me/faq' style='color: #008800';>www.catarse.me/faq</a> or send an email to <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a><br>"
-        facebook_text: "Hooray! The project '%{name}', which I backed, was successful on LittleBigMoney!"
-        notification_text: "Hooray! The project %{link} that you backed was successful! Spread the word!"
+        email_text: "The project %{project_link}, that you have supported was successfully funded in LittleBigMoney! Let's celebrate! <br><br>The project has, including you, %{project_total_backers} wonderful supporters. It raised %{project_pleged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: LittleBigMoney's team takes 3 business days to send the list with all information of the supporters to the project creator. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantine, share with all your friends this sucess?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubts about LittleBigMoney, acess our FAQ: <a href='http://www.catarse.me/faq' style='color: #008800';>www.catarse.me/faq</a> or send an email to <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a><br>"
+        facebook_text: "Hooray! The project '%{name}', which I supported, was successful on LittleBigMoney!"
+        notification_text: "Hooray! The project %{link} that you supported was successful! Spread the word!"
         reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
-        twitter_text: "Hooray! The project '%{name}', which I backed, was successful on @catarse! %{short_url}"
+        twitter_text: "Hooray! The project '%{name}', which I supported, was successful on @LBigMoney! %{short_url}"
       unsuccessful:
         email_subject: "The project %{project_name} wasn't funded on LittleBigMoney."
-        email_text: "Unfortunately the project %{project_link}, that you have backed, did not reached its goal and was not funded at LittleBigMoney.<br><br>So, you have received <strong>%{value}</strong> in credits to back other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in LittleBigMoney using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject \"Refund - login issue\".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, acess our FAQ or send an email to <a href=\"mail_to:contato@catarse.me\" style=\"color: #008800;\">contato@catarse.me</a>.<br>"
-        notification_text: "You received %{value} in credits to back other projects. If you prefer, you can request a refund %{link}."
-        unsuccessful_text: "The project %{link} that you backed wasn't funded. Maybe next time!"
+        email_text: "Unfortunately the project %{project_link}, that you have supported, did not reach its goal and was not funded at LittleBigMoney.<br><br>In this case, you have received <strong>%{value}</strong> credits to support other projects. You can see other projects at %{project_category}%{explore_category_link}.<br><br>You can also ask for a refund by clicking in %{credits_link}. Remember that you signed up in LittleBigMoney using %{user_provider}. </b> If you have some difficulty in this process, do not hesitate to send an email to financeiro@catarse.me with the subject \"Refund - login issue\".<br><br>(In case you prefer to request a refund, just to remind you, as it appears in %{link_to_term}  of LittleBigMoney, if the support was made by credit card the amount will be returned in the next card bill. If the support was made through bank transfer or check, we will send an email with the procedure yo return the support to you.<br><br>If, for any reason, you want to contact %{project_owner_name} the project owner, send an email to %{project_owner_email}.<br><br>If you have any other doubts, acess our FAQ or send an email to financeiro@catarse.me.<br>"
+        notification_text: "You received %{value} in credits to support other projects. If you prefer, you can request a refund %{link}."
+        unsuccessful_text: "The project %{link} that you supported didn't have enough funds. Maybe next time!"
     video_regex_validation: "only Vimeo URLs are allowed"
     display_status:
       expired: expired
@@ -388,7 +388,7 @@ en:
       not_reached_goal: waiting
   projects:
     index:
-      what_is_html: "<strong>LittleBigMoney</strong> is the first platform of the region in collective micro-investment for the funding and development of SMEs"
+      what_is_html: "<strong>LittleBigMoney</strong> is the first crowdfunding platform of the region for micro businesses with social or environmental impact"
       slogan_donate: "A little donation, a big help"
       slogan_invest: "(Soon) grow with new entrepreneurs"
     box:
@@ -398,21 +398,21 @@ en:
     back_project:
       display_status:
         reached_goal: "This project will be successful and funded on %{date}"
-        not_reached_goal: "This project will only be funded if at least %{goal} is backed until %{date}"
+        not_reached_goal: "This project will only be successful if it collects at least %{goal} until %{date}"
         failed: "This project didn't reach the goal of %{goal} until %{date} and wasn't funded"
         rejected: ~
         successful: "This project was successful and was funded on %{date}"
         waiting_funds: "Waiting confirmation from payments to know if this project will be funded."
-        draft: "This project is in draft mode and is not open to backers yet."
+        draft: "This project is in draft mode and is not open to supporters yet."
       reached_of: "Reached of"
-      submit: "Back this project"
+      submit: "I want to support this project"
     backer:
       anonymous_backer: "Anonymous backer"
       anonymous_description: "Opted to remain incognito"
       no_reward: "This backer has not picked a reward"
     backers:
       review:
-        error: "Ooops. There was an error while registering your back. Please try again."
+        error: "Ooops. There was an error while registering your support. Please try again."
         payulatam: ~
         payulatam_title: ~
         paypal: ~
@@ -430,49 +430,49 @@ en:
         text_title_html: "You are now part of the group that does everything to make %{link} happen."
         title: "Thank you"
       checkout:
-        no_credits: "You don't have enough credits to back this project."
+        no_credits: "You don't have enough credit to support this project."
         paypal_cancel: ~
-        paypal_description: ~
+        paypal_description: "Support for the project %{project_name} with the value of %{value}"
         paypal_error: ~
         paypal_currency: ~
         paypal_conversion: ~
         payulatam_submit: ~
-        payulatam_description: ~
+        payulatam_description: "Support for the project %{project_name} with the value of %{value}"
         payulatam_error: ~
-        success: "Your back was successfully made. Thanks a lot!"
+        success: "Your support was successful. Thanks a lot!"
       new:
-        cannot_back: "It's not possible to back this project right now. Please, back other projects."
+        cannot_back: "It's not possible to support this project right now. Please, support other projects."
         header:
           subtitle: "You're just a few steps away from making a difference and becoming a part of this project."
           title: "Oohh yeah!"
         no_reward: "Thanks. I just want to help the project."
         submit: "Review and proceed to checkout"
-        title: "Back %{name}"
-        anonymous_warning_html: ~
+        title: "Support %{name}"
+        anonymous_warning_html: "<strong>Are you sure you want your support to be anonymous?</strong>Showing your support in public increases your reputation and adds to our contributor's range. <br/><br/>Moreover, the value of your support will not be shared with anyone but the owner of the project. Only the administrator can access this information regardless of wheter your support is public or anonymous."
         back_faq:
           title: ~
           question_1: ~
           question_2: ~
           question_3: ~
-          question_4: ~
+          question_4: "What if I don't want LittleBigMoney credits?"
           question_5: ~
           answer_1_html: ~
-          answer_2_html: ~
-          answer_3_html: ~
+          answer_2_html: "Once PayU or Paypal confirm the transaction (credit card in the same day, Baloto takes up to 4 days to confirm). If the project doesn't reach %{goal} until %{expires_at} you will receive the amount of money in the form of credits to support other projects in LittleBigMoney."
+          answer_3_html: "Yes! you will receive back 100% of what you paid in credits to support other projects in LittleBigMoney."
           answer_4_html: ~
           answer_5_html: ~
       create:
-        brazil_address_title: "Fill when you back is in Brazil"
-        credits_notice_html: "This back will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
+        brazil_address_title: "Fill in the blanks if the transaction was made in Colombia"
+        credits_notice_html: "This support will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to support other projects."
         live_in_brazil: "If you live in Colombia, please check this box"
-        error: "Ooops. There was an error while registering your back. Please try again."
+        error: "Ooops. There was an error while registering your support. Please try again."
         international:
           description: "You can use PayPal to make international payments"
           important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5.4% + 0.60 COP per transaction.</p>"
           submit: "Proceed to PayPal's checkout"
           title: "Want to make an international payment?"
-        review_with_reward_html: "You will back with <strong>%{value}</strong> and receive the following reward:"
-        review_without_reward_html: "You will back with <strong>%{value}</strong> but you don't want any reward for that."
+        review_with_reward_html: "You will support with <strong>%{value}</strong> and receive the following reward:"
+        review_without_reward_html: "You will support with <strong>%{value}</strong> but you don't want any reward for that."
         submit:
           credits: "Confirm backing with credits"
           moip: "Proceed to MoIP's checkout"
@@ -496,17 +496,17 @@ en:
       success: "Your project was successfully created! We'll soon contact you. Thanks a lot!"
     form:
       permalink_hint: "Simplify the URL of your project. Think that your sponsor need to remember the address to share your project."
-      important_html: "Please notice that LittleBigMoney will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises."
+      important_html: "Please notice that LittleBigMoney will charge a 13% fee if your project is successful."
       add_reward: "Add reward"
       project_warning:
         content_html: "Want to have your project selected? Don't forget to read %{link}."
         help_link: "our guide"
-      rewards_description: "We believe that the best way to inspire people to back a project is offering excelent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
+      rewards_description: "We believe that the best way to inspire people to support your project is offering great – and creative! – rewards. Supporters love limited editions, unique things that will help them learn more about your life and your environment. Spend some time devising creative rewards for your supporters."
       rewards_title: Rewards
       submit: "Submit project"
     index_header:
-      subtitle: "Fund projects collaboratively and become part of something bigger. Promote a collective catharsis! You're the missing part in this story."
-      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/>Promote a collective catharsis! You're the missing part in this story."
+      subtitle: "Support projects and become part of something new and BIG. Promote a collective change! You're the missing part in this story."
+      subtitle_html: "Support projects and become part of something new and BIG.<br/>Promote a collective change! You're the missing part in this story."
       title: "Make the projects you believe in happen"
     recommended_header:
       suggest_for_you: "suggested for you"
@@ -537,19 +537,19 @@ en:
       key: Key
       no_backers: "No backers found."
       project: Project
-      refunded: Refunded?
+      refunded: "Support refunded!"
       requested_refund: "Requested refund?"
       reward: Reward
       submit: Search
-      title: "Backers management"
-      total_backed: backed
+      title: "Supporters management"
+      total_backed: "Support total"
       total_backers: backers
-      total_backs: backs
+      total_backs: Support
       total_users: users
       user: User
       value: Value
     project:
-      backed: backed
+      backed: Support
       reached: reached
     project_backers:
       empty: "Nobody has supported this project so far. How about being the first one?"
@@ -568,12 +568,12 @@ en:
       alert: ~
     warnings:
       minimize: ~
-      support: ~
-      support_html: ~
+      support: "Support central"
+      support_html: "Your questions and comments are very important to us. We invite you to write to us during the proccess %{link}."
       draft:
         alert: ~
         paragraph_1_html: ~
-        paragraph_2_html: ~
+        paragraph_2_html: "<strong>remember that</strong> LittleBigMoney is a platform that reviews the feasibility  and consistency of the project throughout its process. The project will be evaluated by the LittleBigMoney team to be uploaded or not in case it doesn't meet the profile of the platform."
       rejected:
         alert: ~
         paragraph_1_html: ~
@@ -589,10 +589,10 @@ en:
           item_4: ~
       waiting_funds:
         alert: ~
-        paragraph_1_html: "After time runs out, your project will be waiting for confirmation of last minute contributions during the next 3 business days."
+        paragraph_1_html: "After time runs out, your project will be waiting for confirmation of last minute support during the next 3 business days."
         paragraph_2_html: ~
-        paragraph_3_html: ~
-        paragraph_4_html: ~
+        paragraph_3_html: "All the money will be transferred to the supporters in the form of credits. At first, this credits can support other projects in LittleBigMoney. In any case, you will receive an email with instructions on how to ask for a refund."
+        paragraph_4_html: "In case your project collects at least 30% of its goal, it will have the possibility to go on air for a second time. However it will reviewed by the LittleBigMoney team"
       successful:
         alert: ~
         paragraph_1_html: ~
@@ -600,7 +600,7 @@ en:
         paragraph_3_html: ~
       failed:
         alert: ~
-        paragraph_1_html: ~
+        paragraph_1_html: "All the money will be transferred to the supporters in the form of credits. At first, this credits can support other projects in LittleBigMoney. In any case, you will receive an email with instructions on how to ask for a refund."
     formatting_tips:
       title: ~
       media_html: ~
@@ -612,9 +612,9 @@ en:
       reward_title: "For %{minimum} or more"
       reward_deliver_time: "Estimated delivery: %{prevision}"
       backs_to_confirm:
-        one: "1 backer in time to confirm."
-        other: "%{count} backers in time to confirm."
-      title: "Back and receive..."
+        one: "1 support awaiting confirmation."
+        other: "%{count} supports awaiting confirmation."
+      title: "Support and receive"
       versions: ~
       updated_at: ~
     send_mail:
@@ -628,7 +628,7 @@ en:
       no_rewards_warning: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
       guide_html: ~
       reports:
-        no_backs: "This project don't have any back yet."
+        no_backs: "This project doesn't have supporters yet."
         link_reports: "Download report of "
         all_backers: "all backers"
         all_backers_without_reward: "all backers that don't select any reward"
@@ -654,11 +654,11 @@ en:
       introduction_html: ~
       permalink_important: "Try not to use underline, hyphen etc."
       permalink_hint: "Go simple. Your backers should be able to remmember the URL to your project ;)"
-      important_html: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount."
+      important_html: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the amount to be deducted."
       about: "Describe your project and how much do you need"
       how_much_you_need: "How much do you want to raise?"
-      how_much_hint_html: ~
-      how_much_important: ~
+      how_much_hint_html: "It's important to keep in mind that most of the money that you collect will come from people close to you (family, friends and acquaintances):<a href='%{href}' target='_blank'>Click here!</a> For this reason note that when you calculate the total amount to ask to LittleBigMoney you must have the ability to collect at least 50% of it in your network."
+      how_much_important: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the amount to be deducted."
       days: ~
       days_hint: ~
       days_important: ~
@@ -684,18 +684,18 @@ en:
       facebook_hint: ~
       twitter_hint: ~
       social_important: ~
-      know_us_via: "How did you meet LittleBigMoney?"
+      know_us_via: "How did you hear about LittleBigMoney?"
       knowus_important: ~
       how_works: "How to mobilize backers to raise $ needed for enforcement?"
       project_warning:
         content_html: "Want to have your project selected? Don't forget to read %{link}."
         help_link: "our guide"
       rewards: "What rewards do you want to offer?"
-      rewards_hint: "We believe that the best way to inspire people to back a project is offering excelent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
+      rewards_hint: "We believe that the best way to inspire people to support your project is by offering great – and creative! – rewards. Supporters love limited editions, unique things that will help them learn more about your life and your environment. Spend some time devising creative rewards for your supporters."
       rewards_important: ~
       submit: "Submit the project"
       send_project: "I want to submit my project."
-      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
+      legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you will add the rewards for your supporters. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>LittleBigMoney is a platform with diverse levels of supervision, which means that our board will evaluate the focus, the feasibility and consistency of your project during the draft. We hope you understand that if your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
     twitter:
       take_a_look: "Check out the project %{name} on @catarse"
     video_embed:
@@ -737,15 +737,15 @@ en:
       submit: "Next step!"
       send_project: "I want to submit my project."
       subtitle: "Understand, step-by-step, how to finance your project through LittleBigMoney."
-      title: "How LittleBigMoney works?"
-      introduction: "LittleBigMoney is a different - and collaborative - way to make your projects become reality."
-      legend_html: "Use this guide to decide if LittleBigMoney is the right tool for the job."
+      title: "How does LittleBigMoney?"
+      introduction: "LittleBigMoney is a different - and collaborative - way to make your projects become a reality."
+      legend_html: "Use this guide to decide if <br>LittleBigMoney is the right choice to finance your project."
       title_one: "Submit your project"
-      step_one: "Ideas can be projects and they require support! LittleBigMoney facilitates them and receives them with open arms whether they are big, small or just for simple advice. We love projects that require little money and have a big impact in their communities."
+      step_one: "Ideas can be projects and they require support! LittleBigMoney facilitates and receives them with open arms whether they are big, small or just for simple advice. We love projects that require little money and have a big impact in their communities."
       title_two: Review
       step_two: "After we receive your project, it will be screened by our team of reviewers. The objective here is to give you tips in order to maximize the chances of your project becoming successful, as well as filtering NON-SENSE projects. Remember, we want your project to be successful as much as you do ;)"
       title_three: "Let's go live!?"
-      step_three: "When your project is ready, it's time to go live and plan your campaign. During this period, you will need to engage as many people as possible to reach your goal."
+      step_three: "When your project is ready, it's time to go live and promote it in LittleBigMoney. During this period, you will need to engage as many people as possible to reach your goal."
       title_four: "It's all-or-nothing"
       step_four: "If your project didn't get enough support on time, all of your supporters will receive back their support in credit with which they can support other projects, if they want, they can ask for a refund."
       title_requirements: "Requirements to submit your project to LittleBigMoney"
@@ -754,15 +754,15 @@ en:
       nonprofit: "Non-financial rewards"
       donation: "No philanthropic or “fund my life” projects"
       video: "Make a video"
-      more_questions: "Ok, but tell me more about this LittleBigMoney..."
+      more_questions: "Ok! but tell me more about LittleBigMoney..."
       title_magic: "Our magic formula"
       magic: "We believe that providing a meeting place for people that share common values is the best way to turn projects into reality. Use LittleBigMoney as a channel to direct your network towards a COMMON objective."
       title_money: "Where does the money to finance projects come from?"
-      money: "At least 50% will come from your own network of contacts. In this manner, LittleBigMoney is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
+      money: "At least 50% will come from your own contact network. In this manner, LittleBigMoney is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social media, newspapers, blogs and, of course, your favorite places."
       title_work: "Does it take a lot of work?"
-      work: "A loooot! There is no 'easy money on the INTERNET'. You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after LittleBigMoney."
+      work: "A loooot! There is no 'easy money on the INTERNET'. You will have to work a lot before, during and after your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after LittleBigMoney."
       title_costs: "How much does it cost to use LittleBigMoney?"
-      costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, LittleBigMoney will apply a 13% fee, this value includes both the LittleBigMoney fee and the payment gateway fee."
+      costs: "Submitting your project is free. However, when your project is approved and has reached its goal, LittleBigMoney will apply a 13% fee, this value includes both the LittleBigMoney fee and the payment gateway fee."
       why: "Why LittleBigMoney?"
       intro: "First of all, it's good that you know why we believe that this new way to finance projects is phenomenal:"
       why_one: "By creating a very strong bond with your network, this kind of campaign open doors to new projects, partnerships and other unexpected connections."
@@ -771,12 +771,12 @@ en:
     guidelines_tips:
       title: "Almost there!"
       subtitle: "Before submitting your project, it's good to think over a few important points."
-      introduction_html: "We know you can't wait to have your project online, but first answer <br> (in a piece of paper) the following questions."
+      introduction_html: "We know you can't wait to have your project online, but first answer <br> (in a piece of paper) the following questions"
       legend_html: "Having clear answers to these questions will help tremendously in structuring your project, <br>increasing the chances that it will be successful."
       title_one: "What inspired you to make this project?"
       tip_one: "People only engage when they realize the importance of a cause for society or for the person who leads a campaign. So be very clear about what is your inspiration and let it overflow into your project."
       title_two: "What is the focus?"
-      tip_two: "LittleBigMoney is an excellent way to take the first steps. Therefore, define very well the purpose of your project, as well as who will benefit from it. Clearly defining your objectives is one of the best ways to engage people."
+      tip_two: "LittleBigMoney is an excellent tool to give a boost to your ideas. Therefore, define very well the purpose of your project, as well as who will benefit from it. Clearly defining your objectives is one of the best ways to engage people."
       title_three: "What is your goal?"
       tip_three: "Calculate all costs for the project execution and rewards delivery. Also take into account your ability to engage people in order to define your financial goal."
       title_four: "What is your deadline for the fundraising?"
@@ -786,23 +786,23 @@ en:
       title_six: "Is your video ready?"
       tip_six: "The video is the business card of your project. It's through it that the backers will get in touch with your cause. So, take special care in the script, audio and image quality. HD is recommended."
       title_seven: "How will you mobilize your network?"
-      tip_seven: "You need to have a clear idea on how you will stir your network and convince it to back your project. Distribute your work weekly and change your approach with the network according to how close you are to it."
+      tip_seven: "It is important to plan strategically to mobilize networks and convince them to support your project, both before and during the period of project completion. We recommend distributing your work weekly with your network according to the proximity you achieve with your supporters."
       title_eight: "How will the money be used?"
       tip_eight: "Create a GOOGLE DOCS spreadsheet and open your budget to show everyone how the received support will be used. TRANSPARENCY is everything in this project."
       explore_curious: "Just looking around!"
       explore_projects: "I want to explore the projects."
       submit: "Next step!"
       send_project: "I want to submit my project."
-      guide: "Download here a complete guide with all the tips to elaborate your project in LittleBigMoney."
+      guide: "Download a complete guide with all the tips to elaborate your project in LittleBigMoney."
       guide_url: ~
     guidelines_backers:
-      title: "I want to back a project!"
-      subtitle: "Understand step by step how to back a project on LittleBigMoney."
-      introduction: "LittleBigMoney is an excelent way to engaje in a cause you believe in"
+      title: "I want to support a project!"
+      subtitle: "Understand step by step how to support a project on LittleBigMoney."
+      introduction: "LittleBigMoney is a great way to engage in a causes you believe in"
       legend_html: "We believe that being part of a project is the kind of thing that sometimes we do not really know why, but it does a darn good."
       title_one: "Explore the Project"
       step_one: "The first step is to understand the project. Watch the video, read the description, browse the links. If you are certain that this project can not remain only on paper, go one step forward!"
-      title_two: "Decide with how much you’ll back it"
+      title_two: "Decide with how much you want to support"
       step_two: "A good way to decide how much you want to give as support is to observe the rewards that the micro entrepeneurs offer in exchange for your support."
       title_three: "Finalize your support"
       step_three: "Fill in your information and review it! Then, decide what form of payment best meets your needs."
@@ -814,38 +814,38 @@ en:
       not_sucess_title: "If the project does not meet its support goal"
       not_sucess: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href='%{terms}' target='_blank'>terms of use</a>."
       title_not_funded: "If the project does not achieve the goal, how do I use my credits?"
-      not_funded: "You will receive credits  on LittleBigMoney. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
+      not_funded: "You will receive your credits on your LittleBigMoney profile. At the time you choose to support another project, on the select a reward window, there will be a field to use your credits."
       more_questions: "I'm dying to support a project, is there anything else I need to know?"
       title_backer: "How do I know that my support was successful?"
       backer: "You will receive a confirmation email. Stay tuned and check your support on the SUPPORTERS tab at the page of the project you supported."
       title_rewards: "If the project is funded, how do I get my rewards?"
       rewards: "It is the duty of the project creator to contact you and arrange how to deliver  the chosen reward. If not, you need to send an email to him/her to claim it! If you get no answer … contact us so we can give them an earful = D"
       title_credits: "If the project does not achieve the goal, how do I use my credits?"
-      credits: "You will receive credits  on LittleBigMoney. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
+      credits: "You will receive your credits on your LittleBigMoney profile. At the time you choose to support another project, on the select a reward window, there will be a field to use your credits."
       title_money: "What if I don't want to use the credits?"
-      money: "No problem! You just need to enter in your profile (My credits) and request a chargeback. If you paid with debit or billet, you’ll need to open an account at MOIP. If you used a credit card the value will be back on your next bill."
+      money: "No problem! You just have to go to your profile (My credits) and request a refund. If you paid with debit or billet, you’ll need to open an account at MOIP. If you used a credit card you will receive the value on your next card bill. You can also send an email to finanzas@littlebigmoney.org with your request."
       other_backers: "I WANT MORE! CAN I HELP  IN OTHER WAYS?"
       intro: "Get to know diferent ways to help projects you believe in"
       other_one: "Bring two other friends to support the project as you did"
-      other_two: "Spread the word to every one. Tell them how amazing it is the project that you supported on LittleBigMoney."
+      other_two: "Spread the word! Tell everyone how amazing the project that you supported is on LittleBigMoney and encourage them to support too."
       other_three: "Do you have a friend who’s a Journalist? Try to have him/her to post something about it on his/her blog."
       other_four: "Make a backing video to broadcast your believe in the project .Like these guys did:https://vimeo.com/46233018"
       other_five: "Send an e-mail to the project creator asking how can  you help even more."
       submit: "VERY COOL!"
       send_project: "I want to submit my project "
       explore_curious: "I’M ON BOARD!"
-      explore_projects: "I want to back a project"
+      explore_projects: "I want to support a project"
     guidelines:
       title: "How it works"
-      subtitle: "Get to know LittleBigMoney better."
-      introduction_html: "LittleBigMoney is a space of exchange among individuals who together <br >enable the realization of creative projects."
+      subtitle: "Get to know LittleBigMoney a little better."
+      introduction_html: "LittleBigMoney is a place of exchange among individuals<br> who enable together the realization of creative projects with social and environmental impact."
       legend_html: |-
-          Welcome! this is a place created for you where with a little support you can get BIG results. <br><br> Today we can help and support the growth of many micro enterprises which contribute to your country's growth and the economic empowerment of many communities.
+          Welcome! this is a place created for you where with a little support you can get BIG results. <br><br> We can help and support the growth of many micro businesses which contribute to your country's growth and the economic empowerment of many communities.
           LittleBigmoney is an alternative that connects thousands of people with the dreams of many micro entrepeneurs and everyone is a part of a community where little things become BIG.
       submit: "SUBMITTING A PROJECT"
       send_project: "Understand how to submit your project"
       explore_curious: "BACKING A PROJECT"
-      explore_projects: "Understand how to back a project"
+      explore_projects: "How to support a project"
     about:
       title: "Who Are We?"
       subtitle: "Meet the Little people that makes BIG things happen <3"
@@ -863,13 +863,13 @@ en:
 
           franz.gomez@fundacioncapital.org
       name_three: "Paula Rodriguez Rueda - Colombia"
-      title_three: "Coordinadora de Proyecto - LittleBigMoney"
+      title_three: "Project Coordinator - LittleBigMoney"
       text_three: |-
           Es Master en Relaciones Internacionales de la Universidad Javeriana en Bogotá y en Public Management del SDA Bocconi School of Management de Italia. Ha trabajado con el sector público colombiano abriendo mercados exteriores a pequeñas y medianas empresas colombianas, y  también con empresas privadas prestadoras de servicios públicos, apoyando el diseño de nuevo proyectos de inversión y licitaciones públicas.
 
           paula.rodriguez@fundacioncapital.org
       name_four: "María Antonia Hoyos - Colombia"
-      title_four: "Oficial de Operaciones - LittleBigMoney"
+      title_four: "Operations officer - LittleBigMoney"
       text_four: |-
           Profesional en Gobierno y Relaciones Internacionales, con énfasis en Gestión Pública de la Universidad Externado de Colombia. Experiencia en Gerencia y Formulación de proyectos sociales, Fundraising y gestión de Asistencia Técnica Internacional para pequeñas y medianas empresas colombianas. Trabajó en la Fundación CINEP/Programa por la Paz como Profesional Junior de la Gerencia de Proyectos y realizó un año de pasantía en la Dirección de Cooperación y Convenios de PROEXPORT.
 
@@ -881,7 +881,7 @@ en:
 
           veruschka.zilveti@fudacioncapital.org
       name_six: "Javier Felipe Hidalgo - Colombia"
-      title_six: "Oficial de Comunicaciones LittleBigMoney"
+      title_six: "Communications officer - LittleBigMoney"
       text_six: |-
           Comunicador social y periodista con énfasis en la gestión de la comunicación empresarial de la Universidad Externado de Colombia. Experiencia en manejo y creación de comunidades en redes y creación de estratégias de comunicación organizacional. Trabajó como voluntario en la fundación CISV de Colombia como entrenador de liderazgo en educación experiencial y realizó labores de fotografía en la Corporación Coral y Orquestal de Colombia.
 
@@ -901,9 +901,9 @@ en:
       title: "Terms of use"
   terms: "terms of use"
   user:
-    backs_text_one: "Backed only this project until now"
-    backs_text_two: "Backed this and 1 other project"
-    backs_text_many: "Backed this and other %{total} projects"
+    backs_text_one: "Only supported this project until now"
+    backs_text_two: "Supported this and 1 other project"
+    backs_text_many: "Supported this and other %{total} projects"
     no_name: Unnamed
     google_account: "Google Account"
   users:
@@ -914,7 +914,7 @@ en:
     show:
       attention: Attention
       tabs:
-        backed_projects: "Backed projects"
+        backed_projects: "Support total"
         created_projects: "Created projects"
         comments: Comments
         credits: Credits
@@ -925,12 +925,12 @@ en:
         facebook: "Profile on facebook"
         twitter: "Profile on twiiter"
     backs:
-      anonymous: "Anonymous back."
-      no_backs: "%{name} haven't backed any project yet. But we know it's just a matter of time! :D"
-      no_backs_current_user_html: "You haven't backed any project yet. What about <a href=\"/\">starting now</a>?"
+      anonymous: "Anonymous support"
+      no_backs: "%{name} you haven't supported any project yet. But we know it's just a matter of time! :)"
+      no_backs_current_user_html: "You haven't supported any project yet. What if <a href=\"/\">you do now</a>?"
       no_reward: "You didn't pick a reward"
-      title: "Projects %{name} has backed"
-      title_current_user: "Projects I've backed"
+      title: "Projects that %{name} has supported"
+      title_current_user: "Projects I've supported"
       your_reward: "Your reward"
     unsubscribes:
       title: "Choose from which projects you want to receive update notifications:"
@@ -948,7 +948,7 @@ en:
       other_link: "another internet page"
       change_password: "Change my password"
       current_password_hint: "<i>We need your current password to confirm your changes.</i>"
-      email_hint: "Your email will only be used for communications from LittleBigMoney and from the projects you back. It won't be visible in your profile. When you back a project, we will give your email to the project owner so he can provide your rewards."
+      email_hint: "Your email will only be used for communications from LittleBigMoney and from the projects you support. It won't be visible in your profile. When you support a project, we will give your email to the project owner so he can deliver your rewards."
       email_tooltip: "Click here to fill your email..."
       gravatar_hint_html: "Want to change your picture? Use %{link} with your email. It's as simple as uploading an image and works for other sites as well ;)"
       local_avatar: "My avatar"

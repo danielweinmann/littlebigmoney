@@ -18,7 +18,7 @@ en:
         state: State
         menu: "Financial reports"
         title: "Financial reports"
-        backer_report: "Backer report"
+        backer_report: "Supporters report"
         search_report: "Search report"
         total_projects: projects
         submit: Filter
@@ -37,7 +37,7 @@ en:
         approve: Approve!
         user_id: "User ID"
         goal: Goal
-        total_backs: Backs
+        total_backs: Support
         online_date: "Went live"
         pledged: Reached
         recommended: Recommended?
@@ -57,17 +57,17 @@ en:
       confirm: Confirm
     users:
       index:
-        title: "Management backers"
-        menu: Backers
+        title: "Supporters management"
+        menu: Supporters
         credits: Credits
         credits_view: "Calculated credits"
         id: ID
         key: Key
         submit: Search
         has_credits_difference: "Discrepancy in credits"
-        total_backed: backed
-        total_backers: backers
-        total_backs: backs
+        total_backed: "Support total"
+        total_backers: Supporters
+        total_backs: Support
         total_users: users
         total_credits: credits
         total_credits_view: "calculated credits"
@@ -78,49 +78,49 @@ en:
     backers:
       messages:
         successful:
-          confirm: "Backer confirmed!"
-          pendent: "Backer unconfirmed!"
-          refund: "Backer refunded!"
-          change_reward: "Reward changed!"
-          hide: "Backer hidden!"
-          cancel: "Backer canceled!"
-          push_to_trash: "Backer deleted!"
+          confirm: "Support confirmed"
+          pendent: "Support canceled!"
+          refund: "Support refunded!"
+          change_reward: "Reward successfully modified!"
+          hide: "Support successfully hidden!"
+          cancel: "Support canceled!"
+          push_to_trash: "Support deleted!"
       index:
-        push_to_trash: "Delete backer"
-        cancel: "Cancel backer"
+        push_to_trash: "Delete support"
+        cancel: "Cancel support"
         between_values: "Values between"
         by_state: State
         refund_and_hide: "Reimburse and do not exhibit support."
-        backer_info: "Info of backer %{key}"
+        backer_info: "supporter information %{key}"
         payment_id: "Payment ID"
         payment_method: "Payment method"
         payment_fee: "Payment method fee"
         payment_choice: "Payment choice"
         payer_email: "Payer email"
-        user_email: "Catarse user email"
+        user_email: LittleBig-email
         created_at: "Created at"
-        pending_to_refund: "Pending to refund"
-        confirm_backer: "Confirm backer"
-        unconfirm_backer: "Unconfirm backer"
-        refund_backer: "Refund backer"
-        title: "Backers management"
+        pending_to_refund: "Refund pending"
+        confirm_backer: "Confirm support"
+        unconfirm_backer: "Support unconfirmed"
+        refund_backer: "Refund support"
+        title: "Supporters management"
         state: State
-        menu: Backs
+        menu: Support
         anonymous: Anonymous?
         confirmed: Confirmed?
         credits: "Used credits?"
         id: ID
         key: Key
-        no_backers: "No backers found."
+        no_backers: "No supporters found."
         project: Project
-        refunded: Refunded?
-        requested_refund: "Requested refund?"
+        refunded: "Support refunded!"
+        requested_refund: Refund?
         reward: Reward
         no_reward: "No reward"
         submit: Search
-        total_backed: backed
-        total_backers: backers
-        total_backs: backs
+        total_backed: "Support total"
+        total_backers: Supporters
+        total_backs: Support
         total_users: Users
         user: User
         value: Value
@@ -129,9 +129,9 @@ en:
         menu: Statistics
         title: Statistics
         total_users: Users
-        total_backs: Backs
-        total_backers: Backers
-        total_backed: Backed
+        total_backs: Support
+        total_backers: Supporters
+        total_backed: "Support total"
         total_projects: Projects
         total_projects_success: Successful
         total_projects_online: Online
@@ -141,7 +141,7 @@ en:
         previous_period: "Previous 8 weeks"
         last_year: "Last year"
       backers_by_week:
-        title: "Backed value confirmed per week"
+        title: "Support value confirmed per week"
         current_period: "Last 8 weeks"
         previous_period: "Previous 8 weeks"
         last_year: "Last year"
@@ -165,7 +165,7 @@ en:
           state: State
           menu: "Financial reports"
           title: "Financial reports"
-          backer_report: "Backer report"
+          backer_report: "Supporter report"
           search_report: "Search report"
           total_projects: projects
           submit: Filter
@@ -184,7 +184,7 @@ en:
           approve: Approve!
           user_id: "User ID"
           goal: Goal
-          total_backs: Backs
+          total_backs: Support
           online_date: "Went live"
           pledged: Reached
           recommended: Recommended?
@@ -204,17 +204,17 @@ en:
         confirm: Confirm
       users:
         index:
-          title: "Management backers"
-          menu: Backers
+          title: "Supporter management"
+          menu: Supporters
           credits: Credits
           credits_view: "Calculated credits"
           id: ID
           key: Key
           submit: Search
           has_credits_difference: "Discrepancy in credits"
-          total_backed: backed
-          total_backers: backers
-          total_backs: backs
+          total_backed: "Support total"
+          total_backers: Supporters
+          total_backs: Support
           total_users: users
           total_credits: credits
           total_credits_view: "calculated credits"
@@ -225,20 +225,20 @@ en:
       backers:
         messages:
           successful:
-            confirm: "Backer confirmed!"
-            pendent: "Backer unconfirmed!"
-            refund: "Backer refunded!"
-            change_reward: "Reward changed!"
-            hide: "Backer hidden!"
-            cancel: "Backer canceled!"
-            push_to_trash: "Backer deleted!"
+            confirm: "Support confirmed!"
+            pendent: "Support canceled!"
+            refund: "Support refunded!"
+            change_reward: "Reward successfully modified!"
+            hide: "Support successfully hidden!"
+            cancel: "Support canceled!"
+            push_to_trash: "Support deleted!"
         index:
-          push_to_trash: "Delete backer"
-          cancel: "Cancel backer"
-          between_values: ~
-          by_state: ~
-          refund_and_hide: "Refund and hide"
-          backer_info: "Info of backer %{key}"
+          push_to_trash: "Delete support"
+          cancel: "Cancel support"
+          between_values: "Values between"
+          by_state: Status
+          refund_and_hide: "Cancel and hide support"
+          backer_info: "supporter information %{key}"
           payment_id: "Payment ID"
           payment_method: "Payment method"
           payment_fee: "Payment method fee"
@@ -248,11 +248,11 @@ en:
           created_at: "Created at"
           pending_to_refund: "Pending to refund"
           confirm_backer: ~
-          unconfirm_backer: ~
-          refund_backer: ~
-          title: "Backers management"
+          unconfirm_backer: "Support not confirmed"
+          refund_backer: "Refund support"
+          title: "Support management"
           state: ~
-          menu: Backs
+          menu: Support
           anonymous: Anonymous?
           confirmed: Confirmed?
           credits: "Used credits?"
@@ -260,14 +260,14 @@ en:
           key: Key
           no_backers: "No backers found."
           project: Project
-          refunded: Refunded?
+          refunded: "Support refunded!"
           requested_refund: "Requested refund?"
           reward: Reward
           no_reward: "No reward"
           submit: Search
-          total_backed: backed
+          total_backed: "Support total"
           total_backers: backers
-          total_backs: backs
+          total_backs: Support
           total_users: Users
           user: User
           value: Value
@@ -276,9 +276,9 @@ en:
           menu: Statistics
           title: Statistics
           total_users: Users
-          total_backs: Backs
+          total_backs: Support
           total_backers: Backers
-          total_backed: Backed
+          total_backed: "Support total"
           total_projects: Projects
           total_projects_success: Successful
           total_projects_online: Online
@@ -288,7 +288,7 @@ en:
           previous_period: "Previous 8 weeks"
           last_year: "Last year"
         backers_by_week:
-          title: "Backed value confirmed per week"
+          title: "Confirmed value of support per week"
           current_period: "Last 8 weeks"
           previous_period: "Previous 8 weeks"
           last_year: "Last year"

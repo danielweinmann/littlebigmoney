@@ -40,10 +40,10 @@ en:
         site_title: "Reset password"
         label_new_password: "Type your new password bellow"
         title: "Reset password"
-        subtitle: "Reset password to use your email and password in your Catarse login"
+        subtitle: "Set a new password to use your email address to access LittleBigMoney anytime"
         submit: "Reset password"
     registrations:
-      destroyed: "Bye! Your account was successfully cancelled. We hope to see you again soon."
+      destroyed: "Thanks! Your account was successfully cancelled. We hope to see you in LittleBigMoney soon!"
       signed_up: "Welcome! You have signed up successfully."
       signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
       signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."

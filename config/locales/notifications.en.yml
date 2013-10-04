@@ -1,16 +1,16 @@
 en:
   notifications:
     support_html: "If you have any questions contact our team in our support central<br/>%{link}"
-    signature_html: "A big hug,<br/>LittleBigMoney team"
+    signature_html: "A big hug,<br/>The LittleBigMoney team"
     reward_html: "Reward selected:%{description}</strong>"
     no_reward_html: "<strong>No reward selected</strong>"
     backer_canceled_after_confirmed:
       subject: "The support was canceled after confirmation"
       header: "The support was canceled after confirmation"
     project_owner_backer_confirmed:
-      subject: "Hooray! Another new supporter backed your project"
+      subject: "Hooray! a new supporter backed your project"
       header: "A new support has just been confirmed for your project"
-      text_html: "Hello,<strong>%{name}</strong>!<br/><br/>The supporter%{backer} just supported your project!<br/><br/>Some support data:<br/><br/><strong>Support provided:</strong>%{value}<br/>%{reward}<br/><strong>Supporter's email:</strong>%{email}<br/><br/>See other supporters here:%{backers_link}<br/><br/>Share your news with them:%{updates_link}<br/><br/>Download your reports:%{reports_link}"
+      text_html: "Hello,<strong>%{name}</strong>!<br/><br/>The supporter%{backer} just backed your project!<br/><br/>Some support data:<br/><br/><strong>Support provided:</strong>%{value}<br/>%{reward}<br/><strong>Supporter's email:</strong>%{email}<br/><br/>See other supporters here:%{backers_link}<br/><br/>Share your news with them:%{updates_link}<br/><br/>Download your reports:%{reports_link}"
     confirm_backer:
       subject: "Thank you! Your support for %{project_name} was confirmed!"
       header: "Support confirmed"
@@ -35,7 +35,7 @@ en:
       header: "Project successful"
     project_unsuccessful:
       subject: "Your project was not successfully supported, but we would like your feedback :)"
-      header: "Project was not successfully supported :("
+      header: "Your project was not successfully supported :("
     backer_project_successful:
       subject: "Hooray! The project %{project_name} was successful in LittleBigMoney"
       header: "Hooray! The project you supported was successful in LittleBigMoney"
@@ -48,7 +48,7 @@ en:
     project_received:
       subject: "Your project was received by LittleBigMoney"
       header: "Your project was received by the LittleBigMoney team"
-      text_html: "Hello, %{name}<br/><br/>! Thank you very much for trusting LittleBigMoney and sending us your project. <br/><br/> First of all we want to remind you how  the project selection works in LittleBigMoney step by step. It is very easy, there are 4 simple steps:<br/><br/>1 - When you completed your form you could see your project's page. In that moment it is a DRAFT and we already have knowledge of it;<br/><br/>2 - Our team will answer in four business days maximum. It's not a matter of yes or no, certainly we will exchange several mails before your project airs.<br/><br/>3 - In the meantime (and during the contact you have with us too), you can update the information that you sent. Remember that the project is in a draft state, that's why you have the possibility to complete your information calmly and it will air only when your project is ready<br/><ul><li>Here you can find a <a href='https://docs.google.com/document/d/1IHkWiIqPzB9aAryoO-wUiHJUjgdLW7LrVcGn43mZ_Lk/edit'>GUIDE</a>on how to better structure your project.</li><li>Here's another<a href='https://docs.google.com/document/d/169gO3htuy9NyZHdmtnJsOod3TwvImRLVzgRbU5VelKs/edit'>GUIDE</a>on how to edit your project in draft.</li></ul><br/>4 - We will receive your notification so we can authorize your project to be available to all human beings of the world to share and support you!<br/><br/>Important information: It is mandatory to complete the registration information. To do so in the upper part of the page click in: MY ACCOUNT > MY PROFILE > ADJUSTMENTS<br/><br/> You have a link of the draft of your project: %{link}. With that take the opportunity to share with some people in order to get suggestions to improve your project before going to air.<br/><br/>It is worth receiving a little inspiration from the projects that have been successful in LittleBigMoney, it is all collective knowledge created to be taken advantage from.<br/><br/>Benefit too by <a href='http://littlebigmoney.org/es/explore'> knowing some of the projects that are on air</a>and if one of them catches your eye, you can support it. That is the best way to show that you believe in the culture of crowdfunding in Colombia and promote the ecosystem that is being formed around LittleBigMoney. If you support a project you will probably receive support back when your project airs.<br/><br/>Stay connected with our latest news on %{facebook} and %{twitter} and know more about LittleBigMoney reading our entries in our %{blog}."
+      text_html: "Hello, %{name}<br/><br/>! Thank you for trusting LittleBigMoney and sending us your project. <br/><br/> First of all we want to remind you how the project selection works step by step. It is very easy, there are 4 simple steps:<br/><br/>1 - When you completed your form you could see your project's page. In that moment it is a DRAFT and we already have knowledge of it;<br/><br/>2 - Our team will answer in four business days maximum. It's not a matter of yes or no, certainly we will exchange several mails before your project airs.<br/><br/>3 - In the meantime (and during the contact you have with us), you can update the information that you sent. Remember that the project is in a draft state, that's why you have the possibility to complete your information calmly and it will air only when your project is ready<br/><ul><li>Here you can find a <a href='https://docs.google.com/document/d/1IHkWiIqPzB9aAryoO-wUiHJUjgdLW7LrVcGn43mZ_Lk/edit'>GUIDE</a>on how to better structure your project.</li><li>Here's another<a href='https://docs.google.com/document/d/169gO3htuy9NyZHdmtnJsOod3TwvImRLVzgRbU5VelKs/edit'>GUIDE</a>on how to edit your project in draft.</li></ul><br/>4 - We will receive your notification so we can authorize your project to be available to all the people of the world to share and support you!<br/><br/>Important information: It is mandatory to complete the registration information. To do so in the upper part of the page click in: MY ACCOUNT > MY PROFILE > ADJUSTMENTS<br/><br/> You have a link of the draft of your project: %{link}. With that take the opportunity to share with some people in order to get suggestions to improve your project before going to air.<br/><br/>It is worth receiving a little inspiration from the projects that have been successful in LittleBigMoney, it is all collective knowledge created to be taken advantage from.<br/><br/>Benefit too by <a href='http://littlebigmoney.org/es/explore'> knowing some of the projects that are on air</a>and if one of them catches your eye, you can support it. That is the best way to show that you believe in the culture of crowdfunding in Colombia and promote the ecosystem that is being formed around LittleBigMoney. If you support a project you will probably receive support back when your project airs.<br/><br/>Stay connected with our latest news on %{facebook} and %{twitter} and know more about LittleBigMoney reading our entries in our %{blog}."
     project_received_channel:
       subject: "Your project was received by the wings channel"
       header: "Your project was welcomed by the staff of the Wings Channel"
@@ -57,7 +57,7 @@ en:
       header: "Now it's for real"
       text_html: ~
     project_rejected:
-      subject: "Your project does not fit LittleBigMoney's profile"
+      subject: "Your project does not match the profile that LittleBigMoney is looking for now"
       header: "Your project was not accepted :("
       text_html: ~
     new_draft_project:
@@ -81,4 +81,4 @@ en:
     temporary_password:
       subject: "Temporary password for LittleBigMoney"
       header: "Login to change your password"
-      text_html: ~
+      text_html: "As you registered in LittleBigMoney via Facebook, we are sending you a temporary password so you can access with you email address too.<br/><br/>Login can be made using the following information: <br/><br/>Email:%{email}<br/>Temporary password:%{password}<br/><br/>Remember that you can continue accesing LittleBigMoney using your Facebook account. <br/><br/>To change your temporary password%{link}."
