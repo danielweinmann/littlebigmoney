@@ -257,14 +257,14 @@ en:
           confirmed: Confirmed?
           credits: "Used credits?"
           id: ID
-          key: Password
+          key: Key
           no_backers: "No supporters found."
           project: Standard
           refunded: "Support refunded!"
           requested_refund: "Requested refund?"
           reward: Reward
           no_reward: "No reward"
-          submit: Search
+          submit: search
           total_backed: "Support total"
           total_backers: Supporters
           total_backs: Support

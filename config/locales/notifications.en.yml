@@ -80,5 +80,5 @@ en:
       header: "New support confirmed"
     temporary_password:
       subject: "Temporary password for LittleBigMoney"
-      header: "Login to change your password"
+      header: "Log in to change your password"
       text_html: "As you registered in LittleBigMoney via Facebook, we are sending you a temporary password so you can access with you email address too.<br/><br/>Login can be made using the following information: <br/><br/>Email:%{email}<br/>Temporary password:%{password}<br/><br/>Remember that you can continue accesing LittleBigMoney using your Facebook account. <br/><br/>To change your temporary password%{link}."
