@@ -450,7 +450,7 @@ es:
         title: "Colabora con %{name}"
         anonymous_warning_html: "<strong>¿Seguro deseas que tu aporte sea anónimo?</strong> Dejar tu aporte público aumenta tu reputación y suma en nuestro rango de colaboradores. <br/><br/>Por otra parte, el valor de tu aporte no será compartido con nadie más que el dueño del proyecto. Sólo el administrador podrá acceder a esta información, con independencia de que tu aporte sea público o anónimo."
         back_faq:
-          title: "Quiero aportar y lo quiero hacer ahora?"
+          title: "Quiero aportar y lo quiero hacer ahora"
           question_1: "¿Cómo puedo aportar a este proyecto?"
           question_2: "¿Cuándo se valida el pago?"
           question_3: "¿Recibo mi dinero de vuelta si el proyecto no tiene éxito?"
@@ -459,7 +459,7 @@ es:
           answer_1_html: "Seleccione el valor y la recompensa deseada! Luego haz clic en \"Revisar y hacer el pago\", serás enviado a la página siguiente para completar el pago."
           answer_2_html: "Una vez que PayU o Paypal confirman la transacción (tarjeta el mismo día, Baloto se demora hasta 4 días para confirmar). Si el proyecto no logra %{goal} hasta %{expires_at} tu obtienes el dinero en forma de créditos de LittleBigMoney para aportar a otros proyectos."
           answer_3_html: "Si! recibirás de vuelta el 100% de lo que pagaste en forma de créditos para apoyar otros proyectos de LittleBigMoney."
-          answer_4_html: "No hay problema! Solo tienes que entrar a la pestaña %{link}, dentro de los 60 días después de tu apoyo y solicitar una devolución de cargo. Si pagaste con tarjeta de crédito, se hará en la próxima factura. El costo de esta transacción será cargado a tu tarjeta de crédito."
+          answer_4_html: "No hay problema! Solo tienes que entrar a la pestaña %{link}, dentro de los 60 días después de tu apoyo y solicitar una devolución de cargo. Si pagaste con tarjeta de crédito, se hará el reembolso en la próxima factura. El costo de esta transacción será cargado a tu tarjeta de crédito."
           answer_5_html: "Cuando tu recompensa este lista, %{link} vamos a contactarte para enviarla o entregarla."
       create:
         brazil_address_title: "Completa los espacios si la transacción fue realizada en Colombia"

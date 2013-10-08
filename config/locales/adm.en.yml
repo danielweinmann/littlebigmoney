@@ -266,7 +266,7 @@ en:
           no_reward: "No reward"
           submit: Search
           total_backed: "Support total"
-          total_backers: backers
+          total_backers: Supporters
           total_backs: Support
           total_users: Users
           user: User
@@ -277,7 +277,7 @@ en:
           title: Statistics
           total_users: Users
           total_backs: Support
-          total_backers: Backers
+          total_backers: Supporters
           total_backed: "Support total"
           total_projects: Projects
           total_projects_success: Successful

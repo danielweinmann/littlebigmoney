@@ -8,9 +8,9 @@ en:
       subject: "The support was canceled after confirmation"
       header: "The support was canceled after confirmation"
     project_owner_backer_confirmed:
-      subject: "Hooray! a new supporter backed your project"
+      subject: "Hooray! a new supporter collaborated to your project"
       header: "A new support has just been confirmed for your project"
-      text_html: "Hello,<strong>%{name}</strong>!<br/><br/>The supporter%{backer} just backed your project!<br/><br/>Some support data:<br/><br/><strong>Support provided:</strong>%{value}<br/>%{reward}<br/><strong>Supporter's email:</strong>%{email}<br/><br/>See other supporters here:%{backers_link}<br/><br/>Share your news with them:%{updates_link}<br/><br/>Download your reports:%{reports_link}"
+      text_html: "Hello,<strong>%{name}</strong>!<br/><br/>The supporter%{backer} just contributed to your project!<br/><br/>Some support data:<br/><br/><strong>Support provided:</strong>%{value}<br/>%{reward}<br/><strong>Supporter's email:</strong>%{email}<br/><br/>See other supporters here:%{backers_link}<br/><br/>Share your news with them:%{updates_link}<br/><br/>Download your reports:%{reports_link}"
     confirm_backer:
       subject: "Thank you! Your support for %{project_name} was confirmed!"
       header: "Support confirmed"
@@ -18,7 +18,7 @@ en:
       text_html: "Hello, <strong>%{name}</strong>!<br/><br/>Your support to%{project} was confirmed by <strong>%{method}</strong><br/><br/>Save this message to serve as proof of your support.<br/><br/>Very important:<strong> if your support was made by credit card</strong>, the name that will appear on the invoice is%{method}. It is not yet possible that the name of LittleBigMoney appears written there.<br/><br/>Value of support:<strong>%{value}</strong><br/>%{reward}<br/>Support id%{id}<br/><br/>If the project is successful<strong>%{expires_at}</strong>, the project micro entrepeneurs will contact you to arrange the delivery of the rewards. That contact is made, usually, one week after the deadline of the campaign. This is the time that we use to pass the information of all the supporters to the micro entrepeneur.<br/><br/> If the project fails to meet the goal, you will receive an email from LittleBigMoney with the instructions to<br/>support another project with the credits that will be generated.<br/><br/>If you want to contact%{user}, you can send an email to%{email}"
     payment_slip:
       subject: "Support status for %{project_name}: printed payment order"
-      header: "Support information through payment order for LittleBigMoney"
+      header: "Support information on payment orders for LittleBigMoney"
     processing_payment:
       subject: "Your support to %{project_name} was received and is awaiting confirmation from %{payment_method}"
       header: "Support in analysis - What is this?"
@@ -43,7 +43,7 @@ en:
       subject: "The project %{project_name} did not reach the expected support - Some useful information"
       header: "Information on available credits and refunds ;)"
     pending_backer_project_unsuccessful:
-      subject: "The project %{project_name} that you supported did not reach the expected funds - Some useful information"
+      subject: "The project %{project_name} that you supported did not reach the expected support - Some useful information"
       header: "Confirmation about support information, available credits and refunds ;)"
     project_received:
       subject: "Your project was received by LittleBigMoney"
@@ -54,7 +54,7 @@ en:
       header: "Your project was received by the staff of the Asas Channel"
     project_visible:
       subject: "Your project is now online at LittleBigMoney"
-      header: "Now it's for real"
+      header: "Now it's a reality"
       text_html: ~
     project_rejected:
       subject: "Your project does not match the profile that LittleBigMoney is looking for now"
