@@ -102,13 +102,17 @@
                             | &nbsp;
                             = backer.payment_method
                           p
-                            strong= t('.payment_fee')
-                            | &nbsp;
-                            = number_to_currency backer.payment_service_fee, unit: 'COP', precision: 2, delimiter: '.'
-                          p
                             strong= t('.payment_id')
                             | &nbsp;
                             = backer.payment_id
+                          p
+                            strong= t('.payment_choice')
+                            | &nbsp;
+                            = backer.payment_choice
+                          p
+                            strong= t('.payment_fee')
+                            | &nbsp;
+                            = number_to_currency backer.payment_service_fee, unit: 'COP', precision: 2, delimiter: '.'
                           p
                             strong= t('.payer_email')
                             | &nbsp;
@@ -117,10 +121,6 @@
                             strong= t('.user_email')
                             | &nbsp;
                             = backer.user.email
-                          p
-                            strong= t('.payment_choice')
-                            | &nbsp;
-                            = backer.payment_choice
                           p
                             strong= t('.created_at')
                             | &nbsp;
