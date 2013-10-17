@@ -415,6 +415,14 @@ es:
         error: "Oops! Hubo un error mientras se registraba la colaboración. Por favor intenta de nuevo."
         payulatam: "Pago nacional - PayU Latam"
         payulatam_title: "Vas a ser redirigido a la página de PayU Latam para completar el pago."
+        payroll:
+          title: "Pago por nómina"
+          companies: "Fundación Capital, Color al cuadrado"
+          company_name: "Convenio empresarial"
+          accept_terms_html: "He leido y estoy de acuerdo con los <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-tÃ©rminos-de-uso-espaÃ±ol'>términos de uso para pago por nómina</a>."
+          submit: "Pago por nómina"
+          success: "Pago por nómina exitoso. Dentro de poco confirmaremos tu aporte con el convenio empresarial."
+          error: "Oops! Hubo un error mientras se registraba tu pago por nómina. Por favor intenta de nuevo."
         paypal: "Pago internacional - PayPal"
         international:
           section_title: "Vas a ser redirigido a la página de PayPal para completar el pago."
@@ -880,14 +888,14 @@ es:
       place_six: Colombia
       title_six: "Oficial de Comunicaciones"
       text_six: "Comunicador social y periodista con énfasis en la gestión de la comunicación empresarial de la Universidad Externado de Colombia. Experiencia en manejo y creación de comunidades en redes y creación de estratégias de comunicación organizacional. Trabajó como voluntario en la fundación CISV de Colombia como entrenador de liderazgo en educación experiencial y realizó labores de fotografía en la Corporación Coral y Orquestal de Colombia."
-      name_seven: ~
-      image_seven: ~
-      place_seven: ~
+      name_seven: ""
+      image_seven: ""
+      place_seven: Bogotá
       title_seven: ""
       text_seven: ""
       name_eight: ""
-      image_eight: ~
-      place_eight: ~
+      image_eight: ""
+      place_eight: Bogotá
       title_eight: ""
       text_eight: ""
     privacy:

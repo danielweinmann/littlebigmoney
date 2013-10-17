@@ -405,7 +405,7 @@ en:
         waiting_funds: "Waiting for payment confirmation to know if the project will be supported."
         draft: "This project is in draft mode and is not open to supporters yet."
       reached_of: Reached
-      submit: "I want to support this project"
+      submit: "I want to support"
     backer:
       anonymous_backer: "Anonymous supporter"
       anonymous_description: "I prefer to remain anonymous"
@@ -415,6 +415,14 @@ en:
         error: "Ooops. There was an error while registering your support. Please try again."
         payulatam: "National payment - PayU Latam"
         payulatam_title: "You will be redirected to the PayU Latam page to complete the payment."
+        payroll:
+          title: ~
+          companies: ~
+          company_name: ~
+          accept_terms_html: ~
+          submit: ~
+          success: ~
+          error: ~
         paypal: "International payment - PayPal"
         international:
           section_title: "You will be redirected to the PayPal site to complete you payment."
@@ -834,7 +842,7 @@ en:
       submit: "I'M CHECKING IT OUT!"
       send_project: "I want to submit my project "
       explore_curious: "I’M ON BOARD!"
-      explore_projects: "I want to support this project!"
+      explore_projects: "I want to support"
     guidelines:
       title: "How it works"
       subtitle: "Get to know LittleBigMoney a little better"
