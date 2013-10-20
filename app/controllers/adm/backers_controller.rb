@@ -1,7 +1,7 @@
 class Adm::BackersController < Adm::BaseController
   menu I18n.t("adm.backers.index.menu", locale: :es) => Rails.application.routes.url_helpers.adm_backers_path(locale: :es)
   has_scope :by_id, :by_user_id, :by_key, :user_name_contains, :project_name_contains, :confirmed, :credits, :requested_refund, :refunded,
-    :by_state, :by_value
+    :by_state, :by_payment_method, :by_value
   has_scope :between_values, using: [ :start_at, :ends_at ], allow_blank: true
   has_scope :pending_to_refund do |controller, scope, value|
     if value.present?

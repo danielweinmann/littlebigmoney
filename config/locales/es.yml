@@ -415,10 +415,12 @@ es:
         error: "Oops! Hubo un error mientras se registraba la colaboración. Por favor intenta de nuevo."
         payulatam: "Pago nacional - PayU Latam"
         payulatam_title: "Vas a ser redirigido a la página de PayU Latam para completar el pago."
-        payroll:
+        payroll: "Pago por nómina"
+        payroll_info:
           title: "Pago por nómina"
           companies: "Fundación Capital, Color al cuadrado"
           company_name: "Convenio empresarial"
+          employee_id: "Número de registro"
           accept_terms_html: "He leido y estoy de acuerdo con los <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>términos de uso para pago por nómina</a>."
           submit: "Pagar por nómina"
           success: "Pago por nómina exitoso. Dentro de poco confirmaremos tu aporte con el convenio empresarial."

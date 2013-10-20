@@ -16,6 +16,7 @@ class Backer < ActiveRecord::Base
   scope :not_deleted, ->() { where("backers.state <> 'deleted'") }
   scope :by_id, ->(id) { where(id: id) }
   scope :by_state, ->(state) { where(state: state) }
+  scope :by_payment_method, ->(payment_method) { where(payment_method: payment_method) }
   scope :by_key, ->(key) { where(key: key) }
   scope :by_user_id, ->(user_id) { where(user_id: user_id) }
   scope :user_name_contains, ->(term) { joins(:user).where("unaccent(upper(users.name)) LIKE ('%'||unaccent(upper(?))||'%')", term) }

@@ -48,6 +48,12 @@ GIT
   specs:
     cancan (2.0.0.alpha)
 
+PATH
+  remote: ../catarse_payroll
+  specs:
+    catarse_payroll (0.0.1)
+      rails (~> 3.2.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -466,6 +472,7 @@ DEPENDENCIES
   carrierwave (~> 0.8.0)
   catarse_mailchimp!
   catarse_paypal_express!
+  catarse_payroll!
   catarse_payulatam!
   chartkick
   coffee-rails

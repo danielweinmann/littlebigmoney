@@ -415,10 +415,12 @@ en:
         error: "Ooops. There was an error while registering your support. Please try again."
         payulatam: "National payment - PayU Latam"
         payulatam_title: "You will be redirected to the PayU Latam page to complete the payment."
-        payroll:
+        payroll: ~
+        payroll_info:
           title: ~
           companies: ~
           company_name: ~
+          employee_id: ~
           accept_terms_html: ~
           submit: ~
           success: ~

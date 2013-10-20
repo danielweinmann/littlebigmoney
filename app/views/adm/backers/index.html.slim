@@ -35,6 +35,9 @@
               = label_tag :by_state, t('.by_state')
               = select_tag :by_state, options_for_select(Backer.state_names, params[:by_state]), include_blank: true
             .input
+              = label_tag :by_payment_method, t('.by_payment_method')
+              = select_tag :by_payment_method, options_for_select(Backer.select("DISTINCT payment_method").map(&:payment_method), params[:by_payment_method]), include_blank: true
+            .input
               = label_tag :by_key, t('.key')
               = text_field_tag :by_key, params[:by_key]
             .input

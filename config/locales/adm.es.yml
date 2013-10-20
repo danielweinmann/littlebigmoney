@@ -90,6 +90,7 @@ es:
         cancel: "Cancelar Colaboración"
         between_values: "Valores entre"
         by_state: Estado
+        by_payment_method: "Forma de pago"
         refund_and_hide: "Hacer reembolso y no exibir aporte."
         backer_info: "información del colaborador %{key}"
         payment_id: "Identificación de pago"

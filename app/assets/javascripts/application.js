@@ -24,3 +24,4 @@
 //= require_tree ./app
 //= require ./init.js
 //= require i18n_viz
+//= require catarse_payroll

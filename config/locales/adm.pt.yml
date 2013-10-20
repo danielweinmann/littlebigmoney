@@ -90,6 +90,7 @@ pt:
         cancel: "Cancelar apoio"
         between_values: "Valores entre"
         by_state: Estado
+        by_payment_method: "Método de pagamento"
         refund_and_hide: "Fazer estorno e não exibir apoio."
         backer_info: "Informações do backer %{key}"
         payment_id: "ID do pagamento"
