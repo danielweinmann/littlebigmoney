@@ -35,7 +35,8 @@ gem 'catarse_payulatam', git: 'git://github.com/danielweinmann/catarse_payulatam
 # gem 'catarse_payulatam', path: '../catarse_payulatam'
 
 # Payment engine using PayU Latam
-gem 'catarse_payroll', path: '../catarse_payroll'
+gem 'catarse_payroll', git: 'git://github.com/danielweinmann/catarse_payroll.git',  ref: '90e0b1e01c7a3d2eff10a3c16286138e54397a1e'
+# gem 'catarse_payroll', path: '../catarse_payroll'
 
 # Decorators
 gem 'draper'
