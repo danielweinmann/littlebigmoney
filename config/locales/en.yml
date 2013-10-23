@@ -420,7 +420,7 @@ en:
           title: ~
           companies: ~
           company_name: ~
-          employee_id: ~
+          employee_id: "Identification number"
           accept_terms_html: ~
           submit: ~
           success: ~
@@ -861,42 +861,42 @@ en:
       subtitle: "Meet the Little people that make BIG things happen! <3"
       introduction: "Who are they? What do they eat? How do they network? You’ll see all of it on Who Are We."
       name_one: "Yves Moury"
-      image_one: "http://www.fundacioncapital.org/imagesup/yves_teamphoto.jpg"
+      image_one: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/yves_wp.jpg"
       place_one: Belgium
       title_one: "President y Executive Director"
       text_one: |-
           Economist and Management Engineer from the University of Leuven in Belgium, and Postgraduate in Social and Cultural Anthropology, Administration, Banking and IT and Development Finances from the same university. His experience of over 25 years in international development and poverty reduction includes consulting and research for agencies and international organizations such as BID, EU, IFAD, UNIDO, OIT and UNDP, and also with public and private entities, financial corporations and universities in Europe, Africa, Asia and Latin America.
           y.moury@fundacioncapital.org
       name_two: "Franz Gomez"
-      image_two: "http://www.fundacioncapital.org/imagesup/Franztest1.jpg"
+      image_two: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/franz_gomez_wp.jpg"
       place_two: Bolivia
       title_two: "Financial Inclusion Director"
       text_two: |-
           Economist from the Universidad Mayor of San Andrés, Bolivia. He holds a Master in Economics and a Doctorate (Ph.D.) in Economic Development from the Ohio State University, United States. He specializes in microfinance and rural finance, with extensive experience in technical assistance to government agencies and financial institutions for the design and implementation of financial inclusion policies and social protection. He has worked as a consultant and researcher in several countries in Latin America and the Caribbean, Europe and Asia.
           franz.gomez@fundacioncapital.org
       name_three: "Paula Rodriguez Rueda"
-      image_three: "http://www.fundacioncapital.org/imagesup/paulatest1.jpg"
+      image_three: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/paula_wp.jpg"
       place_three: Colombia
       title_three: "Project Coordinator"
       text_three: |-
           Master's in International Relations from the Universidad Javeriana in Bogotá and Master's in Public Management from SDA Bocconi School of Management in Italy. She has worked with the Colombian public sector by opening foreign markets to small and medium enterprises, and also with private companies like public utility providers, supporting the design of new investment projects and public tenders.
           paula.rodriguez@fundacioncapital.org
       name_four: "María Antonia Hoyos"
-      image_four: "http://www.fundacioncapital.org/imagesup/Tona_teamphoto.jpg"
+      image_four: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/tona_wp.jpg"
       place_four: Colombia
       title_four: "Operations Officer"
       text_four: |-
           Professional in Government and International Relations with emphasis in Public Management of the Externado University of Colombia. Experience in managing and developing social projects, fundraising and management of international technical assistance for SMEs in Colombia. She worked at the CINEP Foundation/Program for Peace as Junior Professional Project Manager and performed a one-year internship in the Department of Cooperation and Conventions in PROEXPORT
           maria.hoyos@fundacioncapital.org
       name_five: "Veruschka Zilveti"
-      image_five: "http://www.fundacioncapital.org/imagesup/verutest1.jpg"
+      image_five: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/veru_wp.jpg"
       place_five: Bolivia
       title_five: "Project Coordinator"
       text_five: |-
           Economist from the Catholic University of Bolivia, with a postgraduate degree in Management of Non-Profit Institutions. She has extensive experience in rural development projects and working with rural communities. She worked for eight years at IFAD analyzing strategies for poverty reduction and tools to strengthen market access for rural businesses.
           veruschka.zilveti@fudacioncapital.org
       name_six: "Javier Felipe Hidalgo"
-      image_six: "http://www.fundacioncapital.org/imagesup/javier_teamphoto2.jpg"
+      image_six: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/javier_wp.jpg"
       place_six: Colombia
       title_six: "Communications Officer"
       text_six: |-

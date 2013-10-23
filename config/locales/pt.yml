@@ -420,7 +420,7 @@ pt:
           title: "Pagamento em folha"
           companies: "Fundación Capital, Color al cuadrado"
           company_name: "Empresa conveniada"
-          employee_id: "Número de registro"
+          employee_id: "Número de identificación (obligatorio)"
           accept_terms_html: "Eu li e estou de acordo com os <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>termos de uso para pagamento em folha</a>."
           submit: "Pagar em folha"
           success: "Pagamento em folha enviado com sucesso. Em breve confirmaremos o apoio com a empresa conveniada."

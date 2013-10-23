@@ -420,7 +420,7 @@ es:
           title: "Pago por nómina"
           companies: "Fundación Capital, Color al cuadrado"
           company_name: "Convenio empresarial"
-          employee_id: "Número de registro"
+          employee_id: "Número de identificación (obligatorio)"
           accept_terms_html: "He leido y estoy de acuerdo con los <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>términos de uso para pago por nómina</a>."
           submit: "Pagar por nómina"
           success: "Pago por nómina exitoso. Dentro de poco confirmaremos tu aporte con el convenio empresarial."
