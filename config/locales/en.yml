@@ -98,7 +98,7 @@ en:
       terms_link: "http://lbm.uservoice.com/knowledgebase/articles/245482"
       policy_link: "http://suporte.catarse.me/knowledgebase/articles/161104-privacy-policy"
       contact: Contact
-      twitter: "Follow us at @%{twitter}"
+      twitter: "Follow us @%{twitter}"
       facebook: "Find us on Facebook"
   main:
     links:
@@ -388,7 +388,7 @@ en:
       not_reached_goal: waiting
   projects:
     index:
-      what_is_html: "<strong>LittleBigMoney</strong> is the first crowdfunding platform of the region for small and growing businesses with social or environmental impact"
+      what_is_html: "<strong>LittleBigMoney</strong> is Latin America's first crowdfunding platform for small and growing businesses with social or environmental impact"
       slogan_donate: "A little donation, a big help"
       slogan_invest: "Grow with new entrepreneurs (soon)"
     box:
@@ -863,7 +863,7 @@ en:
       name_one: "Yves Moury"
       image_one: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/yves_wp.jpg"
       place_one: Belgium
-      title_one: "President y Executive Director"
+      title_one: "President and Executive Director"
       text_one: |-
           Economist and Management Engineer from the University of Leuven in Belgium, and Postgraduate in Social and Cultural Anthropology, Administration, Banking and IT and Development Finances from the same university. His experience of over 25 years in international development and poverty reduction includes consulting and research for agencies and international organizations such as BID, EU, IFAD, UNIDO, OIT and UNDP, and also with public and private entities, financial corporations and universities in Europe, Africa, Asia and Latin America.
           y.moury@fundacioncapital.org
