@@ -1,4 +1,4 @@
-- Notification.create_notification(:backer_project_successful, @project.backers.confirmed.first.user, backer: @project.backers.confirmed.first, project: @project, project_name: @project.name)
+- Notification.create_notification(:backer_project_unsuccessful, @project.backers.confirmed.first.user, backer: @project.backers.confirmed.first, project: @project, project_name: @project.name)
 
 - content_for :js_templates do
   = render partial: 'backer'
