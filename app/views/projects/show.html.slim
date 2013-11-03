@@ -1,4 +1,4 @@
-- Notification.create_notification(:adm_project_deadline, User.where(email: ::Configuration[:email_payments]).first, project: @project, from: ::Configuration[:email_system], project_name: @project.name)
+- Notification.create_notification(:backer_canceled_after_confirmed, User.where(email: ::Configuration[:email_payments]).first, backer: @project.backers.confirmed.first)
 
 - content_for :js_templates do
   = render partial: 'backer'
