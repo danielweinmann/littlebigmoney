@@ -1,3 +1,5 @@
+- Notification.create_notification(:adm_project_deadline, User.where(email: ::Configuration[:email_payments]).first, project: @project, from: ::Configuration[:email_system], project_name: @project.name)
+
 - content_for :js_templates do
   = render partial: 'backer'
   = render partial: 'project_templates'
