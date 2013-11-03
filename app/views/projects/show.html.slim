@@ -1,4 +1,4 @@
-- Notification.create_notification(:credits_warning, @project.backers.confirmed.first.user, backer: @project.backers.confirmed.first, amount: @project.backers.confirmed.first.user.credits)
+- Notification.create_notification(:new_draft_project, @project.new_draft_recipient, project: @project, project_name: @project.name, from: @project.user.email, display_name: @project.user.display_name)
 
 - content_for :js_templates do
   = render partial: 'backer'
