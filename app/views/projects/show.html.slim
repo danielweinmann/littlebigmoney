@@ -1,4 +1,4 @@
-- Notification.create_notification(:backer_confirmed_after_project_was_closed, User.where(email: ::Configuration[:email_payments]).first, backer: @project.backers.confirmed.first, project_name: @project.name)
+- Notification.create_notification(:backer_project_successful, @project.backers.confirmed.first.user, backer: @project.backers.confirmed.first, project: @project, project_name: @project.name)
 
 - content_for :js_templates do
   = render partial: 'backer'

@@ -2,7 +2,7 @@ pt:
   notifications:
     support_html: "Se tiver alguma outra dúvida, entre em contato conosco na nossa Central de Suporte:<br/>%{link}"
     signature_html: "Um grande abraço,<br/>Equipe do LittleBigMoney"
-    reward_html: "Recompensa selecionada: %{description}</strong>"
+    reward_html: "Recompensa selecionada: <strong>%{description}</strong>"
     no_reward_html: "<strong>Nenhuma recompensa selecionada</strong>"
     backer_canceled_after_confirmed:
       subject: "Apoio cancelado após ser confirmado"
@@ -40,6 +40,7 @@ pt:
     backer_project_successful:
       subject: "Uhuu! O projeto %{project_name} foi bem-sucedido no LittleBigMoney"
       header: "Uhuu! O projeto que você apoiou foi bem-sucedido no LittleBigMoney!"
+      text_html: "Olá, %{user_name}!<br/><br/>O projeto %{project_link} que você apoiou foi financiado com sucesso no LittleBigMoney! Hora de comemorar o/<br/><br/>O projeto teve, incluindo você, %{total_backers} maravilhosos apoiadores, arrecadou %{pledged} e atingiu %{progress}% da meta da captação =D<br/><br/>Ahh, uma informação importante: a equipe do LittleBigMoney leva até 3 dias úteis para passar a lista de contato de todos os apoiadores para os produtores do projeto. Por isso, o realizador entrará em contato contigo para agradecimentos e pra falar sobre as recompensas só daqui alguns dias, ok?<br/><br/>Enquanto isso, compartilhe com todo mundo este sucesso!<br/><br/><a href='http://www.facebook.com/share.php?u=%{project_url}&t=Uhuu!%20O%20projeto%20%{project_name_escaped}%2C%20que%20eu%20apoiei%2C%20foi%20bem-sucedido%20no%20LittleBigMoney!'><img src='http://littlebigmoney.org/assets/auth/facebook_64.png' title='facebook' class='social'/></a><a href='http://twitter.com/?status=Uhuu!%20O%20projeto%20%{project_name_escaped}%2C%20que%20eu%20apoiei%2C%20foi%20bem-sucedido%20no%20LittleBigMoney!%20%{project_url}'><img src='http://littlebigmoney.org/assets/auth/twitter_64.png' title='facebook' class='social'/></a><br/><br/><strong>Informações importantes sobre o seu apoio (que sempre vão ajudar pra tirar qualquer dúvida):<br/><br/>Valor apoiado: %{backer_value}<br/>%{reward}<br/>Data do apoio: %{backer_created_at}<br/>Id do apoio: %{backer_id}<br/><br/></strong>Se quiser entrar em contato com %{project_user}, mande um email para %{project_mail}"
     backer_project_unsuccessful:
       subject: "O projeto %{project_name} não foi financiado - algumas informações úteis"
       header: "Informações sobre créditos e reembolso ;)"
