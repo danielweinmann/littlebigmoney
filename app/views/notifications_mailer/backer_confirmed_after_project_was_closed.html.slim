@@ -1,8 +1,3 @@
 - backer = @notification.backer
-|Projeto: #{backer.project.name}
-br
-|Chave: #{backer.key}
-br
-|Criado em: #{backer.created_at}
-br
-|Confirmado em: #{backer.confirmed_at}
+= t('notifications.backer_confirmed_after_project_was_closed.text_html', project_name: backer.project.name, key: backer.key, created_at: backer.created_at, confirmed_at: backer.confirmed_at)
+

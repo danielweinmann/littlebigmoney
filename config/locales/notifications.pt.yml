@@ -80,6 +80,7 @@ pt:
     backer_confirmed_after_project_was_closed:
       subject: "Novo apoio confirmado no projeto '%{project_name}' após 7 dias do encerramento"
       header: "Novo apoio confirmado."
+      text_html: "Projeto: %{project_name}<br/>Chave: %{key}<br/>Criado em: %{created_at}<br/>Confirmado em: %{confirmed_at}"
     temporary_password:
       subject: "Sua senha temporária para o LittleBigMoney"
       header: "Acesse sua conta para trocar sua senha"
