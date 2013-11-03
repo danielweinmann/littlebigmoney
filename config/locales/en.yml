@@ -261,7 +261,7 @@ en:
       quick_explore: "Quick search"
       recent: Recent
       recommended: Recommended
-      subtitle: "Explore the projects, find the ones that inspire you and support to make them happen!"
+      subtitle: "Explore the projects, find the ones that inspire you and make them happen!"
       successful: Successful!
       title: "Discover amazing projects!"
     title: "Explore the projects"
@@ -388,7 +388,7 @@ en:
       not_reached_goal: waiting
   projects:
     index:
-      what_is_html: "<strong>LittleBigMoney</strong> is Latin America's first crowdfunding platform for small and growing businesses with social or environmental impact"
+      what_is_html: "<strong>LittleBigMoney</strong> is Latin America's first crowdfunding platform for small and growing businesses with social impact"
       slogan_donate: "A little donation, a big help"
       slogan_invest: "Grow with new entrepreneurs (soon)"
     box:
@@ -427,17 +427,17 @@ en:
           error: ~
         paypal: "International payment - PayPal"
         international:
-          section_title: "You will be redirected to the PayPal site to complete you payment."
+          section_title: "You will be redirected to PayPal to complete your payment."
           user_document_label: "Document optional (numbers only)"
           button: "Go to PayPal"
       show:
         error: "Ooops. You can only access this page after supporting a project."
         moip_message: "Your transaction has been “authorized\". Your PayU code is “%{code}″.<br>If you have any questions about this transaction, contact PayU directly."
-        header_subtitle: "Without you maybe this project wouldn't stand a chance. Welcome to the team!"
+        header_subtitle: "Without your support, this project wouldn't be possible. Welcome to the team!"
         header_title: "Thank you! :)"
         text_subtitle: "Tell everyone about this!"
         recommended_projects: "You may like these other projects:"
-        text_title_html: "You are now part of the group that does everything to reach the goal! %{link}"
+        text_title_html: "You're part of a team that's committed to reaching its goals! %{link}"
         title: "Thank you"
       checkout:
         no_credits: "You don't have enough credit to support this project."
@@ -478,15 +478,15 @@ en:
         error: "Ooops. There was an error while registering your support. Please try again."
         international:
           description: "You can use PayPal to make international payments"
-          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any extra fees.</p><p>In case you make the payment through PayU, you have to ask for the refund.</p><p>If that's not possible, don't worry: you'll always be able to receive your money back. If your refund is requested 60 days after your payment, you'll have to pay PayPal's fee, which is 5.4% + 0.60 COP per transaction.</p>"
-          submit: "Proceed to PayPal's checkout"
+          important_html: "<p>The use of PayPal is designated primarily for international payments, because. You'll have only 60 days to receive an eventual refund without paying any extra fees.</p><p>If you make your payment through PayU, you'll have to request your refund directly.</p><p>If that's not possible, don't worry: you'll always be able to get your money back. If you request your refund 60 days after your payment, you'll have to pay PayPal's fee of 5.4% + 0.60 COP per transaction.</p>"
+          submit: "Proceed to PayPal"
           title: "Want to make an international payment?"
         review_with_reward_html: "You are going to support with <strong>%{value}</strong> and receive the following reward:"
-        review_without_reward_html: "You are going to support with <strong>%{value}</strong> but you don't want any reward for that."
+        review_without_reward_html: "You are going to contribute <strong>%{value}</strong> but you'd rather not receive an additional reward for your support."
         submit:
           credits: "Confirm support with credits"
           moip: "Proceed to PayU's checkout"
-        subtitle: "This is the last step to make a difference and become part of this project."
+        subtitle: "This is the last step before becoming part of this project and making a difference."
         title: "Fill in and review your information"
         choose_payment: "How do you want to pay?"
         choose_payment_subtitle: "Select a payment method below"
@@ -500,7 +500,7 @@ en:
         select_boleto: "To continue, please select:"
         payment_account: "Payment by direct debit (coming soon)"
         select_account: "You will be redirected to your bank's website:"
-        you_are_about_html: "You are about to become part of the group that does everything to make %{link} happen."
+        you_are_about_html: "You are about to become part of the community that will help make %{link} happen."
         pay_with: "Pay with"
     create:
       success: "Your project was successfully created! We'll contact you soon. Thanks a lot!"
@@ -746,7 +746,7 @@ en:
       explore_projects: "I want to explore the projects"
       submit: "Next step!"
       send_project: "I want to submit my project"
-      subtitle: "Understand, step-by-step, how to finance your project through LittleBigMoney"
+      subtitle: "Learn how to finance your project through LittleBigMoney"
       title: "How does LittleBigMoney work?"
       introduction: "LittleBigMoney is a different - and collaborative - way to make your project become a reality."
       legend_html: "Use this guide to decide if <br>LittleBigMoney is the right choice to finance your project."
@@ -790,7 +790,7 @@ en:
       title_three: "What is your goal?"
       tip_three: "Calculate all costs for the project execution and rewards delivery. Also take into account your ability to engage people in order to define your financial goal."
       title_four: "What is your deadline to raise the support?"
-      tip_four: "The deadline is 60 days, but remember: don't underestimate the work of a campaign. You will have to work hard before and during the campaign if you want to succeed. It is important to keep enthusiasm to not feel tired in the middle of the road, so we recommend a 60 days time limit."
+      tip_four: "The deadline is 60 days, but remember: don't underestimate the amount of work that goes into a campaign. You will have to work hard before and during the campaign if you want to succeed. It is important to keep enthusiasm and not get worn out, which is why we recommend a 60 days time limit."
       title_five: "Have you thought about your project's rewards?"
       tip_five: "Remember that rewards are public promises. So, think very well while you elaborate them, as well as the logistics in delivering them to your supporters. Our suggestion: think about immaterial rewards: downloads, experiences, courses, kisses and hugs!"
       title_six: "Is your video ready?"
@@ -809,7 +809,7 @@ en:
       title: "I want to support a project!"
       subtitle: "Understand step-by-step how to support a project on LittleBigMoney."
       introduction: "LittleBigMoney is a great way to engage in causes you believe in"
-      legend_html: "We believe that being part of a project is the kind of thing that sometimes we really don't know why, but it feels darn good!"
+      legend_html: "We know people support our projects for a variety of reasons. But mostly? Because it feels so darn good!"
       title_one: "Explore the project"
       step_one: "The first step is to understand the project. Watch the video, read the description, browse the links. If you are certain that this project can't remain only on paper, go one step forward!"
       title_two: "Decide with how much you want to support"
@@ -818,7 +818,7 @@ en:
       step_three: "Fill in your information and review it! Then, decide what form of payment meets your needs best."
       title_four: "Spread the word!"
       step_four: "Now you're in the same boat as the project creator. Spread the word in social media and stay tuned for updates."
-      title_requirements: "Remember: in LittleBigMoney it’s “all or nothing”"
+      title_requirements: "Remember: with LittleBigMoney it’s “all or nothing”"
       sucessfull_title: "If the project meets or exceeds its support goal"
       sucessfull: "The project was successful! The microentrepreneur will receive the money and will contact all the supporters."
       not_sucess_title: "If the project does not meet its support goal..."
@@ -848,7 +848,7 @@ en:
     guidelines:
       title: "How it works"
       subtitle: "Get to know LittleBigMoney a little better"
-      introduction_html: "LittleBigMoney is a place of exchange among individuals<br> who enable together the realization of creative projects with social and environmental impact."
+      introduction_html: "LittleBigMoney is a place for exchange <br> where people can come together to make creative projects with social impact a reality."
       legend_html: |-
           Welcome! this is a place created for you where with a little support you can get BIG results. <br><br> We can help and support many small and growing businesses which contribute to your country's growth and the economic empowerment of many communities.
           LittleBigMoney is an alternative that connects thousands of people with the dreams of many microentrepreneurs and everyone is a part of a community where little things become BIG.
@@ -859,7 +859,7 @@ en:
     about:
       title: "Who are we?"
       subtitle: "Meet the Little people that make BIG things happen! <3"
-      introduction: "Who are they? What do they eat? How do they network? You’ll see all of it on Who Are We."
+      introduction: "What do they look like? What do they eat? How do they network? You've come to the right place."
       name_one: "Yves Moury"
       image_one: "http://fundacioncapitaldotorg.files.wordpress.com/2013/10/yves_wp.jpg"
       place_one: Belgium
