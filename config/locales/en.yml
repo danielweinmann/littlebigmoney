@@ -274,7 +274,7 @@ en:
         value: "You choose the amount ;) starting from 20,000 COP, any amount is great!"
       project:
         video_url_edit: "Paste here the URL of your Vimeo video."
-        about: "Tell us about what inspired you to come up with this project . Be objective and charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
+        about: "Tell us about what inspired you to come up with this project . Be objective and charming, present your readers with something that moves them while being very transparent over the expectations on your project! Do you nedd help? http://bit.ly/17L1aEK"
         category: "Before you submit your project explore other successful projects to inspire yourself!"
         expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach your goal"
         online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach your goal"
@@ -299,7 +299,7 @@ en:
       comment:
         comment: "Leave your comment about this project"
       project:
-        about: "About your project. How will you spend this money?"
+        about: "Describe your project using this guide!"
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use only numbers)"
         name: "Project's Name"
@@ -665,7 +665,7 @@ en:
       permalink_important: "Try not to use underline, hyphen etc."
       permalink_hint: "Go simple. Your supporters should be able to remember the URL to your project ;)"
       important_html: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the amount to be deducted."
-      about: "Describe your project and how you will use the money"
+      about: "Describe your project using this guide!"
       how_much_you_need: "How much do you want to raise?"
       how_much_hint_html: "It's important to keep in mind that most of the money that you collect will come from people close to you (family, friends and acquaintances):<a href='%{href}' target='_blank'>Click here!</a> For this reason note that when you calculate the total amount to ask to LittleBigMoney you must have the ability to collect at least 50% of it in your network."
       how_much_important: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the amount to be deducted."
@@ -673,7 +673,7 @@ en:
       days_hint: "Projects are online for 40 days, on average."
       days_important: "The deadline for the project to air is 60 days."
       about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the supporters something that moves them. After all, it's your creation and they need to see your passion!"
-      about_important: "Don't make it too long! Use links so people can know more about your work"
+      about_important: "Don't make it too long! Indicate links so people can know more about your work. i.e video links, URL of Facebook pictures, flicker etc so your profile will be complete!"
       contact: "Leave us your email address so we can contact you"
       links: "Where can we find more about you and your project?"
       links_important: "These links help us know more about you"

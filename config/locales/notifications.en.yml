@@ -7,6 +7,7 @@ en:
     backer_canceled_after_confirmed:
       subject: "The support was canceled after confirmation"
       header: "The support was canceled after confirmation"
+      text_html: ~
     project_owner_backer_confirmed:
       subject: "Hooray! a new supporter collaborated to your project"
       header: "A new support has just been confirmed for your project"
@@ -39,9 +40,11 @@ en:
     backer_project_successful:
       subject: "Hooray! The project %{project_name} was successful in LittleBigMoney"
       header: "Hooray! The project you supported was successful in LittleBigMoney"
+      text_html: ~
     backer_project_unsuccessful:
       subject: "The project %{project_name} did not reach the expected support - Some useful information"
       header: "Information on available credits and refunds ;)"
+      text_html: ~
     pending_backer_project_unsuccessful:
       subject: "The project %{project_name} that you supported did not reach the expected support - Some useful information"
       header: "Confirmation about support information, available credits and refunds ;)"
@@ -63,6 +66,7 @@ en:
     new_draft_project:
       subject: "New project created - %{project_name}"
       header: "New project created"
+      text_html: ~
     new_draft_project_channel:
       subject: "The project %{project_name} has just been created"
       header: "A new project is awaiting review"
@@ -72,12 +76,15 @@ en:
     adm_project_deadline:
       subject: "The project %{project_name} has reached its deadline for publishing"
       header: "The project reached its deadline"
+      text_html: ~
     credits_warning:
       subject: "You have %{amount} COP in credits on LittleBigMoney"
       header: "Why not support another project?"
+      text_html: ~
     backer_confirmed_after_project_was_closed:
       subject: "New support confirmed for the project '%{project_name}' after 7 days of the end of the deadline"
       header: "New support confirmed"
+      text_html: ~
     temporary_password:
       subject: "Temporary password for LittleBigMoney"
       header: "Log in to change your password"
