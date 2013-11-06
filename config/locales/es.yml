@@ -792,7 +792,7 @@ es:
       title_four: "¿Cuál es el plazo para recaudar la totalidad del dinero?"
       tip_four: "El plazo máximo son 60 días, pero recuerda: Debes dedicar intensamente tiempo y esfuerzo,  antes y durante el periodo de la campaña, si quieres tener éxito. No subestimes esa etapa, es importante mantener un entusiasmo para no sentir cansancio en el medio del camino, por eso recomendamos plazos 60 días."
       title_five: "¿Has pensado acerca de las recompensas de tus proyectos?"
-      tip_five: "Las recompensas son promesas que estás haciendo de forma pública. es importante que consideres tu capacidad de poder cumplir con ellas. Piensa en la facilidad de entrega. Aquí valen recompensas que tengan un valor más simbólico e inmaterial como: downloads, experiencias, cursos, besos y abrazos"
+      tip_five: "Las recompensas son promesas que estás haciendo de forma pública. Es importante que consideres tu capacidad de poder cumplir con ellas. Piensa en la facilidad de entrega. Aquí valen recompensas que tengan un valor más simbólico y/o inmaterial como: archivos para desacargar, información interesante, productos tuyos (sí los puedes enviar por correo físico), besos y abrazos"
       title_six: "¿Ya está listo tu video?"
       tip_six: "Tu video es la carta de presentación de tu proyecto. Generalmente es el primer contacto con posibles colaboradores, por eso recomendamos tener especial cuidado en el guión (especialmente en los primeros 30 segundos), en el audio y la calidad de la imagen (HD es recomendado)."
       title_seven: "¿Cómo vas a movilizar tu red?"
@@ -804,7 +804,7 @@ es:
       submit: "Siguiente paso!"
       send_project: "Quiero enviar mi proyecto"
       guide: "Descarga aquí una guía completa con todos los tips para hacer tu proyecto en LittleBigMoney."
-      guide_url: ~
+      guide_url: "https://docs.google.com/document/d/1XWH7AQUV_0gN9XA5e3DkMKi0OfvM8shhaO55d9e_t9E/edit?usp=sharing"
     guidelines_backers:
       title: "Quiero aportar a este proyecto!"
       subtitle: "Entiende paso a paso como aportar a un proyecto de LittleBigMoney."
