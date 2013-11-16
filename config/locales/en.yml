@@ -299,7 +299,7 @@ en:
       comment:
         comment: "Leave your comment about this project"
       project:
-        about: "Describe your project using this guide!"
+        about_html: ~
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use only numbers)"
         name: "Project's Name"

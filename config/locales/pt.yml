@@ -299,7 +299,7 @@ pt:
       comment:
         comment: "Deixe seu comentário sobre este projeto"
       project:
-        about: "História do seu projeto e como o $ será utilizado *"
+        about_html: "História do seu projeto e como o $ será utilizado *"
         expires_at: "Qual o prazo para atingir o mínimo? *"
         goal: "Quanto você pretende arrecadar? (apenas números)*"
         name: "Nome do projeto *"

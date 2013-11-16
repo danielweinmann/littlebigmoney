@@ -299,7 +299,7 @@ es:
       comment:
         comment: "¿Qué piensas de este proyecto?"
       project:
-        about: "Describe tu proyecto utilizando esta guía!"
+        about_html: "Describe tu proyecto utilizando <a href='https://docs.google.com/document/d/160KoFEwr51fEQr8Zv0nmF8O_Xn0oCb1T0_4hmAFhAMg/edit' target='_blank'>esta guía</a>"
         expires_at: "¿Cuál es la fecha límite para alcanzar tu meta?"
         goal: "¿Cuánto esperas reunir? (usa solo números)"
         name: "Nombre de tu proyecto"
