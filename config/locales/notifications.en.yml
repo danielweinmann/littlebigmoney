@@ -31,12 +31,15 @@ en:
     project_in_wainting_funds:
       subject: "The deadline for your project is over, these are the next steps"
       header: "Your deadline is over!"
+      text_html: ~
     project_success:
       subject: "Project successful: Some important information"
       header: "Project successful"
+      text_html: ~
     project_unsuccessful:
       subject: "Your project was not successfully supported, but we would like your feedback :)"
       header: "Your project was not successfully supported :("
+      text_html: ~
     backer_project_successful:
       subject: "Hooray! The project %{project_name} was successful in LittleBigMoney"
       header: "Hooray! The project you supported was successful in LittleBigMoney"
@@ -48,6 +51,7 @@ en:
     pending_backer_project_unsuccessful:
       subject: "The project %{project_name} that you supported did not reach the expected support - Some useful information"
       header: "Confirmation about support information, available credits and refunds ;)"
+      text_html: ~
     project_received:
       subject: "Your project was received by LittleBigMoney"
       header: "Your project was received by the LittleBigMoney team"

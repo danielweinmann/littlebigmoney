@@ -31,12 +31,15 @@ es:
     project_in_wainting_funds:
       subject: "El plazo de tu proyecto ha terminado, conoce los próximos pasos"
       header: "Acabo tu plazo!"
+      text_html: ~
     project_success:
       subject: "Proyecto exitoso: A continuación alguna información importante"
       header: "Proyecto exitoso"
+      text_html: ~
     project_unsuccessful:
       subject: "Tu proyecto no alcanzó los recursos, pero queremos tener tu retroalimentación :)"
       header: "Tu proyecto no alcanzó los recursos solicitados : ("
+      text_html: ~
     backer_project_successful:
       subject: "Súper! El proyecto %{project_name} tuvo éxito en LittleBigMoney"
       header: "Súper! El proyecto para el que colaboraste fue exitoso en LittleBigMoney"
@@ -48,6 +51,7 @@ es:
     pending_backer_project_unsuccessful:
       subject: "El proyecto %{project_name} apoyado por ti no alcanzó los fondos esperados - Alguna información útil"
       header: "Confirmación sobre información de soporte, créditos disponibles y reembolsos ; )"
+      text_html: ~
     project_received:
       subject: "Tu proyecto fue recibido por LittleBigMoney"
       header: "Tu proyecto fue recibido por el equipo de LittleBigMoney"
