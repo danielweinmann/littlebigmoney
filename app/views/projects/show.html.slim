@@ -1,4 +1,4 @@
-/- Notification.create_notification(:new_draft_project, @project.new_draft_recipient, project: @project, project_name: @project.name, from: @project.user.email, display_name: @project.user.display_name)
+- Notification.create_notification(:project_in_wainting_funds, @project.user, project: @project)
 
 - content_for :js_templates do
   = render partial: 'backer'
