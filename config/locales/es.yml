@@ -445,7 +445,7 @@ es:
         paypal_description: "Colaboración para el proyecto %{project_name} con el valor de %{value}"
         paypal_error: "Oops! Algo sucedió con el envío de tu pago para PayPal. Por favor, intenta de nuevo."
         paypal_currency: USD
-        paypal_conversion: 1880
+        paypal_conversion: 1801
         payulatam_submit: "Ir a PayU Latam"
         payulatam_description: "Colaboración para el proyecto %{project_name} con el valor de %{value}"
         payulatam_error: "Oops! Algo sucedió con el envío de tu pago para PayU Latam. Por favor, intenta de nuevo."
@@ -886,7 +886,7 @@ es:
       title_five: "Coordinadora de Proyecto"
       text_five: "Economista por la Universidad Católica de Bolivia, con un Posgrado en Gestión y Organización de Entidades Non-Profit. Cuenta con amplia experiencia en proyectos de desarrollo rural y en el trabajo con comunidades rurales. En el FIDA trabajó durante 8 años analizando estrategias de reducción de la pobreza y herramientas para el fortalecimiento el acceso a mercados de emprendimientos rurales."
       name_six: "Javier Felipe Hidalgo"
-      image_six: "http://s22.postimg.org/bgb2bcen5/veru_wp.jpg"
+      image_six: "http://s22.postimg.org/wh13w9i5d/javier_wp.jpg"
       place_six: Colombia
       title_six: "Oficial de Comunicaciones"
       text_six: "Comunicador social y periodista con énfasis en la gestión de la comunicación empresarial de la Universidad Externado de Colombia. Experiencia en manejo y creación de comunidades en redes y creación de estratégias de comunicación organizacional. Trabajó como voluntario en la fundación CISV de Colombia como entrenador de liderazgo en educación experiencial y realizó labores de fotografía en la Corporación Coral y Orquestal de Colombia."
