@@ -7,7 +7,7 @@ class Backer < ActiveRecord::Base
   schema_associations
 
   validates_presence_of :project, :user, :value
-  validates_numericality_of :value, greater_than_or_equal_to: 20000.00
+  validates_numericality_of :value, greater_than_or_equal_to: 25000.00
   validate :reward_must_be_from_project
   validate :value_must_be_at_least_rewards_value
   validate :should_not_back_if_maximum_backers_been_reached, on: :create

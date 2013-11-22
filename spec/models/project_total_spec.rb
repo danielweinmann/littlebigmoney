@@ -2,16 +2,16 @@ require 'spec_helper'
 
 describe ProjectTotal do
   before do
-    @project_id = FactoryGirl.create(:backer, value: 20000.0, payment_service_fee: 1, state: 'pending').project_id
-    FactoryGirl.create(:backer, value: 20000.0, payment_service_fee: 1, state: 'confirmed', project_id: @project_id)
-    FactoryGirl.create(:backer, value: 20000.0, payment_service_fee: 1, state: 'waiting_confirmation', project_id: @project_id)
-    FactoryGirl.create(:backer, value: 20000.0, payment_service_fee: 1, state: 'refunded', project_id: @project_id)
-    FactoryGirl.create(:backer, value: 20000.0, payment_service_fee: 1, state: 'requested_refund', project_id: @project_id)
+    @project_id = FactoryGirl.create(:backer, value: 25000.0, payment_service_fee: 1, state: 'pending').project_id
+    FactoryGirl.create(:backer, value: 25000.0, payment_service_fee: 1, state: 'confirmed', project_id: @project_id)
+    FactoryGirl.create(:backer, value: 25000.0, payment_service_fee: 1, state: 'waiting_confirmation', project_id: @project_id)
+    FactoryGirl.create(:backer, value: 25000.0, payment_service_fee: 1, state: 'refunded', project_id: @project_id)
+    FactoryGirl.create(:backer, value: 25000.0, payment_service_fee: 1, state: 'requested_refund', project_id: @project_id)
   end
 
   describe "#pledged" do
     subject{ ProjectTotal.where(project_id: @project_id).first.pledged }
-    it{ should == 60000 }
+    it{ should == 75000 }
   end
 
   describe "#total_backers" do
