@@ -445,7 +445,7 @@ pt:
         paypal_description: "Apoio para o projeto %{project_name} no valor de %{value}"
         paypal_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o PayPal. Por favor, tente novamente."
         paypal_currency: USD
-        paypal_conversion: "1880.00"
+        paypal_conversion: "1805.00"
         payulatam_submit: "Ir para o PayU Latam"
         payulatam_description: "Apoio para o projeto %{project_name} no valor de %{value}"
         payulatam_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o PayU Latam. Por favor, tente novamente."
