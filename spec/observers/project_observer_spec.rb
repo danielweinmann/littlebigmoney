@@ -141,7 +141,7 @@ describe ProjectObserver do
 
     context "when project is unsuccessful" do
       let(:project){ create(:project, goal: 30000, online_days: -7, state: 'online') }
-      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 20000) }
+      let(:backer){ create(:backer, key: 'should be updated', payment_method: 'should be updated', state: 'confirmed', confirmed_at: Time.now, value: 25000) }
       before do
         backer
         project.update_attributes state: 'waiting_funds'
@@ -156,8 +156,8 @@ describe ProjectObserver do
       let(:project){ create(:project, goal: 30000, online_days: -7, state: 'online') }
 
       before do
-        create(:backer, project: project, key: 'ABC1', payment_method: 'ABC', payment_token: 'ABC', value: 20000, state: 'confirmed')
-        create(:backer, project: project, key: 'ABC2', payment_method: 'ABC', payment_token: 'ABC', value: 20000)
+        create(:backer, project: project, key: 'ABC1', payment_method: 'ABC', payment_token: 'ABC', value: 25000, state: 'confirmed')
+        create(:backer, project: project, key: 'ABC2', payment_method: 'ABC', payment_token: 'ABC', value: 25000)
         project.update_attributes state: 'waiting_funds'
       end
 

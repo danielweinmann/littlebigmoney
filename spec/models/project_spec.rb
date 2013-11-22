@@ -95,14 +95,14 @@ describe Project do
     subject { Project.by_progress(20) }
 
     before do
-      @project_01 = create(:project, goal: 200000)
-      @project_02 = create(:project, goal: 200000)
-      @project_03 = create(:project, goal: 200000)
+      @project_01 = create(:project, goal: 250000)
+      @project_02 = create(:project, goal: 250000)
+      @project_03 = create(:project, goal: 250000)
 
-      create(:backer, value: 20000, project: @project_01)
-      create(:backer, value: 20000, project: @project_01)
+      create(:backer, value: 25000, project: @project_01)
+      create(:backer, value: 25000, project: @project_01)
       create(:backer, value: 60000, project: @project_02)
-      create(:backer, value: 20000, project: @project_03)
+      create(:backer, value: 25000, project: @project_03)
     end
 
     it { should have(2).itens }
@@ -297,7 +297,7 @@ describe Project do
     before { create(:backer, value: 40000, state: 'confirmed', project: project) }
 
     context 'when confirmed and pending backers reached 30% of the goal and in time to wait to wait' do
-      before { create(:backer, value: 20000, state: 'waiting_confirmation', project: project) }
+      before { create(:backer, value: 25000, state: 'waiting_confirmation', project: project) }
 
       it { should be_true }
     end
@@ -759,7 +759,7 @@ describe Project do
         before do
           subject.stub(:pending_backers_reached_the_goal?).and_return(true)
           subject.stub(:reached_goal?).and_return(true)
-          create(:backer, project: main_project, user: user, value: 20000, state: 'waiting_confirmation')
+          create(:backer, project: main_project, user: user, value: 25000, state: 'waiting_confirmation')
           main_project.update_attributes state: 'waiting_funds'
           subject.finish
         end
@@ -768,7 +768,7 @@ describe Project do
 
       context 'when project not hit the goal' do
         let(:user) { create(:user) }
-        let(:backer) { create(:backer, project: main_project, user: user, value: 20000, payment_token: 'ABC') }
+        let(:backer) { create(:backer, project: main_project, user: user, value: 25000, payment_token: 'ABC') }
 
         before do
           backer
@@ -782,7 +782,7 @@ describe Project do
         it "should generate credits for users" do
           backer.confirm!
           user.reload
-          user.credits.should == 20000
+          user.credits.should == 25000
         end
       end
     end
