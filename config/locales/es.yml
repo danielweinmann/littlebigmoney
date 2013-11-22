@@ -271,7 +271,7 @@ es:
     hints:
       backer:
         credits: "Tienes <strong>%{credits}</strong> en créditos y puedes apoyar hasta este valor sim necesitae realizar un nuevo pago."
-        value: "Tu escoges el valor ;) a partir de 20.000 COP está genial!"
+        value: "Tu escoges el valor ;) a partir de 25.000 COP está genial!"
       project:
         video_url_edit: "Pega aquí la URL de tu video de Vimeo."
         about: "Cuéntanos un poco cobre tu inspiración para realizar el proyecto, tu historia y lo que será de ella al terminar. Hazlo en tus mismas palabras y evita las formalidades. Presenta a tus colaboradores algo que los conmueva y se muy transparente en relación con la expectativa sobre el proyecto. Necesitas ayuda? http://bit.ly/17L1aEK"
@@ -331,7 +331,7 @@ es:
       explore: Explora
       invest: "Inversión (Próximamente)"
       submit_project: Envía
-      how_it_works: "Como funciona"
+      how_it_works: "Cómo funciona"
       welcome_html: "Bienvenido <span class='user_name'>%{name}</span>"
       profile: "Mi perfil"
       account: "Mi cuenta"
@@ -741,12 +741,12 @@ es:
     faq:
       title: "Preguntas Frecuentes"
     guidelines_start:
-      accept: "Leí y entendí como funciona LittleBigMoney."
+      accept: "Leí y entendí cómo funciona LittleBigMoney."
       explore_curious: "Estoy curioseando!"
       explore_projects: "Quiero explorar los proyectos."
       submit: "Siguiente paso!"
       send_project: "Quiero enviar mi proyecto."
-      subtitle: "Entérate, paso a paso, como hacer viable tu proyecto a través de LittleBigMoney."
+      subtitle: "Entérate, paso a paso, cómo hacer viable tu proyecto a través de LittleBigMoney."
       title: "¿Cómo funciona LittleBigMoney?"
       introduction: "LittleBigMoney es una herramienta diferente – y colaborativa – para impulsar tu empresa y sacar tu proyecto del papel."
       legend_html: "Presta atención al proceso de la plataforma, y decide si <br>LittleBigMoney es la alternativa adecuada para financiar tu proyecto."
@@ -790,7 +790,7 @@ es:
       title_three: "¿Cuál es tu meta?"
       tip_three: "Calcula todos los costos del proyecto y los envíos de las recompensas. También ten en cuenta tu habilidad para atraer a personas en orden de definir tu meta financiera."
       title_four: "¿Cuál es el plazo para recaudar la totalidad del dinero?"
-      tip_four: "El plazo máximo son 90 días, pero recuerda: Debes dedicar intensamente tiempo y esfuerzo,  antes y durante el periodo de la campaña, si quieres tener éxito. No subestimes esa etapa, es importante mantener un entusiasmo para no sentir cansancio en el medio del camino, por eso recomendamos plazos 90 días."
+      tip_four: "El plazo máximo son 90 días, pero recuerda: Debes dedicar intensamente tiempo y esfuerzo,  antes y durante el periodo de la campaña, si quieres tener éxito. No subestimes esa etapa, es importante mantener un entusiasmo para no sentir cansancio en el medio del camino, por eso recomendamos plazos 60 días."
       title_five: "¿Has pensado acerca de las recompensas de tus proyectos?"
       tip_five: "Las recompensas son promesas que estás haciendo de forma pública. Es importante que consideres tu capacidad de poder cumplir con ellas. Piensa en la facilidad de entrega. Aquí valen recompensas que tengan un valor más simbólico y/o inmaterial como: archivos para desacargar, información interesante, productos tuyos, besos y abrazos"
       title_six: "¿Ya está listo tu video?"
