@@ -231,7 +231,7 @@ class Project < ActiveRecord::Base
       url: Rails.application.routes.url_helpers.project_by_slug_path(permalink, locale: I18n.locale),
       full_uri: Rails.application.routes.url_helpers.project_by_slug_url(permalink, locale: I18n.locale),
       expired: expired?,
-      successful: successful? || reached_goal?,
+      successful: successful?,
       waiting_funds: waiting_funds?,
       failed: failed?,
       display_status_to_box: display_status.blank? ? nil : I18n.t("project.display_status.#{display_status}"),
