@@ -299,7 +299,8 @@ describe Project do
     context 'when confirmed and pending backers reached 30% of the goal and in time to wait to wait' do
       before { create(:backer, value: 25000, state: 'waiting_confirmation', project: project) }
 
-      it { should be_true }
+      # It should always be false for now
+      it { should be_false }
     end
 
     context 'when confirmed and pending backers reached less of 30% of the goal' do

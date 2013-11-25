@@ -245,7 +245,7 @@ class Project < ActiveRecord::Base
   end
 
   def can_go_to_second_chance?
-    ((pledged + backers.in_time_to_confirm.sum(&:value)) >= (goal*0.3.to_f)) && (4.weekdays_from(expires_at) >= DateTime.now)
+    false
   end
 
   def permalink_cant_be_route
