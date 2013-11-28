@@ -445,7 +445,7 @@ en:
         paypal_description: "Support for the project %{project_name} with the value of %{value}"
         paypal_error: "Oops! Something happened with sending your payment to PayPal. Please try again."
         paypal_currency: USD
-        paypal_conversion: "1805.00"
+        paypal_conversion: "1813.00"
         payulatam_submit: "Go to PayU Latam"
         payulatam_description: "Support for the project %{project_name} with the value of %{value}"
         payulatam_error: "Oops! Something happened with sending your payment to PayU Latam. Please try again."
