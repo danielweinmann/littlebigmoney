@@ -102,9 +102,10 @@ es:
       facebook: "Encuéntranos en Facebook"
   main:
     links:
-      selected: "Explora más proyectos seleccionados"
-      expiring: "Explora más proyectos inspiradoes"
-      recents: "Explora más proyectos recientes"
+      selected: "Explora proyectos destacados"
+      expiring: "Explora proyectos en la recta final"
+      recents: "Explora proyectos recientes"
+      successful: "Explora proyectos exitosos"
       near: "Explora proyectos cercanos a ti"
   sidebar:
     titles:
@@ -124,6 +125,8 @@ es:
       title: "En la recta final"
     recents:
       title: Reciente
+    successful:
+      title: Exitosos
     partners:
       title: "Con el apoyo de"
   accept_terms_html: "He leído y estoy de acuerdo %{link}."
@@ -262,7 +265,7 @@ es:
       recent: Reciente
       recommended: Recomendaciones
       subtitle: "Explora los proyectos, encuentra aquellos que te inspiran y apóyalos para que sean una realidad!"
-      successful: Exitoso!
+      successful: Exitosos
       title: "Descubre proyectos increíbles!"
     title: "Explora los proyectos"
     project:

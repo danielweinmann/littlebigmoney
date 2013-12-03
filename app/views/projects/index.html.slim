@@ -23,25 +23,11 @@
           = render partial: 'project', locals: {project: @first_project, custom_class: 'first' } if @first_project
           = render partial: 'project', locals: {project: @second_project } if @second_project
           = render partial: 'project', locals: {project: @third_project } if @third_project
-          = render partial: 'project', locals: {project: @fourth_project, custom_class: 'last' } if @fourth_project
-        .clear_link
+          /= render partial: 'project', locals: {project: @fourth_project, custom_class: 'last' } if @fourth_project
+        .explore_link
           hr
+          = link_to t('main.links.selected'), explore_path(anchor: :recommended)
 
-      .allies.list
-        .list_title
-          .title
-            h2= t('sections.partners.title')
-        .projects
-          a.first href="http://www.culturaemedellin.gov.co/sites/CulturaE/ciudade/Paginas/default.aspx" target="_blank"
-            = image_tag "allies/ciudad_e.png"
-          a href="http://givetocolombia.org/" target="_blank"
-            = image_tag "allies/give_to_colombia.png"
-          a href="http://www.dps.gov.co/" target="_blank"
-            = image_tag "allies/dps.png"
-          a.last href="http://www.fordfoundation.org/" target="_blank"
-            = image_tag "allies/ford_foundation.png"
-        .clear_link
-          hr
       /.expiring_projects.list
         .list_title
           .title
@@ -63,6 +49,33 @@
         .explore_link
           hr
           = link_to t('main.links.recents'), explore_path(anchor: :recent)
+
+      .successful_projects.list
+        .list_title
+          .title
+            h2= t('sections.successful.title')
+        .projects
+          - @recent.each_with_index do |item,i|
+            == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+        .explore_link
+          hr
+          = link_to t('main.links.successful'), explore_path(anchor: :successful)
+
+      .allies.list
+        .list_title
+          .title
+            h2= t('sections.partners.title')
+        .projects
+          a.first href="http://www.culturaemedellin.gov.co/sites/CulturaE/ciudade/Paginas/default.aspx" target="_blank"
+            = image_tag "allies/ciudad_e.png"
+          a href="http://givetocolombia.org/" target="_blank"
+            = image_tag "allies/give_to_colombia.png"
+          a href="http://www.dps.gov.co/" target="_blank"
+            = image_tag "allies/dps.png"
+          a.last href="http://www.fordfoundation.org/" target="_blank"
+            = image_tag "allies/ford_foundation.png"
+        .clear_link
+          hr
 
     /.sidebar
       .content

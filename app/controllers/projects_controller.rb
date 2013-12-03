@@ -28,8 +28,9 @@ class ProjectsController < ApplicationController
         project_ids << @recommended_projects.last.id if @recommended_projects
 
         @projects_near = Project.online.near_of(current_user.address_state).order("random()").limit(3) if current_user
-        @expiring = Project.expiring_for_home(project_ids)
-        @recent   = Project.recent_for_home(project_ids)
+        @expiring  = Project.expiring_for_home(project_ids)
+        @recent    = Project.recent_for_home(project_ids)
+        @sucessful = Project.successful_for_home(project_ids)
       end
 
       format.json do

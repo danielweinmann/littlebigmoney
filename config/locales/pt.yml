@@ -105,6 +105,7 @@ pt:
       selected: "explore mais projetos selecionados"
       expiring: "explore mais projetos na reta final"
       recents: "explore mais projetos recentes"
+      successful: "explore mais projetos bem-sucedidos"
       near: "explore mais projetos próximos"
   sidebar:
     titles:
@@ -124,6 +125,8 @@ pt:
       title: "Na reta final"
     recents:
       title: "Novos e fresquinhos"
+    successful:
+      title: Bem-sucedidos
     partners:
       title: Parceiros
   accept_terms_html: "Eu li e estou de acordo com os %{link}."

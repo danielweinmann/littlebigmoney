@@ -102,9 +102,10 @@ en:
       facebook: "Find us on Facebook"
   main:
     links:
-      selected: "Explore more selected projects"
-      expiring: "Explore more inspiring projects"
+      selected: "Explore recommended projects"
+      expiring: "Explore expiring projects"
       recents: "Explore recent projects"
+      successful: "Explore successful projects"
       near: "Explore projects near to you"
   sidebar:
     titles:
@@ -124,6 +125,8 @@ en:
       title: expiring
     recents:
       title: recent
+    successful:
+      title: Successful
     partners:
       title: partners
   accept_terms_html: "I have read and accepted the %{link}."
