@@ -22,8 +22,7 @@
         .projects
           = render partial: 'project', locals: {project: @first_project, custom_class: 'first' } if @first_project
           = render partial: 'project', locals: {project: @second_project } if @second_project
-          = render partial: 'project', locals: {project: @third_project } if @third_project
-          /= render partial: 'project', locals: {project: @fourth_project, custom_class: 'last' } if @fourth_project
+          = render partial: 'project', locals: {project: @third_project, custom_class: 'last' } if @third_project
         .explore_link
           hr
           = link_to t('main.links.selected'), explore_path(anchor: :recommended)
@@ -55,7 +54,7 @@
           .title
             h2= t('sections.successful.title')
         .projects
-          - @recent.each_with_index do |item,i|
+          - @successful.each_with_index do |item,i|
             == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
         .explore_link
           hr
@@ -70,9 +69,10 @@
             = image_tag "allies/ciudad_e.png"
           a href="http://givetocolombia.org/" target="_blank"
             = image_tag "allies/give_to_colombia.png"
-          a href="http://www.dps.gov.co/" target="_blank"
+          a.last href="http://www.dps.gov.co/" target="_blank"
             = image_tag "allies/dps.png"
-          a.last href="http://www.fordfoundation.org/" target="_blank"
+        .projects
+          a.first href="http://www.fordfoundation.org/" target="_blank"
             = image_tag "allies/ford_foundation.png"
         .clear_link
           hr

@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
                                                                 current_user.recommended_projects.last.id,
                                                                 @recommended_projects.last.category_id)
           end
-          @first_project, @second_project, @third_project, @fourth_project = collection_projects.all
+          @first_project, @second_project, @third_project = collection_projects.all
         end
 
         project_ids = collection_projects.map{|p| p.id }
