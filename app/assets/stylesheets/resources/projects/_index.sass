@@ -87,11 +87,14 @@
       float: left
       margin-bottom: 60px
       hr
-        +grid(16)
+        +grid(12)
         +alpha
         +omega
         border: 1px solid transparent
   .allies
+    +grid(12)
+    +alpha
+    +omega
     a
       display: block
       +grid(4)
@@ -100,6 +103,7 @@
       text-align: center
       +opacity(0.8)
       padding: 20px 0
+      margin-bottom: 20px
       &:hover
         +opacity(1)
       &.first

@@ -27,7 +27,7 @@
           hr
           = link_to t('main.links.selected'), explore_path(anchor: :recommended)
 
-      /.expiring_projects.list
+      - unless @expiring.empty?
         .list_title
           .title
             h2= t('sections.expiring.title')
@@ -38,7 +38,7 @@
           hr
           = link_to t('main.links.expiring'), explore_path(anchor: :expiring)
 
-      /.recents_projects.list
+      - unless @recent.empty?
         .list_title
           .title
             h2= t('sections.recents.title')
@@ -49,16 +49,17 @@
           hr
           = link_to t('main.links.recents'), explore_path(anchor: :recent)
 
-      .successful_projects.list
-        .list_title
-          .title
-            h2= t('sections.successful.title')
-        .projects
-          - @successful.each_with_index do |item,i|
-            == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
-        .explore_link
-          hr
-          = link_to t('main.links.successful'), explore_path(anchor: :successful)
+      - unless @successful.empty?
+        .successful_projects.list
+          .list_title
+            .title
+              h2= t('sections.successful.title')
+          .projects
+            - @successful.each_with_index do |item,i|
+              == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+          .explore_link
+            hr
+            = link_to t('main.links.successful'), explore_path(anchor: :successful)
 
       .allies.list
         .list_title
@@ -71,34 +72,35 @@
             = image_tag "allies/give_to_colombia.png"
           a.last href="http://www.dps.gov.co/" target="_blank"
             = image_tag "allies/dps.png"
-        .projects
           a.first href="http://www.fordfoundation.org/" target="_blank"
             = image_tag "allies/ford_foundation.png"
         .clear_link
           hr
 
-    /.sidebar
+    .sidebar
       .content
         .blog
-          h3= t('sidebar.titles.blog')
+          h2= t('sidebar.titles.blog')
           ul.posts
             - blog_posts.each do |post|
               li
-                h2
+                h6
                   = link_to post.url, target: '__blank' do
-                    /= image_tag("catarse/post_title_image.png")
                     = truncate(post.title, length: 80)
-                p.author= "#{t('projects.box.by')} #{post.author}"
-                = link_to post.url, target: '__blank', class: 'resume' do
-                  = truncate(post.summary, length: 130).html_safe
+                p.author= "#{t('projects.box.by')} LittleBigMoney"
+                = link_to post.url, target: '_blank', class: 'resume' do
+                  = truncate(strip_tags(post.summary), length: 130)
 
+        .twitter
+          a class="twitter-timeline" href="https://twitter.com/#{Configuration['twitter_username']}" data-widget-id="407724007530577920"= Configuration['twitter_username']
+          javascript:
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
         .facebook
-          h3= t('sidebar.titles.facebook')
+          h2= t('sidebar.titles.facebook')
           .fb-like data-href="#{Configuration['facebook_url']}" data-send="false" data-width="160" data-show-faces="true"
-        #twitter.twitter[data-username="@#{Configuration['twitter_username']}"]
         .newsletter
-          h3= t('sidebar.titles.newsletter')
-          = form_tag Configuration['mailchimp_url'], id: 'mailee-form', method: 'post' do
+          h2= t('sidebar.titles.newsletter')
+          = form_tag "#{::Configuration[:mailchimp_url]}", id: 'mailee-form', method: 'post' do
             = text_field_tag 'EMAIL', nil, placeholder: 'email@email.com', label: 'email'
-            = submit_tag t('sidebar.buttons.newsletter')
+            = submit_tag "#{t('newsletter_subscribe')}"
     .clearfix

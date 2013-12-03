@@ -1,29 +1,24 @@
 .sidebar
-  min-height: 1635px
+  //min-height: 1635px
   border-left: 1px $df_gryn solid
   .content
-    padding: 33px 0 0 22px
+    padding: 20px 0 0 22px
+    h2
+      padding-bottom: 12px
     .blog
-      h3
-        font-weight: 700
-        font-size: 18px
-        background: url($images_path+'blog_icon17x14.png') left 5px no-repeat
-        text-indent: 28px
-        color: black
-        padding-bottom: 25px
       ul
         li
           padding-bottom: 30px
           &:last-child
             border-bottom: 1px rgba(black, 0.1) solid
-          h2
+          h6
             float: left
             width: 100%
             font-weight: 700
             font-size: 14px
             padding-top: 4px
             a
-              color: $ultra_gryn
+              color: $mediumlightgray
               text-decoration: none
               &:hover
                 color: $carrot
@@ -48,27 +43,11 @@
       margin-top: 30px
       padding-bottom: 30px
       border-bottom: 1px rgba(black, 0.1) solid
-      h3
-        font-weight: 700
-        font-size: 18px
-        background: url($images_path+'facebook_icon13x26.png') left top no-repeat
-        text-indent: 28px
-        color: black
-        padding-top: 6px
-        padding-bottom:  25px
 
     .twitter
       margin-top: 30px
       padding-bottom: 30px
       border-bottom: 1px rgba(black, 0.1) solid
-      h3
-        font-weight: 700
-        font-size: 18px
-        background: url($images_path+'twitter_icon28x24.png') left top no-repeat
-        text-indent: 28px
-        color: black
-        padding-top: 6px
-        padding-bottom:  25px
       p
         font-size:  12px
         color: $ultra_gryn
@@ -80,30 +59,32 @@
       padding-bottom: 30px
       margin-top: 30px
       border-bottom: 1px rgba(black, 0.1) solid
-      h3
-        font-weight: 700
-        font-size: 18px
-        background: url($images_path+'newsletter_icon18x15.png') left 2px no-repeat
-        text-indent: 28px
-        color: black
-        padding-bottom:  25px
       form
-        input[type='text']
-          width:  183px
-          height: 27px
-          border: 1px $minimal_gryn solid
-          text-align: center
-          +border-radius(8px)
+        input[type="text"]
+          float: left
+          width: 104px
+          height: 28px
+          padding-left: 8px
+          +border-radius(4px 0 0 4px)
+          border: 1px $df_gryn solid
+          border-right: none
+          &:focus
+            outline: none
+            border: 1px $carrot solid
+            border-right: none
         input[type="submit"]
-          +border-radius(8px)
+          float: left
           background: $carrot
+          width: 82px
+          height: 32px
+          +border-radius(0 4px 4px 0)
           color: white
+          font-size: 12px
+          text-transform: lowercase
           border: none
-          margin-top: 10px
-          padding: 3px 15px
-          float:  right
-          margin-right:  12px
-          font-size: 16px
+          +transition(all, 0.5s)
+          &:hover
+            background: $darkcarrot
           &:active
             +box-shadow(rgba(black, 0.5) 0 0 5px inset)
 
