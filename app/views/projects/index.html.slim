@@ -56,7 +56,7 @@
               h2= t('sections.successful.title')
           .projects
             - @successful.each_with_index do |item,i|
-              == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+              == render 'project', project: item, custom_class: ((@successful.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
           .explore_link
             hr
             = link_to t('main.links.successful'), explore_path(anchor: :successful)
