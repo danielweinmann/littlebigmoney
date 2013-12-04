@@ -109,7 +109,7 @@ es:
       near: "Explora proyectos cercanos a ti"
   sidebar:
     titles:
-      blog: Blog
+      blog: LittleBig-Blog
       facebook: "¿Qué tal un like a nuestra página de Facebook?"
       newsletter: "¿Te gustaría recibir nuestras LittleBig-News?"
       faq: "¿Tienes alguna duda?"
@@ -326,7 +326,7 @@ es:
       login_with_facebook: "Registrate con tu cuenta de Facebook"
       remember_me: "Recuérdame y manntenme infomado."
     header:
-      blog: Blog
+      blog: LittleBig-Blog
       help: Ayuda
       faq: FAQ
       signup: Registro
