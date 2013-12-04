@@ -732,7 +732,7 @@ describe Project do
           main_project.finish
         end
 
-        its(:waiting_funds?) { should be_true }
+        its(:waiting_funds?) { should be_false }
       end
 
       context 'when project is expired and have recent backers without confirmation' do
