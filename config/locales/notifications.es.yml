@@ -47,7 +47,10 @@ es:
     backer_project_unsuccessful:
       subject: "El proyecto %{project_name} no alcanzó los fondos esperados - Alguna información útil"
       header: "Información sobre créditos disponibles y reembolsos ; )"
-      text_html: ~
+      text_html: |-
+          Hola, %{user_name}!<br/><br/> Desafortunadamente el proyecto %{project_link} en el que colaboraste no logró cumplir la meta establecida en LittleBigMoney.<br/><br/>En función de esto, recibiste %{backer_value} en créditos para apoyar a otros proyectos. Puedes conocer más proyectos de %{category} en %{category_link}<br/><br/> Abajo seleccionamos algunas sugerencias de proyectos especialmete para ti: <br/><br/>%{recommended_text}. En el caso de solicitar un reembolso debes entrar en
+          %{credits_link}<br/><br/>con tu Id de colaboración: %{backer_id}<br/><br/> Para entender más de este proceso puedes dirigirte a nuestros términos de uso y condición. <http://soporte.littlebigmoney.org/knowledgebase/articles/245482> Términos de uso de LittleBigMoney</a>
+          Si deseas entrar en contacto con %{project_user}, envía un email para %{project_mail}.
     pending_backer_project_unsuccessful:
       subject: "El proyecto %{project_name} apoyado por ti no alcanzó los fondos esperados - Alguna información útil"
       header: "Confirmación sobre información de soporte, créditos disponibles y reembolsos ; )"
