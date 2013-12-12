@@ -199,7 +199,7 @@ describe Project do
       Project.should_receive(:visible).and_return(Project)
       Project.should_receive(:not_expired).and_return(Project)
       Project.should_receive(:order).with('random()').and_return(Project)
-      Project.should_receive(:limit).with(4)
+      Project.should_receive(:limit).with(3)
     end
 
     it{ should be_empty }
