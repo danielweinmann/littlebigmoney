@@ -274,8 +274,8 @@ describe Project do
 
   describe ".recent" do
     before do
-      @p = create(:project, online_date: (Time.now - 4.days))
-      create(:project, online_date: (Time.now - 15.days))
+      @p = create(:project, online_date: (Time.now - 59.days))
+      create(:project, online_date: (Time.now - 61.days))
     end
     subject{ Project.recent }
     it{ should == [@p] }
