@@ -16,7 +16,7 @@ class ProjectsController < ApplicationController
         collection_projects = Project.recommended_for_home
         unless collection_projects.empty?
           if current_user and current_user.recommended_projects
-            @recommended_projects  ||= current_user.recommended_projects
+            @recommended_projects ||= current_user.recommended_projects
             collection_projects   ||= collection_projects.where("id != ? AND category_id != ?",
                                                                 current_user.recommended_projects.last.id,
                                                                 @recommended_projects.last.category_id)

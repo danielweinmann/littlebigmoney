@@ -61,7 +61,7 @@ class Project < ActiveRecord::Base
   scope :not_expired, where("projects.expires_at >= current_timestamp")
   scope :expiring, not_expired.where("projects.expires_at <= (current_timestamp + interval '2 weeks')")
   scope :not_expiring, not_expired.where("NOT (projects.expires_at <= (current_timestamp + interval '2 weeks'))")
-  scope :recent, where("current_timestamp - projects.online_date <= '60 days'::interval")
+  scope :recent, where("current_timestamp - projects.online_date <= '30 days'::interval")
   scope :successful, where(state: 'successful')
   scope :online, where(state: 'online')
   scope :recommended_for_home, ->{
@@ -70,7 +70,7 @@ class Project < ActiveRecord::Base
     visible.
     not_expired.
     order('random()').
-    limit(4)
+    limit(3)
   }
   scope :order_for_search, ->{ reorder("
                                      CASE projects.state
