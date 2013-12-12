@@ -392,6 +392,16 @@ es:
   projects:
     index:
       what_is_html: "<strong>LittleBigMoney</strong> es una plataforma de financiación colectiva para Microempresas con impacto social o ambiental"
+      banner_image_1: "http://s9.postimg.org/hlx1by1j3/LBM_EQUATION_V1_ESPANOL_01.jpg"
+      banner_image_2: "http://littlebigmoney.org/assets/home-banner.es-80ed1aaca187bbe585446f6fb833c6e7.jpg"
+      banner_image_3: ~
+      banner_image_4: ~
+      banner_image_5: ~
+      banner_image_6: ~
+      banner_image_7: ~
+      banner_image_8: ~
+      banner_image_9: ~
+      banner_image_10: ~
       slogan_donate: "Una pequeña colaboración, una gran ayuda"
       slogan_invest: "(Próximamente) crece con nuevos emprendedores"
     box:

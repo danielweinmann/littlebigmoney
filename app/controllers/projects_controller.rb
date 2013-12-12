@@ -31,6 +31,8 @@ class ProjectsController < ApplicationController
         @expiring = Project.expiring_for_home(project_ids)
         @recent = Project.recent_for_home(project_ids)
         @successful = Project.successful_for_home(project_ids)
+        @banner_image = ""
+        @banner_image = I18n.t("projects.index.banner_image_#{1 + Random.rand(9)}", :default => "") while @banner_image.empty?
       end
 
       format.json do

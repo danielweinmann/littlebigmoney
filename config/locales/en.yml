@@ -392,6 +392,16 @@ en:
   projects:
     index:
       what_is_html: "<strong>LittleBigMoney</strong> is Latin America's first crowdfunding platform for small and growing businesses with social impact"
+      banner_image_1: "http://s21.postimg.org/hdbcsoo8n/LBM_EQUATION_V1_ENGLISH_02.jpg"
+      banner_image_2: "http://littlebigmoney.org/assets/home-banner.en-690eafe4a7aeddba09b95932234ecf77.jpg"
+      banner_image_3: ~
+      banner_image_4: ~
+      banner_image_5: ~
+      banner_image_6: ~
+      banner_image_7: ~
+      banner_image_8: ~
+      banner_image_9: ~
+      banner_image_10: ~
       slogan_donate: "A little donation, a big help"
       slogan_invest: "Grow with new entrepreneurs (soon)"
     box:
