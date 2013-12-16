@@ -458,7 +458,7 @@ es:
         paypal_description: "Colaboración para el proyecto %{project_name} con el valor de %{value}"
         paypal_error: "Oops! Algo sucedió con el envío de tu pago para PayPal. Por favor, intenta de nuevo."
         paypal_currency: USD
-        paypal_conversion: "1821.00"
+        paypal_conversion: "1816.00"
         payulatam_submit: "Ir a PayU Latam"
         payulatam_description: "Colaboración para el proyecto %{project_name} con el valor de %{value}"
         payulatam_error: "Oops! Algo sucedió con el envío de tu pago para PayU Latam. Por favor, intenta de nuevo."
