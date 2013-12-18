@@ -81,7 +81,7 @@ class Reward < ActiveRecord::Base
   def converted_minimum
     conversion = I18n.t('projects.backers.checkout.paypal_conversion').to_f
     return nil unless conversion > 0
-    (minimum_value / conversion).round
+    (minimum_value / conversion * 100).round.to_f / 100
   end
 
 end
