@@ -741,6 +741,7 @@ es:
   reward:
     display_remaining: "%{remaining} de %{maximum} disponible"
     dont_want: "No quiero una recompensa"
+    international: "<em> (%{value})</em>"
     limited: Limitado
     sold_out: Agotado
   sessions:
@@ -998,3 +999,4 @@ es:
       weblink: "Ver en la página web"
       whitelist: "Añadir contacto"
       whitelist_long: "Agrega nuestra dirección de email a tus contactos"
+ail a tus contactos"

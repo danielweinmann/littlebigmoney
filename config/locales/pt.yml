@@ -741,6 +741,7 @@ pt:
   reward:
     display_remaining: "%{remaining} de %{maximum} disponíveis"
     dont_want: "Não quero recompensa"
+    international: "<em> (%{value})</em>"
     limited: Limitada
     sold_out: Esgotada
   sessions:
