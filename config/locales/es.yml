@@ -394,8 +394,8 @@ es:
       what_is_html: "<strong>LittleBigMoney</strong> es una plataforma de financiación colectiva para Microempresas con impacto social o ambiental"
       banner_image_1: "http://s9.postimg.org/hlx1by1j3/LBM_EQUATION_V1_ESPANOL_01.jpg"
       banner_image_2: "http://littlebigmoney.org/assets/home-banner.es-80ed1aaca187bbe585446f6fb833c6e7.jpg"
-      banner_image_3: ~
-      banner_image_4: ~
+      banner_image_3: "http://s23.postimg.org/omyt4a5vv/LBM_EMKT_IMP2_GG_V1_03.jpg"
+      banner_image_4: "http://s22.postimg.org/dxnyvba41/LBM_EMKT_NEWYEAR_GG_V1_03.jpg"
       banner_image_5: ~
       banner_image_6: ~
       banner_image_7: ~
@@ -431,7 +431,7 @@ es:
         payroll: "Pago por nómina"
         payroll_info:
           title: "Pago por nómina"
-          companies: "Fundación Capital, Color al cuadrado"
+          companies: "Fundación Capital, Color al cuadrado, Global Giving"
           company_name: "Convenio empresarial"
           employee_id: "Número de identificación (obligatorio)"
           accept_terms_html: "He leido y estoy de acuerdo con los <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>términos de uso para pago por nómina</a>."

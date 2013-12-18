@@ -431,7 +431,7 @@ pt:
         payroll: "Pagamento em folha"
         payroll_info:
           title: "Pagamento em folha"
-          companies: "Fundación Capital, Color al cuadrado"
+          companies: "Fundación Capital, Color al cuadrado, Global Gving"
           company_name: "Empresa conveniada"
           employee_id: "Número de identificación (obligatorio)"
           accept_terms_html: "Eu li e estou de acordo com os <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>termos de uso para pagamento em folha</a>."
