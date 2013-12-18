@@ -12,7 +12,7 @@
           = image_tag('catarse/bg_explore.jpg')
           .ico.one.backer
           span= t('.title_one')
-          p= t('.step_one')
+          p= t('.step_one').html_safe
         li
           = image_tag('catarse/bg_heartbacker.jpg')
           .ico.two.backer
@@ -22,12 +22,12 @@
           = image_tag('catarse/bg_moneytag.jpg')
           .ico.three.backer
           span= t('.title_three')
-          p= t('.step_three')
+          p= t('.step_three').html_safe
         li.last
           = image_tag('catarse/bg_finish.jpg')
           .ico.four.backer
           span= t('.title_four')
-          p= t('.step_four')
+          p= t('.step_four').html_safe
 
       .requirements
         span.backer= t('.title_requirements')
