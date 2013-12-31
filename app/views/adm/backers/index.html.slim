@@ -108,6 +108,11 @@
                             strong= t('.payment_id')
                             | &nbsp;
                             = backer.payment_id
+                          - if backer.converted_currency.present?
+                            p
+                              strong= backer.converted_currency
+                              | &nbsp;
+                              = backer.converted_value
                           p
                             strong= t('.payment_choice')
                             | &nbsp;

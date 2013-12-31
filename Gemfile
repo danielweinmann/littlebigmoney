@@ -25,7 +25,7 @@ gem 'schema_associations'
 gem 'chartkick'
 
 # Payment engine using Paypal
-gem 'catarse_paypal_express', git: 'git://github.com/danielweinmann/catarse_paypal_express.git',  ref: '20c1fea4e5f857dc09a75dced040cfb4abffb771'
+gem 'catarse_paypal_express', git: 'git://github.com/danielweinmann/catarse_paypal_express.git',  ref: '4f460f8828b6a65045b9e09d03d21ad039e3cd3e'
 # gem 'catarse_paypal_express', path: '../catarse_paypal_express'
 
 # Payment engine using PayU Latam
