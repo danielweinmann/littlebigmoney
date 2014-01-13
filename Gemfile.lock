@@ -506,6 +506,7 @@ DEPENDENCIES
   launchy
   letter_opener
   newrelic_rpm
+  nokogiri
   omniauth
   omniauth-facebook (= 1.4.0)
   omniauth-twitter
