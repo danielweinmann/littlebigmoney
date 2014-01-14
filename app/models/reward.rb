@@ -42,7 +42,7 @@ class Reward < ActiveRecord::Base
   end
 
   def name
-    "<div class='reward_minimum_value'>#{minimum_value > 0 ? display_minimum+'+' : I18n.t('reward.dont_want')}#{ I18n.t('reward.international', value: number_to_currency(converted_minimum, unit: I18n.t('projects.backers.checkout.paypal_currency'), precision: 2, delimiter: '.')) unless I18n.locale == I18n.default_locale or minimum_value == 0}</div><div class='reward_description'>#{h description}</div>#{'<div class="sold_out">' + I18n.t('reward.sold_out') + '</div>' if sold_out?}<div class='clear'></div>".html_safe
+    "<div class='reward_minimum_value'>#{minimum_value > 0 ? display_minimum+'+' : I18n.t('reward.dont_want')}#{ I18n.t('reward.international', value: number_to_currency(converted_minimum, unit: Configuration[:paypal_currency], precision: 2, delimiter: '.')) unless I18n.locale == I18n.default_locale or minimum_value == 0}</div><div class='reward_description'>#{h description}</div>#{'<div class="sold_out">' + I18n.t('reward.sold_out') + '</div>' if sold_out?}<div class='clear'></div>".html_safe
   end
   def display_minimum
     number_to_currency minimum_value, unit: 'COP', precision: 2, delimiter: '.'
@@ -79,7 +79,7 @@ class Reward < ActiveRecord::Base
   end
 
   def converted_minimum
-    conversion = I18n.t('projects.backers.checkout.paypal_conversion').to_f
+    conversion = Configuration[:paypal_conversion].to_f
     return nil unless conversion > 0
     (minimum_value / conversion * 100).round.to_f / 100
   end
