@@ -3,10 +3,19 @@
     +grid-container
     +grid-system(16)
     overflow: hidden
-    padding-top: 20px
+    padding-top: 40px
     margin-bottom: 20px
     .center_content
       +grid(16)
+    .banner
+      background: $carrot
+      padding: 10px
+      +clearfix
+      img
+        float: left
+        width: 412px
+      iframe
+        float: right
     .text
       margin-top: 40px
       h1

@@ -1,5 +1,7 @@
 .channel_banner
   .center_content
-    = image_tag @banner_image
+    .banner
+      = image_tag @banner_image
+      iframe src="//player.vimeo.com/video/#{t("projects.index.vimeo_video_id")}?title=0&amp;byline=0&amp;portrait=0" width="498" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
     .text
       h2= t("projects.index.what_is_html")
