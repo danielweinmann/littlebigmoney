@@ -8,6 +8,6 @@
       = link_to t('channels.footer.how_it_works', name: @profile.name), channels_about_path, title: t('channels.footer.how_it_works', name: @profile.name), target: '_blank' 
       .separator
       = mail_to @profile.email, t('channels.footer.contact'), title: t('channels.footer.contact'), target: '_blank' 
-      .separator
-      = link_to t('channels.footer.how_channels_work'), 'http://blog.catarse.me/conheca-os-canais-do-catarse/', title: t('channels.footer.how_channels_work'), target: '_blank' 
+      / .separator
+      / = link_to t('channels.footer.how_channels_work'), 'http://blog.catarse.me/conheca-os-canais-do-catarse/', title: t('channels.footer.how_channels_work'), target: '_blank' 
 

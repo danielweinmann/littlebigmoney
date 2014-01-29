@@ -27,7 +27,7 @@ Catarse::Application.routes.draw do
   end
 
   # Channels
-  constraints subdomain: 'asas' do
+  constraints subdomain: /^(?!www|secure|test|local)(\w+)/ do
     namespace :channels, path: '' do
       namespace :adm do
         resources :projects, only: [ :index, :update] do
