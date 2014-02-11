@@ -7,7 +7,7 @@ es:
     backer_canceled_after_confirmed:
       subject: "El aporte fue cancelado después de la confirmación"
       header: "El aporte fue cancelado después de la confirmación"
-      text_html: ~
+      text_html: "Proyecto: %{project_name}<br/> Clave de la colaboración:%{key}<br/>ID de medio de pago: %{payment_id}<br/><br/>Esta colaboración recibió una notificación de cancelación después de haber recibido una notificación de confirmación.<br/>Verifica en el portal de medio de pago el status real de la transacción, si logra constar la colaboración como confirmado, confirma en el la página de LittleBigMoney (adm/backers)"
     project_owner_backer_confirmed:
       subject: "Excelente! Otro nuevo colaborador apoyó tu proyecto"
       header: "Un nuevo aporte fue rconfirmado recintemente para tu proyecto"
@@ -35,7 +35,7 @@ es:
     project_success:
       subject: "Proyecto exitoso: A continuación alguna información importante"
       header: "Proyecto exitoso"
-      text_html: ~
+      text_html: "Hola %{project_user}!!<br/><br/>Antes que todo, felicitaciones por el éxito de tu proyecto! :D<br/><br/>Reunimos aquí alguna información para quien tiene su proyecto financiado en LittleBigMoney. Son 4 Cosas,<br/><br/>1- Puedes descargar tu<strong>planilla con detalles de los colaboradores (nombre, recompensa, email, etc.)</strong>en cualquier momento<strong>en la pestaña de Informes</strong>en la página de tu proyecto.<br/><br/>2 - Además de eso, vamos a necesitar de alguna información para poder emitir la factura al servicio de LittleBigMoney. Vamos a usar los datos que nos diste en tu perfil de LittleBigMoney. Asegurate que los datos que pusiste ahí son los que quieres que sean usados para la factura.<br/><br/>3 - Vamos a emitir la factura para ustedes hasta el último día hábil del mes en el que se cerro la recolección de tu proyecto en LittleBigMoney<br/><br/>4 -  Para terminar, recuerda que es muy importante que te pongas a trabajar en las recompensas de las personas que creyeron en ti y tu proyecto. Intenta hacer contacto con ellos lo más pronto posible pues esta fue la comunidad que creaste y que ahora se encargará de divulgar la buena noticia."
     project_unsuccessful:
       subject: "Tu proyecto no alcanzó los recursos, pero queremos tener tu retroalimentación :)"
       header: "Tu proyecto no alcanzó los recursos solicitados : ("
@@ -43,7 +43,7 @@ es:
     backer_project_successful:
       subject: "Súper! El proyecto %{project_name} tuvo éxito en LittleBigMoney"
       header: "Súper! El proyecto para el que colaboraste fue exitoso en LittleBigMoney"
-      text_html: ~
+      text_html: "Hola, %{user_name}!<br/><br/>El proyecto %{project_link} que apoyaste fue financiado con éxito en LittleBigMoney! En resumen<br/><br/>El proyecto tuvo, incluyéndote, %{total_backers} maravillosos colaboradores, recaudó %{pledged} y logró el %{progress}% de la meta establecida :D<br/><br/>Una información importante: el equipo de LittleBigMoney se pondrá en contacto con el emprendedor para que empiece a pensar en la distribución de las recompensas directamente contigo.<br/><br/>Mientras tanto, comparte esta buena noticia con todo el mundo!<br/><br/><a href='http://www.facebook.com/share.php?u=%{project_url}&t=Uhuu! O projeto %{project_name_escaped}, que eu apoiei, foi bem-sucedido no LittleBigMoney!'><img src='http://littlebigmoney.org/assets/auth/facebook_64.png' title='facebook' class='social'/></a><a href='http://twitter.com/?status=Uhuu! O projeto %{project_name_escaped}, que eu apoiei, foi bem-sucedido no LittleBigMoney! %{project_url}'><img src='http://littlebigmoney.org/assets/auth/twitter_64.png' title='facebook' class='social'/></a><br/><br/><strong>Datos importantes sobre tu colaboración que ayudan en caso de alguna duda:<br/><br/>Valor de la colaboración:%{backer_value}<br/>%{reward}<br/>Fecha de la colaboración:%{backer_created_at}<br/>ID de la colaboración:%{backer_id}<br/><br/></strong>Si quieres contactarte con %{project_user}, puedes escribir a %{project_mail}"
     backer_project_unsuccessful:
       subject: "El proyecto %{project_name} no alcanzó los fondos esperados - Alguna información útil"
       header: "Información sobre créditos disponibles y reembolsos ; )"
@@ -73,7 +73,7 @@ es:
     new_draft_project:
       subject: "Nuevo proyecto creado - %{project_name}"
       header: "Nuevo proyecto creado"
-      text_html: ~
+      text_html: "<br/><br/>Un nuevo proyecto fue creado en LittleBigMoney!<br/><br/>Por%{user_link}<br/>Email del emprendedor:%{user_mail}<br/><br/>Detalles del proyecto abajo:<br/><br/><strong>Nombre</strong>:%{project_name}<br/><strong>Meta</strong>:%{goal}<br/><strong>Lista de Links relacionados</strong>:<br/>%{more_links}<br/><strong>Primeros colaboradores</strong>:<br/>%{first_backers}<br/><strong>Cómo conociste LittleBigMoney</strong>:<br/>%{how_know}<br/><br/><a href='%{project_url}'>Más del proyecto</a>"
     new_draft_project_channel:
       subject: "El proyecto %{project_name} fue creado"
       header: "Un nuevo proyecto esta listo para ser revisado"
@@ -83,7 +83,7 @@ es:
     adm_project_deadline:
       subject: "Se acabo el tiempo de publicación para el proyecto %{project_name}"
       header: "El plazo para el proyecto se cumplió"
-      text_html: ~
+      text_html: "El proyecto %{link} acaba de cumplir la fecha límite"
     credits_warning:
       subject: "Tienes %{amount} COP de crédito en LittleBigMoney"
       header: "¿Qué tal apoyar un nuevo proyecto?"
@@ -91,7 +91,7 @@ es:
     backer_confirmed_after_project_was_closed:
       subject: "Nuevo aporte confirmado para el proyecto '%{project_name}' después de 7 días del término del plazo."
       header: "Nuevo aporte confirmado"
-      text_html: ~
+      text_html: "Proyecto%{project_name}<br/>Clave: %{key}<br/>Creado en:%{created_at}<br/>Confirmado en: %{confirmed_at}"
     temporary_password:
       subject: "Contraseña provisional para LittleBigMoney"
       header: "Ingresa a tu cuenta para cambiar la contraseña"
