@@ -11,7 +11,7 @@ es:
     subscribed: "%{count} siguiendo el canal"
     curator: Curador
     adm:
-      menu: "Moderación de comentarios"
+      menu: "Moderación de Canal"
     projects:
       send: "Envía tu proyecto"
       see_how_it_works: "Revisa cómo funciona y envía tu proyecto"
@@ -27,11 +27,11 @@ es:
         legend_html: "Después de llenar el formato recibirás un borrador de la página del proyecto. En este borrador podrás agregar las recompensas para tus colaboradores. También podrás compartir esta página con tus amigos para  obtener comentarios y mejorar tu proyecto aún más.<br/><br/>La información de este borrador no es la definitiva, pero recuerda que entre más consciente seas de que estas enviando un proyecto, más rápido iras al aire.<br/><br/><strong>Es muy importante</strong>El canal Asas selecciona los proyectos con<a href=' https://docs.google.com/document/d/1TomgNL2k3Vlya-nMJixe-06cEjyswqIdtQwQ6OfOkoc/edit' target='_blank'>criterio propio</a>, lo que implica que tu proyecto puede ser rechazado por el equipo de curadores.  "
         permalink_hint: "Usa una URL simple. Tus colaboradores deben recordar esta dirección fácilmente para compartir tu proyecto."
         permalink_important: "Trata de no usar subrayado, guión etc."
-        important_html: "Ten en cuenta que la comisión cargada por LittleBigMoney es del 13% más impuestos si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
+        important_html: "Ten en cuenta que el descuento total será de aproximadamente el 13% sobre el valor recogido, si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
         about: "Describe tu proyecto utilizando esta guía!"
         how_much_you_need: "¿Cuánto dinero quieres recaudar?"
         how_much_hint_html: "Es importante recodar que la mayoría del dinero que recolectes vendrá de personas cercanas a ti (familiares, amigos y/o conocidos):<a href='%{href}' target='_blank'>Clickhere!</a> Por esta razón ten en cuenta que cuando calcules el monto total a solicitar en LittleBigMoney, debes tener al menos la capacidad de recolectar el 50% del mismo entre tu red."
-        how_much_important: "Ten en cuenta que la comisión cargada por LittleBigMoney es del 13% más impuestos si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
+        how_much_important: "Ten en cuenta que el descuento total será de aproximadamente el 13% sobre el valor recogido, si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
         days: "¿En cuántos días?"
         days_hint: "En promedio los proyectos están al aire por 40 días."
         days_important: "La fecha límite para que el proyecto este al aire es de 90 días."

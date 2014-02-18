@@ -11,7 +11,7 @@ en:
     subscribed: "%{count} following the channel"
     curator: Curator
     adm:
-      menu: "Comment moderation"
+      menu: "Channel moderation"
     projects:
       send: "Submit your project"
       see_how_it_works: "See how it works and submit your project"
@@ -27,11 +27,11 @@ en:
         legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you can add the rewards for your supporters. You can also share this page with your friends to collect feedback and sharpen your project even more.<br/><br/>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go live.<br/><br/><strong>Very Important</strong> Asas channel selects the projects according to<a href=' https://docs.google.com/document/d/1TomgNL2k3Vlya-nMJixe-06cEjyswqIdtQwQ6OfOkoc/edit' target='_blank'>their own selection criteria</a>, which means that your project may be rejected by the curatorial team. "
         permalink_hint: "Simplify the URL of your project. Think that your supporters need to remember the address to share your project."
         permalink_important: "Try not to use underline, hyphen etc."
-        important_html: "Keep in mind the 13% fee + taxes charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.8492 to find the amount to be deducted."
+        important_html: "Keep in mind! The 13% (Approximate) fee will be charged on the total funds raised, in case you reach your financial goal. Just divide your final budget by 0.8492 to find the amount to be deducted."
         about: "Describe your project using this guide!"
         how_much_you_need: "How much do you want to raise?"
         how_much_hint_html: "It's important to remember that most of the support you will colect will come from people near you (family, friends and acquaintances):<a href='%{href}' target='_blank'>Click here!</a> Therefore, when calculating your goal in LittleBigMoney is paramount to think about your capacity of raising at least 50% of the goal in your own network."
-        how_much_important: "Keep in mind the 13% fee charged by LittleBigMoney in case you reach your financial goal. Just divide your final budget by 0.87 to find the amount to be deducted."
+        how_much_important: "Keep in mind! The 13% (Approximate) fee will be charged on the total funds raised, in case you reach your financial goal. Just divide your final budget by 0.8492 to find the amount to be deducted."
         days: "In how many days?"
         days_hint: "Usually the projects stay online for 40 days."
         days_important: "90 days is the maximum number of days for your deadline."
