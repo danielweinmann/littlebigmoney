@@ -16,6 +16,10 @@ gem 'state_machine', require: 'state_machine/core'
 # paranoid stuff
 gem 'paper_trail', '~> 2.7.1'
 
+# Better logs
+gem "lograge"
+gem 'quiet_assets'
+
 # Database and data related
 gem 'pg'
 gem 'pg_search'

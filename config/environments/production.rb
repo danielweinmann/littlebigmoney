@@ -62,4 +62,6 @@ Catarse::Application.configure do
   config.active_support.deprecation = :notify
   config.active_record.schema_format = :sql
 
+  config.lograge.enabled = true
+
 end

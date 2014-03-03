@@ -248,6 +248,10 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.1.2)
       launchy (~> 2.2)
+    lograge (0.2.2)
+      actionpack (>= 3)
+      activesupport (>= 3)
+      railties (>= 3)
     loofah (1.2.1)
       nokogiri (>= 1.4.4)
     mail (2.4.4)
@@ -302,6 +306,8 @@ GEM
       pg
       rails (>= 3.0.0)
       responders
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -505,6 +511,7 @@ DEPENDENCIES
   kaminari
   launchy
   letter_opener
+  lograge
   newrelic_rpm
   nokogiri
   omniauth
@@ -515,6 +522,7 @@ DEPENDENCIES
   pg
   pg_search
   postgres-copy
+  quiet_assets
   rack-mini-profiler
   rack-timeout
   rails (= 3.2.12)
