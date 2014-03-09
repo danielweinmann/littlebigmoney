@@ -3,8 +3,11 @@
 #page_content.presentation
   .container
     .video
-      .padding        
-        = content_tag(:iframe, nil, src: 'http://player.vimeo.com/video/82632252?title=0&byline=0&portrait=0')
+      .padding
+        - if @profile.video_url.present?
+          = content_tag(:iframe, nil, src: @profile.video_url)
+        - else
+          = image_tag @profile.image, title: @profile.name
     .about
       h1              = @profile.name
       p.description   = truncate(@profile.description, length: 210)
@@ -17,7 +20,8 @@
     .channel
       .info
         .padding
-          .image  = image_tag @profile.image, title: @profile.name
+          - if @profile.video_url.present?
+            .image  = image_tag @profile.image, title: @profile.name
           h3      = @profile.name
           span    = t('channels.curator')
           .social
