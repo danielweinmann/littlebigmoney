@@ -22,9 +22,9 @@ en:
         other: "<span>%{count} %{unit}</span> left"
       pledged_html: "<span>%{value}</span> supported"
       new:
-        title: "Hooray! Submit your project to Asas channel"
+        title: "Hooray! Submit your project to the channel"
         subtitle: "This is the time to make it happen! We really want to know what you're up to"
-        legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you can add the rewards for your supporters. You can also share this page with your friends to collect feedback and sharpen your project even more.<br/><br/>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go live.<br/><br/><strong>Very Important</strong> Asas channel selects the projects according to<a href=' https://docs.google.com/document/d/1TomgNL2k3Vlya-nMJixe-06cEjyswqIdtQwQ6OfOkoc/edit' target='_blank'>their own selection criteria</a>, which means that your project may be rejected by the curatorial team. "
+        legend_html: "After filling in the form below, you will receive a project page in draft mode. In this draft you can add the rewards for your supporters. You can also share this page with your friends to collect feedback and sharpen your project even more.<br/><br/>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go live.<br/><br/><strong>Very Important</strong>The channel selects the projects according to <a href=' https://docs.google.com/document/d/1TomgNL2k3Vlya-nMJixe-06cEjyswqIdtQwQ6OfOkoc/edit' target='_blank'>their own selection criteria</a>, which means that your project may be rejected by the curatorial team. "
         permalink_hint: "Simplify the URL of your project. Think that your supporters need to remember the address to share your project."
         permalink_important: "Try not to use underline, hyphen etc."
         important_html: "Keep in mind! The 13% (Approximate) fee will be charged on the total funds raised, in case you reach your financial goal. Just divide your final budget by 0.8492 to find the amount to be deducted."
@@ -68,7 +68,7 @@ en:
         rewards_important: "Don't go nuts! Think about how you're going to deliver your rewards and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
         submit: "Submit project"
         send_project: "I want to submit my project"
-        how_know: "How did you get to know Asas channel?"
+        how_know: "How did you get to know the channel?"
     how_it_works:
       title: "How does %{channel} work?"
     footer:
