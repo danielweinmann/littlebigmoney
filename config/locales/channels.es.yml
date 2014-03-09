@@ -70,7 +70,7 @@ es:
         send_project: "Quiero enviar mi proyecto"
         how_know: "¿Cómo conociste el canal de Asas?"
     how_it_works:
-      title: "¿Cómo funciona un %{channel}?"
+      title: "¿Cómo funciona %{channel}?"
     footer:
       terms: "Términos de uso"
       privacy_policy: "Política de privacidad"

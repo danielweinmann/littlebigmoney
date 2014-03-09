@@ -1,4 +1,6 @@
 class Channel < ActiveRecord::Base
+  extend CatarseAutoHtml
+
   attr_accessible :description, :name, :permalink
   schema_associations
 
@@ -10,9 +12,9 @@ class Channel < ActiveRecord::Base
   has_and_belongs_to_many :subscribers
   has_and_belongs_to_many :trustees, class_name: :User, join_table: :channels_trustees
 
-
   delegate :all, to: :decorator
 
+  catarse_auto_html_for field: :how_it_works, video_width: 600, video_height: 403
 
   # Links to channels should be their permalink
   def to_param; self.permalink end
