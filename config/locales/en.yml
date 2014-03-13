@@ -107,7 +107,7 @@ en:
       recents: "Explore recent projects"
       successful: "Explore successful projects"
       near: "Explore projects near to you"
-      channel_projects: "Conozca el canal %{name}"
+      channel_projects: "Discover channel %{name}"
   sidebar:
     titles:
       blog: Blog
