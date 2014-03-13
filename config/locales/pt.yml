@@ -107,6 +107,7 @@ pt:
       recents: "explore mais projetos recentes"
       successful: "explore mais projetos bem-sucedidos"
       near: "explore mais projetos próximos"
+      channel_projects: "conheça o canal %{name}"
   sidebar:
     titles:
       blog: blog

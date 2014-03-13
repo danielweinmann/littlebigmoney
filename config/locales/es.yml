@@ -107,6 +107,7 @@ es:
       recents: "Explora proyectos recientes"
       successful: "Explora proyectos exitosos"
       near: "Explora proyectos cercanos a ti"
+      channel_projects: ~
   sidebar:
     titles:
       blog: LittleBig-Blog
