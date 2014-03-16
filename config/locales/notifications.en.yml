@@ -62,6 +62,7 @@ en:
     project_received_channel:
       subject: "Your project was received by the channel"
       header: "Your project was received by the staff of the channel"
+      text_html: ~
     project_visible:
       subject: "Your project is now online at LittleBigMoney"
       header: "Now it's a reality"
@@ -77,6 +78,7 @@ en:
     new_draft_project_channel:
       subject: "The project %{project_name} has just been created"
       header: "A new project is awaiting review"
+      text_html: ~
     new_features:
       subject: "Help for doctoral dissertation on crowdfunding"
       header: "Help for doctoral dissertation on crowdfunding"

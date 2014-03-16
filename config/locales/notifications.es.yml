@@ -62,6 +62,7 @@ es:
     project_received_channel:
       subject: "Tu proyecto fue recibido por el canal"
       header: "Tu proyecto fue recibido por el equipo del canal"
+      text_html: ~
     project_visible:
       subject: "Tu proyecto ahora esta publicado en LittleBigMoney"
       header: "Ahora es una realidad"
@@ -77,6 +78,7 @@ es:
     new_draft_project_channel:
       subject: "El proyecto %{project_name} fue creado"
       header: "Un nuevo proyecto esta listo para ser revisado"
+      text_html: "¡Hola!<br/><br/>Un nuevo proyecto ha sido creado en el canal por %{user_link}<br/>Email del emprendedor:%{user_mail}<br/><br/>Detalles del proyecto:<br/><br/><strong>Nombre:</strong>%{project_name}<br/><strong>Meta</strong>%{goal}<strong><br/>Lista de Links relacionados</strong><br/>%{more_links}<br/><strong>Primeros colaboradores:</strong>%{first_backers}<br/><strong>Cómo conoció el canal:</strong>%{how_know}<br/><br/><a href='%{project_url}'>Explrora más del proyecto</a>"
     new_features:
       subject: "Ayuda para tesis doctoral sobre crowdfunding"
       header: "Ayuda para tesis doctoral sobre crowdfunding"
