@@ -97,4 +97,4 @@ es:
     temporary_password:
       subject: "Contraseña provisional para LittleBigMoney"
       header: "Ingresa a tu cuenta para cambiar la contraseña"
-      text_html: "Como tu te regustraste en LittleBibMoney vía facebook, te estamos enviando una contraseña temporal para que puedas entrar también con tu cuenta de correo.<br/><br/>El ingreso podrá hacerse usando la siguiente información: <br/><br/>Email:%{email}<br/>Contraseña temporal:%{password}<br/><br/>Recuerda que puedes continuar entrando a LittleBigMoney usando tu cuenta de facebook. <br/><br/>Para cambiar la contraseña temporal,%{link}."
+      text_html: "Como tu te registraste en LittleBigMoney vía facebook, te estamos enviando una contraseña temporal para que puedas entrar también con tu cuenta de correo.<br/><br/>El ingreso podrá hacerse usando la siguiente información: <br/><br/>Email:%{email}<br/>Contraseña temporal:%{password}<br/><br/>Recuerda que puedes continuar entrando a LittleBigMoney usando tu cuenta de facebook. <br/><br/>Para cambiar la contraseña temporal,%{link}."

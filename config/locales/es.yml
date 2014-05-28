@@ -1,5 +1,5 @@
 es:
-  failure_title: "Por favor, arregla los siguientes errores:"
+  failure_title: "Welcome to LittleBigMoney"
   uservoice_gadget:
     user:
       name: Usuario
@@ -393,7 +393,7 @@ es:
   projects:
     index:
       vimeo_video_id: 82632252
-      what_is_html: "<strong>LittleBigMoney</strong> plataforma crowdfunding para el desarrollo de proyectos con impacto social y ambiental."
+      what_is_html: "<strong>LittleBigMoney</strong> plataforma de crowdfunding para el desarrollo de proyectos con impacto social y ambiental."
       banner_image_1: "http://s29.postimg.org/iow717xmv/Banners_cerdo_ESP.png"
       banner_image_2: "http://s29.postimg.org/vdqhkw3rb/Banners_ecuacion_ESP.png"
       banner_image_3: ~
