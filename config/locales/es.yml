@@ -309,7 +309,7 @@ es:
       comment:
         comment: "¿Qué piensas de este proyecto?"
       project:
-        about_html: "Describe en un párrafo quién eres, que haces y tu experiencia en el negocio"
+        about: "¿Quién eres, que haces y cual tu experiencia en el negocio?"
         history: "¿Cuál es la historia de tu emprendimiento?"
         cause: "¿Cuál es la causa que mueve tu proyecto? ¿Cuál es el problema que busca resolver?"
         description: "¿En qué consiste tu Proyecto?"

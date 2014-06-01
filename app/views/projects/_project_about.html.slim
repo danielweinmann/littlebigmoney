@@ -12,5 +12,24 @@
       #twitter_share= render_twitter(url: project_by_slug_url(permalink: @project.permalink))
       .clear
 .text
-  p
-    = @project.about_html.html_safe
+  - if @project.about.present?
+    h3= t('formtastic.labels.project.about')
+    p= @project.about_html.html_safe
+  - if @project.history.present?
+    h3= t('formtastic.labels.project.history')
+    p= @project.history_html.html_safe
+  - if @project.cause.present?
+    h3= t('formtastic.labels.project.cause')
+    p= @project.cause_html.html_safe
+  - if @project.description.present?
+    h3= t('formtastic.labels.project.description')
+    p= @project.description_html.html_safe
+  - if @project.impact.present?
+    h3= t('formtastic.labels.project.impact')
+    p= @project.impact_html.html_safe
+  - if @project.budget.present?
+    h3= t('formtastic.labels.project.budget')
+    p= @project.budget_html.html_safe
+  - if @project.implementation.present?
+    h3= t('formtastic.labels.project.implementation')
+    p= @project.implementation_html.html_safe

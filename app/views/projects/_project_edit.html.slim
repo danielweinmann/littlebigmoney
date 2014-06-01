@@ -25,18 +25,36 @@
         = form.input :goal, as: :number, required: false, hint: t('formtastic.hints.project.goal').html_safe
       - if can? :update, @project, :about
         = form.input :about, required: false
-        .tips
-          h3= t('projects.formatting_tips.title')
-          = image_tag "catarse/icon_media.png"
-          p= t('projects.formatting_tips.media_html') 
-          = image_tag "catarse/icon_url.png"
-          p= t('projects.formatting_tips.link_html')
-          = image_tag "catarse/icon_linktext.png"
-          p= t('projects.formatting_tips.link_text_html')
-          = image_tag "catarse/icon_bold.png"
-          p= t('projects.formatting_tips.bold_html')
-          = image_tag "catarse/icon_italic.png"
-          p= t('projects.formatting_tips.italic_html')            
+      - if can? :update, @project, :history
+        = form.input :history, required: false
+      - if can? :update, @project, :cause
+        = form.input :cause, required: false
+      - if can? :update, @project, :description
+        = form.input :description, required: false
+      - if can? :update, @project, :impact
+        = form.input :impact, required: false
+      - if can? :update, @project, :budget
+        = form.input :budget, required: false
+      - if can? :update, @project, :implementation
+        = form.input :implementation, required: false
+      - if can? :update, @project, :more_links
+        = form.input :more_links, required: false
+      - if can? :update, @project, :first_backers
+        = form.input :first_backers, required: false
+      - if can? :update, @project, :how_know
+        = form.input :how_know, required: false
+      .tips
+        h3= t('projects.formatting_tips.title')
+        = image_tag "catarse/icon_media.png"
+        p= t('projects.formatting_tips.media_html') 
+        = image_tag "catarse/icon_url.png"
+        p= t('projects.formatting_tips.link_html')
+        = image_tag "catarse/icon_linktext.png"
+        p= t('projects.formatting_tips.link_text_html')
+        = image_tag "catarse/icon_bold.png"
+        p= t('projects.formatting_tips.bold_html')
+        = image_tag "catarse/icon_italic.png"
+        p= t('projects.formatting_tips.italic_html')            
       .clearfix
       .form-actions.bootstrap-twitter
         = form.submit class: 'btn'

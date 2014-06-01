@@ -35,7 +35,7 @@
                 span
                 .alert
                   .important= t('projects.new.about_important')
-              = form.label :about, t('formtastic.labels.project.about_html')
+              = form.label :about, t('formtastic.labels.project.about')
               = form.text_area :about, class: "#{'error' if @project.errors[:about].present?}"
               p.inline-hints= t('formtastic.hints.project.about')
 

@@ -309,7 +309,7 @@ pt:
       comment:
         comment: "Deixe seu comentário sobre este projeto"
       project:
-        about_html: "História do seu projeto e como o $ será utilizado *"
+        about: "História do seu projeto e como o $ será utilizado *"
         history: "Label do history"
         cause: "Label do cause"
         description: "Label do description"

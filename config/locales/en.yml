@@ -309,7 +309,7 @@ en:
       comment:
         comment: "Leave your comment about this project"
       project:
-        about_html: ~
+        about: ~
         history: ~
         cause: ~
         description: ~
