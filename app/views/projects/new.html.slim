@@ -45,19 +45,37 @@
               .bootstrap-alert
                 span
                 .alert
-                  .important= t('.headline_important')
-              = form.label :headline, t('formtastic.labels.project.headline')
-              = form.text_field :headline, { maxlength: 140, class: "#{'error' if @project.errors[:headline].present?}" }
-              p.inline-hints= t('formtastic.hints.project.headline')
+                  .important= t('.history_important')
+              = form.label :history, t('formtastic.labels.project.history')
+              = form.text_area :history, class: "#{'error' if @project.errors[:history].present?}"
+              p.inline-hints= t('formtastic.hints.project.history')
 
             .input
               .bootstrap-alert
                 span
                 .alert
-                  .important= t('.tags_important', href: explore_path).html_safe
-              = form.label :category, t('.category')
-              = form.select :category_id, Category.array, class: "#{'error' if @project.errors[:category].present?}"
-              p.inline-hints= t('formtastic.hints.project.category')
+                  .important= t('.cause_important')
+              = form.label :cause, t('formtastic.labels.project.cause')
+              = form.text_area :cause, class: "#{'error' if @project.errors[:cause].present?}"
+              p.inline-hints= t('formtastic.hints.project.cause')
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
+                  .important= t('.description_important')
+              = form.label :description, t('formtastic.labels.project.description')
+              = form.text_area :description, class: "#{'error' if @project.errors[:description].present?}"
+              p.inline-hints= t('formtastic.hints.project.description')
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
+                  .important= t('.impact_important')
+              = form.label :impact, t('formtastic.labels.project.impact')
+              = form.text_area :impact, class: "#{'error' if @project.errors[:impact].present?}"
+              p.inline-hints= t('formtastic.hints.project.impact')
 
             .input
               .bootstrap-alert
@@ -72,12 +90,48 @@
               .bootstrap-alert
                 span
                 .alert
+                  .important= t('.budget_important')
+              = form.label :budget, t('formtastic.labels.project.budget')
+              = form.text_area :budget, class: "#{'error' if @project.errors[:budget].present?}"
+              p.inline-hints= t('formtastic.hints.project.budget')
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
+                  .important= t('.implementation_important')
+              = form.label :implementation, t('formtastic.labels.project.implementation')
+              = form.text_area :implementation, class: "#{'error' if @project.errors[:implementation].present?}"
+              p.inline-hints= t('formtastic.hints.project.implementation')
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
                   .important= t('.online_days_important')
               = form.label :online_days, t('formtastic.labels.project.expires_at')
               .input-append
                 = form.text_field :online_days, class: "#{'error' if @project.errors[:online_days].present?}"
                 span.add-on= t('days')
               p.inline-hints= t('formtastic.hints.project.online_days')
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
+                  .important= t('.tags_important', href: explore_path).html_safe
+              = form.label :category, t('.category')
+              = form.select :category_id, Category.array, class: "#{'error' if @project.errors[:category].present?}"
+              p.inline-hints= t('formtastic.hints.project.category')
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
+                  .important= t('.headline_important')
+              = form.label :headline, t('formtastic.labels.project.headline')
+              = form.text_field :headline, { maxlength: 140, class: "#{'error' if @project.errors[:headline].present?}" }
+              p.inline-hints= t('formtastic.hints.project.headline')
 
             .input
               .bootstrap-alert

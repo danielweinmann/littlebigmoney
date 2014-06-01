@@ -279,6 +279,12 @@ en:
       project:
         video_url_edit: "Paste here the URL of your Vimeo video."
         about: "Tell us about what inspired you to come up with this project . Be objective and charming, present your readers with something that moves them while being very transparent over the expectations on your project! Do you nedd help? http://bit.ly/17L1aEK"
+        history: ~
+        cause: ~
+        description: ~
+        impact: ~
+        budget: ~
+        implementation: ~
         category: "Before you submit your project explore other successful projects to inspire yourself!"
         expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach your goal"
         online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach your goal"
@@ -304,6 +310,12 @@ en:
         comment: "Leave your comment about this project"
       project:
         about_html: ~
+        history: ~
+        cause: ~
+        description: ~
+        impact: ~
+        budget: ~
+        implementation: ~
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use only numbers)"
         name: "Project's Name"
@@ -689,6 +701,12 @@ en:
       days_important: "The deadline for the project to air is 90 days."
       about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the supporters something that moves them. After all, it's your creation and they need to see your passion!"
       about_important: "Don't make it too long! Indicate links so people can know more about your work. i.e video links, URL of Facebook pictures, Flickr etc so your profile will be complete!"
+      history_important: ~
+      cause_important: ~
+      description_important: ~
+      impact_important: ~
+      budget_important: ~
+      implementation_important: ~
       contact: "Leave us your email address so we can contact you"
       links: "Where can we find more about you and your project?"
       links_important: "These links help us know more about you"

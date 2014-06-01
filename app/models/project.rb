@@ -25,6 +25,12 @@ class Project < ActiveRecord::Base
   accepts_nested_attributes_for :rewards
 
   catarse_auto_html_for field: :about, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :history, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :cause, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :description, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :impact, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :budget, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :implementation, video_width: 600, video_height: 403
 
   pg_search_scope :pg_search, against: [
       [:name, 'A'],
