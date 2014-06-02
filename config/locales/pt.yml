@@ -309,6 +309,9 @@ pt:
       comment:
         comment: "Deixe seu comentário sobre este projeto"
       project:
+        permalink: Permalink
+        online_days: Dias online
+        category: Categoria
         about: "História do seu projeto e como o $ será utilizado *"
         history: "Label do history"
         cause: "Label do cause"

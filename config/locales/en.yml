@@ -309,6 +309,9 @@ en:
       comment:
         comment: "Leave your comment about this project"
       project:
+        permalink: ~
+        online_days: ~
+        category: ~
         about: ~
         history: ~
         cause: ~
