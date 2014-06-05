@@ -4,6 +4,7 @@ class UpdatesController < ApplicationController
 
   actions :index, :create, :destroy
   respond_to :html, only: [ :index, :create, :destroy ]
+  respond_to :json, only: [:index]
   belongs_to :project
 
   def index
