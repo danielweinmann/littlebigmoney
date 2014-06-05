@@ -232,10 +232,12 @@ class Project < ActiveRecord::Base
       headline: headline,
       progress: progress,
       display_progress: display_progress,
+      goal: display_goal,
       pledged: display_pledged,
       created_at: created_at,
       time_to_go: time_to_go,
       remaining_text: remaining_text,
+      video_url: video_url,
       embed_url: video_embed_url ? video_embed_url : (video ? video.embed_url : nil),
       url: Rails.application.routes.url_helpers.project_by_slug_path(permalink, locale: I18n.locale),
       full_uri: Rails.application.routes.url_helpers.project_by_slug_url(permalink, locale: I18n.locale),
@@ -245,7 +247,16 @@ class Project < ActiveRecord::Base
       failed: failed?,
       display_status_to_box: display_status.blank? ? nil : I18n.t("project.display_status.#{display_status}"),
       display_expires_at: display_expires_at,
-      in_time: in_time?
+      in_time: in_time?,
+      permalink: permalink,
+      about: about_html,
+      history: history_html,
+      cause: cause_html,
+      description: description_html,
+      impact: impact_html,
+      budget: budget_html,
+      implementation: implementation_html,
+      online_days: online_days
     }
   end
 
