@@ -95,9 +95,10 @@ Catarse::Application.routes.draw do
     end
   end
   
-  resources :users do
+  resources :users, except: [:index, :new, :create, :edit, :destroy] do
     collection do
       get :uservoice_gadget
+      post :authenticate_user
     end
     resources :backers, only: [:index] do
       member do

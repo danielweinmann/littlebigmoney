@@ -26,7 +26,6 @@ class Ability
       project.user == current_user && ( project.draft? || project.rejected? )
     end
 
-
     # NOTE: Reward authorizations
     can :create, :rewards do |reward|
       reward.project.user == current_user
@@ -56,7 +55,6 @@ class Ability
     can :update, :users, :admin do |user|
       current_user.admin
     end
-
 
     # NOTE: Backer authorizations
     cannot :show, :backers
@@ -89,7 +87,6 @@ class Ability
         current_user.channels_projects.exists?(reward.project)
       end
 
-
       # For the access, :all
       # we're removing the ability to update users at all, but
       cannot [:update, :destroy], :users
@@ -113,12 +110,9 @@ class Ability
       else
     end
 
-
-
     # NOTE: admin can access everything.
     # It's the last ability to override all previous abilities.
     can :access, :all if current_user.admin?
-
 
   end
 end

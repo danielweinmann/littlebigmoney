@@ -1,15 +1,16 @@
 # coding: utf-8
 class UsersController < ApplicationController
-  load_and_authorize_resource new: [ :set_email ], except: [ :projects ]
+  load_and_authorize_resource new: [ :set_email ], except: [ :projects, :authenticate_user ]
   inherit_resources
-  actions :show, :update, :unsubscribe_update, :request_refund, :set_email, :update_email, :uservoice_gadget
-  respond_to :json, only: [:backs, :projects, :request_refund]
+  actions :show, :create, :update, :unsubscribe_update, :request_refund, :set_email, :update_email, :uservoice_gadget, :authenticate_user
+  respond_to :json, only: [:backs, :projects, :request_refund, :authenticate_user]
+
+  before_filter :authenticate_api, only: [:authenticate_user]
 
   def uservoice_gadget
     if params[:secret] == ::Configuration[:uservoice_secret_gadget]
       @user = User.find_by_email params[:email]
     end
-
     render :uservoice_gadget, layout: false
   end
 
@@ -74,4 +75,17 @@ class UsersController < ApplicationController
     @credits = @user.backs.can_refund.order(:id).all
     render json: @credits
   end
+
+  def authenticate_user
+    user_attributes = JSON.parse(request.body.read)
+    email = user_attributes["email"]
+    return render(json: {errors: ["You must inform at least and email address"]}, status: 422) unless email.present?
+    unless user = User.find_by_email(email)
+      user = User.create(user_attributes)
+      return render(json: {errors: user.errors.full_messages}, status: 422) unless user.valid?
+    end
+    access_token = user.api_keys.create(expires_at: 2.minutes.from_now).access_token
+    render json: {access_token: access_token}
+  end
+
 end

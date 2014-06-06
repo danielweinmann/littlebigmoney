@@ -63,6 +63,7 @@ class User < ActiveRecord::Base
   schema_associations
   has_many :oauth_providers, through: :authorizations
   has_many :backs, class_name: "Backer"
+  has_many :api_keys
   has_one :user_total
 
 

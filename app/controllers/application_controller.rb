@@ -117,4 +117,20 @@ class ApplicationController < ActionController::Base
     []
   end
 
+  def authenticate_api
+    authenticate_or_request_with_http_token do |token, options|
+      api_key = ApiKey.not_expired.find_by_access_token(token)
+      if api_key
+        user = api_key.user
+        if api_key.user.api?
+          user
+        else
+          false
+        end
+      else
+        false
+      end
+    end    
+  end
+
 end
