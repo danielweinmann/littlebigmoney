@@ -118,19 +118,20 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate_api(check_api_user = false)
+    user = nil
     authenticate_or_request_with_http_token do |token, options|
       api_key = ApiKey.not_expired.find_by_access_token(token)
       if api_key
-        user = api_key.user
-        if (check_api_user && user.api?) || (!check_api_user)
-          sign_in(:user, user)
+        if (check_api_user && api_key.user.api?) || (!check_api_user)
+          user = sign_in(:user, api_key.user)
         else
           false
         end
       else
         false
       end
-    end    
+    end
+    user
   end
 
 end
