@@ -3,8 +3,10 @@ class Projects::BackersController < ApplicationController
   actions :index, :show, :new, :update_info, :review, :create
   skip_before_filter :force_http, only: [:create, :update_info]
   skip_before_filter :verify_authenticity_token, only: [:moip]
-  load_and_authorize_resource
+  load_and_authorize_resource except: [:create]
   belongs_to :project
+
+  before_filter :authenticate_api, only: [:create], if: -> { request.format == "application/json" }
 
   def update_info
     resource.update_attributes(params[:backer])
@@ -45,6 +47,7 @@ class Projects::BackersController < ApplicationController
 
   def create
     @title = t('projects.backers.create.title')
+    authorize! :create, @backer
     @backer.reward_id = nil if params[:backer][:reward_id].to_s == '0'
     @backer.user = current_user
     create! do |success,failure|

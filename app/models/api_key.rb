@@ -7,7 +7,7 @@ class ApiKey < ActiveRecord::Base
   before_create :set_access_token
 
   def self.not_expired
-    where("expires_at < current_timestamp OR expires_at IS NULL")
+    where("expires_at > current_timestamp OR expires_at IS NULL")
   end
 
   private
