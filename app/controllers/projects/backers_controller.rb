@@ -6,7 +6,8 @@ class Projects::BackersController < ApplicationController
   load_and_authorize_resource except: [:create]
   belongs_to :project
 
-  before_filter :authenticate_api, only: [:create], if: -> { request.format == "application/json" }
+  before_filter :authenticate_api, only: [:create], if: -> { request.headers["Authorization"].present? }
+  skip_before_filter :verify_authenticity_token, only: [:create], if: -> { request.headers["Authorization"].present? }
 
   def update_info
     resource.update_attributes(params[:backer])
@@ -47,6 +48,8 @@ class Projects::BackersController < ApplicationController
 
   def create
     @title = t('projects.backers.create.title')
+    @project = Project.find(params[:project_id])
+    @backer = @project.backers.new(params[:backer])
     authorize! :create, @backer
     @backer.reward_id = nil if params[:backer][:reward_id].to_s == '0'
     @backer.user = current_user
