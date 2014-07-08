@@ -260,7 +260,7 @@ class Backer < ActiveRecord::Base
 
   def conversion_fee
     return unless self.converted_value && self.converted_value > 0
-    number_to_currency (self.value / self.converted_value), unit: self.converted_currency, precision: 2, delimiter: '.'
+    number_to_currency (self.value / self.converted_value), unit: "COP", precision: 2, delimiter: '.'
   end
 
   def display_converted_value
