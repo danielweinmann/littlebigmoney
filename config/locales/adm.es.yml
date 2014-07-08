@@ -8,7 +8,7 @@ es:
         user: "Usuario PayU"
         user_id: "Identificación de Usuario"
         goal: Meta
-        total_payment_service_fee: "Tarifa de PayU"
+        total_payment_service_fee: "Tarifa de MP"
         total_catarse_fee: "Tarifa de LittleBigMoney"
         repass_value: "Valor a pagar"
         expires_at: Finaliza
@@ -22,12 +22,12 @@ es:
         search_report: "Informe de búsqueda"
         total_projects: Proyectos
         submit: Filtro
-        by_state: "Por Departamento/Provincia"
+        by_state: Estado
         between_expires_at: "Expira entre"
         by_progress: "Por progreso %"
     projects:
       index:
-        by_state: "Por Departamento/Provincia"
+        by_state: Estado
         between_created_at: "Creados entre"
         id: Identificación
         name: Título
@@ -156,7 +156,7 @@ es:
           user: "Usuario PayU"
           user_id: Usuario
           goal: Meta
-          total_payment_service_fee: "Tarifa de PayU"
+          total_payment_service_fee: "Tarifa de MP"
           total_catarse_fee: "Tarifa de LittleBigMoney"
           repass_value: "Valor a pagar"
           expires_at: Finaliza
@@ -170,12 +170,12 @@ es:
           search_report: "Informe de búsqueda"
           total_projects: Proyectos
           submit: Filtro
-          by_state: "Por Departamento/Provincia"
+          by_state: Estado
           between_expires_at: "Expira entre"
           by_progress: "Por progreso %"
       projects:
         index:
-          by_state: "Por Departamento/Provincia"
+          by_state: Estado
           between_created_at: "Creados entre"
           id: Identificación
           name: Título

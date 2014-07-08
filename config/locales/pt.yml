@@ -310,7 +310,7 @@ pt:
         comment: "Deixe seu comentário sobre este projeto"
       project:
         permalink: Permalink
-        online_days: Dias online
+        online_days: "Dias online"
         category: Categoria
         about: "História do seu projeto e como o $ será utilizado *"
         history: "Label do history"
@@ -783,7 +783,7 @@ pt:
       explore_projects: "Quero explorar os projetos."
       submit: "Próximo Passo!"
       send_project: "Quero enviar meu projeto."
-      subtitle: "Entenda, passo a passo, como funciona para viabilizar seu projeto através do LittleBigMoney."
+      subtitle: "Entenda, passo a passo, como funciona para viabilizar seu projeto através do LittleBigMoney"
       title: "Como funciona o LittleBigMoney?"
       introduction: "O LittleBigMoney é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel."
       legend_html: "Preste atenção ao passo-a-passo e nas perguntas respondidas para decidir se <br>o LittleBigMoney é o caminho para financiar o seu projeto."

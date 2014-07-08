@@ -78,7 +78,7 @@ es:
     new_draft_project_channel:
       subject: "El proyecto %{project_name} fue creado"
       header: "Un nuevo proyecto esta listo para ser revisado"
-      text_html: "¡Hola!<br/><br/>Un nuevo proyecto ha sido creado en el canal por %{user_link}<br/>Email del emprendedor:%{user_mail}<br/><br/>Detalles del proyecto:<br/><br/><strong>Nombre:</strong>%{project_name}<br/><strong>Meta</strong>%{goal}<strong><br/>Lista de Links relacionados</strong><br/>%{more_links}<br/><strong>Primeros colaboradores:</strong>%{first_backers}<br/><strong>Cómo conoció el canal:</strong>%{how_know}<br/><br/><a href='%{project_url}'>Explrora más del proyecto</a>"
+      text_html: "¡Hola!<br/><br/>Un <a href='%{project_url}'>nuevo proyecto</a> ha sido creado en el canal por %{user_link}<br/>Email del emprendedor: %{user_mail}<br/><br/>Detalles del proyecto:<br/><br/>"
     new_features:
       subject: "Ayuda para tesis doctoral sobre crowdfunding"
       header: "Ayuda para tesis doctoral sobre crowdfunding"
@@ -89,7 +89,7 @@ es:
     credits_warning:
       subject: "Tienes %{amount} COP de crédito en LittleBigMoney"
       header: "¿Qué tal apoyar un nuevo proyecto?"
-      text_html: ~
+      text_html: "Hola, <strong>%{user}</strong><br/><br/>En este momento cuentas con %{credits} COP en créditos de LittleBigMoney. Podría ser este el momento para apoyar otro proyecto interesante. <br/><br/>Tenemos algunas recomendaciones para ti:<br/><br/>%{recommended}Para que no queden dudas, te damos un paso a paso para utilizar tus créditos:<br/><br/>1-<a href='%{explore_url}'>Escoge el proyecto al que le quieras aportar tus créditos.<br/><br/>NOTA: ﻿Recuerda que tus créditos pueden ser usados en uno o más proyectos</a>;<br/>2 - Hacer Click en el botón \"Quiero Aportar\";<br/>3 - Escoge el valor de tu apoyo y selecciona el campo donde autorizas el uso de tus créditos.<br/>4 - Hacer click en el Botón \"Revisar y Realizar el Pago\"<br/>5 - Eso es todo. Tu aporte será confirmado<br/><br/>Si lo deseas, puedes pedir el reembolso de tu dinero haciendo click <a href='%{credits_url}'>aquí</a>. Puedes conocer resolver tus dudas sobre este proceso <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>en este artículo</a>."
     backer_confirmed_after_project_was_closed:
       subject: "Nuevo aporte confirmado para el proyecto '%{project_name}' después de 7 días del término del plazo."
       header: "Nuevo aporte confirmado"

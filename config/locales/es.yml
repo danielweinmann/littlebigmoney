@@ -1,5 +1,5 @@
 es:
-  failure_title: "Welcome to LittleBigMoney"
+  failure_title: "Bienvenido a LittleBigMoney"
   uservoice_gadget:
     user:
       name: Usuario
@@ -180,7 +180,7 @@ es:
         current_password: "contraseña actual"
         email: email
         full_name: "Nombre completo / Razón Social"
-        bio: "Mini Biografía"
+        bio: "¿Quién eres?"
         name: Apodo
         id: Identificación
         password: Contraseña
@@ -216,7 +216,7 @@ es:
       accept_btn: "Sí, deseo solicitar el reembolso de mi colaboración"
     index:
       back_date: "Fecha de apoyo"
-      current_credits_html: "Su saldo actual es <span id=\"current_credits\">%{credits}</span> en créditos."
+      current_credits_html: "Tu saldo actual es <span id=\"current_credits\">%{credits}</span> en créditos."
       important_html: "Para saber el reglamento de funcionamiento de reembolso, <a href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos' target='_blank'>haz click aquí</a>. Cualquier duda, puedes entrar a  <a href='http://suporte.catarse.me' target='_blank'> Soporte</a>."
       project: Proyecto
       refund_expration_date: "Plazo para reembolso"
@@ -408,7 +408,7 @@ es:
   projects:
     index:
       vimeo_video_id: 82632252
-      what_is_html: "<strong>LittleBigMoney</strong> plataforma de crowdfunding para el desarrollo de proyectos con impacto social y ambiental."
+      what_is_html: "<strong>LittleBigMoney</strong> plataforma de crowdfunding para el desarrollo de proyectos con impacto social y ambiental"
       banner_image_1: "http://s29.postimg.org/iow717xmv/Banners_cerdo_ESP.png"
       banner_image_2: "http://s29.postimg.org/vdqhkw3rb/Banners_ecuacion_ESP.png"
       banner_image_3: ~
@@ -783,23 +783,23 @@ es:
       explore_projects: "Quiero explorar los proyectos."
       submit: "Siguiente paso!"
       send_project: "Quiero enviar mi proyecto."
-      subtitle: "Entérate, paso a paso, cómo hacer viable tu proyecto a través de LittleBigMoney."
+      subtitle: "Entérate, paso a paso, cómo hacer viable tu proyecto a través de LittleBigMoney"
       title: "¿Cómo funciona LittleBigMoney?"
-      introduction: "LittleBigMoney es una herramienta diferente – y colaborativa – para impulsar tu empresa y sacar tu proyecto del papel."
-      legend_html: "Presta atención al proceso de la plataforma, y decide si <br>LittleBigMoney es la alternativa adecuada para financiar tu proyecto."
+      introduction: "LittleBigMoney es una herramienta diferente – y colaborativa – para impulsar tu idea y sacar tu proyecto del papel"
+      legend_html: "Presta atención a los pasos e instructivos de la plataforma, y decide si <br>LittleBigMoney es la alternativa adecuada para financiar tu proyecto o idea"
       title_one: "Envía tu proyecto"
-      step_one: "Las ideas pueden ser proyectos para tu emprendimiento, que requieren un aporte. LittleBigMoney facilita la conexión con oportunidades de colaboración, que pueden ser aportes monetarios grandes, pequeños, o simplemente consejos. Nos inclinamos por proyectos que no requieran grandes cantidades de dinero y que generan un gran impacto en sus comunidades."
+      step_one: "Los proyectos son acciones concretas! Tenemos los brazos abiertos para recibir iniciativas de todo tipo: grandes, pequeñas, divertidas, tradicionales, innovadoras, comunitarias... Nos gustan aquellos proyectos que requieren poco dinero, pero que generan un gran impacto en sus comunidades y territorios"
       title_two: Revisar
-      step_two: "Una vez recibido tu proyecto, este será revisado por nuestro equipo y aliados locales.  El objetivo es dar recomendaciones, y así <strong>aumentar las posibilidades de que tu proyecto sea exitoso.</strong> Recuerda que nuestro éxito depende del tuyo, nosotros sólo ganamos cuando tu ganas."
+      step_two: "Una vez recibido tu proyecto, este será revisado por nuestro equipo. El objetivo es dar recomendaciones, para <strong>aumentar las posibilidades de éxito de tu proyecto.</strong> Recuerda que nuestro fin es que tu proyecto tenga éxito. Nosotros sólo ganamos cuando tu ganas!"
       title_three: "¿Listo para salir al aire?"
-      step_three: "Una vez tu proyecto está listo, podrá ir al aire y ser promocionado en la plataforma LittleBigMoney. Durante este tiempo deberás atraer a tantas personas como puedas, estar muy atento a la información que te soliciten a través de la plataforma, y responder lo más pronto posible."
-      title_four: "Es todo o nada"
-      step_four: "Si tu proyecto no obtuvo suficientes aportes dentro del plazo, tus colaboradores recibirán de vuelta sus aportes en forma de crédito, con el que podrán apoyar otros proyectos. Si prefieren recibirán su dinero de vuelta."
-      title_requirements: "Requisitos para enviar proyectos a LittleBigMoney"
-      creative: "Idea creativa y con valor agregado"
-      colective: "Beneficios sociales o ambientales"
+      step_three: "Una vez tu proyecto está listo, podrá salir al aire, y ejecutar la campaña de promoción. Durante este tiempo debes estar muy atento al perfil de tu proyecto, estar muy atento a las actualizaciones y solicitudes de información, así como atraer a tantas personas como puedas para que tu proyecto alcance la meta de recaudación"
+      title_four: "Cumple tu meta"
+      step_four: "Durante tu campaña en línea, tienes la oportunidad de repensar el monto solicitado y las actividades, siempre y cuando informes a tu público sobre estos cambios. Si al final tu proyecto no llega a la meta, el dinero recogido regresará a tus aportantes. Alcanzar el 100% del recaudo, garantiza a tus aportantes que podrás ejecutar un proyecto realizable"
+      title_requirements: "Requisitos para enviar proyectos"
+      creative: "Ideas creativas y realizables"
+      colective: "Impacto y beneficios colectivos"
       nonprofit: "Recompensas no financieras"
-      donation: "No apoyamos proyectos personales y sin resultados claros"
+      donation: "No apoyamos proyectos personales o sin resultados claros"
       video: "Hacer un video"
       more_questions: "listo! pero cuéntame un poco más de LittleBigMoney..."
       title_magic: "Nuestra fórmula mágica"
@@ -957,7 +957,7 @@ es:
       attention: Atención
       tabs:
         backed_projects: "Total de colaboraciones"
-        created_projects: "Proyecto creados"
+        created_projects: "Proyectos creados"
         comments: Comentarios
         credits: Créditos
         settings: Ajustes

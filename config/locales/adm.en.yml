@@ -8,7 +8,7 @@ en:
         user: "PayU Username"
         user_id: "User ID"
         goal: Goal
-        total_payment_service_fee: "PayU's fee"
+        total_payment_service_fee: "Fee PM"
         total_catarse_fee: "LittleBigMoney's fee"
         repass_value: "Value to pay"
         expires_at: Ends
@@ -156,7 +156,7 @@ en:
           user: "PayU Username"
           user_id: "User ID"
           goal: Goal
-          total_payment_service_fee: "PayU's fee"
+          total_payment_service_fee: "Fee PM"
           total_catarse_fee: "LittleBigMoney's fee"
           repass_value: "Value to pay"
           expires_at: Ends
