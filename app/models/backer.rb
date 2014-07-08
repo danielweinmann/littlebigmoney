@@ -1,5 +1,5 @@
-require 'state_machine'
 # coding: utf-8
+require 'state_machine'
 class Backer < ActiveRecord::Base
   include ActionView::Helpers::NumberHelper
   include ActionView::Helpers::DateHelper
@@ -233,4 +233,68 @@ class Backer < ActiveRecord::Base
   def define_payment_method
     self.update_attributes({ payment_method: 'PayULatam' })
   end
+
+  def platform_fee
+    self.value * (self.project.actual_platform_fee)
+  end
+
+  def subtotal
+    self.value - self.platform_fee
+  end
+
+  def display_payment_method
+    if self.credits?
+      "Créditos"
+    elsif self.payment_method == "Payroll"
+      if self.payment_id =~ /gift/i
+        "Gift Card"
+      elsif self.payment_id =~ /otros/i
+        "Otros"
+      else
+        "Libranza"
+      end
+    else
+      self.payment_method
+    end
+  end
+
+  def conversion_fee
+    return unless self.converted_value && self.converted_value > 0
+    number_to_currency (self.value / self.converted_value), unit: self.converted_currency, precision: 2, delimiter: '.'
+  end
+
+  def display_converted_value
+    number_to_currency self.converted_value, unit: self.converted_currency, precision: 2, delimiter: '.'
+  end
+
+  def paypal_fee
+    return unless self.payment_method == "PayPal"
+    self.payment_notifications.each do |notification|
+      return notification.extra_data["fee_amount"].to_f if notification.extra_data["fee_amount"].present?
+    end
+    nil
+  end
+
+  def g2c_fee
+    return unless self.converted_value && self.paypal_fee
+    (::Configuration[:g2c_fee].to_f * (self.converted_value - self.paypal_fee)).round(2)
+  end
+
+  def total_fee
+    if self.payment_method == "PayPal"
+      return unless self.paypal_fee && self.g2c_fee
+      self.paypal_fee + self.g2c_fee
+    end
+  end
+
+  def payed_with
+    if self.payment_method == "PayULatam"
+      self.payment_notifications.each do |notification|
+        return "Baloto" if notification.extra_data["payment_method"] == "35"
+        return notification.extra_data["franchise"] if notification.extra_data["franchise"].present?
+      end
+    end
+    nil
+  end
+
 end

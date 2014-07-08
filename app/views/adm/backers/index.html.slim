@@ -1,5 +1,5 @@
 #page_content
-  .container
+  .container style="width: 1700px"
     .title
       h1= t('.title')
       h2
@@ -18,7 +18,7 @@
     .filters
       .bootstrap-form
         = form_tag adm_backers_path, method: :get, class: 'form-horizontal' do |f|
-          fieldset
+          fieldset style="width: 960px"
             .input
               = label_tag :by_id, t('.id')
               = text_field_tag :by_id, params[:by_id], class: 'input-small'
@@ -49,7 +49,7 @@
             .bootstrap-twitter
               .input.submit
                 = submit_tag t('.submit'), class: 'btn btn-success'
-          fieldset
+          fieldset style="width: 960px"
             .input.check
               = check_box_tag :confirmed, :on, params[:confirmed]
               = label_tag :confirmed, t('.confirmed')
@@ -72,7 +72,8 @@
                 strong= collection.count
                 = pluralize_without_number(collection.count, t('backer_singular'), t('backer_plural')).downcase
       .clearfix
-      = paginate @backers
+      fieldset style="width: 960px"
+        = paginate @backers
       - if @backers.empty?
         = t('.no_backers')
       - else
@@ -81,16 +82,27 @@
             thead
               tr
                 th= t('.info')
-                th= t('.id')
+                th Id
                 th= t('.project')
                 th= t('.user')
+                th Fecha
                 th= t('.value')
-                th= t('.reward')
+                th % LBM
+                th Fee LBM
+                th Subtotal
+                th Pasarela
                 th= t('.key')
+                th TRM
+                th Conversión
+                th Fee PayPal
+                th Fee G2C
+                th Fee Total
+                th Medio
+                th= t('.reward')
                 th= t('.anonymous')
                 th= t('.credits')
                 th= t('.state')
-                th
+                th= t('.action')
             tbody
               - @backers.includes(:project, :user, :reward).each do |backer|
                 tr id=backer.id class=cycle("even", "odd")
@@ -147,7 +159,19 @@
                     = link_to user_path(backer.user) do
                       = image_tag backer.user.display_image, class: 'user_img'
                     .user_id= best_in_place [:adm, backer], :user_id, method: :put, type: :input
+                  td= l((backer.confirmed? ? backer.confirmed_at : backer.created_at).to_date)
                   td= best_in_place [:adm, backer], :value, method: :put, type: :input
+                  td= backer.project.actual_platform_fee
+                  td= backer.platform_fee
+                  td= backer.subtotal
+                  td= backer.display_payment_method
+                  td.key= backer.key
+                  td= backer.conversion_fee
+                  td= backer.display_converted_value
+                  td= backer.paypal_fee
+                  td= backer.g2c_fee
+                  td= backer.total_fee
+                  td= backer.payed_with
                   td title=("#{backer.reward.display_minimum} - #{backer.reward.description}" if backer.reward)
                     - if backer.reward
                       = backer.reward.display_minimum
@@ -161,7 +185,6 @@
                         - backer.available_rewards.each do |reward|
                           li title=("#{reward.display_minimum} - #{reward.description}" ) = link_to reward.minimum_value, change_reward_adm_backer_path(backer, reward_id: reward.id, local_params: params), method: :put
 
-                  td.key= backer.key
                   td.checkbox= best_in_place [:adm, backer], :anonymous, method: :put, type: :checkbox, collection: [t('no'), t('yes')]
                   td= (backer.credits ? t('yes') : t('no'))
                   td= backer.state
@@ -179,6 +202,7 @@
                         li= link_to t('adm.backers.index.refund_and_hide'), hide_adm_backer_path(backer, local_params: params), method: :put
                         li= link_to t('adm.backers.index.cancel'), cancel_adm_backer_path(backer, local_params: params), method: :put
                         li= link_to t('adm.backers.index.push_to_trash'), push_to_trash_adm_backer_path(backer, local_params: params), method: :put
-      = paginate @backers
+      fieldset style="width: 960px"
+        = paginate @backers
   .clearfix
 

@@ -385,6 +385,10 @@ class Project < ActiveRecord::Base
     channels.first ? :project_received_channel : :project_received
   end
 
+  def actual_platform_fee
+    self.platform_fee || ::Configuration[:catarse_fee].to_f
+  end
+  
   private
   def self.get_routes
     routes = Rails.application.routes.routes.map do |r|
