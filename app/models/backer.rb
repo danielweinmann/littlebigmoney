@@ -283,7 +283,7 @@ class Backer < ActiveRecord::Base
   def total_fee
     if self.payment_method == "PayPal"
       return unless self.paypal_fee && self.g2c_fee
-      self.paypal_fee + self.g2c_fee
+      (self.paypal_fee + self.g2c_fee).round(2)
     end
   end
 
