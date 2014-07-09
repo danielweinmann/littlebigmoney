@@ -1,5 +1,5 @@
 #page_content
-  .container style="width: 1800px"
+  .container style="width: 2600px"
     .title
       h1= t('.title')
       h2
@@ -92,13 +92,22 @@
                 th Subtotal
                 th Pasarela
                 th= t('.key')
+                th Medio
                 th TRM
                 th Conversión
                 th Fee PayPal
                 th Fee G2C
                 th Fee PayU
-                th Fee Total
-                th Medio
+                th Fee Total COP
+                th IVA Fee PayU
+                th Valor antes IVA
+                th IVA
+                th RENTA retention 1,5%
+                th ICA retention 0,414%
+                th Reintegro impuestos
+                th Reserva donación 15%
+                th Reserva + reintegro
+                th Total gastos
                 th= t('.reward')
                 th= t('.anonymous')
                 th= t('.credits')
@@ -167,13 +176,22 @@
                   td= backer.subtotal
                   td= backer.display_payment_method
                   td.key= backer.key
-                  td= backer.conversion_fee
+                  td= backer.payed_with
+                  td= backer.display_conversion_fee
                   td= backer.display_converted_value
-                  td= backer.paypal_fee
-                  td= backer.g2c_fee
+                  td= backer.display_paypal_fee
+                  td= backer.display_g2c_fee
                   td= backer.payulatam_fee
                   td= backer.total_fee
-                  td= backer.payed_with
+                  td= backer.iva_payulatam_fee
+                  td= backer.value_before_iva
+                  td= backer.iva
+                  td= backer.renta_retention
+                  td= backer.ica_retention
+                  td= backer.tax_refund
+                  td= backer.value_reserve
+                  td= backer.reserve_plus_refund
+                  td= backer.total_costs
                   td title=("#{backer.reward.display_minimum} - #{backer.reward.description}" if backer.reward)
                     - if backer.reward
                       = backer.reward.display_minimum

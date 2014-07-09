@@ -262,7 +262,11 @@ class Backer < ActiveRecord::Base
 
   def conversion_fee
     return unless self.converted_value && self.converted_value > 0
-    number_to_currency (self.value / self.converted_value), unit: "COP", precision: 2, delimiter: '.'
+    (self.value / self.converted_value).round(2)
+  end
+
+  def display_conversion_fee
+    number_to_currency (self.conversion_fee), unit: "COP", precision: 2, delimiter: '.'
   end
 
   def display_converted_value
@@ -277,6 +281,10 @@ class Backer < ActiveRecord::Base
     nil
   end
 
+  def display_paypal_fee
+    number_to_currency self.paypal_fee, unit: self.converted_currency, precision: 2, delimiter: '.'
+  end
+
   def payulatam_fee
     return unless self.display_payment_method == "PayULatam"
     return 2750.0 if self.value < 37000.0
@@ -288,10 +296,14 @@ class Backer < ActiveRecord::Base
     (::Configuration[:g2c_fee].to_f * (self.converted_value - self.paypal_fee)).round(2)
   end
 
+  def display_g2c_fee
+    number_to_currency self.g2c_fee, unit: self.converted_currency, precision: 2, delimiter: '.'
+  end
+
   def total_fee
     if self.display_payment_method == "PayPal"
-      return unless self.paypal_fee && self.g2c_fee
-      (self.paypal_fee + self.g2c_fee).round(2)
+      return unless self.paypal_fee && self.g2c_fee && self.conversion_fee
+      ((self.paypal_fee + self.g2c_fee) * self.conversion_fee).round(2)
     elsif self.display_payment_method == "PayULatam"
       self.payulatam_fee
     end
@@ -305,6 +317,48 @@ class Backer < ActiveRecord::Base
       end
     end
     nil
+  end
+
+  def iva_payulatam_fee
+    return unless self.payulatam_fee
+    (self.payulatam_fee * 0.16).round(2)
+  end
+
+  def iva
+    (self.value * 0.16).round(2)
+  end
+
+  def value_before_iva
+    self.value - self.iva
+  end
+
+  def renta_retention
+    if ["AMEX", "VISA", "MASTERCARD", "DINERS"].include?(self.payed_with)
+      self.value * 0.015
+    end
+  end
+
+  def ica_retention
+    if ["AMEX", "VISA", "MASTERCARD", "DINERS"].include?(self.payed_with)
+      self.value * 0.00414
+    end
+  end
+
+  def tax_refund
+    (self.renta_retention || 0) + (self.ica_retention || 0)
+  end
+
+  def value_reserve
+    return unless self.display_payment_method == "PayULatam"
+    self.value * 0.15
+  end
+
+  def reserve_plus_refund
+    (self.tax_refund || 0) + (self.value_reserve || 0)
+  end
+
+  def total_costs
+    (self.total_fee || 0) + (self.iva_payulatam_fee || 0)
   end
 
 end
