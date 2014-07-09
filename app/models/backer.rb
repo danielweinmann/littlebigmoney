@@ -245,6 +245,8 @@ class Backer < ActiveRecord::Base
   def display_payment_method
     if self.credits?
       "Créditos"
+    elsif self.user_id = 376
+      "Gift Card"
     elsif self.payment_method == "Payroll"
       if self.payment_id =~ /gift/i
         "Gift Card"
