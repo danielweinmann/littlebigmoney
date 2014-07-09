@@ -1,5 +1,5 @@
 #page_content
-  .container style="width: 1700px"
+  .container style="width: 1800px"
     .title
       h1= t('.title')
       h2
@@ -96,6 +96,7 @@
                 th Conversión
                 th Fee PayPal
                 th Fee G2C
+                th Fee PayU
                 th Fee Total
                 th Medio
                 th= t('.reward')
@@ -170,6 +171,7 @@
                   td= backer.display_converted_value
                   td= backer.paypal_fee
                   td= backer.g2c_fee
+                  td= backer.payulatam_fee
                   td= backer.total_fee
                   td= backer.payed_with
                   td title=("#{backer.reward.display_minimum} - #{backer.reward.description}" if backer.reward)

@@ -270,11 +270,17 @@ class Backer < ActiveRecord::Base
   end
 
   def paypal_fee
-    return unless self.payment_method == "PayPal"
+    return unless self.display_payment_method == "PayPal"
     self.payment_notifications.each do |notification|
       return notification.extra_data["fee_amount"].to_f if notification.extra_data["fee_amount"].present?
     end
     nil
+  end
+
+  def payulatam_fee
+    return unless self.display_payment_method == "PayULatam"
+    return 2750.0 if self.value < 37000.0
+    self.value * 0.05 + 900.0
   end
 
   def g2c_fee
@@ -283,14 +289,16 @@ class Backer < ActiveRecord::Base
   end
 
   def total_fee
-    if self.payment_method == "PayPal"
+    if self.display_payment_method == "PayPal"
       return unless self.paypal_fee && self.g2c_fee
       (self.paypal_fee + self.g2c_fee).round(2)
+    elsif self.display_payment_method == "PayULatam"
+      self.payulatam_fee
     end
   end
 
   def payed_with
-    if self.payment_method == "PayULatam"
+    if self.display_payment_method == "PayULatam"
       self.payment_notifications.each do |notification|
         return "Baloto" if notification.extra_data["payment_method"] == "35"
         return notification.extra_data["franchise"] if notification.extra_data["franchise"].present?
