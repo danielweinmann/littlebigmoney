@@ -1,5 +1,5 @@
 #page_content
-  .container style="width: 3200px"
+  .container style="width: 3500px"
     .title
       h1= t('.title')
       h2
@@ -97,6 +97,8 @@
                 th Fee PayPal
                 th Fee G2C
                 th Fee PayU
+                th % Creditos
+                th Fee Creditos
                 th Fee Total COP
                 th IVA Fee PayU
                 th Valor antes IVA
@@ -186,6 +188,8 @@
                   td= backer.display_paypal_fee
                   td= backer.display_g2c_fee
                   td= backer.payulatam_fee
+                  td= backer.project.actual_credits_fee if backer.credits?
+                  td= backer.credits_fee
                   td= backer.total_fee
                   td= backer.iva_payulatam_fee
                   td= backer.value_before_iva

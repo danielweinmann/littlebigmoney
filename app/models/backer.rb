@@ -235,7 +235,7 @@ class Backer < ActiveRecord::Base
   end
 
   def platform_fee
-    self.value * (self.project.actual_platform_fee)
+    (self.value * self.project.actual_platform_fee).round(2)
   end
 
   def subtotal
@@ -300,12 +300,19 @@ class Backer < ActiveRecord::Base
     number_to_currency self.g2c_fee, unit: self.converted_currency, precision: 2, delimiter: '.'
   end
 
+  def credits_fee
+    return unless self.credits?
+    (self.value * self.project.actual_credits_fee).round(2)
+  end
+
   def total_fee
     if self.display_payment_method == "PayPal"
       return unless self.paypal_fee && self.g2c_fee && self.conversion_fee
       ((self.paypal_fee + self.g2c_fee) * self.conversion_fee).round(2)
     elsif self.display_payment_method == "PayULatam"
       self.payulatam_fee
+    elsif self.credits?
+      self.credits_fee
     end
   end
 

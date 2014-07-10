@@ -389,6 +389,10 @@ class Project < ActiveRecord::Base
     self.platform_fee || ::Configuration[:catarse_fee].to_f
   end
   
+  def actual_credits_fee
+    self.credits_fee || 0.07
+  end
+  
   private
   def self.get_routes
     routes = Rails.application.routes.routes.map do |r|

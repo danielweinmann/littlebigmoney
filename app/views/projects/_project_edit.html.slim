@@ -45,6 +45,7 @@
         = form.input :how_know, required: false
       - if current_user && current_user.admin?
         = form.input :platform_fee, required: false
+        = form.input :credits_fee, required: false
       .tips
         h3= t('projects.formatting_tips.title')
         = image_tag "catarse/icon_media.png"
