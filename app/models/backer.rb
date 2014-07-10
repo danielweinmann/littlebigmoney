@@ -331,14 +331,14 @@ class Backer < ActiveRecord::Base
     (self.payulatam_fee * 0.16).round(2)
   end
 
-  def iva
-    return unless self.display_payment_method == "PayULatam"
-    (self.value * 0.16).round(2)
-  end
-
   def value_before_iva
     return unless self.display_payment_method == "PayULatam"
-    self.value - self.iva
+    (self.value / 1.16).round(2)
+  end
+
+  def iva
+    return unless self.display_payment_method == "PayULatam"
+    (self.value_before_iva * 0.16).round(2)
   end
 
   def renta_retention
