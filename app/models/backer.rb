@@ -366,4 +366,51 @@ class Backer < ActiveRecord::Base
     (self.total_fee || 0) + (self.iva_payulatam_fee || 0)
   end
 
+  def net_platform_fee
+    self.platform_fee - self.total_costs
+  end
+
+  def payer_document
+    self.user.cpf
+  end
+
+  def payer_name
+    if self.display_payment_method == "PayULatam"
+      self.payment_notifications.each do |notification|
+        return notification.extra_data["cc_holder"] if notification.extra_data["cc_holder"].present?
+      end
+    end
+    self.user.full_name || self.user.name
+  end
+
+  def payer_address
+    if self.display_payment_method == "PayULatam"
+      self.payment_notifications.each do |notification|
+        return notification.extra_data["billing_address"] if notification.extra_data["billing_address"].present?
+      end
+    end
+    self.user.address_street
+  end
+
+  def payer_city
+    if self.display_payment_method == "PayULatam"
+      self.payment_notifications.each do |notification|
+        return notification.extra_data["billing_city"] if notification.extra_data["billing_city"].present?
+      end
+    end
+    self.user.address_city
+  end
+
+  def payer_country
+    self.user.address_zip_code
+  end
+
+  def payer_phone
+    "#{self.user.address_complement} #{self.user.phone_number}".strip
+  end
+
+  def payer_email
+    self.user.email
+  end
+
 end

@@ -1,5 +1,5 @@
 #page_content
-  .container style="width: 2600px"
+  .container style="width: 3200px"
     .title
       h1= t('.title')
       h2
@@ -84,7 +84,6 @@
                 th= t('.info')
                 th Id
                 th= t('.project')
-                th= t('.user')
                 th Fecha
                 th= t('.value')
                 th % LBM
@@ -108,6 +107,15 @@
                 th Reserva donación 15%
                 th Reserva + reintegro
                 th Total gastos
+                th PyG
+                th= t('.user')
+                th Id. Pagador
+                th Nombre Pagador
+                th Dirección
+                th Ciudad
+                th País
+                th Teléfono
+                th Email
                 th= t('.reward')
                 th= t('.anonymous')
                 th= t('.credits')
@@ -165,10 +173,6 @@
                     = link_to project_by_slug_path(permalink: backer.project.permalink) do
                       = image_tag backer.project.display_image, class: 'project_img'
                     .project_id=backer.project.id
-                  td title=backer.user.display_name
-                    = link_to user_path(backer.user) do
-                      = image_tag backer.user.display_image, class: 'user_img'
-                    .user_id= best_in_place [:adm, backer], :user_id, method: :put, type: :input
                   td= l((backer.confirmed? ? backer.confirmed_at : backer.created_at).to_date)
                   td= best_in_place [:adm, backer], :value, method: :put, type: :input
                   td= backer.project.actual_platform_fee
@@ -192,6 +196,18 @@
                   td= backer.value_reserve
                   td= backer.reserve_plus_refund
                   td= backer.total_costs
+                  td= backer.net_platform_fee
+                  td title=backer.user.display_name
+                    = link_to user_path(backer.user) do
+                      = image_tag backer.user.display_image, class: 'user_img'
+                    .user_id= best_in_place [:adm, backer], :user_id, method: :put, type: :input
+                  td= backer.user.cpf
+                  td= backer.payer_name
+                  td= backer.payer_address
+                  td= backer.payer_city
+                  td= backer.payer_country
+                  td= backer.payer_phone
+                  td= backer.payer_email
                   td title=("#{backer.reward.display_minimum} - #{backer.reward.description}" if backer.reward)
                     - if backer.reward
                       = backer.reward.display_minimum
