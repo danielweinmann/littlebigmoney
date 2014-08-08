@@ -214,16 +214,12 @@ class Backer < ActiveRecord::Base
 
   def after_transition_to_confirmed
     unless self.matchfunding
-
       self.project.channels.each do |channel|
         if channel.matchfunding_user.present? && channel.matchfunding_factor.present? && channel.matchfunding_factor > 0.0
-
           matchfunding_backer = self.project.backers.create user: channel.matchfunding_user, value: (self.value * channel.matchfunding_factor).round, matchfunding: true
           matchfunding_backer.confirm!
-
         end
       end
-
     end
   end
 
