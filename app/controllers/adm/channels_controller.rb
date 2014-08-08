@@ -1,6 +1,6 @@
 class Adm::ChannelsController < Adm::BaseController
 
-  menu I18n.t("adm.channels.index.menu", locale: :es) => Rails.application.routes.url_helpers.adm_projects_path(locale: :es)
+  menu I18n.t("adm.channels.index.menu", locale: :es) => Rails.application.routes.url_helpers.adm_channels_path(locale: :es)
 
   before_filter do
     @total_channels = Channel.count
