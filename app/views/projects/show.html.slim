@@ -46,7 +46,10 @@
       = image_tag @project.display_image('project_thumb_small')
     .section_header
       h1= @project.name
-      h4= t('projects.project_header.without_city', category_name: link_to(@project.category, explore_path(anchor: @project.category.to_s.parameterize)), author: link_to(@project.user.display_name, user_path(@project.user))).html_safe
+      h4
+        = t('projects.project_header.without_city', category_name: link_to(@project.category, explore_path(anchor: @project.category.to_s.parameterize)), author: link_to(@project.user.display_name, user_path(@project.user))).html_safe
+        - @project.channels.each do |channel|
+          = link_to(channel.name, root_url(subdomain: channel.permalink), class: 'project_channel')
     .tab_container
       nav#project_menu
         = link_to '#about', id: 'about_link', class: 'selected' do

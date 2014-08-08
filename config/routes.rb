@@ -148,6 +148,10 @@ Catarse::Application.routes.draw do
       end
     end
     resources :users, only: [ :index ]
+    resources :channels, except: [ :show ] do
+      resources :projects, controller: 'channels/projects', only: [:create], on: :member
+      resources :trustees, controller: 'channels/trustees', only: [:create], on: :member
+    end
 
     namespace :reports do
       resources :backer_reports, only: [ :index ]

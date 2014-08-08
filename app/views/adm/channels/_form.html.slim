@@ -1,0 +1,22 @@
+#page_content
+  .container
+    .bootstrap-form
+      = semantic_form_for [:adm, @channel] do |form|
+        = form.inputs do
+          = form.input :permalink, as: :string
+          = form.input :name, as: :string
+          = form.input :description, as: :text, input_html: {style: "height: 100px; width: 99%;"}
+          = form.input :email, as: :string
+          = form.input :twitter, as: :string
+          = form.input :facebook, as: :string
+          = form.input :website, as: :string
+          = form.input :image, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :banner_url, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :video_url, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :how_it_works, as: :text, input_html: {style: "width: 99%;"}
+          = form.input :matchfunding_factor, as: :string
+          / = form.input :matchfunding_percentage, as: :string
+          = form.input :matchfunding_user_id, as: :string
+          .clearfix
+          .form-actions.bootstrap-twitter
+            = form.submit class: 'btn'

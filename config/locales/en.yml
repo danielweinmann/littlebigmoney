@@ -186,11 +186,28 @@ en:
         password: Password
         password_confirmation: "Password Confirmation"
         phone_number: Mobile
+      channel:
+        permalink: ~
+        name: ~
+        description: ~
+        email: ~
+        twitter: ~
+        facebook: ~
+        website: ~
+        image: ~
+        video_url: ~
+        how_it_works: ~
+        banner_url: ~
+        matchfunding_factor: ~
+        matchfunding_percentage: ~
+        matchfunding_user: ~
+        matchfunding_user_id: ~
     models:
       backer: Supporter
       category: Category
       project: Project
       reward: Reward
+      channel: ~
   backer:
     display_confirmed_at: "%{time_ago} ago"
     reward_must_be_from_project: "Must be from the same project"

@@ -33,6 +33,7 @@ es:
         name: Título
         send_to_trash: Borrar
         send_to_draft: "Guardar como borrador!"
+        add_to_channel: "Añadir al canal"
         reject: Rechazar!
         approve: Aprobar!
         user_id: "Identificación de Usuario"
@@ -53,6 +54,18 @@ es:
         order_asc: "Meta más baja"
         order_desc: "Meta más alta"
         order_created_at: "Fecha de envío"
+    channels:
+      index:
+        menu: Canales
+        title: "Gestión de canales"
+        total_channels: canales
+        no_channels: "Ninguno canal encontrado."
+        id: Id
+        name: Nombre
+        permalink: "URL de canal"
+        edit: Editar
+        destroy: Borrar
+        new: "Nuevo canal"
     actions:
       confirm: Confirmar
     users:
@@ -75,6 +88,7 @@ es:
         value: Valor
         payer_email: "email de pago"
         provider: Proveedor
+        add_to_channel: "Tornar trustee del canal"
     backers:
       messages:
         successful:

@@ -33,6 +33,7 @@ en:
         name: Title
         send_to_trash: Delete
         send_to_draft: "Save as DRAFT!"
+        add_to_channel: ~
         reject: Reject!
         approve: Approve!
         user_id: "User ID"
@@ -53,6 +54,18 @@ en:
         order_asc: "Lowest goal"
         order_desc: "Highest goal"
         order_created_at: "Submission date"
+    channels:
+      index:
+        menu: ~
+        title: ~
+        total_channels: ~
+        no_channels: ~
+        id: ~
+        name: ~
+        permalink: ~
+        edit: ~
+        destroy: ~
+        new: ~
     actions:
       confirm: Confirm
     users:
@@ -75,6 +88,7 @@ en:
         value: Value
         payer_email: "payment email"
         provider: Provider
+        add_to_channel: ~
     backers:
       messages:
         successful:

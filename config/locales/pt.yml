@@ -186,11 +186,28 @@ pt:
         password: Senha
         password_confirmation: "Confirmação de senha"
         phone_number: "Telefone (fixo ou celular)"
+      channel:
+        permalink: Subdomínio
+        name: Nome
+        description: Descrição
+        email: Email
+        twitter: Twitter
+        facebook: Facebook
+        website: Website
+        image: URL da imagem do canal
+        video_url: URL do vídeo do canal
+        how_it_works: Como funciona o canal?
+        banner_url: URL do banner para projetos
+        matchfunding_factor: Fator para matchfunding
+        matchfunding_percentage: "% para matchfunding"
+        matchfunding_user: Usuário para apoios de matchfunding
+        matchfunding_user_id: Usuário para apoios de matchfunding
     models:
       backer: Apoiador
       category: Categoria
       project: Projeto
       reward: Recompensa
+      channel: Canal
   backer:
     display_confirmed_at: "Há %{time_ago}"
     reward_must_be_from_project: "deve ser do mesmo projeto"

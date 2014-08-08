@@ -186,11 +186,28 @@ es:
         password: Contraseña
         password_confirmation: "Confirmación de contraseña"
         phone_number: Celular
+      channel:
+        permalink: Subdominio
+        name: Nombre
+        description: Descripción
+        email: Email
+        twitter: Twitter
+        facebook: Facebook
+        website: "Sitio web"
+        image: "URL de la imagen del canal"
+        video_url: "URL del vídeo del canal"
+        how_it_works: "Como funciona el canal?"
+        banner_url: "URL del banner para proyectos"
+        matchfunding_factor: "Factor para matchfunding"
+        matchfunding_percentage: "% para matchfunding"
+        matchfunding_user: "Id de usuário para aportes de matchfunding"
+        matchfunding_user_id: "Id de usuário para aportes de matchfunding"
     models:
       backer: Colaborador
       category: Categoría
       project: Proyecto
       reward: Recompensa
+      channel: Canal
   backer:
     display_confirmed_at: "%{time_ago} atrás"
     reward_must_be_from_project: "Debe ser del mismo proyecto"
@@ -788,7 +805,7 @@ es:
       introduction: "LittleBigMoney es una herramienta diferente – y colaborativa – para impulsar tu idea y sacar tu proyecto del papel"
       legend_html: "Presta atención a los pasos e instructivos de la plataforma, y decide si <br>LittleBigMoney es la alternativa adecuada para financiar tu proyecto o idea"
       title_one: "Envía tu proyecto"
-      step_one: "Los proyectos son acciones concretas! Tenemos los brazos abiertos para recibir iniciativas de todo tipo: grandes, pequeñas, divertidas, tradicionales, innovadoras, comunitarias... Nos gustan aquellos proyectos que requieren poco dinero, pero que generan un gran impacto en sus comunidades y territorios"
+      step_one: "Los proyectos son acciones concretas! Tenemos los brazos abiertos para recibir iniciativas de todo tipo: grandes, pequeñas, divertidas, tradicionales, innovadoras, comunitarias... Nos gustan aquellos proyectos que requieren poco dinero, pero que generan un gran impacto en sus comunidades"
       title_two: Revisar
       step_two: "Una vez recibido tu proyecto, este será revisado por nuestro equipo. El objetivo es dar recomendaciones, para <strong>aumentar las posibilidades de éxito de tu proyecto.</strong> Recuerda que nuestro fin es que tu proyecto tenga éxito. Nosotros sólo ganamos cuando tu ganas!"
       title_three: "¿Listo para salir al aire?"

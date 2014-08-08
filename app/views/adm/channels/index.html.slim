@@ -1,0 +1,53 @@
+#page_content
+  .container
+    .title
+      h1= t('.title')
+    .data-table
+      h2
+        strong= "#{@total_channels} "
+        = t('.total_channels')
+      br
+      .bootstrap-twitter.input
+        .submit
+          = link_to t('.new'), new_adm_channel_path, class: 'btn btn-success'
+      br
+      = paginate @channels
+      br
+      - if @channels.empty?
+        = t('.no_channels')
+      - else
+        .bootstrap-twitter
+          table.table.table-striped
+            thead
+              tr
+                th= t('.id')
+                th= t('.name')
+                th= t('.permalink')
+                th= t('.trustees')
+                th
+            tbody
+              - for channel in @channels do
+                tr id=channel.id class=cycle("even", "odd")
+                  td= link_to channel.id, edit_adm_channel_path(channel)
+                  td= link_to channel.name, edit_adm_channel_path(channel)
+                  td= channel.permalink
+                  td
+                    - for trustee in channel.trustees do
+                      = link_to adm_users_path(by_id: trustee.id), target: :_blank do
+                        = image_tag trustee.display_image, style: 'width: 32px;'
+                  td
+                    .btn-group
+                      = link_to 'javascript:void(0);', class: 'btn btn-mini dropdown-toggle', data: {toggle: "dropdown"} do
+                        b.caret
+                      ul.dropdown-menu
+                          li
+                            = link_to edit_adm_channel_path(channel) do
+                              i.icon-edit
+                              = t('.edit')
+                          li
+                            = link_to adm_channel_path(channel), method: :delete, data: {confirm: t('adm.confirm_dialog')} do
+                              i.icon-trash
+                              = t('.destroy')
+      = paginate @channels
+
+  .clearfix

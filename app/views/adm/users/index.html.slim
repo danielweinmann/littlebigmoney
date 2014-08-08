@@ -59,6 +59,7 @@
                 th
                   a data-sort="coalesce(user_totals.credits,0)" href='#'= t('.credits')
                   span.sort-order
+                th
             tbody
               - for user in @users do
                 tr id=user.id class=cycle("even", "odd")
@@ -67,6 +68,16 @@
                   td= user.email
                   td= user.user_total ? user.user_total.sum : 0
                   td= user.credits
+                  td
+                    .btn-group
+                      = link_to 'javascript:void(0);', class: 'btn btn-mini dropdown-toggle', data: {toggle: "dropdown"} do
+                        b.caret
+                      ul.dropdown-menu
+                        - Channel.all.each do |channel|
+                          li
+                            = link_to adm_channel_trustees_path(channel, user_id: user), method: :post, data: {confirm: t('adm.confirm_dialog')} do
+                              i.icon-ok
+                              = "#{t('.add_to_channel')} #{channel.name}"
       = paginate @users
 
   .clearfix
