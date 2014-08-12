@@ -76,7 +76,7 @@ class UsersController < ApplicationController
 
   def authenticate_user
     return unless authenticate_api(true)
-    return render(json: {errors: ["You must inform a user parameter"]}, status: 422) unless params[:user].present?
+    return render(json: {errors: ["You must inform an 'user' parameter"]}, status: 422) unless params[:user].present?
     email = params[:user][:email]
     return render(json: {errors: ["You must inform at least an email address"]}, status: 422) unless email.present?
     unless user = User.find_by_email(email)
