@@ -14,7 +14,6 @@
         | ·
         strong= "#{@total_users} "
         = t('.total_users')
-
     .filters
       .bootstrap-form
         = form_tag adm_backers_path, method: :get, class: 'form-horizontal' do |f|
@@ -72,6 +71,11 @@
                 strong= collection.count
                 = pluralize_without_number(collection.count, t('backer_singular'), t('backer_plural')).downcase
       .clearfix
+      br
+      .bootstrap-twitter.input
+        .submit
+          = link_to "Download Excel", adm_backers_path({format: "xls"}.merge(params)), class: 'btn btn-success'
+      br
       fieldset style="width: 960px"
         = paginate @backers
       - if @backers.empty?

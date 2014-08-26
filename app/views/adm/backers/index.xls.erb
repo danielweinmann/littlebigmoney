@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Colaboradores">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Id</Data></Cell>
+        <Cell><Data ss:Type="String">Proyecto</Data></Cell>
+        <Cell><Data ss:Type="String">Fecha</Data></Cell>
+        <Cell><Data ss:Type="String">Valor</Data></Cell>
+        <Cell><Data ss:Type="String">% LBM</Data></Cell>
+        <Cell><Data ss:Type="String">Fee LBM</Data></Cell>
+        <Cell><Data ss:Type="String">Subtotal</Data></Cell>
+        <Cell><Data ss:Type="String">Pasarela</Data></Cell>
+        <Cell><Data ss:Type="String">Clave</Data></Cell>
+        <Cell><Data ss:Type="String">Medio</Data></Cell>
+        <Cell><Data ss:Type="String">TRM</Data></Cell>
+        <Cell><Data ss:Type="String">Conversión</Data></Cell>
+        <Cell><Data ss:Type="String">Fee PayPal</Data></Cell>
+        <Cell><Data ss:Type="String">Fee G2C</Data></Cell>
+        <Cell><Data ss:Type="String">Fee PayU</Data></Cell>
+        <Cell><Data ss:Type="String">% Creditos</Data></Cell>
+        <Cell><Data ss:Type="String">Fee Creditos</Data></Cell>
+        <Cell><Data ss:Type="String">Fee Total COP</Data></Cell>
+        <Cell><Data ss:Type="String">IVA Fee PayU</Data></Cell>
+        <Cell><Data ss:Type="String">Valor antes IVA</Data></Cell>
+        <Cell><Data ss:Type="String">IVA</Data></Cell>
+        <Cell><Data ss:Type="String">RENTA retention 1,5%</Data></Cell>
+        <Cell><Data ss:Type="String">ICA retention 0,414%</Data></Cell>
+        <Cell><Data ss:Type="String">Reintegro impuestos</Data></Cell>
+        <Cell><Data ss:Type="String">Reserva donación 15%</Data></Cell>
+        <Cell><Data ss:Type="String">Reserva + reintegro</Data></Cell>
+        <Cell><Data ss:Type="String">Total gastos</Data></Cell>
+        <Cell><Data ss:Type="String">PyG</Data></Cell>
+        <Cell><Data ss:Type="String">Usuario</Data></Cell>
+        <Cell><Data ss:Type="String">Id. Pagador</Data></Cell>
+        <Cell><Data ss:Type="String">Nombre Pagador</Data></Cell>
+        <Cell><Data ss:Type="String">Dirección</Data></Cell>
+        <Cell><Data ss:Type="String">Ciudad</Data></Cell>
+        <Cell><Data ss:Type="String">País</Data></Cell>
+        <Cell><Data ss:Type="String">Teléfono</Data></Cell>
+        <Cell><Data ss:Type="String">Email</Data></Cell>
+        <Cell><Data ss:Type="String">Recompensa</Data></Cell>
+        <Cell><Data ss:Type="String">¿Anónimo?</Data></Cell>
+        <Cell><Data ss:Type="String">¿Créditos usados?</Data></Cell>
+        <Cell><Data ss:Type="String">Estado</Data></Cell>
+      </Row>
+    <% @backers.each do |backer| %>
+      <Row>
+        <Cell><Data ss:Type="Number"><%= backer.id %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.project.name %></Data></Cell>
+        <Cell><Data ss:Type="Date"><%= l((backer.confirmed? ? backer.confirmed_at : backer.created_at).to_date) %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.value %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.project.actual_platform_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.platform_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.subtotal %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.display_payment_method %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.key %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payed_with %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.conversion_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.converted_value %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.paypal_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.g2c_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.payulatam_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.project.actual_credits_fee if backer.credits? %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.credits_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.total_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.iva_payulatam_fee %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.value_before_iva %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.iva %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.renta_retention %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.ica_retention %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.tax_refund %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.value_reserve %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.reserve_plus_refund %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.total_costs %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= backer.net_platform_fee %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= "#{backer.user.id} #{backer.user.display_name}" %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.user.cpf %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payer_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payer_address %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payer_city %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payer_country %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payer_phone %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.payer_email %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= ( backer.reward ? "#{backer.reward.display_minimum} - #{backer.reward.description}" : '-' ) %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= (backer.anonymous ? t('yes') : t('no')) %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= (backer.credits ? t('yes') : t('no')) %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= backer.state %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>

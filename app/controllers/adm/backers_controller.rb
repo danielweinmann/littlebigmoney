@@ -12,6 +12,17 @@ class Adm::BackersController < Adm::BaseController
   end
   before_filter :set_title
 
+  respond_to :xls, :only => :index
+
+  def index
+    index! do |format|
+      format.html
+      format.xls do
+        @backers = end_of_association_chain.not_deleted.order("backers.created_at DESC")
+      end
+    end
+  end
+
   def self.backer_actions
     %w[confirm pendent refund hide cancel push_to_trash].each do |action|
       define_method action do
@@ -35,6 +46,6 @@ class Adm::BackersController < Adm::BaseController
   end
 
   def collection
-    @backers = end_of_association_chain.not_deleted.order("backers.created_at DESC").page(params[:page])
+    @backers ||= end_of_association_chain.not_deleted.order("backers.created_at DESC").page(params[:page])
   end
 end
