@@ -14,8 +14,11 @@ class Projects::BackersController < ApplicationController
   end
 
   def index
+    if request.headers["HTTP_AUTHORIZATION"].present?
+      return unless @api_authorized = authenticate_api(true)
+    end
     @backers = parent.backers.available_to_count.order("confirmed_at DESC").page(params[:page]).per(10)
-    render json: @backers.to_json(can_manage: can?(:update, @project))
+    render json: @backers.to_json(can_manage: (can?(:update, @project) || @api_authorized))
   end
 
   def show
