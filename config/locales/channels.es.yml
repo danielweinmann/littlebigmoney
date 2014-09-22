@@ -26,7 +26,7 @@ es:
         subtitle: "Es la hora de hacerlo realidad! Queremos saber del potencial de tu empresa y de tu proyecto"
         legend_html: "<br/><br/><strong>Recuerda</strong><br/>Si estás diligenciando esta información, estás en el PASO 3. Por lo tanto, ya debes haber superado el Paso 1 (leer la descripción del concurso) y el Paso 2 (diligenciar el formato de Google Drive “Aplicación Impact Hub Fellowship en biocomercio”).<br/><br/>Después de llenar este formato tendrás acceso a un borrador de la página del proyecto donde podrás agregar las recompensas para tus colaboradores y hacer todos los ajustes que creas necesarios.<br/><br/>Recibirás comentarios del equipo de curadores para mejorar tu proyecto y ni bien esté listo, éste irá al aire. "
         permalink_hint: "Usa una URL simple. Tus colaboradores deben recordar esta dirección fácilmente para compartir tu proyecto."
-        permalink_important: "Trata de no usar subrayado, guión etc."
+        permalink_important: "Usa una palabra que represente tu proyecto para que podamos crear tu URL."
         important_html: "Ten en cuenta que el descuento total será de aproximadamente el 13% sobre el valor recogido, si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
         about: "Describe tu proyecto utilizando esta guía!"
         how_much_you_need: "¿Cuánto dinero quieres recaudar?"
