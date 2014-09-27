@@ -5,7 +5,7 @@ class RewardsController < ApplicationController
   respond_to :html, :json
 
   def index
-    @rewards = Reward.find_by_project_id(params[:project_id])
+    @rewards = Reward.where(project_id: params[:project_id])
     render json: @rewards
   end
 
