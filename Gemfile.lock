@@ -105,6 +105,13 @@ GEM
       redcarpet
       rinku
       tag_helper
+    axlsx (2.0.0)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (= 0.9.9)
+    axlsx_rails (0.1.5)
+      axlsx
+      rails (>= 3.1)
     bcrypt-ruby (3.1.1)
     best_in_place (2.1.0)
       jquery-rails
@@ -214,6 +221,7 @@ GEM
     heroku-deflater (0.5.1)
       rack (>= 1.4.5)
     hike (1.2.3)
+    htmlentities (4.3.2)
     http_accept_language (1.0.2)
     httparty (0.6.1)
       crack (= 0.1.8)
@@ -472,6 +480,7 @@ DEPENDENCIES
   RedCloth
   activemerchant (>= 1.17.0)
   auto_html (= 1.4.2)
+  axlsx_rails
   best_in_place
   better_errors
   binding_of_caller

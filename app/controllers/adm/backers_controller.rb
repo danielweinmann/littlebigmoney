@@ -12,12 +12,12 @@ class Adm::BackersController < Adm::BaseController
   end
   before_filter :set_title
 
-  respond_to :xls, :only => :index
+  respond_to :xlsx, :only => :index
 
   def index
     index! do |format|
       format.html
-      format.xls do
+      format.xlsx do
         @backers = end_of_association_chain.not_deleted.order("backers.created_at DESC")
       end
     end

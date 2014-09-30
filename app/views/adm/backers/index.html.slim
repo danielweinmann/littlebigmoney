@@ -74,7 +74,7 @@
       br
       .bootstrap-twitter.input
         .submit
-          = link_to "Download Excel", adm_backers_path({format: "xls"}.merge(params)), class: 'btn btn-success'
+          = link_to "Download Excel", adm_backers_path({format: "xlsx"}.merge(params)), class: 'btn btn-success'
       br
       fieldset style="width: 960px"
         = paginate @backers
