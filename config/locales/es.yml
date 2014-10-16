@@ -202,6 +202,7 @@ es:
         matchfunding_percentage: "% para matchfunding"
         matchfunding_user: "Id de usuário para aportes de matchfunding"
         matchfunding_user_id: "Id de usuário para aportes de matchfunding"
+        matchfunding_maximum: "Presupuesto máximo para matchfunding"
     models:
       backer: Colaborador
       category: Categoría

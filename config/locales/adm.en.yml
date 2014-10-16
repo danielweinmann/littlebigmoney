@@ -90,7 +90,7 @@ en:
         payer_email: "payment email"
         provider: Provider
         add_to_channel: "Grant trustee to channel"
-        remove_from_channel: ~
+        remove_from_channel: "Remove trustee of channel"
     backers:
       messages:
         successful:

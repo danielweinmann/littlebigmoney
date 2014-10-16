@@ -40,6 +40,8 @@ wb.add_worksheet(name: "Colaboradores") do |sheet|
     "Recompensa",
     "¿Anónimo?",
     "¿Créditos usados?",
+    "Matchfunding?",
+    "Canal matchfunding",
     "Estado"
   ])
   @backers.each do |backer|
@@ -83,6 +85,8 @@ wb.add_worksheet(name: "Colaboradores") do |sheet|
       ( backer.reward ? "#{backer.reward.display_minimum} - #{backer.reward.description}" : '-' ),
       (backer.anonymous ? t('yes') : t('no')),
       (backer.credits ? t('yes') : t('no')),
+      (backer.matchfunding? ? t('yes') : t('no')),
+      (backer.matchfunding_channel.name if backer.matchfunding_channel.present?),
       backer.state
     ])
   end

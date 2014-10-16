@@ -1,7 +1,7 @@
 class Channel < ActiveRecord::Base
   extend CatarseAutoHtml
 
-  attr_accessible :description, :name, :permalink, :email, :twitter, :facebook, :website, :image, :video_url, :how_it_works, :banner_url, :matchfunding_factor, :matchfunding_percentage, :matchfunding_user, :matchfunding_user_id
+  attr_accessible :description, :name, :permalink, :email, :twitter, :facebook, :website, :image, :video_url, :how_it_works, :banner_url, :matchfunding_factor, :matchfunding_percentage, :matchfunding_user, :matchfunding_user_id, :matchfunding_maximum
   schema_associations
 
   validates_presence_of :name, :description, :permalink
@@ -12,6 +12,8 @@ class Channel < ActiveRecord::Base
 
   has_and_belongs_to_many :subscribers
   has_and_belongs_to_many :trustees, class_name: :User, join_table: :channels_trustees
+
+  has_many :backers, through: :projects
 
   belongs_to :matchfunding_user, class_name: :User
 
@@ -26,4 +28,9 @@ class Channel < ActiveRecord::Base
   def decorator
     @decorator ||= ChannelDecorator.new(self)
   end
+
+  def matchfunding_total
+    self.backers.confirmed.matchfunding.where(matchfunding_channel_id: self.id).sum(:value)
+  end
+
 end

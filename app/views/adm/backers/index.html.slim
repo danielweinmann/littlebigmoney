@@ -125,6 +125,8 @@
                 th= t('.reward')
                 th= t('.anonymous')
                 th= t('.credits')
+                th Matchfunding?
+                th Canal matchfunding
                 th= t('.state')
                 th= t('.action')
             tbody
@@ -231,6 +233,8 @@
 
                   td.checkbox= best_in_place [:adm, backer], :anonymous, method: :put, type: :checkbox, collection: [t('no'), t('yes')]
                   td= (backer.credits ? t('yes') : t('no'))
+                  td= (backer.matchfunding? ? t('yes') : t('no'))
+                  td= backer.matchfunding_channel.name if backer.matchfunding_channel.present?
                   td= backer.state
                   td.bootstrap-twitter
                     .btn-group

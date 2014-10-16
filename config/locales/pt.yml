@@ -202,6 +202,7 @@ pt:
         matchfunding_percentage: "% para matchfunding"
         matchfunding_user: Usuário para apoios de matchfunding
         matchfunding_user_id: Usuário para apoios de matchfunding
+        matchfunding_maximum: orçamento máximo para matchfunding
     models:
       backer: Apoiador
       category: Categoria

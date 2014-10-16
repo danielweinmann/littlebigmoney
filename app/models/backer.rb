@@ -27,6 +27,7 @@ class Backer < ActiveRecord::Base
   scope :refunded, where(state: 'refunded')
   scope :not_anonymous, where(anonymous: false)
   scope :confirmed, where(state: 'confirmed')
+  scope :matchfunding, where(matchfunding: true)
   scope :not_confirmed, where("backers.state <> 'confirmed'") # used in payment engines
   scope :in_time_to_confirm, ->() { where(state: 'waiting_confirmation') }
   scope :pending_to_refund, ->() { where(state: 'requested_refund') }
@@ -216,8 +217,13 @@ class Backer < ActiveRecord::Base
     unless self.matchfunding
       self.project.channels.each do |channel|
         if channel.matchfunding_user.present? && channel.matchfunding_factor.present? && channel.matchfunding_factor > 0.0
-          matchfunding_backer = self.project.backers.create user: channel.matchfunding_user, value: (self.value * channel.matchfunding_factor).round, matchfunding: true
-          matchfunding_backer.confirm!
+          matchfunding_value = (self.value * channel.matchfunding_factor).round
+          if channel.matchfunding_maximum && channel.matchfunding_maximum > 0.0 && (matchfunding_value + channel.matchfunding_total) > channel.matchfunding_maximum
+            matchfunding_value = channel.matchfunding_maximum - channel.matchfunding_total
+          end
+          return unless matchfunding_value > 0.0
+          matchfunding_backer = self.project.backers.create user: channel.matchfunding_user, value: matchfunding_value, matchfunding: true, matchfunding_channel: channel
+          matchfunding_backer.confirm! unless matchfunding_backer.new_record?
         end
       end
     end
