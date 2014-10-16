@@ -34,6 +34,7 @@ pt:
         send_to_trash: Deletar
         send_to_draft: "Mandar para DRAFT!"
         add_to_channel: "Adicionar ao canal"
+        remove_from_channel: "Remover do canal"
         reject: Rejeitar!
         approve: Aprovar!
         user_id: "User ID"
@@ -88,7 +89,8 @@ pt:
         value: Valor
         payer_email: "Email do pagamento"
         provider: Provedor
-        add_to_channel: Tornar trustee do canal
+        add_to_channel: Nomear trustee do canal
+        remove_from_channel: Desnomear trustee do canal
     backers:
       messages:
         successful:

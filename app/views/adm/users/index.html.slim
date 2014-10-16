@@ -75,9 +75,14 @@
                       ul.dropdown-menu
                         - Channel.all.each do |channel|
                           li
-                            = link_to adm_channel_trustees_path(channel, user_id: user), method: :post, data: {confirm: t('adm.confirm_dialog')} do
-                              i.icon-ok
-                              = "#{t('.add_to_channel')} #{channel.name}"
+                            - if channel.trustees.include?(user)
+                              = link_to adm_channel_trustee_path(channel, user), method: :delete, data: {confirm: t('adm.confirm_dialog')} do
+                                i.icon-trash
+                                = "#{t('.remove_from_channel')} #{channel.name}"
+                            - else
+                              = link_to adm_channel_trustees_path(channel, user_id: user), method: :post, data: {confirm: t('adm.confirm_dialog')} do
+                                i.icon-ok
+                                = "#{t('.add_to_channel')} #{channel.name}"
       = paginate @users
 
   .clearfix

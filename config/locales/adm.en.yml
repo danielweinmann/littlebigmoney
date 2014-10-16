@@ -33,7 +33,8 @@ en:
         name: Title
         send_to_trash: Delete
         send_to_draft: "Save as DRAFT!"
-        add_to_channel: ~
+        add_to_channel: "Add to channel"
+        remove_from_channel: "Remove from channel"
         reject: Reject!
         approve: Approve!
         user_id: "User ID"
@@ -88,7 +89,8 @@ en:
         value: Value
         payer_email: "payment email"
         provider: Provider
-        add_to_channel: ~
+        add_to_channel: "Grant trustee to channel"
+        remove_from_channel: ~
     backers:
       messages:
         successful:

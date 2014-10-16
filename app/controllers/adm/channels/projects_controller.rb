@@ -8,4 +8,12 @@ class Adm::Channels::ProjectsController < ApplicationController
     redirect_to adm_projects_path
   end
 
+  def destroy
+    return redirect_to :root unless current_user && current_user.admin?
+    @channel = Channel.find_by_permalink(params[:channel_id])
+    @project = Project.find(params[:id])
+    @channel.projects.delete(@project)
+    redirect_to adm_projects_path
+  end
+
 end

@@ -119,9 +119,14 @@
 
                         - Channel.all.each do |channel|
                           li
-                            = link_to adm_channel_projects_path(channel, project_id: project), method: :post, data: {confirm: t('adm.confirm_dialog')} do
-                              i.icon-ok
-                              = "#{t('.add_to_channel')} #{channel.name}"
+                            - if channel.projects.include?(project)
+                              = link_to adm_channel_project_path(channel, project), method: :delete, data: {confirm: t('adm.confirm_dialog')} do
+                                i.icon-trash
+                                = "#{t('.remove_from_channel')} #{channel.name}"
+                            - else
+                              = link_to adm_channel_projects_path(channel, project_id: project), method: :post, data: {confirm: t('adm.confirm_dialog')} do
+                                i.icon-ok
+                                = "#{t('.add_to_channel')} #{channel.name}"
 
       = paginate @projects
   .clearfix
