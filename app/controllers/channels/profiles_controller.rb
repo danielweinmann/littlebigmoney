@@ -8,7 +8,7 @@ class Channels::ProfilesController < Channels::BaseController
 
   def show
     show! do
-      @projects = @profile.projects
+      @projects = @profile.projects.visible_or_draft
       @projects = @projects.visible unless @profile.show_drafts?
     end
   end
