@@ -6,6 +6,7 @@ class Channel < ActiveRecord::Base
 
   validates_presence_of :name, :description, :permalink
   validates_uniqueness_of :permalink
+  validates :description, length: { maximum: 140 }
 
   has_and_belongs_to_many :projects,  order: "online_date desc"
 
