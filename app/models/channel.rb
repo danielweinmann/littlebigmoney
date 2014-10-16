@@ -1,7 +1,7 @@
 class Channel < ActiveRecord::Base
   extend CatarseAutoHtml
 
-  attr_accessible :description, :name, :permalink, :email, :twitter, :facebook, :website, :image, :video_url, :how_it_works, :banner_url, :matchfunding_factor, :matchfunding_percentage, :matchfunding_user, :matchfunding_user_id, :matchfunding_maximum, :show_drafts
+  attr_accessible :description, :name, :permalink, :email, :twitter, :facebook, :website, :image, :video_url, :how_it_works, :banner_url, :matchfunding_factor, :matchfunding_percentage, :matchfunding_user, :matchfunding_user_id, :matchfunding_maximum, :show_drafts, :legend
   schema_associations
 
   validates_presence_of :name, :description, :permalink
@@ -20,6 +20,7 @@ class Channel < ActiveRecord::Base
   delegate :all, to: :decorator
 
   catarse_auto_html_for field: :how_it_works, video_width: 600, video_height: 403
+  catarse_auto_html_for field: :legend, video_width: 600, video_height: 403
 
   # Links to channels should be their permalink
   def to_param; self.permalink end

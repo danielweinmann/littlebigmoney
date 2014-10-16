@@ -4,7 +4,11 @@
       .title
         h1= t('.title')
         h2= t('.subtitle')
-        p= t('.legend_html')
+        p
+          - if @channel && @channel.legend.present?
+            = @channel.legend_html
+          - else
+            = t('.legend_html')
       .bootstrap-form
         .clearfix
         = semantic_form_for @project, html: { id: 'project_form' } do |form|
