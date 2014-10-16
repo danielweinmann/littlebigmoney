@@ -203,6 +203,7 @@ en:
         matchfunding_user: ~
         matchfunding_user_id: ~
         matchfunding_maximum: ~
+        show_drafts: ~
     models:
       backer: Supporter
       category: Category

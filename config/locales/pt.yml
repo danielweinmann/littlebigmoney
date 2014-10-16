@@ -203,6 +203,7 @@ pt:
         matchfunding_user: Usuário para apoios de matchfunding
         matchfunding_user_id: Usuário para apoios de matchfunding
         matchfunding_maximum: orçamento máximo para matchfunding
+        show_drafts: Mostrar rascunhos
     models:
       backer: Apoiador
       category: Categoria

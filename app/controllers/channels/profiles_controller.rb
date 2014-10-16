@@ -6,4 +6,11 @@ class Channels::ProfilesController < Channels::BaseController
 
   before_filter{ params[:id] = request.subdomain }
 
+  def show
+    show! do
+      @projects = @profile.projects
+      @projects = @projects.visible unless @profile.show_drafts?
+    end
+  end
+
 end

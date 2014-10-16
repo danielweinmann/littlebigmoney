@@ -85,6 +85,7 @@ class ProjectsController < ApplicationController
           @updates << update if can? :see, update
         end
         @update = @project.updates.where(id: params[:update_id]).first if params[:update_id].present?
+        @channel = Channel.find_by_permalink(request.subdomain) if request.subdomain.present?
       }
     rescue ActiveRecord::RecordNotFound
       return render_404

@@ -45,7 +45,7 @@
           = resource.channels_subscribers.size
 
     ol.projects_list
-      = content_tag_for(:li, @profile.projects.visible) do |project|
+      = content_tag_for(:li, @projects) do |project|
         = render partial: 'channels/projects/project', locals: { project: project }
 
 = render 'footer'
