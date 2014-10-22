@@ -27,16 +27,16 @@
           hr
           = link_to t('main.links.selected'), explore_path(anchor: :recommended)
 
-      / - if @channel && !@channel_projects.empty?
-      /   .list_title
-      /     .title
-      /       h2= @channel.name
-      /   .projects
-      /     - @channel_projects.each_with_index do |item,i|
-      /       == render 'project', project: item, custom_class: ((@channel_projects.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
-      /   .explore_link
-      /     hr
-      /     = link_to t('main.links.channel_projects', name: @channel.name), root_url(subdomain: @channel.permalink)
+      - if @channel && !@channel_projects.empty?
+        .list_title
+          .title
+            h2= @channel.name
+        .projects
+          - @channel_projects.each_with_index do |item,i|
+            == render 'project', project: item, custom_class: ((@channel_projects.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+        .explore_link
+          hr
+          = link_to t('main.links.channel_projects', name: @channel.name), root_url(subdomain: @channel.permalink)
 
       - unless @expiring.empty?
         .list_title

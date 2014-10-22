@@ -28,8 +28,8 @@ class ProjectsController < ApplicationController
         project_ids << @recommended_projects.last.id if @recommended_projects
 
         @projects_near = Project.online.near_of(current_user.address_state).order("random()").limit(3) if current_user
-        @channel = Channel.find_by_permalink("theappdate")
-        @channel_projects = @channel.projects.visible.order("random()").limit(3) if @channel
+        @channel = Channel.find_by_permalink("impacthub")
+        @channel_projects = @channel.projects.visible_or_draft.order("random()").limit(3) if @channel
         @expiring = Project.expiring_for_home(project_ids)
         @recent = Project.recent_for_home(project_ids)
         @successful = Project.successful_for_home(project_ids)
