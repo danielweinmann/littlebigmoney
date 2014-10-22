@@ -28,6 +28,8 @@ class ProjectDecorator < Draper::Decorator
       source.video_thumbnail.send(version).url
     elsif source.video
       source.video.thumbnail_large
+    else
+      image_path("project.png")
     end
   end
 
