@@ -204,6 +204,7 @@ pt:
         matchfunding_user_id: Usuário para apoios de matchfunding
         matchfunding_maximum: orçamento máximo para matchfunding
         show_drafts: Mostrar rascunhos
+        receive_projects: Recebe projetos
         legend: Texto para o formulário de novo projeto
     models:
       backer: Apoiador

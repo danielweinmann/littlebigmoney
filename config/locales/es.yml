@@ -204,6 +204,7 @@ es:
         matchfunding_user_id: "Id de usuário para aportes de matchfunding"
         matchfunding_maximum: "Presupuesto máximo para matchfunding"
         show_drafts: "Mostrar borradores"
+        receive_projects: "Recibe proyectos"
         legend: "Texto para el formulario de nuevo proyecto"
     models:
       backer: Colaborador
