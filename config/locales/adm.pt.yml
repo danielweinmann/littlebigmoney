@@ -28,6 +28,7 @@ pt:
     projects:
       index:
         by_state: "Por estado"
+        by_channel: "Por canal"
         between_created_at: "Criados entre"
         id: ID
         name: Titulo

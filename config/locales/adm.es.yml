@@ -28,6 +28,7 @@ es:
     projects:
       index:
         by_state: Estado
+        by_channel: Canal
         between_created_at: "Creados entre"
         id: Identificación
         name: Título

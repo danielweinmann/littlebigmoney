@@ -31,6 +31,11 @@
             .input
               = label_tag :user_name_contains, t('.user')
               = text_field_tag :user_name_contains, params[:user_name_contains]
+
+            .input
+              = label_tag :by_channel, t('.by_channel')
+              = select_tag :by_channel, options_from_collection_for_select(Channel.all, 'id', 'name', params[:by_channel]), include_blank: true
+
             .input
               = label_tag :order_table, t('.order_table')
               = select_tag :order_table, options_for_select({t('.order_created_at') => 'created_at', t('.order_asc') => 'asc',t('.order_desc') => 'desc'}, params[:order_table]), include_blank: false

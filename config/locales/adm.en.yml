@@ -28,6 +28,7 @@ en:
     projects:
       index:
         by_state: "By state"
+        by_channel: ~
         between_created_at: "Created between"
         id: ID
         name: Title

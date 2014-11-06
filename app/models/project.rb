@@ -44,6 +44,7 @@ class Project < ActiveRecord::Base
   scope :not_deleted_projects, ->() { where("projects.state <> 'deleted'") }
   scope :by_progress, ->(progress) { joins(:project_total).where("project_totals.pledged >= projects.goal*?", progress.to_i/100.to_f) }
   scope :by_state, ->(state) { where(state: state) }
+  scope :by_channel, ->(channel_id) { where("id IN (SELECT DISTINCT project_id FROM channels_projects WHERE channel_id = #{channel_id})") }
   scope :by_id, ->(id) { where(id: id) }
   scope :by_permalink, ->(p) { where("lower(permalink) = lower(?)", p) }
   scope :by_category_id, ->(id) { where(category_id: id) }
