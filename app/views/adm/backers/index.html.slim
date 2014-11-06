@@ -127,6 +127,7 @@
                 th= t('.credits')
                 th Matchfunding?
                 th Canal matchfunding
+                th Colaboración original matchfunding
                 th= t('.state')
                 th= t('.action')
             tbody
@@ -235,6 +236,7 @@
                   td= (backer.credits ? t('yes') : t('no'))
                   td= (backer.matchfunding? ? t('yes') : t('no'))
                   td= backer.matchfunding_channel.name if backer.matchfunding_channel.present?
+                  td= backer.matchfunding_backer.id if backer.matchfunding_backer.present?
                   td= backer.state
                   td.bootstrap-twitter
                     .btn-group

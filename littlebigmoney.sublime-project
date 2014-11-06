@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"app/assets/fonts/icomoon.json"
+			],
+			"folder_exclude_patterns":
+			[
+				".gems",
+				"tmp",
+				"log"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}
