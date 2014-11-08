@@ -203,6 +203,7 @@ en:
         matchfunding_user: ~
         matchfunding_user_id: ~
         matchfunding_maximum: ~
+        matchfunding_maximum_per_project: ~
         show_drafts: ~
         receive_projects: ~
         legend: ~

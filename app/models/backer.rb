@@ -221,6 +221,9 @@ class Backer < ActiveRecord::Base
           if channel.matchfunding_maximum && channel.matchfunding_maximum > 0.0 && (matchfunding_value + channel.matchfunding_total) > channel.matchfunding_maximum
             matchfunding_value = channel.matchfunding_maximum - channel.matchfunding_total
           end
+          if channel.matchfunding_maximum_per_project && channel.matchfunding_maximum_per_project > 0.0 && (matchfunding_value + self.project.matchfunding_total(channel)) > channel.matchfunding_maximum_per_project
+            matchfunding_value = channel.matchfunding_maximum_per_project - self.project.matchfunding_total(channel)
+          end
           return unless matchfunding_value > 0.0
           new_matchfunding_backer = self.project.backers.create user: channel.matchfunding_user, value: matchfunding_value, matchfunding: true, matchfunding_channel: channel, matchfunding_backer: self
           new_matchfunding_backer.confirm! unless new_matchfunding_backer.new_record?

@@ -203,6 +203,7 @@ es:
         matchfunding_user: "Id de usuário para aportes de matchfunding"
         matchfunding_user_id: "Id de usuário para aportes de matchfunding"
         matchfunding_maximum: "Presupuesto máximo para matchfunding"
+        matchfunding_maximum_per_project: "Presupuesto máximo para matchfunding por proyecto"
         show_drafts: "Mostrar borradores"
         receive_projects: "Recibe proyectos"
         legend: "Texto para el formulario de nuevo proyecto"

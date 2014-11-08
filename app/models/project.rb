@@ -395,6 +395,10 @@ class Project < ActiveRecord::Base
     self.credits_fee || 0.07
   end
   
+  def matchfunding_total(channel)
+    self.backers.confirmed.matchfunding.where(matchfunding_channel_id: channel.id).sum(:value)
+  end
+
   private
   def self.get_routes
     routes = Rails.application.routes.routes.map do |r|
