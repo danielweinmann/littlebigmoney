@@ -467,6 +467,17 @@ pt:
         error: "Ooops. Ocorreu um erro ao registrar seu apoio. Por favor, tente novamente."
         payulatam: "Pagamento nacional - PayU Latam"
         payulatam_title: "Você será direcionado para o site do PayU Latam para completar o pagamento."
+        lbm_gift_cards: "Gift Card"
+        lbm_gift_cards_info:
+          title: "Gift Card"
+          coupon: "Número do coupon"
+          accept_terms_html: "Eu li e estou de acordo com os <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>termos de uso para Gift Cards</a>."
+          submit: "Usar Gift Card"
+          success: "Pagamento com Gift Card realizado com sucesso!"
+          error: "Ooops. Ocorreu um erro ao enviar seu pagamento com Gift Card. Por favor, tente novamente."
+          error_duplicate: "Este Gift Card já foi utilizado."
+          error_value: "Este Gift Card não é deste valor informado."
+          error_coupon: "Gift Card não encontrado."
         payroll: "Pagamento em folha"
         payroll_info:
           title: "Pagamento em folha"

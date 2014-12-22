@@ -19,6 +19,7 @@ Catarse::Application.routes.draw do
 
   mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
   mount CatarsePayulatam::Engine => "/", :as => :catarse_payulatam
+  mount CatarseLbmGiftCards::Engine => "/", :as => :catarse_lbm_gift_cards
   # mount CatarsePayroll::Engine => "/", :as => :catarse_payroll
 
   # Non production routes

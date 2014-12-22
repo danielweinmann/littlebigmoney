@@ -58,16 +58,14 @@
 	[
 		"/Users/danielweinmann/projects/littlebigmoney",
 		"/Users/danielweinmann/projects/littlebigmoney/app",
+		"/Users/danielweinmann/projects/littlebigmoney/app/controllers",
 		"/Users/danielweinmann/projects/littlebigmoney/app/models",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels",
-		"/Users/danielweinmann/projects/littlebigmoney/config",
-		"/Users/danielweinmann/projects/littlebigmoney/config/locales",
-		"/Users/danielweinmann/projects/littlebigmoney/lib"
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects"
 	],
 	"file_history":
 	[
+		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/projects_controller.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/models/channel.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales/pt.yml",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels/_form.html.slim",

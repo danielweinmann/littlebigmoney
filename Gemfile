@@ -42,6 +42,9 @@ gem 'catarse_payulatam', git: 'git://github.com/danielweinmann/catarse_payulatam
 # gem 'catarse_payroll', git: 'git://github.com/danielweinmann/catarse_payroll.git',  ref: '90e0b1e01c7a3d2eff10a3c16286138e54397a1e'
 # gem 'catarse_payroll', path: '../catarse_payroll'
 
+# gem 'catarse_lbm_gift_cards', path: '../catarse_lbm_gift_cards'
+gem 'catarse_lbm_gift_cards', git: 'git://github.com/danielweinmann/catarse_lbm_gift_cards.git',  ref: '01a38efc0b1c4c2ad8fef6d78a8d538c607c7572'
+
 # Decorators
 gem 'draper'
 

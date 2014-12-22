@@ -467,6 +467,17 @@ es:
         error: "Oops! Hubo un error mientras se registraba la colaboración. Por favor intenta de nuevo."
         payulatam: "Pago nacional - PayU Latam"
         payulatam_title: "Vas a ser redirigido a la página de PayU Latam para completar el pago."
+        lbm_gift_cards: "Gift Card"
+        lbm_gift_cards_info:
+          title: "Gift Card"
+          coupon: "Código del cupo"
+          accept_terms_html: "He leido y estoy de acuerdo con los <a href='http://soporte.littlebigmoney.org/knowledgebase/articles/245482-t%C3%A9rminos-de-uso-espa%C3%B1ol'>términos de uso para Gift Cards</a>."
+          submit: "Usar Gift Card"
+          success: "Pago con Gift Card realizado con éxito!"
+          error: "Oops! Hubo un error mientras se registraba tu pago con Gift Card. Por favor intenta de nuevo."
+          error_duplicate: "Este Gift Card ya fue utilizado."
+          error_value: "Este cupo no es del valor informado. Por favor, informa el valor exacto del cupo."
+          error_coupon: "Gift Card no encontrado."
         payroll: "Pago por nómina"
         payroll_info:
           title: "Pago por nómina"
@@ -909,7 +920,7 @@ es:
       subtitle: "Conoce un poco más de LittleBigMoney"
       introduction_html: "LittleBigMoney es un espacio de colaboración entre individuos, <br>que juntos permiten la realización de proyectos con impacto social o ambiental."
       legend_html: |-
-          Bienvenidos a este tu espacio! Un lugar hecho para ustedes, donde con pequeños aportes puedes lograr GRANDES resultados. <br><br> Hoy podemos ayudar y contribuir en el crecimiento de muchas micro-empresas, que contribuyen en el crecimiento de tu país, y el fortalecimiento económico de muchas comunidades.
+          Bienvenidos a este tu espacio! Un lugar hecho para ustedes, donde con pequeños aportes puedes lograr GRANDES resultados. <br><br> Hoy podemos ayudar y contribuir en el crecimiento de muchas micro-empresas, que contribuyen en el crecimiento de tu país, y el fortalecimiento económico de muchas comunidades. 
           LittleBigMoney es una alternativa que conecta a miles de personas con muchos de sueños de muchos micro-empresarios, y cada uno sea parte de una comunidad en la que las pequeñas cosas se hacen GRANDES.
       submit: "ENVIAR TU PROYECTO"
       send_project: "Entérate cómo subir tu proyecto"

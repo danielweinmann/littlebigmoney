@@ -467,6 +467,17 @@ en:
         error: "Ooops. There was an error while registering your support. Please try again."
         payulatam: "National payment - PayU Latam"
         payulatam_title: "You will be redirected to the PayU Latam page to complete the payment."
+        lbm_gift_cards: ~
+        lbm_gift_cards_info:
+          title: ~
+          coupon: ~
+          accept_terms_html: ~
+          submit: ~
+          success: ~
+          error: ~
+          error_duplicate: ~
+          error_value: ~
+          error_coupon: ~
         payroll: ~
         payroll_info:
           title: ~
