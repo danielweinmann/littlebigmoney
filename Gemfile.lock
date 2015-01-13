@@ -8,14 +8,6 @@ GIT
       supermodel
 
 GIT
-  remote: git://github.com/danielweinmann/catarse_lbm_gift_cards.git
-  revision: 01a38efc0b1c4c2ad8fef6d78a8d538c607c7572
-  ref: 01a38efc0b1c4c2ad8fef6d78a8d538c607c7572
-  specs:
-    catarse_lbm_gift_cards (0.0.1)
-      rails (~> 3.2.6)
-
-GIT
   remote: git://github.com/danielweinmann/catarse_paypal_express.git
   revision: e4f4113be9cb9f684a272e5d04a2dd4f808bb6ff
   ref: e4f4113be9cb9f684a272e5d04a2dd4f808bb6ff
@@ -55,6 +47,12 @@ GIT
   branch: 2.0
   specs:
     cancan (2.0.0.alpha)
+
+PATH
+  remote: ../catarse_lbm_gift_cards
+  specs:
+    catarse_lbm_gift_cards (0.0.2)
+      rails (~> 3.2.6)
 
 GEM
   remote: https://rubygems.org/
