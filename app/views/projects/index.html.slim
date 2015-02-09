@@ -27,7 +27,7 @@
           hr
           = link_to t('main.links.selected'), explore_path(anchor: :recommended)
 
-      - if @channel && !@channel_projects.empty?
+      / - if @channel && !@channel_projects.empty?
         .list_title
           .title
             h2= @channel.name

@@ -58,28 +58,22 @@
 	[
 		"/Users/danielweinmann/projects/littlebigmoney",
 		"/Users/danielweinmann/projects/littlebigmoney/app",
-		"/Users/danielweinmann/projects/littlebigmoney/app/assets",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers",
-		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/projects",
-		"/Users/danielweinmann/projects/littlebigmoney/app/models",
+		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/adm",
+		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/adm/channels",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/projects",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects",
-		"/Users/danielweinmann/projects/littlebigmoney/config",
-		"/Users/danielweinmann/projects/littlebigmoney/db",
-		"/Users/danielweinmann/projects/littlebigmoney/db/migrate",
-		"/Users/danielweinmann/projects/littlebigmoney/lib"
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/users",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/users"
 	],
 	"file_history":
 	[
+		"/Users/danielweinmann/projects/littlebigmoney/app/assets/javascripts/application.js",
+		"/Users/danielweinmann/projects/littlebigmoney/Gemfile",
+		"/Users/danielweinmann/projects/littlebigmoney/config/routes.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/projects/backers_controller.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/application_controller.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales/pt.yml",
-		"/Users/danielweinmann/projects/littlebigmoney/app/assets/javascripts/application.js",
-		"/Users/danielweinmann/projects/littlebigmoney/config/routes.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/Gemfile",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales/es.yml",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/backers/create.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/projects_controller.rb",
@@ -132,6 +126,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gift_card",
+			"giftcard",
+			"gift_card",
+			"giftcard",
 			"authenticate_api",
 			"authenticate_token",
 			"authenticate_api",
