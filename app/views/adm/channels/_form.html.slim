@@ -12,6 +12,8 @@
           = form.input :website, as: :string
           = form.input :image, as: :string, input_html: {style: "width: 50%;"}
           = form.input :banner_url, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :banner_top_url, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :banner_bottom_url, as: :string, input_html: {style: "width: 50%;"}
           = form.input :video_url, as: :string, input_html: {style: "width: 50%;"}
           = form.input :how_it_works, as: :text, input_html: {style: "width: 99%;"}
           = form.input :legend, as: :text, input_html: {style: "width: 99%;"}
@@ -19,6 +21,7 @@
           = form.input :matchfunding_user_id, as: :string
           = form.input :matchfunding_maximum, as: :string
           = form.input :matchfunding_maximum_per_project, as: :string
+          = form.input :group_subdomains, as: :string, input_html: {style: "width: 50%;"}
           = form.input :receive_projects
           = form.input :show_drafts
           .clearfix

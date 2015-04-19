@@ -58,16 +58,16 @@
 	[
 		"/Users/danielweinmann/projects/littlebigmoney",
 		"/Users/danielweinmann/projects/littlebigmoney/app",
-		"/Users/danielweinmann/projects/littlebigmoney/app/controllers",
-		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/adm",
-		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/adm/channels",
+		"/Users/danielweinmann/projects/littlebigmoney/app/models",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/users",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/users"
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/backers",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/backers"
 	],
 	"file_history":
 	[
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/index.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/assets/javascripts/application.js",
 		"/Users/danielweinmann/projects/littlebigmoney/Gemfile",
 		"/Users/danielweinmann/projects/littlebigmoney/config/routes.rb",
@@ -126,6 +126,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"givecolombia",
+			"Searching",
+			"http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos",
 			"gift_card",
 			"giftcard",
 			"gift_card",

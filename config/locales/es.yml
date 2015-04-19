@@ -198,6 +198,8 @@ es:
         video_url: "URL del vídeo del canal"
         how_it_works: "Como funciona el canal?"
         banner_url: "URL del banner para proyectos"
+        banner_top_url: "URL del banner de arriba"
+        banner_bottom_url: "URL del banner de abajo"
         matchfunding_factor: "Factor para matchfunding"
         matchfunding_percentage: "% para matchfunding"
         matchfunding_user: "Id de usuário para aportes de matchfunding"
@@ -207,6 +209,7 @@ es:
         show_drafts: "Mostrar borradores"
         receive_projects: "Recibe proyectos"
         legend: "Texto para el formulario de nuevo proyecto"
+        group_subdomains: "Subdominios para consolidar en el canal"
     models:
       backer: Colaborador
       category: Categoría

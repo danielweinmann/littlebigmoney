@@ -21,11 +21,19 @@ body[data-namespace="channels"]
     border-radius: 0 !important
   #page_content
     padding: 2.8em 0
+  #page_content.banner
+    padding: 0
+    text-align: center
+    background-color: $lightblue
+    img
+      max-width: 100%
+    .container
+      padding: 0
   #page_content.presentation
     background: white
     .container
       margin-bottom: .2em
-  #page_content.presentation, #page_content.projects, #page_content.channel_footer, #page_content.how_to_participate
+  #page_content.banner, #page_content.presentation, #page_content.projects, #page_content.channel_footer, #page_content.how_to_participate
     border-top: 1px solid lighten(lightgray, 10%)
     .container
       background: none
@@ -57,4 +65,3 @@ body[data-namespace="channels"]
     background: $body_background
     min-height: 400px
     margin-bottom: 1em
-

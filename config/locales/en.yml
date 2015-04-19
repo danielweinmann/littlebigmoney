@@ -198,6 +198,8 @@ en:
         video_url: ~
         how_it_works: ~
         banner_url: ~
+        banner_top_url: ~
+        banner_bottom_url: ~
         matchfunding_factor: ~
         matchfunding_percentage: ~
         matchfunding_user: ~
@@ -207,6 +209,7 @@ en:
         show_drafts: ~
         receive_projects: ~
         legend: ~
+        group_subdomains: ~
     models:
       backer: Supporter
       category: Category
