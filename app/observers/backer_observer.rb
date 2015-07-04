@@ -16,6 +16,7 @@ class BackerObserver < ActiveRecord::Observer
     if backer.confirmed? and backer.confirmed_at.nil?
 
       backer.confirmed_at = Time.now
+
       Notification.create_notification_once(:confirm_backer,
         backer.user,
         {backer_id: backer.id},
@@ -55,10 +56,18 @@ class BackerObserver < ActiveRecord::Observer
   end
 
   def after_save(backer)
-    Notification.create_notification_once(:project_success,
-      backer.project.user,
-      {project_id: backer.project.id},
-      project: backer.project) if backer.project.reached_goal?
+    if backer.project.reached_goal?
+      Notification.create_notification_once(:project_success,
+        backer.project.user,
+        {project_id: backer.project.id},
+        project: backer.project)
+      backer.project.channels.each do |channel|
+        if channel.finish_once_reached_goal? && backer.project.original_online_days.nil?
+          backer.project.update_attributes online_days: ((Time.now - backer.project.online_date).to_i / (24 * 60 * 60) - 1), original_online_days: backer.project.online_days
+          break
+        end
+      end
+    end
   end
 
   def notify_backoffice(backer)

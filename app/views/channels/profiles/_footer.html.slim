@@ -1,4 +1,4 @@
-#page_content.channel_footer
+#page_content.channel_footer style=("background-color: #{@profile.background_color};" if @profile.background_color.present?)
   .container
     nav
       = link_to t('channels.footer.terms'), t('footer.links.terms_link'), title: t('channels.footer.terms'), target: '_blank'

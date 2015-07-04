@@ -210,6 +210,10 @@ es:
         receive_projects: "Recibe proyectos"
         legend: "Texto para el formulario de nuevo proyecto"
         group_subdomains: "Subdominios para consolidar en el canal"
+        finish_once_reached_goal: "Finalizar proyectos apenas alcancen la meta"
+        background_color: "Color de fondo del canal"
+        banner_background_color: "Color de fondo de los banners"
+        confirm_backer_email_paragraph: "Párrafo para email de confirmación de aporte"
     models:
       backer: Colaborador
       category: Categoría
@@ -572,7 +576,7 @@ es:
       success: "Tu proyecto fue creado exitosamente! Te contactaremos próximamente. Muchas gracias!"
     form:
       permalink_hint: "Usa una URL simple. Tus colaboradores deben recordar esta dirección fácilmente para compartir tu proyecto."
-      important_html: "Recuerda que la comisión de LittleBigMoney es del 13%, si el proyecto tiene éxito."
+      important_html: "Recuerda que la comisión de LittleBigMoney es del 14%, si el proyecto tiene éxito."
       add_reward: "Agregar recomepensa"
       project_warning:
         content_html: "¿Quieres aumentar las posibilidades de tener éxito? Asegúrate de revisar este %{link}"
@@ -730,11 +734,11 @@ es:
       introduction_html: "Completa el siguiente formulario, danos buena información! Entre más información recibimos <br/>mejor completamos tu proyecto y más rápido irá al irá en la plataforma."
       permalink_important: "Trata de no usar subrayado, guión etc."
       permalink_hint: "Hazlo simple. Tus colaboradores deben poder recordar la URL de tu proyecto ; )"
-      important_html: "Ten en cuenta que el descuento total será de aproximadamente el 13% sobre el valor recogido, si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
+      important_html: "Ten en cuenta que el descuento total será de aproximadamente el 14% sobre el valor recogido, si logras completar el monto solicitado. Divide tu presupuesto final por 0.8492 para hallar el monto total que vas a solicitar."
       about: "Describe tu proyecto utilizando esta guía!"
       how_much_you_need: "¿Cuánto dinero quieres recaudar?"
       how_much_hint_html: "Es importante recodar que la mayoría del dinero que recolectes vendrá de personas cercanas a ti (familiares, amigos y/o conocidos):<a href='%{href}' target='_blank'>Clickhere!</a> Por esta razón ten en cuenta que cuando calcules el monto total a solicitar en LittleBigMoney, debes tener al menos la capacidad de recolectar el 50% del mismo entre tu red."
-      how_much_important: "Ten en cuenta que la comisión cargada por LittleBigMoney es del 13% si logras completar el monto solicitado. Divide tu presupuesto final por 0,87 para hallar el monto a ser descontado."
+      how_much_important: "Ten en cuenta que la comisión cargada por LittleBigMoney es del 14% si logras completar el monto solicitado. Divide tu presupuesto final por 0,87 para hallar el monto a ser descontado."
       days: "¿En cuántos días?"
       days_hint: "En promedio los proyectos están al aire por 40 días."
       days_important: "La fecha límite para que el proyecto este al aire es de 90 días."

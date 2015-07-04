@@ -1,6 +1,6 @@
 = content_for :title, @profile.name
 
-#page_content.presentation
+#page_content.presentation style=("background-color: #{@profile.background_color};" if @profile.background_color.present?)
   .container
     .video
       .padding
@@ -17,13 +17,13 @@
     .clearfix
 
 - if @profile.banner_top_url.present?
-  #page_content.banner
+  #page_content.banner style=("background-color: #{@profile.banner_background_color};" if @profile.banner_background_color.present?)
     .container
       = image_tag @profile.banner_top_url
 
 - if @profile.group_channels.present?
 
-  #page_content.projects.group_channels
+  #page_content.projects.group_channels style=("background-color: #{@profile.background_color};" if @profile.background_color.present?)
     .container
       ol.projects_list
         - @profile.group_channels.each do |channel|
@@ -37,7 +37,7 @@
 
 - else
 
-  #page_content.projects
+  #page_content.projects style=("background-color: #{@profile.background_color};" if @profile.background_color.present?)
     .container
       .channel
         .info
@@ -71,7 +71,7 @@
           = render partial: 'channels/projects/project', locals: { project: project }
 
 - if @profile.banner_bottom_url.present?
-  #page_content.banner
+  #page_content.banner style=("background-color: #{@profile.banner_background_color};" if @profile.banner_background_color.present?)
     .container
       = image_tag @profile.banner_bottom_url
 

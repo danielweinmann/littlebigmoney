@@ -15,8 +15,11 @@
           = form.input :banner_top_url, as: :string, input_html: {style: "width: 50%;"}
           = form.input :banner_bottom_url, as: :string, input_html: {style: "width: 50%;"}
           = form.input :video_url, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :background_color, as: :string, input_html: {style: "width: 50%;"}
+          = form.input :banner_background_color, as: :string, input_html: {style: "width: 50%;"}
           = form.input :how_it_works, as: :text, input_html: {style: "width: 99%;"}
           = form.input :legend, as: :text, input_html: {style: "width: 99%;"}
+          = form.input :confirm_backer_email_paragraph, as: :text, input_html: {style: "width: 99%;"}
           = form.input :matchfunding_factor, as: :string
           = form.input :matchfunding_user_id, as: :string
           = form.input :matchfunding_maximum, as: :string
@@ -24,6 +27,7 @@
           = form.input :group_subdomains, as: :string, input_html: {style: "width: 50%;"}
           = form.input :receive_projects
           = form.input :show_drafts
+          = form.input :finish_once_reached_goal
           .clearfix
           .form-actions.bootstrap-twitter
             = form.submit class: 'btn'

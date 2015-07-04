@@ -210,6 +210,10 @@ pt:
         receive_projects: Recebe projetos
         legend: Texto para o formulário de novo projeto
         group_subdomains: Subdomínios para agrupar no canal
+        finish_once_reached_goal: Finalizar projetos quando atingirem a meta
+        background_color: Cor de fundo do canal
+        banner_background_color: Cor de fundo dos banners
+        confirm_backer_email_paragraph: Parágrafo para email de confirmação de apoio
     models:
       backer: Apoiador
       category: Categoria

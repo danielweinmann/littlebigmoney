@@ -210,6 +210,10 @@ en:
         receive_projects: ~
         legend: ~
         group_subdomains: ~
+        finish_once_reached_goal: "Finish projects once they reach the goal"
+        background_color: ~
+        banner_background_color: ~
+        confirm_backer_email_paragraph: ~
     models:
       backer: Supporter
       category: Category

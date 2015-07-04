@@ -5,4 +5,11 @@
   - reward = t('notifications.confirm_backer.no_reward_html', link: mail_to(Configuration[:email_contact]))
 
 = t('notifications.confirm_backer.text_html', name: backer.user.display_name, project: link_to(backer.project.name, project_by_slug_url(permalink: backer.project.permalink)), method: backer.payment_method, value: backer.display_value, reward: reward, id: backer.id, expires_at: backer.project.display_expires_at, user: backer.project.user.name, email: mail_to(backer.project.user.email))
+
+- @notification.backer.project.channels.each do |channel|
+  - if channel.confirm_backer_email_paragraph.present?
+    br
+    br
+    = channel.confirm_backer_email_paragraph
+
 = render "email_footer"
