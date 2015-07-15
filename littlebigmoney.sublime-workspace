@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"online",
+				"online_days"
+			],
+			[
 				"moip_state",
 				"moip_state_name"
 			],
@@ -25,9 +29,14 @@
 	[
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 287.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -58,34 +67,42 @@
 	[
 		"/Users/danielweinmann/projects/littlebigmoney",
 		"/Users/danielweinmann/projects/littlebigmoney/app",
-		"/Users/danielweinmann/projects/littlebigmoney/app/models",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/backers",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/backers"
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels",
+		"/Users/danielweinmann/projects/littlebigmoney/config",
+		"/Users/danielweinmann/projects/littlebigmoney/config/locales",
+		"/Users/danielweinmann/projects/littlebigmoney/db/migrate",
+		"/Users/danielweinmann/projects/littlebigmoney/lib/tasks"
 	],
 	"file_history":
 	[
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels/_form.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/config/locales/pt.yml",
+		"/Users/danielweinmann/projects/littlebigmoney/app/models/channel.rb",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/notifications_mailer/confirm_backer.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/observers/backer_observer.rb",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles/_footer.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles/show.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/assets/stylesheets/resources/channels/_general.sass",
+		"/Users/danielweinmann/projects/littlebigmoney/app/assets/stylesheets/resources/channels/_profile.sass",
+		"/Users/danielweinmann/projects/littlebigmoney/app/decorators/project_decorator.rb",
+		"/Users/danielweinmann/projects/littlebigmoney/app/models/project.rb",
+		"/Users/danielweinmann/projects/littlebigmoney/app/models/backer.rb",
+		"/Users/danielweinmann/projects/littlebigmoney/db/structure.sql",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/index.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/assets/javascripts/application.js",
 		"/Users/danielweinmann/projects/littlebigmoney/Gemfile",
 		"/Users/danielweinmann/projects/littlebigmoney/config/routes.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/projects/backers_controller.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/application_controller.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/config/locales/pt.yml",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales/es.yml",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/backers/create.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/projects_controller.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/app/models/channel.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels/_form.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/lib/payment_engines.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/app/models/backer.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/app/models/project.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/projects/index.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/controllers/adm/projects_controller.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales/adm.pt.yml",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles/show.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/db/migrate/20141106155412_add_receive_projects_to_channels.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/backers/index.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/db/migrate/20141016193001_add_matchfunding_channel_id_to_backers.rb",
@@ -111,7 +128,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 49.0
 	},
 	"find_in_files":
 	{
@@ -126,6 +143,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"confirm_backer",
+			"#page_content.projects",
+			"expires_at",
+			"aki",
+			"pending_backers_reached_the_goal",
+			"in_time_to_wait",
+			"successful",
+			"matchfund",
+			"match",
+			"reached_goal",
+			"goal",
+			"expires_at",
+			"projects.expires_at",
+			"expires_at",
+			"expired",
+			"channels",
 			"givecolombia",
 			"Searching",
 			"http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos",
@@ -207,6 +240,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "littlebigmoney.sublime-project",
 	"replace":
 	{
@@ -216,6 +250,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -224,6 +259,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -232,6 +268,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
