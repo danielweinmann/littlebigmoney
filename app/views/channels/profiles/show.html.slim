@@ -28,7 +28,7 @@
       ol.projects_list
         - @profile.group_channels.each do |channel|
           li.project
-            .channel_image style=("background-color: #{@profile.background_color};" if @profile.background_color.present?)
+            .channel_image style=("background-color: #{@profile.banner_background_color};" if @profile.banner_background_color.present?)
               = link_to root_url(subdomain: channel.permalink) do
                 = image_tag channel.image, title: channel.name
             - random_project = channel.projects.visible.sample(1).first

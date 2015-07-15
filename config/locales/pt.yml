@@ -130,6 +130,8 @@ pt:
       title: Bem-sucedidos
     partners:
       title: Parceiros
+    channels:
+      title: Canais
   accept_terms_html: "Eu li e estou de acordo com os %{link}."
   activerecord:
     errors:
