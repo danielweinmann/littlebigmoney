@@ -130,6 +130,8 @@ es:
       title: Exitosos
     partners:
       title: "Con el apoyo de"
+    channels:
+      title: Canales
   accept_terms_html: "He leído y estoy de acuerdo %{link}."
   activerecord:
     errors:
@@ -214,6 +216,7 @@ es:
         background_color: "Color de fondo del canal"
         banner_background_color: "Color de fondo de los banners"
         confirm_backer_email_paragraph: "Párrafo para email de confirmación de aporte"
+        home_page: "Mostrar en el home"
     models:
       backer: Colaborador
       category: Categoría

@@ -100,7 +100,7 @@
         +alpha
         +omega
         border: 1px solid transparent
-  .allies
+  .allies, .channels
     +grid(12)
     +alpha
     +omega
@@ -113,9 +113,13 @@
       +opacity(0.8)
       padding: 20px 0
       margin-bottom: 20px
+      height: 80px
       &:hover
         +opacity(1)
       &.first
         +alpha
       &.last
         +omega
+      img
+        max-height: 80px
+        max-width: 200px

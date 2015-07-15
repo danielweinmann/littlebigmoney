@@ -1,7 +1,7 @@
 class Channel < ActiveRecord::Base
   extend CatarseAutoHtml
 
-  attr_accessible :description, :name, :permalink, :email, :twitter, :facebook, :website, :image, :video_url, :how_it_works, :banner_url, :banner_top_url, :banner_bottom_url, :matchfunding_factor, :matchfunding_percentage, :matchfunding_user, :matchfunding_user_id, :matchfunding_maximum, :matchfunding_maximum_per_project, :show_drafts, :legend, :receive_projects, :group_subdomains, :finish_once_reached_goal, :background_color, :banner_background_color, :confirm_backer_email_paragraph
+  attr_accessible :description, :name, :permalink, :email, :twitter, :facebook, :website, :image, :video_url, :how_it_works, :banner_url, :banner_top_url, :banner_bottom_url, :matchfunding_factor, :matchfunding_percentage, :matchfunding_user, :matchfunding_user_id, :matchfunding_maximum, :matchfunding_maximum_per_project, :show_drafts, :legend, :receive_projects, :group_subdomains, :finish_once_reached_goal, :background_color, :banner_background_color, :confirm_backer_email_paragraph, :home_page
   schema_associations
 
   validates_presence_of :name, :description, :permalink
@@ -16,6 +16,8 @@ class Channel < ActiveRecord::Base
   has_many :backers, through: :projects
 
   belongs_to :matchfunding_user, class_name: :User
+
+  scope :home_page, ->() { where("home_page") }
 
   delegate :all, to: :decorator
 

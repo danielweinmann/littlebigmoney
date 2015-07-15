@@ -130,6 +130,8 @@ en:
       title: Successful
     partners:
       title: partners
+    channels:
+      title: ~
   accept_terms_html: "I have read and accepted the %{link}."
   activerecord:
     errors:
@@ -214,6 +216,7 @@ en:
         background_color: ~
         banner_background_color: ~
         confirm_backer_email_paragraph: ~
+        home_page: ~
     models:
       backer: Supporter
       category: Category

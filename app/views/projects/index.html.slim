@@ -72,31 +72,14 @@
             hr
             = link_to t('main.links.successful'), explore_path(anchor: :successful)
 
-      .allies.list
+      .channels.list
         .list_title
           .title
-            h2= t('sections.partners.title')
+            h2= t('sections.channels.title')
         .projects
-          a.first href="http://www.culturaemedellin.gov.co/sites/CulturaE/ciudade/Paginas/default.aspx" target="_blank"
-            = image_tag "allies/ciudad_e.png"
-          a href="http://givetocolombia.org/" target="_blank"
-            = image_tag "allies/give_to_colombia.png"
-          a.last href="http://www.dps.gov.co/" target="_blank"
-            = image_tag "allies/dps.png"
-          a.first href="http://www.ccmpc.org.co/Default.aspx" target="_blank"
-            = image_tag "allies/camara_manizales.png"
-          a href="http://www.globalgiving.org/" target="_blank"
-            = image_tag "allies/global_giving.png"
-          a.last href="http://www.fordfoundation.org/" target="_blank"
-            = image_tag "allies/ford_foundation.png"
-          a.first href="http://www.theappdate.com/es/" target="_blank"
-            = image_tag "allies/theappdate.png"
-          a href="http://bogota.impacthub.net/" target="_blank"
-            = image_tag "allies/impact_hub.png"
-          a.last href="http://colombia.laspaginasverdes.com/" target="_blank"
-            = image_tag "allies/lpv.png"
-          a.first href="http://www.emocioncreativa.com/" target="_blank"
-            = image_tag "allies/ec.png"
+          - Channel.home_page.each do |channel|
+            a.first href=root_url(subdomain: channel.permalink) target="_blank"
+              = image_tag channel.image
         .clear_link
           hr
 
