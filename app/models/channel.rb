@@ -17,7 +17,7 @@ class Channel < ActiveRecord::Base
 
   belongs_to :matchfunding_user, class_name: :User
 
-  scope :home_page, ->() { where("home_page") }
+  scope :home_page, ->() { where("home_page").order('random()') }
 
   delegate :all, to: :decorator
 

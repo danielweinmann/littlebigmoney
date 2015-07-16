@@ -72,16 +72,41 @@
             hr
             = link_to t('main.links.successful'), explore_path(anchor: :successful)
 
-      .channels.list
-        .list_title
-          .title
-            h2= t('sections.channels.title')
-        .projects
-          - Channel.home_page.each do |channel|
-            a.first href=root_url(subdomain: channel.permalink) target="_blank"
-              = image_tag channel.image
-        .clear_link
-          hr
+      / .channels.list
+      /   .list_title
+      /     .title
+      /       h2= t('sections.channels.title')
+      /   .projects
+      /     - Channel.home_page.each do |channel|
+      /       a.first href=root_url(subdomain: channel.permalink) target="_blank"
+      /         = image_tag channel.image
+      /   .clear_link
+      /     hr
+
+      - Channel.home_page.each do |channel|
+        .channel.list
+          .list_title
+            .title
+              h2= channel.name
+          .projects
+            - if channel.group_subdomains.present?
+              - length = channel.group_channels.length
+              - length = 3 if channel.group_channels.length > 3
+              - i = 0
+              - channel.group_channels.each do |grouped_channel|
+                .group_channels
+                  li.project
+                    - random_project = grouped_channel.projects.visible.sample(1).first
+                    - if random_project
+                      == render 'project', project: random_project, custom_class: ((length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+                - i += 1
+            - else
+              - channel_projects = channel.projects.visible.order("random()").limit(3)
+              - channel_projects.each_with_index do |item, i|
+                == render 'project', project: item, custom_class: ((channel_projects.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+          .explore_link
+            hr
+            = link_to t('main.links.channel_projects', name: channel.name), root_url(subdomain: channel.permalink)
 
       .allies.list
         .list_title
