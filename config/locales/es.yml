@@ -215,6 +215,7 @@ es:
         finish_once_reached_goal: "Finalizar proyectos apenas alcancen la meta"
         background_color: "Color de fondo del canal"
         banner_background_color: "Color de fondo de los banners"
+        project_background_color: "Color de fondo de los banners de proyecto"
         confirm_backer_email_paragraph: "Párrafo para email de confirmación de aporte"
         home_page: "Mostrar en el home"
     models:

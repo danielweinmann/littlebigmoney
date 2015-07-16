@@ -215,6 +215,7 @@ en:
         finish_once_reached_goal: "Finish projects once they reach the goal"
         background_color: ~
         banner_background_color: ~
+        project_background_color: ~
         confirm_backer_email_paragraph: ~
         home_page: ~
     models:
