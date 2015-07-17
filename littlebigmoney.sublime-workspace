@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"channel",
+				"channel_projects"
+			],
+			[
 				"confirme",
 				"confirmed_at"
 			],
@@ -76,24 +80,27 @@
 		"/Users/danielweinmann/projects/littlebigmoney",
 		"/Users/danielweinmann/projects/littlebigmoney/app",
 		"/Users/danielweinmann/projects/littlebigmoney/app/models",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/adm/projects",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles",
 		"/Users/danielweinmann/projects/littlebigmoney/config",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales"
 	],
 	"file_history":
 	[
-		"/Users/danielweinmann/projects/littlebigmoney/app/models/backer.rb",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles/show.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels/_form.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/config/locales/pt.yml",
 		"/Users/danielweinmann/projects/littlebigmoney/app/models/channel.rb",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/adm/channels/_form.html.slim",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/index.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/assets/stylesheets/resources/channels/_profile.sass",
 		"/Users/danielweinmann/projects/littlebigmoney/app/assets/stylesheets/resources/projects/_index.sass",
-		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles/show.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/views/projects/index.html.slim",
+		"/Users/danielweinmann/projects/littlebigmoney/app/models/backer.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/notifications_mailer/confirm_backer.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/observers/backer_observer.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/views/channels/profiles/_footer.html.slim",
 		"/Users/danielweinmann/projects/littlebigmoney/app/assets/stylesheets/resources/channels/_general.sass",
-		"/Users/danielweinmann/projects/littlebigmoney/app/assets/stylesheets/resources/channels/_profile.sass",
 		"/Users/danielweinmann/projects/littlebigmoney/app/decorators/project_decorator.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/app/models/project.rb",
 		"/Users/danielweinmann/projects/littlebigmoney/db/structure.sql",
@@ -149,6 +156,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".channel_image",
+			"channel",
+			"@profile",
 			".allies",
 			"sections",
 			".channel_image",
